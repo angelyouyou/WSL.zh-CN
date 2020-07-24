@@ -5,16 +5,16 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，vs code，远�
 ms.date: 05/28/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 416862201094ba28474918dca8e7d9ce316844cc
-ms.sourcegitcommit: d95bdbc2fea991ba14a4c9ec53ee0ec19d6bbdb4
+ms.openlocfilehash: f5d7bd4f582f504ea3c4bd814454b1dc881ffed2
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84457779"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948651"
 ---
 # <a name="get-started-using-visual-studio-code-with-windows-subsystem-for-linux"></a>使用适用于 Linux 的 Windows 子系统的 Visual Studio Code 入门
 
-Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code 使用 WSL 作为你的全时开发环境。 你可以：
+Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code 使用 WSL 作为你的全时开发环境。 方法：
 
 * 在基于 Linux 的环境中进行开发
 * 使用特定于 Linux 的工具链和实用工具
@@ -34,7 +34,7 @@ Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code
 * 安装[远程开发扩展包](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)。 除了远程 SSH 和远程容器扩展外，此扩展包还包括远程 WSL 扩展，使你能够打开容器、远程计算机或 WSL 中的任何文件夹。
 
 > [!IMPORTANT]
-> 若要安装 WSL 扩展，将需要[1.35 的发行](https://code.visualstudio.com/updates/v1_35)版本或更高版本 VS Code。 建议不要在不使用 WSL 扩展的 VS Code 中使用 WSL，因为将失去对自动完成、调试、linting 等的支持。有趣的事实：此 WSL 扩展安装在 $HOME/.vscode-server/extensions。
+> 若要安装 WSL 扩展，将需要[1.35 的发行](https://code.visualstudio.com/updates/v1_35)版本或更高版本 VS Code。 建议不要在不使用 WSL 扩展的 VS Code 中使用 WSL，因为将失去对自动完成、调试、linting 等的支持。有趣的事实：此 WSL 扩展安装在 $HOME/.vscode/extensions （ `ls $HOME\.vscode\extensions\` 在 PowerShell 中输入命令）中。
 
 ## <a name="update-your-linux-distribution"></a>更新 Linux 分发版
 
@@ -94,7 +94,7 @@ VS Code 远程运行时，选择 "扩展" 选项卡将显示本地计算机与 W
 
 新的 Windows 终端启用多个选项卡（在命令提示符、PowerShell 或多个 Linux 分发之间快速切换）、自定义密钥绑定（创建自己的快捷键以打开或关闭选项卡、复制 + 粘贴等）、表情符号☺和自定义主题（配色方案、字体样式和大小、背景图像/模糊/透明度）。 在[Windows 终端文档](https://docs.microsoft.com/windows/terminal)中了解详细信息。
 
-1. 获取[Microsoft Store 中的 Windows 终端](https://www.microsoft.com/store/apps/9n0dx20hk701)：通过应用商店进行安装，将自动处理更新。
+1. [在 Microsoft Store 中获取 Windows 终端](https://www.microsoft.com/store/apps/9n0dx20hk701)：通过 Microsoft Store 进行安装时，将自动处理更新。
 
 2. 安装完成后，打开 Windows 终端并选择“设置”以使用 `profile.json` 文件自定义终端。
 
