@@ -4,14 +4,16 @@ description: 浏览适用于 Linux 的 Windows 子系统文档。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, gnu, linux
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: eac5ab3a4406d7e3b1ba89c0d9e6212fa602d852
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 81ff05f03172e3e3a167ffba4ce846ec2edb3d1c
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83270485"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948581"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>适用于 Linux 的 Windows 子系统文档
+
+适用于 Linux 的 Windows 子系统可让开发人员按原样运行 GNU/Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生传统虚拟机或双启动设置开销。
 
 ## <a name="learn-more-here"></a>在此处了解详细信息
 

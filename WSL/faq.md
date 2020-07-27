@@ -6,12 +6,12 @@ ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 3c3681b0e0e8317917b4ec7c37c9bb2f0bbe9c95
-ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
+ms.openlocfilehash: 8e3ebb44c139b5e7b8c25e8e813766b0107426dc
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83343894"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948631"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>有关适用于 Linux 的 Windows 子系统的常见问题解答
 
@@ -34,6 +34,10 @@ WSL 提供一个名为 Bash.exe 的应用程序，启动该应用程序后，会
 还可以从 Linux Bash shell 内部访问本地计算机的文件系统 – 将会看到 `/mnt` 文件夹下装载的本地驱动器。 例如，你的 `C:` 驱动器装载在 `/mnt/c` 下：  
 
 ![装载的 C 驱动器的屏幕截图](media/ls.png)
+
+## <a name="could-you-describe-a-typical-development-workflow-that-incorporates-wsl"></a>你能否描述一下整合了 WSL 的典型开发工作流？
+
+WSL 面向开发人员受众，旨在用作内部开发流程的一部分。 假设何石要创建一个 CI/CD 管道（持续集成和持续交付），而且他想先在本地计算机（笔记本电脑）上测试它，然后再将它部署到云中。 何石可启用 WSL（和 WSL 2 来提高速度和性能），然后在本地（在笔记本电脑上）将正版 Linux Ubuntu 实例与所需的任何 Bash 命令和功能搭配使用。 在本地验证开发管道后，何石可将该 CI/CD 管道向上推送到云中（也就是 Azure 中），方法是将它放入 Docker 容器并将该容器推送到云实例，使其在生产就绪的 Ubuntu VM 上运行。
 
 ## <a name="what-is-bash"></a>什么是 Bash？
 
@@ -83,7 +87,7 @@ WSL 支持 x64 和 ARM CPU。
 
 系统会自动为本地计算机上的硬盘驱动器创建装入点，通过这些装入点可以轻松访问 Windows 文件系统。
 
-**/mnt/\<驱动器号>/**
+**/mnt/\<drive letter>/**
 
 示例用法：运行 `cd /mnt/c` 访问 c:\
 
@@ -200,7 +204,7 @@ sudo update-locale LANG=en_US.UTF8
 在某些情况下，关闭防火墙即可进行访问。 在某些情况下，只需让安装的防火墙在表面上阻止访问。
 
 ## <a name="how-do-i-access-a-port-from-wsl-in-windows"></a>如何从 Windows 中的 WSL 访问某个端口？
-WSL 共享 Windows 的 IP 地址，因为它在 Windows 上运行。 因此，你可以访问 localhost 上的任何端口。例如，如果你在端口 1234 上提供 Web 内容，可以在 Windows 浏览器中输入 https://localhost:1234。
+WSL 共享 Windows 的 IP 地址，因为它在 Windows 上运行。 因此，你可以访问 localhost 上的任何端口。例如，如果你在端口 1234 上提供 Web 内容，可以在 Windows 浏览器中输入 https://localhost:1234 。
 
 ## <a name="how-can-i-back-up-my-wsl-distros-or-move-them-from-one-drive-to-another"></a>如何备份我的 WSL 分发版，或者如何将它们从一个驱动器移到另一个驱动器？
 

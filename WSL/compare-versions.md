@@ -1,18 +1,18 @@
 ---
-title: 适用于 Linux 的 Windows 子系统概述
+title: 比较 WSL 版本 1 和版本 2
 description: 了解适用于 Linux 的 Windows 子系统及其不同版本和使用方式。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubuntu, debian, suse, windows 10, UX 更改, WSL 2, linux 内核, 网络应用程序, localhost, IPv6, 虚拟硬件磁盘, VHD, VHD 限制, VHD 错误
-ms.date: 05/12/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 8354e9c35d1e97f38c4cf6aa53a861c2c5e290be
-ms.sourcegitcommit: 386d47a1c53a85b91f5a2b0f1f99ce2c46b20a77
+ms.openlocfilehash: 139bf2200b47f7d1465312f16ed0a3449491dc89
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86093276"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948641"
 ---
-# <a name="comparing-wsl-2-and-wsl-1"></a>比较 WSL 2 和 WSL 1
+# <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
 将适用于 Linux 的 Windows 子系统更新到新版本的主要目标是，**提高文件系统性能**并支持**完全的系统调用兼容性**。 
 
@@ -77,7 +77,7 @@ WSL 2 中的 Linux 内核是 Microsoft 根据最新的稳定版分支（基于 k
 
 ### <a name="increased-file-io-performance"></a>提升了文件 IO 性能
 
-在使用 WSL 2 的情况下，文件密集型操作（如 git 克隆、npm 安装、apt 更新、apt 升级等）的速度都明显更快。
+如果使用 WSL 2，文件密集型操作（如 git 克隆、npm 安装、apt 更新、apt 升级等）的速度都明显更快。
 
 实际的速度提升将取决于你运行的应用以及它与文件系统的交互方式。 在对压缩的 tarball 进行解包时，WSL 2 的初始版本的运行速度比 WSL 1 快达 20 倍，在各种项目上使用 git 克隆、npm 安装和 cmake 时，大约快 2-5 倍。
 

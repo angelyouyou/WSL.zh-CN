@@ -6,14 +6,24 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 2fcf24719f037a29bab7652fc75ac82cc0b6176a
-ms.sourcegitcommit: 031a74801e03a90aed4b34c4fd5bfe964fc30994
+ms.openlocfilehash: 1de8f5e287d70c4992e9e6694d8980cbd305957b
+ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942591"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86948681"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统发行说明
+
+## <a name="build-20175"></a>内部版本 20175
+有关内部版本 20175 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/)。
+
+* 将 WSL2 VM 的默认内存分配调整为主机内存的 50% 或 8 GB（以较小者为准）[GH 4166]。
+* 将 \\\\wsl$ 前缀更改为 \\\\wsl 以支持 URI 分析。 旧的 \\\\wsl$ 路径仍然受到支持。
+* 在 amd64 上为 WSL2 默认启用嵌套虚拟化。 你可通过 %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false) 来禁用此设置。
+* 使 wsl.exe --update 要求启动 Microsoft 更新。
+* 支持在 DrvFs 中对只读文件进行重命名。
+* 确保始终在正确的代码页中打印错误消息。
 
 ## <a name="build-20150"></a>内部版本 20150
 有关内部版本 20150 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/)。
@@ -1547,13 +1557,13 @@ Syscall 总数：384 </br>
 ### <a name="new-feature-windows--ubuntu-interoperability"></a>新功能：Windows/Ubuntu 互操作性
 现在可以直接从 WSL 命令行调用 Windows 二进制文件。  这样，用户便可以通过前所未有的方式来与其 Windows 环境和系统交互。  举个简单的例子，用户现在可以运行以下命令：
 
-    ```
-    $ export PATH=$PATH:/mnt/c/Windows/System32
-    $ notepad.exe
-    $ ipconfig.exe | grep IPv4 | cut -d: -f2
-    $ ls -la | findstr.exe foo.txt
-    $ cmd.exe /c dir
-    ```
+```bash
+$ export PATH=$PATH:/mnt/c/Windows/System32
+$ notepad.exe
+$ ipconfig.exe | grep IPv4 | cut -d: -f2
+$ ls -la | findstr.exe foo.txt
+$ cmd.exe /c dir
+```
 
 可在以下资源中找到详细信息：
 
