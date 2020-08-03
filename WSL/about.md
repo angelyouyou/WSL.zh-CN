@@ -2,16 +2,16 @@
 title: 关于适用于 Linux 的 Windows 子系统
 description: 了解适用于 Linux 的 Windows 子系统及其不同版本和使用方式。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, gnu, linux
-ms.date: 05/12/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
-ROBOTS: NOINDEX
-ms.openlocfilehash: ddc242360adf67e3c5b6cd14d35fb6c869b83b2d
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.localizationpriority: high
+ms.openlocfilehash: 512b5dc96892e2b66721e5e164301f2e9be6cd65
+ms.sourcegitcommit: b494c8a76f867d69fa7fff4878c4e38140eaeb8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948621"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87235451"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>什么是适用于 Linux 的 Windows 子系统？
 
@@ -24,10 +24,17 @@ ms.locfileid: "86948621"
 * 运行 Bash shell 脚本和 GNU/Linux 命令行应用程序，包括：  
     * 工具：vim、emacs、tmux
     * 语言：[NodeJS](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2)、Javascript、[Python](https://docs.microsoft.com/windows/python/web-frameworks)、Ruby、C/ C++、C# 与 F#、Rust、Go 等。
-    * 服务：SSHD、MySQL、Apache、lighttpd、[MongoDB](https://docs.microsoft.com/windows/nodejs/databases)、[PostgreSQL](https://docs.microsoft.com/windows/python/databases)。
+    * 服务：SSHD、[MySQL](./tutorials/wsl-database.md)、Apache、lighttpd、[MongoDB](./tutorials/wsl-database.md)、[PostgreSQL](./tutorials/wsl-database.md)。
 * 使用自己的 GNU/Linux 分发包管理器安装其他软件。
 * 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序。
 * 在 Windows 上调用 GNU/Linux 应用程序。
+
+> [!div class="nextstepaction"]
+> [安装 WSL](install-win10.md)
+
+<br>
+
+> [!VIDEO https://www.youtube.com/embed/48k317kOxqg]
 
 ## <a name="what-is-wsl-2"></a>什么是 WSL 2？
 
@@ -36,6 +43,10 @@ WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，�
 这一新的体系结构改变了这些 Linux 二进制文件与Windows 和计算机硬件进行交互的方式，但仍然提供与 WSL 1（当前广泛可用的版本）中相同的用户体验。
 
 单个 Linux 分发版可以在 WSL 1 或 WSL 2 体系结构中运行。 每个分发版可随时升级或降级，并且你可以并行运行 WSL 1 和 WSL 2 分发版。 WSL 2 使用全新的体系结构，该体系结构受益于运行真正的 Linux 内核。
+
+<br>
+
+> [!VIDEO https://www.youtube.com/embed/MrZolfGm8Zk]
 
 ## <a name="next-steps"></a>后续步骤
 
