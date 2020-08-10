@@ -4,12 +4,12 @@ description: 有关列出和配置在适用于 Linux 的 Windows 子系统上运
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: e97b1030d5891bf8aa1cb656646a4d9e1d480a3d
-ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
+ms.openlocfilehash: b8aa740233f3ac9517744212eb7b362a18378822
+ms.sourcegitcommit: 90577817a9321949da2a3971b4c78bb00f6d977f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85336080"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88039410"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL 命令和启动配置
 
@@ -38,7 +38,7 @@ ms.locfileid: "85336080"
 
 以这种方式从命令行运行分发版的缺点是，会自动将工作目录从当前目录更改为分发版的主目录。
 
-**示例：（使用 PowerShell）**
+**示例：使用 PowerShell)  (**
 
 ```console
 PS C:\Users\sarah> pwd
@@ -61,7 +61,7 @@ PS C:\Users\sarah>
 
 从命令行运行 WSL 的最佳方式是使用 `wsl.exe`。
 
-**示例：（使用 PowerShell）**
+**示例：使用 PowerShell)  (**
 
 ```console
 PS C:\Users\sarah> pwd
@@ -78,7 +78,7 @@ scooley@scooley-elmer:/mnt/c/Users/sarah$ pwd
 
 这样，`wsl` 不仅可以保留当前工作目录，而且还允许结合 Windows 命令运行单个命令。
 
-**示例：（使用 PowerShell）**
+**示例：使用 PowerShell)  (**
 
 ```console
 PS C:\Users\sarah> Get-Date
@@ -95,7 +95,7 @@ PS C:\Users\sarah> wsl date
 Sun Mar 11 19:56:57 DST 2018
 ```
 
-**示例：（使用 PowerShell）**
+**示例：使用 PowerShell)  (**
 
 ```console
 PS C:\Users\sarah> Get-VM
@@ -116,9 +116,9 @@ PS C:\Users\sarah>
 
 ## <a name="managing-multiple-linux-distributions"></a>管理多个 Linux 分发版
 
-在 Windows 10 版本 1903[及更高](ms-settings:windowsupdate)版本中，你可以使用在 `wsl.exe` 适用于 Linux 的 WINDOWS 子系统（WSL）中管理你的分发版，其中包括列出可用的分发、设置默认分发以及卸载分发。
+在 Windows 10 版本 1903[及更高](ms-settings:windowsupdate)版本中，可以使用在 `wsl.exe` 适用于 Linux 的 WINDOWS 子系统 (WSL) 中管理分发，包括列出可用的分发、设置默认分发以及卸载分发。
 
-每个 Linux 分发版独立管理自身的配置。 若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如，`ubuntu /?`。
+每个 Linux 分发版独立管理自身的配置。 若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如 `ubuntu /?`。
 
 ## <a name="list-distributions"></a>列出分发版
 
@@ -137,7 +137,7 @@ PS C:\Users\sarah>
 
 将默认分发版设置为 `<DistributionName>`。
 
-**示例：（使用 PowerShell）**  
+**示例：使用 PowerShell)  (**  
 `wsl -s Ubuntu` 会将我的默认分发版设置为 Ubuntu。  现在，当我运行 `wsl npm init` 时，该分发版将在 Ubuntu 中运行。  如果我运行 `wsl`，它会打开 Ubuntu 会话。
 
 ## <a name="unregister-and-reinstall-a-distribution"></a>取消注册和重新安装分发版
@@ -180,9 +180,9 @@ PS C:\Users\sarah>
 
 ## <a name="managing-multiple-linux-distributions-in-earlier-windows-versions"></a>在早期 Windows 版本中管理多个 Linux 分发
 
-在 Windows 10 版本1903之前，应使用 WSL Config （ `wslconfig.exe` ）命令行工具管理在适用于 linux 的 Windows 子系统（WSL）上运行的 linux 分发。  使用该工具可以列出可用分发版、设置默认分发和卸载分发版。
+在 Windows 10 版本1903之前，应使用 WSL Config (`wslconfig.exe`) 命令行工具管理在适用于 linux 的 Windows 子系统 (WSL) 上运行的 linux 分发。  使用该工具可以列出可用分发版、设置默认分发和卸载分发版。
 
-尽管 WSL Config 对于跨越或协调分发版的设置有帮助，但每个 Linux 分发版会独立管理自身的配置。  若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如，`ubuntu /?`。
+尽管 WSL Config 对于跨越或协调分发版的设置有帮助，但每个 Linux 分发版会独立管理自身的配置。  若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如 `ubuntu /?`。
 
 若要查看 wslconfig 的所有可用选项，请运行：`wslconfig /?`
 
@@ -210,7 +210,7 @@ Usage:
 
 `wslconfig /setdefault <DistributionName>`将默认分布设置为 `<DistributionName>` 。
 
-**示例：（使用 PowerShell）**  
+**示例：使用 PowerShell)  (**  
 `wslconfig /setdefault Ubuntu` 会将我的默认分发版设置为 Ubuntu。  现在，当我运行 `wsl npm init` 时，该分发版将在 Ubuntu 中运行。  如果我运行 `wsl`，它会打开 Ubuntu 会话。
 
 若要注销并重新安装分发：
@@ -309,9 +309,9 @@ WSL 支持两个节：`automount` 和 `network`。
 
 这些选项在版本18980和更高版本中可用。
 
-| 键 | 值 | 默认值 | 说明|
+| key | value | 默认值 | 说明|
 |:----|:----|:----|:----|
-| 默认值 | string | 首次运行时创建的初始用户名 | 设置此项将指定在首次启动 WSL 会话时要运行的用户。 |
+| 默认值 | 字符串 | 首次运行时创建的初始用户名 | 设置此项将指定在首次启动 WSL 会话时要运行的用户。 |
 
 ## <a name="configure-global-options-with-wslconfig"></a>用 wslconfig 配置全局选项。
 
@@ -336,15 +336,17 @@ processors=2 # Makes the WSL 2 VM use two virtual processors
 
 这些设置会影响支持任何 WSL 2 分发的虚拟机。
 
-| 键 | 值 | 默认值 | 说明|
+| key | value | 默认值 | 说明|
 |:----|:----|:----|:----|
-| 内核 (kernel) | string | Microsoft 构建的内核提供的收件箱 | 自定义 Linux 内核的绝对 Windows 路径。 |
-| memory | 大小 | Windows 上的总内存的80% | 要分配给 WSL 2 VM 的内存量。 |
+| 内核 (kernel) | 字符串 | Microsoft 构建的内核提供的收件箱 | 自定义 Linux 内核的绝对 Windows 路径。 |
+| 内存 | 大小 | Windows 上的总内存的 80% * | 要分配给 WSL 2 VM 的内存量。 |
 | 款 | number | Windows 上的处理器数相同 | 要分配给 WSL 2 VM 的处理器数量。 |
 | localhostForwarding | boolean | `true` | 布尔值，指定是否应通过 localhost： port 将绑定到 WSL 2 VM 中的通配符或 localhost 的端口连接到主机。 |
-| kernelCommandLine | string | 空 | 其他内核命令行参数。 |
+| kernelCommandLine | 字符串 | 空 | 其他内核命令行参数。 |
 | swap | 大小 | Windows 上的25% 内存大小向上舍入到最接近的 GB | 要添加到 WSL 2 VM 的交换空间量，0表示没有交换文件。 |
-| 交换文件 | string | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | 交换虚拟硬盘的绝对 Windows 路径。 |
+| 交换文件 | 字符串 | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | 交换虚拟硬盘的绝对 Windows 路径。 |
+
+* 注意：对于 Windows 版本19041，此值为 true，并可能在预览体验计划中的 Windows 版本中有所不同
 
 值为的项 `path` 必须是包含转义反斜杠的 Windows 路径，例如：`C:\\Temp\\myCustomKernel`
 
