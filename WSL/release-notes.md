@@ -6,14 +6,23 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 1de8f5e287d70c4992e9e6694d8980cbd305957b
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: 751f7dd73abeefe7be0406c17b95158ee21b9199
+ms.sourcegitcommit: b79bf1d5f158f09e858184a6dfd096e212c1a231
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948681"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88161039"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统发行说明
+
+## <a name="build-20190"></a>内部版本 20190
+有关内部版本 20190 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/)。
+
+* 修复阻止 WSL1 实例启动的 bug [GH 5633]
+* 修复重定向 Windows 进程输出时出现的挂起 [GH 5648]
+* 添加 %userprofile%\\.wslconfig 选项以控制 VM 空闲超时 (wsl2.vmIdleTimeout=<time_in_ms>)
+* 支持从 WSL 启动应用执行别名
+* 添加了对安装 WSL2 内核和 wsl.exe 发行版的支持 - 安装
 
 ## <a name="build-20175"></a>内部版本 20175
 有关内部版本 20175 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/)。

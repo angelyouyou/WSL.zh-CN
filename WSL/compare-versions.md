@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubun
 ms.date: 07/22/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ea2c92030a895076be17ad2b99fe34719f84a47f
-ms.sourcegitcommit: b494c8a76f867d69fa7fff4878c4e38140eaeb8a
+ms.openlocfilehash: f64eff318ead5b74356a1b7db435952d4d4e669b
+ms.sourcegitcommit: 90577817a9321949da2a3971b4c78bb00f6d977f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87235461"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88039420"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
@@ -136,6 +136,11 @@ WSL 2 在实际 Linux 内核上使用轻量级实用工具 VM，内存占用量�
 当使用 WSL 1 分发版时，如果计算机设置为可供 LAN 访问，那么在 WSL 中运行的应用程序也可供在 LAN 中访问。
 
 这不是 WSL 2 中的默认情况。 WSL 2 有一个带有其自己独一无二的 IP 地址的虚拟化以太网适配器。 目前，若要启用此工作流，你需要执行与常规虚拟机相同的步骤。 （我们正在寻找改善此体验的方法。）
+
+下面是一个示例 PowerShell 命令，用于添加侦听主机上的端口 4000 的端口代理并将其连接到端口 4000，并使用 IP 地址 192.168.101.100 连接到 WSL 2 VM。
+```powershell
+netsh interface portproxy add v4tov4 listenport=4000 listenaddress=0.0.0.0 connectport=4000 connectaddress=192.168.101.100
+```
 
 #### <a name="ipv6-access"></a>IPv6 访问
 
