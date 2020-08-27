@@ -5,12 +5,12 @@ keywords: wsl, windows, linux 内核, 适用于 Linux 的 Windows 子系统, 内
 ms.date: 03/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: bef722f5653380d9f6d104f1a7c116a7599658c9
-ms.sourcegitcommit: ba52d673c123fe8ae61e872a33e218cfc30a1f82
+ms.openlocfilehash: a718c4a880e2c3147900143c24983835d269a4bc
+ms.sourcegitcommit: a5534257c236cefeebe86e6b3fc4be0be8fac24e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033046"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88714835"
 ---
 # <a name="updating-the-wsl-2-linux-kernel"></a>更新 WSL 2 Linux 内核
 
@@ -43,7 +43,7 @@ ms.locfileid: "86033046"
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="this-update-only-applies-to-machines-with-the-windows-subsystem-for-linux"></a>此更新仅适用于具有适用于 Linux 的 Windows 子系统的计算机
-要安装 MSI 内核，需要 WSL，应先启用。 如果失败，将看到以下消息：`This update only applies to machines with the Windows Subsytem for Linux`。 
+要安装 MSI 内核，需要 WSL，应先启用。 如果失败，将看到以下消息：`This update only applies to machines with the Windows Subsystem for Linux`。 
 
 出现此消息有三个可能的原因：
 
