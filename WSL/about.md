@@ -1,17 +1,17 @@
 ---
 title: 关于适用于 Linux 的 Windows 子系统
-description: 了解适用于 Linux 的 Windows 子系统及其不同版本和使用方式。
+description: 了解适用于 Linux 的 Windows 子系统，包括不同的版本及其使用方式。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, gnu, linux
 ms.date: 07/21/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.localizationpriority: high
-ms.openlocfilehash: 512b5dc96892e2b66721e5e164301f2e9be6cd65
-ms.sourcegitcommit: b494c8a76f867d69fa7fff4878c4e38140eaeb8a
+ms.openlocfilehash: c468f501894df9dfde4323471a6d20569ac82e9c
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87235451"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88865967"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>什么是适用于 Linux 的 Windows 子系统？
 
