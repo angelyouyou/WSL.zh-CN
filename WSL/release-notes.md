@@ -1,194 +1,194 @@
 ---
 title: 适用于 Linux 的 Windows 子系统发行说明
-description: 适用于 Linux 的 Windows 子系统的发行说明。  每周更新。
+description: 阅读适用于 Linux 的 Windows 子系统的发行说明。 这些发行说明包括已解决的问题，它们每周都会更新。
 keywords: 发行说明, wsl, windows, 适用于 linux 的 windows 子系统, windows 子系统, ubuntu
 author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 751f7dd73abeefe7be0406c17b95158ee21b9199
-ms.sourcegitcommit: b79bf1d5f158f09e858184a6dfd096e212c1a231
+ms.openlocfilehash: 57d06a8666f8003b187f043bd18655a9287d8a63
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161039"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866107"
 ---
-# <a name="release-notes-for-windows-subsystem-for-linux"></a><span data-ttu-id="263bc-105">适用于 Linux 的 Windows 子系统发行说明</span><span class="sxs-lookup"><span data-stu-id="263bc-105">Release Notes for Windows Subsystem for Linux</span></span>
+# <a name="release-notes-for-windows-subsystem-for-linux"></a><span data-ttu-id="aa113-105">适用于 Linux 的 Windows 子系统发行说明</span><span class="sxs-lookup"><span data-stu-id="aa113-105">Release Notes for Windows Subsystem for Linux</span></span>
 
-## <a name="build-20190"></a><span data-ttu-id="263bc-106">内部版本 20190</span><span class="sxs-lookup"><span data-stu-id="263bc-106">Build 20190</span></span>
-<span data-ttu-id="263bc-107">有关内部版本 20190 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-107">For general Windows information on build 20190 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/).</span></span>
+## <a name="build-20190"></a><span data-ttu-id="aa113-106">内部版本 20190</span><span class="sxs-lookup"><span data-stu-id="aa113-106">Build 20190</span></span>
+<span data-ttu-id="aa113-107">有关内部版本 20190 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-107">For general Windows information on build 20190 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/).</span></span>
 
-* <span data-ttu-id="263bc-108">修复阻止 WSL1 实例启动的 bug [GH 5633]</span><span class="sxs-lookup"><span data-stu-id="263bc-108">Fix bug preventing WSL1 instances from launching [GH 5633]</span></span>
-* <span data-ttu-id="263bc-109">修复重定向 Windows 进程输出时出现的挂起 [GH 5648]</span><span class="sxs-lookup"><span data-stu-id="263bc-109">Fix hang when redirecting Windows process output [GH 5648]</span></span>
-* <span data-ttu-id="263bc-110">添加 %userprofile%\\.wslconfig 选项以控制 VM 空闲超时 (wsl2.vmIdleTimeout=<time_in_ms>)</span><span class="sxs-lookup"><span data-stu-id="263bc-110">Add %userprofile%\\.wslconfig option to control the VM idle timeout (wsl2.vmIdleTimeout=<time_in_ms>)</span></span>
-* <span data-ttu-id="263bc-111">支持从 WSL 启动应用执行别名</span><span class="sxs-lookup"><span data-stu-id="263bc-111">Support launching app execution aliases from WSL</span></span>
-* <span data-ttu-id="263bc-112">添加了对安装 WSL2 内核和 wsl.exe 发行版的支持 - 安装</span><span class="sxs-lookup"><span data-stu-id="263bc-112">Added support for installing the WSL2 kernel and distributions to wsl.exe --install</span></span>
+* <span data-ttu-id="aa113-108">修复阻止 WSL1 实例启动的 bug [GH 5633]</span><span class="sxs-lookup"><span data-stu-id="aa113-108">Fix bug preventing WSL1 instances from launching [GH 5633]</span></span>
+* <span data-ttu-id="aa113-109">修复重定向 Windows 进程输出时出现的挂起 [GH 5648]</span><span class="sxs-lookup"><span data-stu-id="aa113-109">Fix hang when redirecting Windows process output [GH 5648]</span></span>
+* <span data-ttu-id="aa113-110">添加 %userprofile%\\.wslconfig 选项以控制 VM 空闲超时 (wsl2.vmIdleTimeout=<time_in_ms>)</span><span class="sxs-lookup"><span data-stu-id="aa113-110">Add %userprofile%\\.wslconfig option to control the VM idle timeout (wsl2.vmIdleTimeout=<time_in_ms>)</span></span>
+* <span data-ttu-id="aa113-111">支持从 WSL 启动应用执行别名</span><span class="sxs-lookup"><span data-stu-id="aa113-111">Support launching app execution aliases from WSL</span></span>
+* <span data-ttu-id="aa113-112">添加了对安装 WSL2 内核和 wsl.exe 发行版的支持 - 安装</span><span class="sxs-lookup"><span data-stu-id="aa113-112">Added support for installing the WSL2 kernel and distributions to wsl.exe --install</span></span>
 
-## <a name="build-20175"></a><span data-ttu-id="263bc-113">内部版本 20175</span><span class="sxs-lookup"><span data-stu-id="263bc-113">Build 20175</span></span>
-<span data-ttu-id="263bc-114">有关内部版本 20175 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-114">For general Windows information on build 20175 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/).</span></span>
+## <a name="build-20175"></a><span data-ttu-id="aa113-113">内部版本 20175</span><span class="sxs-lookup"><span data-stu-id="aa113-113">Build 20175</span></span>
+<span data-ttu-id="aa113-114">有关内部版本 20175 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-114">For general Windows information on build 20175 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/).</span></span>
 
-* <span data-ttu-id="263bc-115">将 WSL2 VM 的默认内存分配调整为主机内存的 50% 或 8 GB（以较小者为准）[GH 4166]。</span><span class="sxs-lookup"><span data-stu-id="263bc-115">Adjust default memory assignment of WSL2 VM to be 50% of host memory or 8GB, whichever is less [GH 4166].</span></span>
-* <span data-ttu-id="263bc-116">将 \\\\wsl$ 前缀更改为 \\\\wsl 以支持 URI 分析。</span><span class="sxs-lookup"><span data-stu-id="263bc-116">Change \\\\wsl$ prefix to \\\\wsl to support URI parsing.</span></span> <span data-ttu-id="263bc-117">旧的 \\\\wsl$ 路径仍然受到支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-117">The old \\\\wsl$ path is still supported.</span></span>
-* <span data-ttu-id="263bc-118">在 amd64 上为 WSL2 默认启用嵌套虚拟化。</span><span class="sxs-lookup"><span data-stu-id="263bc-118">Enable nested virtualization for WSL2 by default on amd64.</span></span> <span data-ttu-id="263bc-119">你可通过 %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false) 来禁用此设置。</span><span class="sxs-lookup"><span data-stu-id="263bc-119">You can disable this via %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false).</span></span>
-* <span data-ttu-id="263bc-120">使 wsl.exe --update 要求启动 Microsoft 更新。</span><span class="sxs-lookup"><span data-stu-id="263bc-120">Make wsl.exe --update demand start Microsoft Update.</span></span>
-* <span data-ttu-id="263bc-121">支持在 DrvFs 中对只读文件进行重命名。</span><span class="sxs-lookup"><span data-stu-id="263bc-121">Support renaming over a read-only file in DrvFs.</span></span>
-* <span data-ttu-id="263bc-122">确保始终在正确的代码页中打印错误消息。</span><span class="sxs-lookup"><span data-stu-id="263bc-122">Ensure error messages are always printed in the correct codepage.</span></span>
+* <span data-ttu-id="aa113-115">将 WSL2 VM 的默认内存分配调整为主机内存的 50% 或 8 GB（以较小者为准）[GH 4166]。</span><span class="sxs-lookup"><span data-stu-id="aa113-115">Adjust default memory assignment of WSL2 VM to be 50% of host memory or 8GB, whichever is less [GH 4166].</span></span>
+* <span data-ttu-id="aa113-116">将 \\\\wsl$ 前缀更改为 \\\\wsl 以支持 URI 分析。</span><span class="sxs-lookup"><span data-stu-id="aa113-116">Change \\\\wsl$ prefix to \\\\wsl to support URI parsing.</span></span> <span data-ttu-id="aa113-117">旧的 \\\\wsl$ 路径仍然受到支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-117">The old \\\\wsl$ path is still supported.</span></span>
+* <span data-ttu-id="aa113-118">在 amd64 上为 WSL2 默认启用嵌套虚拟化。</span><span class="sxs-lookup"><span data-stu-id="aa113-118">Enable nested virtualization for WSL2 by default on amd64.</span></span> <span data-ttu-id="aa113-119">你可通过 %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false) 来禁用此设置。</span><span class="sxs-lookup"><span data-stu-id="aa113-119">You can disable this via %userprofile%\\.wslconfig ([wsl2] nestedVirtualization=false).</span></span>
+* <span data-ttu-id="aa113-120">使 wsl.exe --update 要求启动 Microsoft 更新。</span><span class="sxs-lookup"><span data-stu-id="aa113-120">Make wsl.exe --update demand start Microsoft Update.</span></span>
+* <span data-ttu-id="aa113-121">支持在 DrvFs 中对只读文件进行重命名。</span><span class="sxs-lookup"><span data-stu-id="aa113-121">Support renaming over a read-only file in DrvFs.</span></span>
+* <span data-ttu-id="aa113-122">确保始终在正确的代码页中打印错误消息。</span><span class="sxs-lookup"><span data-stu-id="aa113-122">Ensure error messages are always printed in the correct codepage.</span></span>
 
-## <a name="build-20150"></a><span data-ttu-id="263bc-123">内部版本 20150</span><span class="sxs-lookup"><span data-stu-id="263bc-123">Build 20150</span></span>
-<span data-ttu-id="263bc-124">有关内部版本 20150 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-124">For general Windows information on build 20150 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).</span></span>
+## <a name="build-20150"></a><span data-ttu-id="aa113-123">内部版本 20150</span><span class="sxs-lookup"><span data-stu-id="aa113-123">Build 20150</span></span>
+<span data-ttu-id="aa113-124">有关内部版本 20150 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-124">For general Windows information on build 20150 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/).</span></span>
 
-* <span data-ttu-id="263bc-125">有关 WSL2 GPU 计算，请参阅 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/)以了解详细信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-125">WSL2 GPU compute see [Windows blog](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/) for more information.</span></span>
-* <span data-ttu-id="263bc-126">引入 wsl.exe --install 命令行选项以轻松设置 WSL。</span><span class="sxs-lookup"><span data-stu-id="263bc-126">Introduce wsl.exe --install command line option to easily set up WSL.</span></span>
-* <span data-ttu-id="263bc-127">引入 wsl.exe --install 命令行选项以管理对 WSL2 内核的更新。</span><span class="sxs-lookup"><span data-stu-id="263bc-127">Introduce wsl.exe --update command line option to manage updates to the WSL2 kernel.</span></span> 
-* <span data-ttu-id="263bc-128">将 WSL2 设置为默认值。</span><span class="sxs-lookup"><span data-stu-id="263bc-128">Set WSL2 as the default.</span></span>
-* <span data-ttu-id="263bc-129">增加 WSL2 VM 正常关闭超时。</span><span class="sxs-lookup"><span data-stu-id="263bc-129">Increase WSL2 vm graceful shutdown timeout.</span></span>
-* <span data-ttu-id="263bc-130">修复映射设备内存 virtio-9p 争用情况。</span><span class="sxs-lookup"><span data-stu-id="263bc-130">Fix virtio-9p race condition when mapping device memory.</span></span>
-* <span data-ttu-id="263bc-131">如果禁用了 UAC，请勿运行提升的 9p 服务器。</span><span class="sxs-lookup"><span data-stu-id="263bc-131">Don't run an elevated 9p server if UAC is disabled.</span></span>
+* <span data-ttu-id="aa113-125">有关 WSL2 GPU 计算，请参阅 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/)以了解详细信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-125">WSL2 GPU compute see [Windows blog](https://blogs.windows.com/windowsexperience/2020/06/17/announcing-windows-10-insider-preview-build-20150/) for more information.</span></span>
+* <span data-ttu-id="aa113-126">引入 wsl.exe --install 命令行选项以轻松设置 WSL。</span><span class="sxs-lookup"><span data-stu-id="aa113-126">Introduce wsl.exe --install command line option to easily set up WSL.</span></span>
+* <span data-ttu-id="aa113-127">引入 wsl.exe --install 命令行选项以管理对 WSL2 内核的更新。</span><span class="sxs-lookup"><span data-stu-id="aa113-127">Introduce wsl.exe --update command line option to manage updates to the WSL2 kernel.</span></span> 
+* <span data-ttu-id="aa113-128">将 WSL2 设置为默认值。</span><span class="sxs-lookup"><span data-stu-id="aa113-128">Set WSL2 as the default.</span></span>
+* <span data-ttu-id="aa113-129">增加 WSL2 VM 正常关闭超时。</span><span class="sxs-lookup"><span data-stu-id="aa113-129">Increase WSL2 vm graceful shutdown timeout.</span></span>
+* <span data-ttu-id="aa113-130">修复映射设备内存 virtio-9p 争用情况。</span><span class="sxs-lookup"><span data-stu-id="aa113-130">Fix virtio-9p race condition when mapping device memory.</span></span>
+* <span data-ttu-id="aa113-131">如果禁用了 UAC，请勿运行提升的 9p 服务器。</span><span class="sxs-lookup"><span data-stu-id="aa113-131">Don't run an elevated 9p server if UAC is disabled.</span></span>
 
-## <a name="build-19640"></a><span data-ttu-id="263bc-132">内部版本 19640</span><span class="sxs-lookup"><span data-stu-id="263bc-132">Build 19640</span></span>
-<span data-ttu-id="263bc-133">有关内部版本 19640 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/03/announcing-windows-10-insider-preview-build-19640/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-133">For general Windows information on build 19640 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/06/03/announcing-windows-10-insider-preview-build-19640/).</span></span>
+## <a name="build-19640"></a><span data-ttu-id="aa113-132">内部版本 19640</span><span class="sxs-lookup"><span data-stu-id="aa113-132">Build 19640</span></span>
+<span data-ttu-id="aa113-133">有关内部版本 19640 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/06/03/announcing-windows-10-insider-preview-build-19640/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-133">For general Windows information on build 19640 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/06/03/announcing-windows-10-insider-preview-build-19640/).</span></span>
 
-* <span data-ttu-id="263bc-134">[WSL2] virtio-9p (drvfs) 的稳定性改进。</span><span class="sxs-lookup"><span data-stu-id="263bc-134">[WSL2] Stability improvements for virtio-9p (drvfs).</span></span>
+* <span data-ttu-id="aa113-134">[WSL2] virtio-9p (drvfs) 的稳定性改进。</span><span class="sxs-lookup"><span data-stu-id="aa113-134">[WSL2] Stability improvements for virtio-9p (drvfs).</span></span>
 
-## <a name="build-19555"></a><span data-ttu-id="263bc-135">内部版本 19555</span><span class="sxs-lookup"><span data-stu-id="263bc-135">Build 19555</span></span>
-<span data-ttu-id="263bc-136">有关内部版本 19555 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-136">For general Windows information on build 19555 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/).</span></span>
+## <a name="build-19555"></a><span data-ttu-id="aa113-135">内部版本 19555</span><span class="sxs-lookup"><span data-stu-id="aa113-135">Build 19555</span></span>
+<span data-ttu-id="aa113-136">有关内部版本 19555 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-136">For general Windows information on build 19555 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/).</span></span>
 
-* <span data-ttu-id="263bc-137">[WSL2] 使用 memory cgroup 限制了安装和转换操作使用的内存量 [GH 4669]</span><span class="sxs-lookup"><span data-stu-id="263bc-137">[WSL2] Use a memory cgroup to limit the amount of memory used by install and conversion operations [GH 4669]</span></span>
-* <span data-ttu-id="263bc-138">在未启用适用于 Linux 的 Windows 子系统可选组件时使 wsl.exe 存在，以提高功能的可发现性。</span><span class="sxs-lookup"><span data-stu-id="263bc-138">Make wsl.exe present when the Windows Subsystem for Linux optional component is not enabled to improve feature discoverability.</span></span>
-* <span data-ttu-id="263bc-139">更改了 wsl.exe 以在未安装 WSL 可选组件时输出帮助文本</span><span class="sxs-lookup"><span data-stu-id="263bc-139">Change wsl.exe to print help text if the WSL optional component is not installed</span></span>
-* <span data-ttu-id="263bc-140">修复了创建实例时的争用条件</span><span class="sxs-lookup"><span data-stu-id="263bc-140">Fix race condition when creating instances</span></span>
-* <span data-ttu-id="263bc-141">创建了包含所有命令行功能的 slclient.dll</span><span class="sxs-lookup"><span data-stu-id="263bc-141">Create wslclient.dll that contains all command line functionality</span></span>
-* <span data-ttu-id="263bc-142">防止了在 LxssManagerUser 服务停止期间发生崩溃</span><span class="sxs-lookup"><span data-stu-id="263bc-142">Prevent crash during LxssManagerUser service stop</span></span>
-* <span data-ttu-id="263bc-143">修复了当 distroName 参数为 NULL 时的 wslapi.dll 快速失败</span><span class="sxs-lookup"><span data-stu-id="263bc-143">Fix wslapi.dll fast fail when distroName parameter is NULL</span></span>
+* <span data-ttu-id="aa113-137">[WSL2] 使用 memory cgroup 限制了安装和转换操作使用的内存量 [GH 4669]</span><span class="sxs-lookup"><span data-stu-id="aa113-137">[WSL2] Use a memory cgroup to limit the amount of memory used by install and conversion operations [GH 4669]</span></span>
+* <span data-ttu-id="aa113-138">在未启用适用于 Linux 的 Windows 子系统可选组件时使 wsl.exe 存在，以提高功能的可发现性。</span><span class="sxs-lookup"><span data-stu-id="aa113-138">Make wsl.exe present when the Windows Subsystem for Linux optional component is not enabled to improve feature discoverability.</span></span>
+* <span data-ttu-id="aa113-139">更改了 wsl.exe 以在未安装 WSL 可选组件时输出帮助文本</span><span class="sxs-lookup"><span data-stu-id="aa113-139">Change wsl.exe to print help text if the WSL optional component is not installed</span></span>
+* <span data-ttu-id="aa113-140">修复了创建实例时的争用条件</span><span class="sxs-lookup"><span data-stu-id="aa113-140">Fix race condition when creating instances</span></span>
+* <span data-ttu-id="aa113-141">创建了包含所有命令行功能的 slclient.dll</span><span class="sxs-lookup"><span data-stu-id="aa113-141">Create wslclient.dll that contains all command line functionality</span></span>
+* <span data-ttu-id="aa113-142">防止了在 LxssManagerUser 服务停止期间发生崩溃</span><span class="sxs-lookup"><span data-stu-id="aa113-142">Prevent crash during LxssManagerUser service stop</span></span>
+* <span data-ttu-id="aa113-143">修复了当 distroName 参数为 NULL 时的 wslapi.dll 快速失败</span><span class="sxs-lookup"><span data-stu-id="aa113-143">Fix wslapi.dll fast fail when distroName parameter is NULL</span></span>
 
-## <a name="build-19041"></a><span data-ttu-id="263bc-144">内部版本 19041</span><span class="sxs-lookup"><span data-stu-id="263bc-144">Build 19041</span></span>
-<span data-ttu-id="263bc-145">有关内部版本 19041 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-145">For general Windows information on build 19041 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/).</span></span>
+## <a name="build-19041"></a><span data-ttu-id="aa113-144">内部版本 19041</span><span class="sxs-lookup"><span data-stu-id="aa113-144">Build 19041</span></span>
+<span data-ttu-id="aa113-145">有关内部版本 19041 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-145">For general Windows information on build 19041 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/).</span></span>
 
-* <span data-ttu-id="263bc-146">[WSL2] 在启动进程之前清除信号掩码</span><span class="sxs-lookup"><span data-stu-id="263bc-146">[WSL2] Clear the signal mask before launching the processes</span></span>
-* <span data-ttu-id="263bc-147">[WSL2] 将 Linux 内核更新到 4.19.84</span><span class="sxs-lookup"><span data-stu-id="263bc-147">[WSL2] Update Linux kernel to 4.19.84</span></span>
-* <span data-ttu-id="263bc-148">当 symlink 非相关时，处理 /etc/resolv.conf symlink 的创建</span><span class="sxs-lookup"><span data-stu-id="263bc-148">Handle creation of /etc/resolv.conf symlink when the symlink is non-relative</span></span>
+* <span data-ttu-id="aa113-146">[WSL2] 在启动进程之前清除信号掩码</span><span class="sxs-lookup"><span data-stu-id="aa113-146">[WSL2] Clear the signal mask before launching the processes</span></span>
+* <span data-ttu-id="aa113-147">[WSL2] 将 Linux 内核更新到 4.19.84</span><span class="sxs-lookup"><span data-stu-id="aa113-147">[WSL2] Update Linux kernel to 4.19.84</span></span>
+* <span data-ttu-id="aa113-148">当 symlink 非相关时，处理 /etc/resolv.conf symlink 的创建</span><span class="sxs-lookup"><span data-stu-id="aa113-148">Handle creation of /etc/resolv.conf symlink when the symlink is non-relative</span></span>
 
-## <a name="build-19028"></a><span data-ttu-id="263bc-149">内部版本 19028</span><span class="sxs-lookup"><span data-stu-id="263bc-149">Build 19028</span></span>
-<span data-ttu-id="263bc-150">有关内部版本 19028 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-150">For general Windows information on build 19028 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).</span></span>
+## <a name="build-19028"></a><span data-ttu-id="aa113-149">内部版本 19028</span><span class="sxs-lookup"><span data-stu-id="aa113-149">Build 19028</span></span>
+<span data-ttu-id="aa113-150">有关内部版本 19028 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-150">For general Windows information on build 19028 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).</span></span>
 
-* <span data-ttu-id="263bc-151">[WSL2] 将 Linux 内核更新到 4.19.81</span><span class="sxs-lookup"><span data-stu-id="263bc-151">[WSL2] Update Linux kernel to 4.19.81</span></span>
-* <span data-ttu-id="263bc-152">[WSL2] 将 /dev/net/tun 的默认权限更改为 0666 [GH 4629]</span><span class="sxs-lookup"><span data-stu-id="263bc-152">[WSL2] Change the default permission of /dev/net/tun to 0666 [GH 4629]</span></span>
-* <span data-ttu-id="263bc-153">[WSL2] 将分配给 Linux VM 的默认内存量调整为主机内存的 80%</span><span class="sxs-lookup"><span data-stu-id="263bc-153">[WSL2] Tweak default amount of memory assigned to Linux VM to be 80% of host memory</span></span>
-* <span data-ttu-id="263bc-154">[WSL2] 修复互操作服务器以便使用“超时”功能处理请求，从而使不良调用方无法挂起服务器</span><span class="sxs-lookup"><span data-stu-id="263bc-154">[WSL2] fix interop server to handle requests with a timeout so bad callers cannot hang the server</span></span>
+* <span data-ttu-id="aa113-151">[WSL2] 将 Linux 内核更新到 4.19.81</span><span class="sxs-lookup"><span data-stu-id="aa113-151">[WSL2] Update Linux kernel to 4.19.81</span></span>
+* <span data-ttu-id="aa113-152">[WSL2] 将 /dev/net/tun 的默认权限更改为 0666 [GH 4629]</span><span class="sxs-lookup"><span data-stu-id="aa113-152">[WSL2] Change the default permission of /dev/net/tun to 0666 [GH 4629]</span></span>
+* <span data-ttu-id="aa113-153">[WSL2] 将分配给 Linux VM 的默认内存量调整为主机内存的 80%</span><span class="sxs-lookup"><span data-stu-id="aa113-153">[WSL2] Tweak default amount of memory assigned to Linux VM to be 80% of host memory</span></span>
+* <span data-ttu-id="aa113-154">[WSL2] 修复互操作服务器以便使用“超时”功能处理请求，从而使不良调用方无法挂起服务器</span><span class="sxs-lookup"><span data-stu-id="aa113-154">[WSL2] fix interop server to handle requests with a timeout so bad callers cannot hang the server</span></span>
 
-## <a name="build-19018"></a><span data-ttu-id="263bc-155">内部版本 19018</span><span class="sxs-lookup"><span data-stu-id="263bc-155">Build 19018</span></span>
-<span data-ttu-id="263bc-156">有关内部版本 19018 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-156">For general Windows information on build 19018 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/).</span></span>
+## <a name="build-19018"></a><span data-ttu-id="aa113-155">内部版本 19018</span><span class="sxs-lookup"><span data-stu-id="aa113-155">Build 19018</span></span>
+<span data-ttu-id="aa113-156">有关内部版本 19018 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-156">For general Windows information on build 19018 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/).</span></span>
 
-* <span data-ttu-id="263bc-157">[WSL2] 使用 cache=mmap 作为 9p 装入点的默认值来修复 dotnet 应用</span><span class="sxs-lookup"><span data-stu-id="263bc-157">[WSL2] Use cache=mmap as the default for 9p mounts to fix dotnet apps</span></span>
-* <span data-ttu-id="263bc-158">[WSL2] localhost 中继的修补程序 [GH 4340]</span><span class="sxs-lookup"><span data-stu-id="263bc-158">[WSL2] Fixes for localhost relay [GH 4340]</span></span>
-* <span data-ttu-id="263bc-159">[WSL2] 引入了用于在发行版之间共享状态的跨发行版共享 tmpfs 装入点</span><span class="sxs-lookup"><span data-stu-id="263bc-159">[WSL2] Introduce a cross-distro shared tmpfs mount for sharing state between distros</span></span>
-* <span data-ttu-id="263bc-160">修复了 \\\\wsl$ 的永久网络驱动器还原</span><span class="sxs-lookup"><span data-stu-id="263bc-160">Fix restoring persistent network drive for \\\\wsl$</span></span>
+* <span data-ttu-id="aa113-157">[WSL2] 使用 cache=mmap 作为 9p 装入点的默认值来修复 dotnet 应用</span><span class="sxs-lookup"><span data-stu-id="aa113-157">[WSL2] Use cache=mmap as the default for 9p mounts to fix dotnet apps</span></span>
+* <span data-ttu-id="aa113-158">[WSL2] localhost 中继的修补程序 [GH 4340]</span><span class="sxs-lookup"><span data-stu-id="aa113-158">[WSL2] Fixes for localhost relay [GH 4340]</span></span>
+* <span data-ttu-id="aa113-159">[WSL2] 引入了用于在发行版之间共享状态的跨发行版共享 tmpfs 装入点</span><span class="sxs-lookup"><span data-stu-id="aa113-159">[WSL2] Introduce a cross-distro shared tmpfs mount for sharing state between distros</span></span>
+* <span data-ttu-id="aa113-160">修复了 \\\\wsl$ 的永久网络驱动器还原</span><span class="sxs-lookup"><span data-stu-id="aa113-160">Fix restoring persistent network drive for \\\\wsl$</span></span>
 
-## <a name="build-19013"></a><span data-ttu-id="263bc-161">内部版本 19013</span><span class="sxs-lookup"><span data-stu-id="263bc-161">Build 19013</span></span>
-<span data-ttu-id="263bc-162">有关内部版本 19013 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/10/29/announcing-windows-10-insider-preview-build-19013/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-162">For general Windows information on build 19013 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/10/29/announcing-windows-10-insider-preview-build-19013/).</span></span>
+## <a name="build-19013"></a><span data-ttu-id="aa113-161">内部版本 19013</span><span class="sxs-lookup"><span data-stu-id="aa113-161">Build 19013</span></span>
+<span data-ttu-id="aa113-162">有关内部版本 19013 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/10/29/announcing-windows-10-insider-preview-build-19013/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-162">For general Windows information on build 19013 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/10/29/announcing-windows-10-insider-preview-build-19013/).</span></span>
 
-* <span data-ttu-id="263bc-163">[WSL2] 提高 WSL 实用工具 VM 的内存性能。</span><span class="sxs-lookup"><span data-stu-id="263bc-163">[WSL2] Improve memory performance of WSL utility VM.</span></span> <span data-ttu-id="263bc-164">不再处于使用状态的内存将释放回主机。</span><span class="sxs-lookup"><span data-stu-id="263bc-164">Memory that is no longer in use will be freed back to the host.</span></span>
-* <span data-ttu-id="263bc-165">[WSL2] 将内核版本更新到 4.19.79。</span><span class="sxs-lookup"><span data-stu-id="263bc-165">[WSL2] Update kernel version to 4.19.79.</span></span> <span data-ttu-id="263bc-166">（添加 CONFIG_HIGH_RES_TIMERS、CONFIG_TASK_XACCT、CONFIG_TASK_IO_ACCOUNTING、CONFIG_SCHED_HRTICK 和 CONFIG_BRIDGE_VLAN_FILTERING）。</span><span class="sxs-lookup"><span data-stu-id="263bc-166">(add CONFIG_HIGH_RES_TIMERS, CONFIG_TASK_XACCT, CONFIG_TASK_IO_ACCOUNTING, CONFIG_SCHED_HRTICK, and CONFIG_BRIDGE_VLAN_FILTERING).</span></span>
-* <span data-ttu-id="263bc-167">[WSL2] 修复了输入中继，以处理 stdin 为未关闭管道句柄的情况 [GH 4424]</span><span class="sxs-lookup"><span data-stu-id="263bc-167">[WSL2] Fix input relay to handle cases where stdin is a pipe handle that is not closed [GH 4424]</span></span>
-* <span data-ttu-id="263bc-168">检查 \\\\wsl$ 是否不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-168">Make the check for \\\\wsl$ case-insensitive.</span></span>
+* <span data-ttu-id="aa113-163">[WSL2] 提高 WSL 实用工具 VM 的内存性能。</span><span class="sxs-lookup"><span data-stu-id="aa113-163">[WSL2] Improve memory performance of WSL utility VM.</span></span> <span data-ttu-id="aa113-164">不再处于使用状态的内存将释放回主机。</span><span class="sxs-lookup"><span data-stu-id="aa113-164">Memory that is no longer in use will be freed back to the host.</span></span>
+* <span data-ttu-id="aa113-165">[WSL2] 将内核版本更新到 4.19.79。</span><span class="sxs-lookup"><span data-stu-id="aa113-165">[WSL2] Update kernel version to 4.19.79.</span></span> <span data-ttu-id="aa113-166">（添加 CONFIG_HIGH_RES_TIMERS、CONFIG_TASK_XACCT、CONFIG_TASK_IO_ACCOUNTING、CONFIG_SCHED_HRTICK 和 CONFIG_BRIDGE_VLAN_FILTERING）。</span><span class="sxs-lookup"><span data-stu-id="aa113-166">(add CONFIG_HIGH_RES_TIMERS, CONFIG_TASK_XACCT, CONFIG_TASK_IO_ACCOUNTING, CONFIG_SCHED_HRTICK, and CONFIG_BRIDGE_VLAN_FILTERING).</span></span>
+* <span data-ttu-id="aa113-167">[WSL2] 修复了输入中继，以处理 stdin 为未关闭管道句柄的情况 [GH 4424]</span><span class="sxs-lookup"><span data-stu-id="aa113-167">[WSL2] Fix input relay to handle cases where stdin is a pipe handle that is not closed [GH 4424]</span></span>
+* <span data-ttu-id="aa113-168">检查 \\\\wsl$ 是否不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-168">Make the check for \\\\wsl$ case-insensitive.</span></span>
 ```
 [wsl2]
 pageReporting = <bool>    # Enable or disable the free memory page reporting feature (default true).
 idleThreshold = <integer> # Set the idle threshold for memory compaction, 0 disables the feature (default 1).
 ```
 
-## <a name="build-19002"></a><span data-ttu-id="263bc-169">版本 19002</span><span class="sxs-lookup"><span data-stu-id="263bc-169">Build 19002</span></span>
-<span data-ttu-id="263bc-170">有关版本 19002 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-170">For general Windows information on build 19002 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/).</span></span>
+## <a name="build-19002"></a><span data-ttu-id="aa113-169">版本 19002</span><span class="sxs-lookup"><span data-stu-id="aa113-169">Build 19002</span></span>
+<span data-ttu-id="aa113-170">有关版本 19002 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-170">For general Windows information on build 19002 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/).</span></span>
 
-* <span data-ttu-id="263bc-171">[WSL] 解决了有关处理某些 Unicode 字符的问题： https://github.com/microsoft/terminal/issues/2770</span><span class="sxs-lookup"><span data-stu-id="263bc-171">[WSL] Fix issue with handling of some Unicode characters: https://github.com/microsoft/terminal/issues/2770</span></span>
-* <span data-ttu-id="263bc-172">[WSL] 解决了在版本到版本升级后立即启动时可能会注销发行版的罕见情况。</span><span class="sxs-lookup"><span data-stu-id="263bc-172">[WSL] Fix rare cases where distros could be unregistered if launched immediately after a build-to-build upgrade.</span></span>
-* <span data-ttu-id="263bc-173">[WSL] 解决了 wsl.exe --shutdown 的以下小问题：无法取消实例空闲计时器。</span><span class="sxs-lookup"><span data-stu-id="263bc-173">[WSL] Fix minor issue with wsl.exe --shutdown where instance idle timers were not cancelled.</span></span>
+* <span data-ttu-id="aa113-171">[WSL] 解决了有关处理某些 Unicode 字符的问题： https://github.com/microsoft/terminal/issues/2770</span><span class="sxs-lookup"><span data-stu-id="aa113-171">[WSL] Fix issue with handling of some Unicode characters: https://github.com/microsoft/terminal/issues/2770</span></span>
+* <span data-ttu-id="aa113-172">[WSL] 解决了在版本到版本升级后立即启动时可能会注销发行版的罕见情况。</span><span class="sxs-lookup"><span data-stu-id="aa113-172">[WSL] Fix rare cases where distros could be unregistered if launched immediately after a build-to-build upgrade.</span></span>
+* <span data-ttu-id="aa113-173">[WSL] 解决了 wsl.exe --shutdown 的以下小问题：无法取消实例空闲计时器。</span><span class="sxs-lookup"><span data-stu-id="aa113-173">[WSL] Fix minor issue with wsl.exe --shutdown where instance idle timers were not cancelled.</span></span>
 
-## <a name="build-18995"></a><span data-ttu-id="263bc-174">内部版本 18995</span><span class="sxs-lookup"><span data-stu-id="263bc-174">Build 18995</span></span>
-<span data-ttu-id="263bc-175">有关内部版本 18995 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-175">For general Windows information on build 18995 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/).</span></span>
+## <a name="build-18995"></a><span data-ttu-id="aa113-174">内部版本 18995</span><span class="sxs-lookup"><span data-stu-id="aa113-174">Build 18995</span></span>
+<span data-ttu-id="aa113-175">有关内部版本 18995 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-175">For general Windows information on build 18995 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/10/03/announcing-windows-10-insider-preview-build-18995/).</span></span>
 
-* <span data-ttu-id="263bc-176">[WSL2] 修复了 DrvFs 装载在某项操作被中断（例如 ctrl-c）后失效的问题 [GH 4377]</span><span class="sxs-lookup"><span data-stu-id="263bc-176">[WSL2] Fix an issue where DrvFs mounts stopped working after an operation was interrupted (e.g. ctrl-c) [GH 4377]</span></span>
-* <span data-ttu-id="263bc-177">[WSL2] 修复了处理极大型 hvsocket 消息的问题 [GH 4105]</span><span class="sxs-lookup"><span data-stu-id="263bc-177">[WSL2] Fix handling of very large hvsocket messages [GH 4105]</span></span>
-* <span data-ttu-id="263bc-178">[WSL2] 修复了当 stdin 为文件时互操作出现的问题 [GH 4475]</span><span class="sxs-lookup"><span data-stu-id="263bc-178">[WSL2] Fix issue with interop when stdin is a file [GH 4475]</span></span>
-* <span data-ttu-id="263bc-179">[WSL2] 修复了当遇到意外网络状态时服务崩溃的问题 [GH 4474]</span><span class="sxs-lookup"><span data-stu-id="263bc-179">[WSL2] Fix service crash when unexpected network state is encountered [GH 4474]</span></span>
-* <span data-ttu-id="263bc-180">[WSL2] 在当前进程没有环境变量的情况下从互操作服务器查询发行版名称</span><span class="sxs-lookup"><span data-stu-id="263bc-180">[WSL2] Query the distro name from the interop server if the current process does not have the environment variable</span></span>
-* <span data-ttu-id="263bc-181">[WSL2] 修复了当 stdin 为文件时互操作出现的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-181">[WSL2] Fix issue with interop whe stdin is a file</span></span>
-* <span data-ttu-id="263bc-182">[WSL2] 将 Linux 内核版本更新到 4.19.72</span><span class="sxs-lookup"><span data-stu-id="263bc-182">[WSL2] Update Linux kernel version to 4.19.72</span></span>
-* <span data-ttu-id="263bc-183">[WSL2] 添加了通过 .wslconfig 指定其他内核命令行参数的功能</span><span class="sxs-lookup"><span data-stu-id="263bc-183">[WSL2] Add ability to specify additional kernel command line parameters via .wslconfig</span></span>
+* <span data-ttu-id="aa113-176">[WSL2] 修复了 DrvFs 装载在某项操作被中断（例如 ctrl-c）后失效的问题 [GH 4377]</span><span class="sxs-lookup"><span data-stu-id="aa113-176">[WSL2] Fix an issue where DrvFs mounts stopped working after an operation was interrupted (e.g. ctrl-c) [GH 4377]</span></span>
+* <span data-ttu-id="aa113-177">[WSL2] 修复了处理极大型 hvsocket 消息的问题 [GH 4105]</span><span class="sxs-lookup"><span data-stu-id="aa113-177">[WSL2] Fix handling of very large hvsocket messages [GH 4105]</span></span>
+* <span data-ttu-id="aa113-178">[WSL2] 修复了当 stdin 为文件时互操作出现的问题 [GH 4475]</span><span class="sxs-lookup"><span data-stu-id="aa113-178">[WSL2] Fix issue with interop when stdin is a file [GH 4475]</span></span>
+* <span data-ttu-id="aa113-179">[WSL2] 修复了当遇到意外网络状态时服务崩溃的问题 [GH 4474]</span><span class="sxs-lookup"><span data-stu-id="aa113-179">[WSL2] Fix service crash when unexpected network state is encountered [GH 4474]</span></span>
+* <span data-ttu-id="aa113-180">[WSL2] 在当前进程没有环境变量的情况下从互操作服务器查询发行版名称</span><span class="sxs-lookup"><span data-stu-id="aa113-180">[WSL2] Query the distro name from the interop server if the current process does not have the environment variable</span></span>
+* <span data-ttu-id="aa113-181">[WSL2] 修复了当 stdin 为文件时互操作出现的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-181">[WSL2] Fix issue with interop whe stdin is a file</span></span>
+* <span data-ttu-id="aa113-182">[WSL2] 将 Linux 内核版本更新到 4.19.72</span><span class="sxs-lookup"><span data-stu-id="aa113-182">[WSL2] Update Linux kernel version to 4.19.72</span></span>
+* <span data-ttu-id="aa113-183">[WSL2] 添加了通过 .wslconfig 指定其他内核命令行参数的功能</span><span class="sxs-lookup"><span data-stu-id="aa113-183">[WSL2] Add ability to specify additional kernel command line parameters via .wslconfig</span></span>
 ```
 [wsl2]
 kernelCommandLine = <string> # Additional kernel command line arguments
 ```
 
-## <a name="build-18990"></a><span data-ttu-id="263bc-184">版本 18990</span><span class="sxs-lookup"><span data-stu-id="263bc-184">Build 18990</span></span>
-<span data-ttu-id="263bc-185">有关版本 18990 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-185">For general Windows information on build 18990 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/).</span></span>
+## <a name="build-18990"></a><span data-ttu-id="aa113-184">版本 18990</span><span class="sxs-lookup"><span data-stu-id="aa113-184">Build 18990</span></span>
+<span data-ttu-id="aa113-185">有关版本 18990 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-185">For general Windows information on build 18990 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/).</span></span>
 
-* <span data-ttu-id="263bc-186">提高 \\\\wsl$ 中目录列表的性能</span><span class="sxs-lookup"><span data-stu-id="263bc-186">Improve the performance for directory listings in \\\\wsl$</span></span>
-* <span data-ttu-id="263bc-187">[WSL2] 注入额外的启动熵 [GH 4416]</span><span class="sxs-lookup"><span data-stu-id="263bc-187">[WSL2] Inject additional boot entropy [GH 4416]</span></span>
-* <span data-ttu-id="263bc-188">[WSL2] 修复使用 su/sudo 时的 Windows 互操作 [GH 4465]</span><span class="sxs-lookup"><span data-stu-id="263bc-188">[WSL2] Fix for Windows interop when using su / sudo [GH 4465]</span></span>
+* <span data-ttu-id="aa113-186">提高 \\\\wsl$ 中目录列表的性能</span><span class="sxs-lookup"><span data-stu-id="aa113-186">Improve the performance for directory listings in \\\\wsl$</span></span>
+* <span data-ttu-id="aa113-187">[WSL2] 注入额外的启动熵 [GH 4416]</span><span class="sxs-lookup"><span data-stu-id="aa113-187">[WSL2] Inject additional boot entropy [GH 4416]</span></span>
+* <span data-ttu-id="aa113-188">[WSL2] 修复使用 su/sudo 时的 Windows 互操作 [GH 4465]</span><span class="sxs-lookup"><span data-stu-id="aa113-188">[WSL2] Fix for Windows interop when using su / sudo [GH 4465]</span></span>
 
-## <a name="build-18980"></a><span data-ttu-id="263bc-189">内部版本 18980</span><span class="sxs-lookup"><span data-stu-id="263bc-189">Build 18980</span></span>
-<span data-ttu-id="263bc-190">有关内部版本 18980 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-190">For general Windows information on build 18980 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/).</span></span>
+## <a name="build-18980"></a><span data-ttu-id="aa113-189">内部版本 18980</span><span class="sxs-lookup"><span data-stu-id="aa113-189">Build 18980</span></span>
+<span data-ttu-id="aa113-190">有关内部版本 18980 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-190">For general Windows information on build 18980 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/).</span></span>
 
-* <span data-ttu-id="263bc-191">修复拒绝 FILE_READ_DATA 的读取符号链接。</span><span class="sxs-lookup"><span data-stu-id="263bc-191">Fix reading symlinks that deny FILE_READ_DATA.</span></span> <span data-ttu-id="263bc-192">这包括 Windows 为了实现后向兼容而创建的所有符号链接（例如“C:\Document and Settings”），以及用户配置文件目录中的一些符号链接。</span><span class="sxs-lookup"><span data-stu-id="263bc-192">This includes all the symlinks Windows creates for backwards compatibility such as "C:\Document and Settings" and a bunch of symlinks in the user profile directory</span></span>
-* <span data-ttu-id="263bc-193">使意外的文件系统状态变得不严重 [GH 4334、4305]</span><span class="sxs-lookup"><span data-stu-id="263bc-193">Make unexpected filesystem state non-fatal [GH 4334, 4305]</span></span>
-* <span data-ttu-id="263bc-194">[WSL2] 添加当 CPU/固件支持虚拟化时对 arm64 的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-194">[WSL2] Add support for arm64 if your CPU / firmware supports virtualization</span></span>
-* <span data-ttu-id="263bc-195">[WSL2] 允许无特权用户查看内核日志</span><span class="sxs-lookup"><span data-stu-id="263bc-195">[WSL2] Allow unprivileged users to view kernel log</span></span>
-* <span data-ttu-id="263bc-196">[WSL2] 修复关闭 stdout/stderr 套接字后的输出中继 [GH 4375]</span><span class="sxs-lookup"><span data-stu-id="263bc-196">[WSL2] Fix output relay when stdout / stderr sockets have been closed [GH 4375]</span></span>
-* <span data-ttu-id="263bc-197">[WSL2] 支持电池和交流适配器直通</span><span class="sxs-lookup"><span data-stu-id="263bc-197">[WSL2] Support battery and AC adapter passthrough</span></span>
-* <span data-ttu-id="263bc-198">[WSL2] 将 Linux 内核更新到 4.19.67</span><span class="sxs-lookup"><span data-stu-id="263bc-198">[WSL2] Update Linux kernel to 4.19.67</span></span>
-* <span data-ttu-id="263bc-199">添加在 /etc/wsl.conf 中设置默认用户名的功能：</span><span class="sxs-lookup"><span data-stu-id="263bc-199">Add the ability to set default username in /etc/wsl.conf:</span></span>
+* <span data-ttu-id="aa113-191">修复拒绝 FILE_READ_DATA 的读取符号链接。</span><span class="sxs-lookup"><span data-stu-id="aa113-191">Fix reading symlinks that deny FILE_READ_DATA.</span></span> <span data-ttu-id="aa113-192">这包括 Windows 为了实现后向兼容而创建的所有符号链接（例如“C:\Document and Settings”），以及用户配置文件目录中的一些符号链接。</span><span class="sxs-lookup"><span data-stu-id="aa113-192">This includes all the symlinks Windows creates for backwards compatibility such as "C:\Document and Settings" and a bunch of symlinks in the user profile directory</span></span>
+* <span data-ttu-id="aa113-193">使意外的文件系统状态变得不严重 [GH 4334、4305]</span><span class="sxs-lookup"><span data-stu-id="aa113-193">Make unexpected filesystem state non-fatal [GH 4334, 4305]</span></span>
+* <span data-ttu-id="aa113-194">[WSL2] 添加当 CPU/固件支持虚拟化时对 arm64 的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-194">[WSL2] Add support for arm64 if your CPU / firmware supports virtualization</span></span>
+* <span data-ttu-id="aa113-195">[WSL2] 允许无特权用户查看内核日志</span><span class="sxs-lookup"><span data-stu-id="aa113-195">[WSL2] Allow unprivileged users to view kernel log</span></span>
+* <span data-ttu-id="aa113-196">[WSL2] 修复关闭 stdout/stderr 套接字后的输出中继 [GH 4375]</span><span class="sxs-lookup"><span data-stu-id="aa113-196">[WSL2] Fix output relay when stdout / stderr sockets have been closed [GH 4375]</span></span>
+* <span data-ttu-id="aa113-197">[WSL2] 支持电池和交流适配器直通</span><span class="sxs-lookup"><span data-stu-id="aa113-197">[WSL2] Support battery and AC adapter passthrough</span></span>
+* <span data-ttu-id="aa113-198">[WSL2] 将 Linux 内核更新到 4.19.67</span><span class="sxs-lookup"><span data-stu-id="aa113-198">[WSL2] Update Linux kernel to 4.19.67</span></span>
+* <span data-ttu-id="aa113-199">添加在 /etc/wsl.conf 中设置默认用户名的功能：</span><span class="sxs-lookup"><span data-stu-id="aa113-199">Add the ability to set default username in /etc/wsl.conf:</span></span>
 ```
 [user]
 default=<string>
 ```
 
-## <a name="build-18975"></a><span data-ttu-id="263bc-200">内部版本 18975</span><span class="sxs-lookup"><span data-stu-id="263bc-200">Build 18975</span></span>
-<span data-ttu-id="263bc-201">有关内部版本 18975 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/09/06/announcing-windows-10-insider-preview-build-18975/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-201">For general Windows information on build 18975 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/09/06/announcing-windows-10-insider-preview-build-18975/).</span></span>
+## <a name="build-18975"></a><span data-ttu-id="aa113-200">内部版本 18975</span><span class="sxs-lookup"><span data-stu-id="aa113-200">Build 18975</span></span>
+<span data-ttu-id="aa113-201">有关内部版本 18975 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/09/06/announcing-windows-10-insider-preview-build-18975/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-201">For general Windows information on build 18975 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/09/06/announcing-windows-10-insider-preview-build-18975/).</span></span>
 
-* <span data-ttu-id="263bc-202">[WSL2] 修复大量 localhost 可靠性问题 [GH 4340]</span><span class="sxs-lookup"><span data-stu-id="263bc-202">[WSL2] Fixed a number of localhost reliability issues [GH 4340]</span></span>
+* <span data-ttu-id="aa113-202">[WSL2] 修复大量 localhost 可靠性问题 [GH 4340]</span><span class="sxs-lookup"><span data-stu-id="aa113-202">[WSL2] Fixed a number of localhost reliability issues [GH 4340]</span></span>
 
-## <a name="build-18970"></a><span data-ttu-id="263bc-203">内部版本 18970</span><span class="sxs-lookup"><span data-stu-id="263bc-203">Build 18970</span></span>
-<span data-ttu-id="263bc-204">有关内部版本 18970 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/08/29/announcing-windows-10-insider-preview-build-18970/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-204">For general Windows information on build 18970 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/08/29/announcing-windows-10-insider-preview-build-18970/).</span></span>
+## <a name="build-18970"></a><span data-ttu-id="aa113-203">内部版本 18970</span><span class="sxs-lookup"><span data-stu-id="aa113-203">Build 18970</span></span>
+<span data-ttu-id="aa113-204">有关内部版本 18970 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/08/29/announcing-windows-10-insider-preview-build-18970/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-204">For general Windows information on build 18970 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/08/29/announcing-windows-10-insider-preview-build-18970/).</span></span>
 
-* <span data-ttu-id="263bc-205">[WSL2] 当系统从睡眠状态恢复时，使时间与主机时间同步 [GH 4245]</span><span class="sxs-lookup"><span data-stu-id="263bc-205">[WSL2] Sync time with host time when system resumes from sleep state [GH 4245]</span></span>
-* <span data-ttu-id="263bc-206">[WSL2] 在可能的情况下，在 Windows 卷上创建 NT 符号链接。</span><span class="sxs-lookup"><span data-stu-id="263bc-206">[WSL2] Create NT symlinks on the Windows volumes when possible.</span></span>
-* <span data-ttu-id="263bc-207">[WSL2] 在 UTS、IPC、PID 和 Mount 命名空间中创建分发版。</span><span class="sxs-lookup"><span data-stu-id="263bc-207">[WSL2] Create distros in UTS, IPC, PID, and Mount namespaces.</span></span>
-* <span data-ttu-id="263bc-208">[WSL2] 修复当服务器直接绑定到 localhost 时的 localhost 端口中继 [GH 4353]</span><span class="sxs-lookup"><span data-stu-id="263bc-208">[WSL2] Fix localhost port relay when server binds to localhost directly [GH 4353]</span></span>
-* <span data-ttu-id="263bc-209">[WSL2] 修复重定向输出时的 interop [GH 4337]</span><span class="sxs-lookup"><span data-stu-id="263bc-209">[WSL2] Fix interop when output is redirected [GH 4337]</span></span>
-* <span data-ttu-id="263bc-210">[WSL2] 支持转换绝对 NT 符号链接。</span><span class="sxs-lookup"><span data-stu-id="263bc-210">[WSL2] Support translating absolute NT symlinks.</span></span>
-* <span data-ttu-id="263bc-211">[WSL2] 将内核更新到 4.19.59</span><span class="sxs-lookup"><span data-stu-id="263bc-211">[WSL2] Update kernel to 4.19.59</span></span>
-* <span data-ttu-id="263bc-212">[WSL2] 正确设置 eth0 的子网掩码。</span><span class="sxs-lookup"><span data-stu-id="263bc-212">[WSL2] Properly set subnet mask for eth0.</span></span>
-* <span data-ttu-id="263bc-213">[WSL2] 发出退出事件信号时更改逻辑，以中断控制台工作线程循环。</span><span class="sxs-lookup"><span data-stu-id="263bc-213">[WSL2] Change logic to break out of console worker loop when exit event is signaled.</span></span>
-* <span data-ttu-id="263bc-214">[WSL2] 分发版未运行时弹出分发版 VHD。</span><span class="sxs-lookup"><span data-stu-id="263bc-214">[WSL2] Eject distribution vhd when the distro is not running.</span></span>
-* <span data-ttu-id="263bc-215">[WSL2] 修复配置分析库以正确处理空值。</span><span class="sxs-lookup"><span data-stu-id="263bc-215">[WSL2] Fix config parsing library to correctly handle empty values.</span></span>
-* <span data-ttu-id="263bc-216">[WSL2] 通过创建跨分发版装入点来支持 Docker Desktop。</span><span class="sxs-lookup"><span data-stu-id="263bc-216">[WSL2] Support Docker Desktop by creating cross distro mounts.</span></span> <span data-ttu-id="263bc-217">分发版可以通过将以下行添加到 /etc/wsl.conf 文件来启用此行为：</span><span class="sxs-lookup"><span data-stu-id="263bc-217">A distro can opt-in to this behavior by adding the following line to the /etc/wsl.conf file:</span></span>
+* <span data-ttu-id="aa113-205">[WSL2] 当系统从睡眠状态恢复时，使时间与主机时间同步 [GH 4245]</span><span class="sxs-lookup"><span data-stu-id="aa113-205">[WSL2] Sync time with host time when system resumes from sleep state [GH 4245]</span></span>
+* <span data-ttu-id="aa113-206">[WSL2] 在可能的情况下，在 Windows 卷上创建 NT 符号链接。</span><span class="sxs-lookup"><span data-stu-id="aa113-206">[WSL2] Create NT symlinks on the Windows volumes when possible.</span></span>
+* <span data-ttu-id="aa113-207">[WSL2] 在 UTS、IPC、PID 和 Mount 命名空间中创建分发版。</span><span class="sxs-lookup"><span data-stu-id="aa113-207">[WSL2] Create distros in UTS, IPC, PID, and Mount namespaces.</span></span>
+* <span data-ttu-id="aa113-208">[WSL2] 修复当服务器直接绑定到 localhost 时的 localhost 端口中继 [GH 4353]</span><span class="sxs-lookup"><span data-stu-id="aa113-208">[WSL2] Fix localhost port relay when server binds to localhost directly [GH 4353]</span></span>
+* <span data-ttu-id="aa113-209">[WSL2] 修复重定向输出时的 interop [GH 4337]</span><span class="sxs-lookup"><span data-stu-id="aa113-209">[WSL2] Fix interop when output is redirected [GH 4337]</span></span>
+* <span data-ttu-id="aa113-210">[WSL2] 支持转换绝对 NT 符号链接。</span><span class="sxs-lookup"><span data-stu-id="aa113-210">[WSL2] Support translating absolute NT symlinks.</span></span>
+* <span data-ttu-id="aa113-211">[WSL2] 将内核更新到 4.19.59</span><span class="sxs-lookup"><span data-stu-id="aa113-211">[WSL2] Update kernel to 4.19.59</span></span>
+* <span data-ttu-id="aa113-212">[WSL2] 正确设置 eth0 的子网掩码。</span><span class="sxs-lookup"><span data-stu-id="aa113-212">[WSL2] Properly set subnet mask for eth0.</span></span>
+* <span data-ttu-id="aa113-213">[WSL2] 发出退出事件信号时更改逻辑，以中断控制台工作线程循环。</span><span class="sxs-lookup"><span data-stu-id="aa113-213">[WSL2] Change logic to break out of console worker loop when exit event is signaled.</span></span>
+* <span data-ttu-id="aa113-214">[WSL2] 分发版未运行时弹出分发版 VHD。</span><span class="sxs-lookup"><span data-stu-id="aa113-214">[WSL2] Eject distribution vhd when the distro is not running.</span></span>
+* <span data-ttu-id="aa113-215">[WSL2] 修复配置分析库以正确处理空值。</span><span class="sxs-lookup"><span data-stu-id="aa113-215">[WSL2] Fix config parsing library to correctly handle empty values.</span></span>
+* <span data-ttu-id="aa113-216">[WSL2] 通过创建跨分发版装入点来支持 Docker Desktop。</span><span class="sxs-lookup"><span data-stu-id="aa113-216">[WSL2] Support Docker Desktop by creating cross distro mounts.</span></span> <span data-ttu-id="aa113-217">分发版可以通过将以下行添加到 /etc/wsl.conf 文件来启用此行为：</span><span class="sxs-lookup"><span data-stu-id="aa113-217">A distro can opt-in to this behavior by adding the following line to the /etc/wsl.conf file:</span></span>
 ```
 [automount]
 crossDistro = true
 ```
 
-## <a name="build-18945"></a><span data-ttu-id="263bc-218">内部版本 18945</span><span class="sxs-lookup"><span data-stu-id="263bc-218">Build 18945</span></span>
-<span data-ttu-id="263bc-219">有关内部版本 18945 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-219">For general Windows information on build 18945 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/).</span></span>
+## <a name="build-18945"></a><span data-ttu-id="aa113-218">内部版本 18945</span><span class="sxs-lookup"><span data-stu-id="aa113-218">Build 18945</span></span>
+<span data-ttu-id="aa113-219">有关内部版本 18945 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-219">For general Windows information on build 18945 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-220">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-220">WSL</span></span>
-* <span data-ttu-id="263bc-221">[WSL2] 允许侦听可使用 localhost:port 通过主机访问的 WSL2 中的 TCP 套接字</span><span class="sxs-lookup"><span data-stu-id="263bc-221">[WSL2] Allow listening tcp sockets in WSL2 to be accessible from the host by using localhost:port</span></span>
-* <span data-ttu-id="263bc-222">[WSL2] 修复安装/转换失败和其他诊断，以跟踪将来的问题 [GH 4105]</span><span class="sxs-lookup"><span data-stu-id="263bc-222">[WSL2] Fixes for install / conversion failures and additional diagnostics to track down future issues [GH 4105]</span></span> 
-* <span data-ttu-id="263bc-223">[WSL2] 改善 WSL2 网络问题的诊断</span><span class="sxs-lookup"><span data-stu-id="263bc-223">[WSL2] Improve diagnosability of WSL2 network issues</span></span>
-* <span data-ttu-id="263bc-224">[WSL2] 将内核版本更新到 4.19.55</span><span class="sxs-lookup"><span data-stu-id="263bc-224">[WSL2] Update kernel version to 4.19.55</span></span>
-* <span data-ttu-id="263bc-225">[WSL2] 使用 Docker 所需的配置选项更新了内核 [GH 4165]</span><span class="sxs-lookup"><span data-stu-id="263bc-225">[WSL2] Update kernel with config options required for docker [GH 4165]</span></span>
-* <span data-ttu-id="263bc-226">[WSL2] 增加分配给轻型实用程序 VM 的 CPU 数目，使其与主机相同（以前，内核配置中的 CONFIG_NR_CPUS 将数目限制为 8 个）[GH 4137]</span><span class="sxs-lookup"><span data-stu-id="263bc-226">[WSL2] Increase the number of CPUs assigned to the lightweight utility VM to be the same as the host (was previously capped at 8 by CONFIG_NR_CPUS in the kernel config) [GH 4137]</span></span>
-* <span data-ttu-id="263bc-227">[WSL2] 为 WSL2 轻型 VM 创建交换文件</span><span class="sxs-lookup"><span data-stu-id="263bc-227">[WSL2] Create a swap file for the WSL2 lightweight VM</span></span>
-* <span data-ttu-id="263bc-228">[WSL2] 允许通过 \\\\wsl$\\distro（例如 sshfs）显示用户装入点 [GH 4172]</span><span class="sxs-lookup"><span data-stu-id="263bc-228">[WSL2] Allow user mounts to be visible via \\\\wsl$\\distro (for example sshfs) [GH 4172]</span></span>
-* <span data-ttu-id="263bc-229">[WSL2] 改善 9p 文件系统的性能</span><span class="sxs-lookup"><span data-stu-id="263bc-229">[WSL2] Improve 9p filesystem performance</span></span>
-* <span data-ttu-id="263bc-230">[WSL2] 确保 VHD ACL 不会无限增长 [GH 4126]</span><span class="sxs-lookup"><span data-stu-id="263bc-230">[WSL2] Ensure vhd ACL does not grow unbounded [GH 4126]</span></span>
-* <span data-ttu-id="263bc-231">[WSL2] 更新内核配置以支持 squashfs 和 xt_conntrack [GH 4107、4123]</span><span class="sxs-lookup"><span data-stu-id="263bc-231">[WSL2] Update kernel config to support squashfs and xt_conntrack [GH 4107, 4123]</span></span>
-* <span data-ttu-id="263bc-232">[WSL2] 修复 interop.enabled /etc/wsl.conf 选项 [GH 4140]</span><span class="sxs-lookup"><span data-stu-id="263bc-232">[WSL2] Fix for interop.enabled /etc/wsl.conf option [GH 4140]</span></span>
-* <span data-ttu-id="263bc-233">[WSL2] 如果文件系统不支持 EA，则返回 ENOTSUP</span><span class="sxs-lookup"><span data-stu-id="263bc-233">[WSL2] Return ENOTSUP if the file system does not support EAs</span></span>
-* <span data-ttu-id="263bc-234">[WSL2] 修复 \\\\wsl$ 时 CopyFile 挂起的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-234">[WSL2] Fix CopyFile hang with \\\\wsl$</span></span>
-* <span data-ttu-id="263bc-235">将默认 umask 切换为 0022，并将 filesystem.umask 设置添加到 /etc/wsl.conf</span><span class="sxs-lookup"><span data-stu-id="263bc-235">Switch default umask to 0022 and add filesystem.umask setting to /etc/wsl.conf</span></span>
-* <span data-ttu-id="263bc-236">修复 wslpath 以正确解析符号链接，这是19h1 中的回归 [GH 4078]</span><span class="sxs-lookup"><span data-stu-id="263bc-236">Fix wslpath to properly resolve symlinks, this was regressed in 19h1 [GH 4078]</span></span>
-* <span data-ttu-id="263bc-237">引入 %UserProfile%\\.wslconfig 文件用于调整 WSL2 设置</span><span class="sxs-lookup"><span data-stu-id="263bc-237">Introduce %UserProfile%\\.wslconfig file for tweaking WSL2 settings</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-220">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-220">WSL</span></span>
+* <span data-ttu-id="aa113-221">[WSL2] 允许侦听可使用 localhost:port 通过主机访问的 WSL2 中的 TCP 套接字</span><span class="sxs-lookup"><span data-stu-id="aa113-221">[WSL2] Allow listening tcp sockets in WSL2 to be accessible from the host by using localhost:port</span></span>
+* <span data-ttu-id="aa113-222">[WSL2] 修复安装/转换失败和其他诊断，以跟踪将来的问题 [GH 4105]</span><span class="sxs-lookup"><span data-stu-id="aa113-222">[WSL2] Fixes for install / conversion failures and additional diagnostics to track down future issues [GH 4105]</span></span> 
+* <span data-ttu-id="aa113-223">[WSL2] 改善 WSL2 网络问题的诊断</span><span class="sxs-lookup"><span data-stu-id="aa113-223">[WSL2] Improve diagnosability of WSL2 network issues</span></span>
+* <span data-ttu-id="aa113-224">[WSL2] 将内核版本更新到 4.19.55</span><span class="sxs-lookup"><span data-stu-id="aa113-224">[WSL2] Update kernel version to 4.19.55</span></span>
+* <span data-ttu-id="aa113-225">[WSL2] 使用 Docker 所需的配置选项更新了内核 [GH 4165]</span><span class="sxs-lookup"><span data-stu-id="aa113-225">[WSL2] Update kernel with config options required for docker [GH 4165]</span></span>
+* <span data-ttu-id="aa113-226">[WSL2] 增加分配给轻型实用程序 VM 的 CPU 数目，使其与主机相同（以前，内核配置中的 CONFIG_NR_CPUS 将数目限制为 8 个）[GH 4137]</span><span class="sxs-lookup"><span data-stu-id="aa113-226">[WSL2] Increase the number of CPUs assigned to the lightweight utility VM to be the same as the host (was previously capped at 8 by CONFIG_NR_CPUS in the kernel config) [GH 4137]</span></span>
+* <span data-ttu-id="aa113-227">[WSL2] 为 WSL2 轻型 VM 创建交换文件</span><span class="sxs-lookup"><span data-stu-id="aa113-227">[WSL2] Create a swap file for the WSL2 lightweight VM</span></span>
+* <span data-ttu-id="aa113-228">[WSL2] 允许通过 \\\\wsl$\\distro（例如 sshfs）显示用户装入点 [GH 4172]</span><span class="sxs-lookup"><span data-stu-id="aa113-228">[WSL2] Allow user mounts to be visible via \\\\wsl$\\distro (for example sshfs) [GH 4172]</span></span>
+* <span data-ttu-id="aa113-229">[WSL2] 改善 9p 文件系统的性能</span><span class="sxs-lookup"><span data-stu-id="aa113-229">[WSL2] Improve 9p filesystem performance</span></span>
+* <span data-ttu-id="aa113-230">[WSL2] 确保 VHD ACL 不会无限增长 [GH 4126]</span><span class="sxs-lookup"><span data-stu-id="aa113-230">[WSL2] Ensure vhd ACL does not grow unbounded [GH 4126]</span></span>
+* <span data-ttu-id="aa113-231">[WSL2] 更新内核配置以支持 squashfs 和 xt_conntrack [GH 4107、4123]</span><span class="sxs-lookup"><span data-stu-id="aa113-231">[WSL2] Update kernel config to support squashfs and xt_conntrack [GH 4107, 4123]</span></span>
+* <span data-ttu-id="aa113-232">[WSL2] 修复 interop.enabled /etc/wsl.conf 选项 [GH 4140]</span><span class="sxs-lookup"><span data-stu-id="aa113-232">[WSL2] Fix for interop.enabled /etc/wsl.conf option [GH 4140]</span></span>
+* <span data-ttu-id="aa113-233">[WSL2] 如果文件系统不支持 EA，则返回 ENOTSUP</span><span class="sxs-lookup"><span data-stu-id="aa113-233">[WSL2] Return ENOTSUP if the file system does not support EAs</span></span>
+* <span data-ttu-id="aa113-234">[WSL2] 修复 \\\\wsl$ 时 CopyFile 挂起的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-234">[WSL2] Fix CopyFile hang with \\\\wsl$</span></span>
+* <span data-ttu-id="aa113-235">将默认 umask 切换为 0022，并将 filesystem.umask 设置添加到 /etc/wsl.conf</span><span class="sxs-lookup"><span data-stu-id="aa113-235">Switch default umask to 0022 and add filesystem.umask setting to /etc/wsl.conf</span></span>
+* <span data-ttu-id="aa113-236">修复 wslpath 以正确解析符号链接，这是19h1 中的回归 [GH 4078]</span><span class="sxs-lookup"><span data-stu-id="aa113-236">Fix wslpath to properly resolve symlinks, this was regressed in 19h1 [GH 4078]</span></span>
+* <span data-ttu-id="aa113-237">引入 %UserProfile%\\.wslconfig 文件用于调整 WSL2 设置</span><span class="sxs-lookup"><span data-stu-id="aa113-237">Introduce %UserProfile%\\.wslconfig file for tweaking WSL2 settings</span></span>
 ```
 [wsl2]
 kernel=<path>              # An absolute Windows path to a custom Linux kernel.
@@ -202,58 +202,58 @@ localhostForwarding=<bool> # Boolean specifying if ports bound to wildcard or lo
 # <size> entries must be size followed by unit, for example 8GB or 512MB
 ```
 
-## <a name="build-18917"></a><span data-ttu-id="263bc-238">内部版本 18917</span><span class="sxs-lookup"><span data-stu-id="263bc-238">Build 18917</span></span>
-<span data-ttu-id="263bc-239">有关内部版本 18917 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-239">For general Windows information on build 18917 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/).</span></span>
+## <a name="build-18917"></a><span data-ttu-id="aa113-238">内部版本 18917</span><span class="sxs-lookup"><span data-stu-id="aa113-238">Build 18917</span></span>
+<span data-ttu-id="aa113-239">有关内部版本 18917 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-239">For general Windows information on build 18917 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-240">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-240">WSL</span></span>
-* <span data-ttu-id="263bc-241">WSL 2 现已推出！</span><span class="sxs-lookup"><span data-stu-id="263bc-241">WSL 2 is now available!</span></span> <span data-ttu-id="263bc-242">有关更多详细信息，请参阅[博客](https://devblogs.microsoft.com/commandline/wsl-2-is-now-available-in-windows-insiders/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-242">Please see [blog](https://devblogs.microsoft.com/commandline/wsl-2-is-now-available-in-windows-insiders/) for more details.</span></span>
-* <span data-ttu-id="263bc-243">修复一个回归问题：无法通过符号链接启动 Windows 进程 [GH 3999]</span><span class="sxs-lookup"><span data-stu-id="263bc-243">Fix a regression where launching Windows processes via symlinks did not work correctly [GH 3999]</span></span>
-* <span data-ttu-id="263bc-244">将 wsl.exe --list --verbose、wsl.exe --list --quiet 和 wsl.exe --import --version 选项添加到 wsl.exe</span><span class="sxs-lookup"><span data-stu-id="263bc-244">Add wsl.exe --list --verbose, wsl.exe --list --quiet, and wsl.exe --import --version options to wsl.exe</span></span>
-* <span data-ttu-id="263bc-245">添加 wsl.exe --shutdown 选项</span><span class="sxs-lookup"><span data-stu-id="263bc-245">Add wsl.exe --shutdown option</span></span>
-* <span data-ttu-id="263bc-246">Plan 9：允许打开目录以使写入成功</span><span class="sxs-lookup"><span data-stu-id="263bc-246">Plan 9: Allow opening a directory for write to succeed</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-240">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-240">WSL</span></span>
+* <span data-ttu-id="aa113-241">WSL 2 现已推出！</span><span class="sxs-lookup"><span data-stu-id="aa113-241">WSL 2 is now available!</span></span> <span data-ttu-id="aa113-242">有关更多详细信息，请参阅[博客](https://devblogs.microsoft.com/commandline/wsl-2-is-now-available-in-windows-insiders/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-242">Please see [blog](https://devblogs.microsoft.com/commandline/wsl-2-is-now-available-in-windows-insiders/) for more details.</span></span>
+* <span data-ttu-id="aa113-243">修复一个回归问题：无法通过符号链接启动 Windows 进程 [GH 3999]</span><span class="sxs-lookup"><span data-stu-id="aa113-243">Fix a regression where launching Windows processes via symlinks did not work correctly [GH 3999]</span></span>
+* <span data-ttu-id="aa113-244">将 wsl.exe --list --verbose、wsl.exe --list --quiet 和 wsl.exe --import --version 选项添加到 wsl.exe</span><span class="sxs-lookup"><span data-stu-id="aa113-244">Add wsl.exe --list --verbose, wsl.exe --list --quiet, and wsl.exe --import --version options to wsl.exe</span></span>
+* <span data-ttu-id="aa113-245">添加 wsl.exe --shutdown 选项</span><span class="sxs-lookup"><span data-stu-id="aa113-245">Add wsl.exe --shutdown option</span></span>
+* <span data-ttu-id="aa113-246">Plan 9：允许打开目录以使写入成功</span><span class="sxs-lookup"><span data-stu-id="aa113-246">Plan 9: Allow opening a directory for write to succeed</span></span>
 
-## <a name="build-18890"></a><span data-ttu-id="263bc-247">内部版本 18890</span><span class="sxs-lookup"><span data-stu-id="263bc-247">Build 18890</span></span>
-<span data-ttu-id="263bc-248">有关内部版本 18890 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-248">For general Windows information on build 18890 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/).</span></span>
+## <a name="build-18890"></a><span data-ttu-id="aa113-247">内部版本 18890</span><span class="sxs-lookup"><span data-stu-id="aa113-247">Build 18890</span></span>
+<span data-ttu-id="aa113-248">有关内部版本 18890 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-248">For general Windows information on build 18890 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-249">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-249">WSL</span></span>
-* <span data-ttu-id="263bc-250">非阻塞套接字泄露 [GH 2913]</span><span class="sxs-lookup"><span data-stu-id="263bc-250">Non-blocking socket leak [GH 2913]</span></span>
-* <span data-ttu-id="263bc-251">在终端中输入 EOF 可能会阻塞后续读取 [GH 3421]</span><span class="sxs-lookup"><span data-stu-id="263bc-251">EOF input to terminal can block subsequent reads [GH 3421]</span></span>
-* <span data-ttu-id="263bc-252">更新 resolv.conf 标头以引用 wsl.conf [在 GH 3928 中介绍]</span><span class="sxs-lookup"><span data-stu-id="263bc-252">Update resolv.conf header to refer to wsl.conf [discussed in GH 3928]</span></span>
-* <span data-ttu-id="263bc-253">epoll delete 代码中的死锁 [GH 3922]</span><span class="sxs-lookup"><span data-stu-id="263bc-253">Deadlock in epoll delete code [GH 3922]</span></span>
-* <span data-ttu-id="263bc-254">处理 --import 和 –export 的参数中的空格 [GH 3932]</span><span class="sxs-lookup"><span data-stu-id="263bc-254">Handle spaces in arguments to --import and –export [GH 3932]</span></span>
-* <span data-ttu-id="263bc-255">无法正常扩展 mmap'd 文件 [GH 3939]</span><span class="sxs-lookup"><span data-stu-id="263bc-255">Extending mmap'd files does not work properly [GH 3939]</span></span>
-* <span data-ttu-id="263bc-256">修复了 ARM64 \\\\wsl$ 访问不正常的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-256">Fix issue with ARM64 \\\\wsl$ access not working properly</span></span>
-* <span data-ttu-id="263bc-257">为 wsl.exe 添加更好的默认图标</span><span class="sxs-lookup"><span data-stu-id="263bc-257">Add better default icon for wsl.exe</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-249">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-249">WSL</span></span>
+* <span data-ttu-id="aa113-250">非阻塞套接字泄露 [GH 2913]</span><span class="sxs-lookup"><span data-stu-id="aa113-250">Non-blocking socket leak [GH 2913]</span></span>
+* <span data-ttu-id="aa113-251">在终端中输入 EOF 可能会阻塞后续读取 [GH 3421]</span><span class="sxs-lookup"><span data-stu-id="aa113-251">EOF input to terminal can block subsequent reads [GH 3421]</span></span>
+* <span data-ttu-id="aa113-252">更新 resolv.conf 标头以引用 wsl.conf [在 GH 3928 中介绍]</span><span class="sxs-lookup"><span data-stu-id="aa113-252">Update resolv.conf header to refer to wsl.conf [discussed in GH 3928]</span></span>
+* <span data-ttu-id="aa113-253">epoll delete 代码中的死锁 [GH 3922]</span><span class="sxs-lookup"><span data-stu-id="aa113-253">Deadlock in epoll delete code [GH 3922]</span></span>
+* <span data-ttu-id="aa113-254">处理 --import 和 –export 的参数中的空格 [GH 3932]</span><span class="sxs-lookup"><span data-stu-id="aa113-254">Handle spaces in arguments to --import and –export [GH 3932]</span></span>
+* <span data-ttu-id="aa113-255">无法正常扩展 mmap'd 文件 [GH 3939]</span><span class="sxs-lookup"><span data-stu-id="aa113-255">Extending mmap'd files does not work properly [GH 3939]</span></span>
+* <span data-ttu-id="aa113-256">修复了 ARM64 \\\\wsl$ 访问不正常的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-256">Fix issue with ARM64 \\\\wsl$ access not working properly</span></span>
+* <span data-ttu-id="aa113-257">为 wsl.exe 添加更好的默认图标</span><span class="sxs-lookup"><span data-stu-id="aa113-257">Add better default icon for wsl.exe</span></span>
 
-## <a name="build-18342"></a><span data-ttu-id="263bc-258">内部版本 18342</span><span class="sxs-lookup"><span data-stu-id="263bc-258">Build 18342</span></span>
-<span data-ttu-id="263bc-259">有关内部版本 18342 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-259">For general Windows information on build 18342 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/).</span></span>
+## <a name="build-18342"></a><span data-ttu-id="aa113-258">内部版本 18342</span><span class="sxs-lookup"><span data-stu-id="aa113-258">Build 18342</span></span>
+<span data-ttu-id="aa113-259">有关内部版本 18342 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-259">For general Windows information on build 18342 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-260">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-260">WSL</span></span>
-* <span data-ttu-id="263bc-261">我们添加了相应的功能，使用户能够从 Windows 访问 WSL 分发版中的 Linux 文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-261">We've added the ability for users to access Linux files in a WSL distro from Windows.</span></span> <span data-ttu-id="263bc-262">可以通过命令行访问这些文件，此外，文件资源管理器、VSCode 等 Windows 应用可与这些文件交互。</span><span class="sxs-lookup"><span data-stu-id="263bc-262">These files can be accessed through the command line, and also Windows apps, like file explorer, VSCode, etc. can interact with these files.</span></span> <span data-ttu-id="263bc-263">通过导航到 \\\\wsl$\\<分发版名称> 访问文件，或通过导航到 \\\\wsl$ 来查看正在运行的分发版列表</span><span class="sxs-lookup"><span data-stu-id="263bc-263">Access your files by navigating to \\\\wsl$\\<distro_name>, or see a list of running distributions by navigating to \\\\wsl$</span></span>
-* <span data-ttu-id="263bc-264">添加额外的 CPU 信息标记，并修复 Cpus_allowed[_list] 值 [GH 2234]</span><span class="sxs-lookup"><span data-stu-id="263bc-264">Add additional CPU info tags and fix Cpus_allowed[_list] values [GH 2234]</span></span>
-* <span data-ttu-id="263bc-265">支持从非领先线程执行 [GH 3800]</span><span class="sxs-lookup"><span data-stu-id="263bc-265">Support exec from non-leader thread [GH 3800]</span></span>
-* <span data-ttu-id="263bc-266">将配置更新失败视为非严重错误 [GH 3785]</span><span class="sxs-lookup"><span data-stu-id="263bc-266">Treat configuration update failures as non-fatal [GH 3785]</span></span>
-* <span data-ttu-id="263bc-267">更新 binfmt 以正确处理偏移 [GH 3768]</span><span class="sxs-lookup"><span data-stu-id="263bc-267">Update binfmt to properly handle offsets [GH 3768]</span></span>
-* <span data-ttu-id="263bc-268">为 Plan 9 启用映射网络驱动器 [GH 3854]</span><span class="sxs-lookup"><span data-stu-id="263bc-268">Enable mapping network drives for Plan 9 [GH 3854]</span></span>
-* <span data-ttu-id="263bc-269">支持对绑定载入点执行“Windows -> Linux”和“Linux -> Windows”路径转换</span><span class="sxs-lookup"><span data-stu-id="263bc-269">Support Windows -> Linux and Linux -> Windows path translation for bind mounts</span></span>
-* <span data-ttu-id="263bc-270">为以只读方式打开的文件中的映射创建只读节</span><span class="sxs-lookup"><span data-stu-id="263bc-270">Create read-only sections for mappings on files opened read-only</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-260">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-260">WSL</span></span>
+* <span data-ttu-id="aa113-261">我们添加了相应的功能，使用户能够从 Windows 访问 WSL 分发版中的 Linux 文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-261">We've added the ability for users to access Linux files in a WSL distro from Windows.</span></span> <span data-ttu-id="aa113-262">可以通过命令行访问这些文件，此外，文件资源管理器、VSCode 等 Windows 应用可与这些文件交互。</span><span class="sxs-lookup"><span data-stu-id="aa113-262">These files can be accessed through the command line, and also Windows apps, like file explorer, VSCode, etc. can interact with these files.</span></span> <span data-ttu-id="aa113-263">通过导航到 \\\\wsl$\\<分发版名称> 访问文件，或通过导航到 \\\\wsl$ 来查看正在运行的分发版列表</span><span class="sxs-lookup"><span data-stu-id="aa113-263">Access your files by navigating to \\\\wsl$\\<distro_name>, or see a list of running distributions by navigating to \\\\wsl$</span></span>
+* <span data-ttu-id="aa113-264">添加额外的 CPU 信息标记，并修复 Cpus_allowed[_list] 值 [GH 2234]</span><span class="sxs-lookup"><span data-stu-id="aa113-264">Add additional CPU info tags and fix Cpus_allowed[_list] values [GH 2234]</span></span>
+* <span data-ttu-id="aa113-265">支持从非领先线程执行 [GH 3800]</span><span class="sxs-lookup"><span data-stu-id="aa113-265">Support exec from non-leader thread [GH 3800]</span></span>
+* <span data-ttu-id="aa113-266">将配置更新失败视为非严重错误 [GH 3785]</span><span class="sxs-lookup"><span data-stu-id="aa113-266">Treat configuration update failures as non-fatal [GH 3785]</span></span>
+* <span data-ttu-id="aa113-267">更新 binfmt 以正确处理偏移 [GH 3768]</span><span class="sxs-lookup"><span data-stu-id="aa113-267">Update binfmt to properly handle offsets [GH 3768]</span></span>
+* <span data-ttu-id="aa113-268">为 Plan 9 启用映射网络驱动器 [GH 3854]</span><span class="sxs-lookup"><span data-stu-id="aa113-268">Enable mapping network drives for Plan 9 [GH 3854]</span></span>
+* <span data-ttu-id="aa113-269">支持对绑定载入点执行“Windows -> Linux”和“Linux -> Windows”路径转换</span><span class="sxs-lookup"><span data-stu-id="aa113-269">Support Windows -> Linux and Linux -> Windows path translation for bind mounts</span></span>
+* <span data-ttu-id="aa113-270">为以只读方式打开的文件中的映射创建只读节</span><span class="sxs-lookup"><span data-stu-id="aa113-270">Create read-only sections for mappings on files opened read-only</span></span>
 
-## <a name="build-18334"></a><span data-ttu-id="263bc-271">内部版本 18334</span><span class="sxs-lookup"><span data-stu-id="263bc-271">Build 18334</span></span>
-<span data-ttu-id="263bc-272">有关内部版本 18334 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/02/08/announcing-windows-10-insider-preview-build-18334/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-272">For general Windows information on build 18334 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/02/08/announcing-windows-10-insider-preview-build-18334/).</span></span>
+## <a name="build-18334"></a><span data-ttu-id="aa113-271">内部版本 18334</span><span class="sxs-lookup"><span data-stu-id="aa113-271">Build 18334</span></span>
+<span data-ttu-id="aa113-272">有关内部版本 18334 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2019/02/08/announcing-windows-10-insider-preview-build-18334/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-272">For general Windows information on build 18334 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2019/02/08/announcing-windows-10-insider-preview-build-18334/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-273">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-273">WSL</span></span>
-* <span data-ttu-id="263bc-274">重新设计 Windows 时区映射到 Linux 时区的方式 [GH 3747]</span><span class="sxs-lookup"><span data-stu-id="263bc-274">Redesign the way that Windows time zone is mapped to a  Linux time zone [GH 3747]</span></span>
-* <span data-ttu-id="263bc-275">修复内存泄漏，并添加新的字符串转换函数 [GH 3746]</span><span class="sxs-lookup"><span data-stu-id="263bc-275">Fix memory leaks and add new string translation functions [GH 3746]</span></span>
-* <span data-ttu-id="263bc-276">不包含任何线程的线程组上的 SIGCONT 是一个 no-op [GH 3741]</span><span class="sxs-lookup"><span data-stu-id="263bc-276">SIGCONT on a threadgroup with no threads is a no-op [GH 3741]</span></span> 
-* <span data-ttu-id="263bc-277">在 /proc/self/fd 中正确显示套接字和 epoll 文件描述符</span><span class="sxs-lookup"><span data-stu-id="263bc-277">Correctly display socket and epoll file descriptors in /proc/self/fd</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-273">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-273">WSL</span></span>
+* <span data-ttu-id="aa113-274">重新设计 Windows 时区映射到 Linux 时区的方式 [GH 3747]</span><span class="sxs-lookup"><span data-stu-id="aa113-274">Redesign the way that Windows time zone is mapped to a  Linux time zone [GH 3747]</span></span>
+* <span data-ttu-id="aa113-275">修复内存泄漏，并添加新的字符串转换函数 [GH 3746]</span><span class="sxs-lookup"><span data-stu-id="aa113-275">Fix memory leaks and add new string translation functions [GH 3746]</span></span>
+* <span data-ttu-id="aa113-276">不包含任何线程的线程组上的 SIGCONT 是一个 no-op [GH 3741]</span><span class="sxs-lookup"><span data-stu-id="aa113-276">SIGCONT on a threadgroup with no threads is a no-op [GH 3741]</span></span> 
+* <span data-ttu-id="aa113-277">在 /proc/self/fd 中正确显示套接字和 epoll 文件描述符</span><span class="sxs-lookup"><span data-stu-id="aa113-277">Correctly display socket and epoll file descriptors in /proc/self/fd</span></span>
 
-## <a name="build-18305"></a><span data-ttu-id="263bc-278">内部版本 18305</span><span class="sxs-lookup"><span data-stu-id="263bc-278">Build 18305</span></span>
-<span data-ttu-id="263bc-279">有关内部版本 18305 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/12/19/announcing-windows-10-insider-preview-build-18305/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-279">For general Windows information on build 18305 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/12/19/announcing-windows-10-insider-preview-build-18305/).</span></span>
+## <a name="build-18305"></a><span data-ttu-id="aa113-278">内部版本 18305</span><span class="sxs-lookup"><span data-stu-id="aa113-278">Build 18305</span></span>
+<span data-ttu-id="aa113-279">有关内部版本 18305 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/12/19/announcing-windows-10-insider-preview-build-18305/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-279">For general Windows information on build 18305 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/12/19/announcing-windows-10-insider-preview-build-18305/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-280">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-280">WSL</span></span>
-* <span data-ttu-id="263bc-281">当主线程退出时，pthreads 失去对文件的访问权限 [GH 3589]</span><span class="sxs-lookup"><span data-stu-id="263bc-281">pthreads lose access to files when the primary thread exits [GH 3589]</span></span>
-* <span data-ttu-id="263bc-282">TIOCSCTTY 应忽略“force”参数，除非该参数是必需的 [GH 3652]</span><span class="sxs-lookup"><span data-stu-id="263bc-282">TIOCSCTTY should ignore the "force" parameter unless it is required [GH 3652]</span></span>
-* <span data-ttu-id="263bc-283">改善 wsl.exe 命令行，并添加导入/导出功能。</span><span class="sxs-lookup"><span data-stu-id="263bc-283">wsl.exe command line improvements and addition of import / export functionality.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-280">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-280">WSL</span></span>
+* <span data-ttu-id="aa113-281">当主线程退出时，pthreads 失去对文件的访问权限 [GH 3589]</span><span class="sxs-lookup"><span data-stu-id="aa113-281">pthreads lose access to files when the primary thread exits [GH 3589]</span></span>
+* <span data-ttu-id="aa113-282">TIOCSCTTY 应忽略“force”参数，除非该参数是必需的 [GH 3652]</span><span class="sxs-lookup"><span data-stu-id="aa113-282">TIOCSCTTY should ignore the "force" parameter unless it is required [GH 3652]</span></span>
+* <span data-ttu-id="aa113-283">改善 wsl.exe 命令行，并添加导入/导出功能。</span><span class="sxs-lookup"><span data-stu-id="aa113-283">wsl.exe command line improvements and addition of import / export functionality.</span></span>
 ```
 Usage: wsl.exe [Argument] [Options...] [CommandLine]
 
@@ -311,54 +311,54 @@ Arguments to manage Windows Subsystem for Linux:
         Display usage information.
 ```
 
-## <a name="build-18277"></a><span data-ttu-id="263bc-284">内部版本 18277</span><span class="sxs-lookup"><span data-stu-id="263bc-284">Build 18277</span></span>
-<span data-ttu-id="263bc-285">有关内部版本 18277 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/11/07/announcing-windows-10-insider-preview-build-18277/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-285">For general Windows information on build 18277 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/11/07/announcing-windows-10-insider-preview-build-18277/).</span></span>
+## <a name="build-18277"></a><span data-ttu-id="aa113-284">内部版本 18277</span><span class="sxs-lookup"><span data-stu-id="aa113-284">Build 18277</span></span>
+<span data-ttu-id="aa113-285">有关内部版本 18277 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/11/07/announcing-windows-10-insider-preview-build-18277/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-285">For general Windows information on build 18277 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/11/07/announcing-windows-10-insider-preview-build-18277/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-286">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-286">WSL</span></span>
-* <span data-ttu-id="263bc-287">修复内部版本 18272 中引入的“不支持此类接口”错误 [GH 3645]</span><span class="sxs-lookup"><span data-stu-id="263bc-287">Fix "no such interface supported" error introduced in build 18272 [GH 3645]</span></span>
-* <span data-ttu-id="263bc-288">忽略 umount syscall 的 MNT_FORCE 标志 [GH 3605]</span><span class="sxs-lookup"><span data-stu-id="263bc-288">Ignore the MNT_FORCE flag for umount syscall [GH 3605]</span></span>
-* <span data-ttu-id="263bc-289">切换 WSL interop 以使用官方的 CreatePseudoConsole API</span><span class="sxs-lookup"><span data-stu-id="263bc-289">Switch WSL interop to use the official CreatePseudoConsole API</span></span>
-* <span data-ttu-id="263bc-290">FUTEX_WAIT 重启时不保留超时值</span><span class="sxs-lookup"><span data-stu-id="263bc-290">Maintain no timeout value when FUTEX_WAIT restarts</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-286">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-286">WSL</span></span>
+* <span data-ttu-id="aa113-287">修复内部版本 18272 中引入的“不支持此类接口”错误 [GH 3645]</span><span class="sxs-lookup"><span data-stu-id="aa113-287">Fix "no such interface supported" error introduced in build 18272 [GH 3645]</span></span>
+* <span data-ttu-id="aa113-288">忽略 umount syscall 的 MNT_FORCE 标志 [GH 3605]</span><span class="sxs-lookup"><span data-stu-id="aa113-288">Ignore the MNT_FORCE flag for umount syscall [GH 3605]</span></span>
+* <span data-ttu-id="aa113-289">切换 WSL interop 以使用官方的 CreatePseudoConsole API</span><span class="sxs-lookup"><span data-stu-id="aa113-289">Switch WSL interop to use the official CreatePseudoConsole API</span></span>
+* <span data-ttu-id="aa113-290">FUTEX_WAIT 重启时不保留超时值</span><span class="sxs-lookup"><span data-stu-id="aa113-290">Maintain no timeout value when FUTEX_WAIT restarts</span></span>
 
-## <a name="build-18272"></a><span data-ttu-id="263bc-291">内部版本 18272</span><span class="sxs-lookup"><span data-stu-id="263bc-291">Build 18272</span></span>
-<span data-ttu-id="263bc-292">有关内部版本 18272 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/31/announcing-windows-10-insider-preview-build-18272/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-292">For general Windows information on build 18272 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/10/31/announcing-windows-10-insider-preview-build-18272/).</span></span>
+## <a name="build-18272"></a><span data-ttu-id="aa113-291">内部版本 18272</span><span class="sxs-lookup"><span data-stu-id="aa113-291">Build 18272</span></span>
+<span data-ttu-id="aa113-292">有关内部版本 18272 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/31/announcing-windows-10-insider-preview-build-18272/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-292">For general Windows information on build 18272 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/10/31/announcing-windows-10-insider-preview-build-18272/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-293">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-293">WSL</span></span>
-* <span data-ttu-id="263bc-294">**警告：** 此版本中存在一个导致 WSL 不可操作的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-294">**WARNING:** There is an issue in this build that makes WSL inoperable.</span></span> <span data-ttu-id="263bc-295">尝试启动分发版时，会看到“不支持此类接口”错误。</span><span class="sxs-lookup"><span data-stu-id="263bc-295">When trying to launch your distribution you will see a "No such interface supported" error.</span></span> <span data-ttu-id="263bc-296">该问题已修复，下周发布的 Insider Fast 内部版本将会应用修复程序。</span><span class="sxs-lookup"><span data-stu-id="263bc-296">The issue has been fixed and will be in next week's Insider Fast build.</span></span> <span data-ttu-id="263bc-297">如果已安装此内部版本，可以使用“设置”->“更新和安全”>“恢复”中的“回退到 Windows 10 的上一个版本”回退到上一 Windows 内部版本。</span><span class="sxs-lookup"><span data-stu-id="263bc-297">If you've installed this build you can roll back to the previous Windows build using "Go back to the previous version of Windows 10" in Settings->Update & Security->Recovery.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-293">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-293">WSL</span></span>
+* <span data-ttu-id="aa113-294">**警告：** 此版本中存在一个导致 WSL 不可操作的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-294">**WARNING:** There is an issue in this build that makes WSL inoperable.</span></span> <span data-ttu-id="aa113-295">尝试启动分发版时，会看到“不支持此类接口”错误。</span><span class="sxs-lookup"><span data-stu-id="aa113-295">When trying to launch your distribution you will see a "No such interface supported" error.</span></span> <span data-ttu-id="aa113-296">该问题已修复，下周发布的 Insider Fast 内部版本将会应用修复程序。</span><span class="sxs-lookup"><span data-stu-id="aa113-296">The issue has been fixed and will be in next week's Insider Fast build.</span></span> <span data-ttu-id="aa113-297">如果已安装此内部版本，可以使用“设置”->“更新和安全”>“恢复”中的“回退到 Windows 10 的上一个版本”回退到上一 Windows 内部版本。</span><span class="sxs-lookup"><span data-stu-id="aa113-297">If you've installed this build you can roll back to the previous Windows build using "Go back to the previous version of Windows 10" in Settings->Update & Security->Recovery.</span></span>
 
-## <a name="build-18267"></a><span data-ttu-id="263bc-298">内部版本 18267</span><span class="sxs-lookup"><span data-stu-id="263bc-298">Build 18267</span></span>
-<span data-ttu-id="263bc-299">有关内部版本 18267 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/24/announcing-windows-10-insider-preview-build-18267/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-299">For general Windows information on build 18267 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/10/24/announcing-windows-10-insider-preview-build-18267/).</span></span>
+## <a name="build-18267"></a><span data-ttu-id="aa113-298">内部版本 18267</span><span class="sxs-lookup"><span data-stu-id="aa113-298">Build 18267</span></span>
+<span data-ttu-id="aa113-299">有关内部版本 18267 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/24/announcing-windows-10-insider-preview-build-18267/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-299">For general Windows information on build 18267 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/10/24/announcing-windows-10-insider-preview-build-18267/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-300">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-300">WSL</span></span>
-* <span data-ttu-id="263bc-301">修复 zombie 进程不会回收，而是无限期保留的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-301">Fix issue where zombie process may not be reaped and remain indefinitely.</span></span>
-* <span data-ttu-id="263bc-302">如果错误消息超过最大长度，WslRegisterDistribution 将会挂起 [GH 3592]</span><span class="sxs-lookup"><span data-stu-id="263bc-302">WslRegisterDistribution hangs if error message exceeds max length [GH 3592]</span></span>
-* <span data-ttu-id="263bc-303">允许 fsync 针对 DrvFs 上的只读文件成功运行 [GH 3556]</span><span class="sxs-lookup"><span data-stu-id="263bc-303">Allow fsync to succeed for read-only files on DrvFs [GH 3556]</span></span>
-* <span data-ttu-id="263bc-304">在内部创建符号链接之前，确保 /bin 和 /sbin 目录存在 [GH 3584]</span><span class="sxs-lookup"><span data-stu-id="263bc-304">Ensure that /bin and /sbin directories exist before creating symlinks inside [GH 3584]</span></span>
-* <span data-ttu-id="263bc-305">为 WSL 实例添加了实例终止超时机制。</span><span class="sxs-lookup"><span data-stu-id="263bc-305">Added an instance termination timeout mechanism for WSL instances.</span></span> <span data-ttu-id="263bc-306">超时目前设置为 15 秒，这意味着，实例将在上一个 WSL 进程退出 15 秒后终止。</span><span class="sxs-lookup"><span data-stu-id="263bc-306">The timeout is currently set to 15 seconds, meaning the instance will terminate 15 seconds after the last WSL process exits.</span></span> <span data-ttu-id="263bc-307">若要立即终止分发版，请使用：</span><span class="sxs-lookup"><span data-stu-id="263bc-307">To terminate a distribution immediately, use:</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-300">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-300">WSL</span></span>
+* <span data-ttu-id="aa113-301">修复 zombie 进程不会回收，而是无限期保留的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-301">Fix issue where zombie process may not be reaped and remain indefinitely.</span></span>
+* <span data-ttu-id="aa113-302">如果错误消息超过最大长度，WslRegisterDistribution 将会挂起 [GH 3592]</span><span class="sxs-lookup"><span data-stu-id="aa113-302">WslRegisterDistribution hangs if error message exceeds max length [GH 3592]</span></span>
+* <span data-ttu-id="aa113-303">允许 fsync 针对 DrvFs 上的只读文件成功运行 [GH 3556]</span><span class="sxs-lookup"><span data-stu-id="aa113-303">Allow fsync to succeed for read-only files on DrvFs [GH 3556]</span></span>
+* <span data-ttu-id="aa113-304">在内部创建符号链接之前，确保 /bin 和 /sbin 目录存在 [GH 3584]</span><span class="sxs-lookup"><span data-stu-id="aa113-304">Ensure that /bin and /sbin directories exist before creating symlinks inside [GH 3584]</span></span>
+* <span data-ttu-id="aa113-305">为 WSL 实例添加了实例终止超时机制。</span><span class="sxs-lookup"><span data-stu-id="aa113-305">Added an instance termination timeout mechanism for WSL instances.</span></span> <span data-ttu-id="aa113-306">超时目前设置为 15 秒，这意味着，实例将在上一个 WSL 进程退出 15 秒后终止。</span><span class="sxs-lookup"><span data-stu-id="aa113-306">The timeout is currently set to 15 seconds, meaning the instance will terminate 15 seconds after the last WSL process exits.</span></span> <span data-ttu-id="aa113-307">若要立即终止分发版，请使用：</span><span class="sxs-lookup"><span data-stu-id="aa113-307">To terminate a distribution immediately, use:</span></span>
 ```
 wslconfig.exe /terminate <DistributionName>
 ```
 
-## <a name="build-17763-1809"></a><span data-ttu-id="263bc-308">内部版本 17763 (1809)</span><span class="sxs-lookup"><span data-stu-id="263bc-308">Build 17763 (1809)</span></span>
-<span data-ttu-id="263bc-309">有关内部版本 17763 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-309">For general Windows information on build 17763 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).</span></span>
+## <a name="build-17763-1809"></a><span data-ttu-id="aa113-308">内部版本 17763 (1809)</span><span class="sxs-lookup"><span data-stu-id="aa113-308">Build 17763 (1809)</span></span>
+<span data-ttu-id="aa113-309">有关内部版本 17763 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-309">For general Windows information on build 17763 visit the [Windows blog](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-310">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-310">WSL</span></span>
-* <span data-ttu-id="263bc-311">Setpriority syscall 权限检查过于严格，导致无法更改同一线程的优先级 [GH 1838]</span><span class="sxs-lookup"><span data-stu-id="263bc-311">Setpriority syscall permission check too strict for changing same thread priority [GH 1838]</span></span>
-* <span data-ttu-id="263bc-312">确保对启动时间使用无偏差的中断时间，以避免返回 clock_gettime(CLOCK_BOOTTIME) 的负值 [GH 3434]</span><span class="sxs-lookup"><span data-stu-id="263bc-312">Ensure that unbiased interrupt time is used for boot time to avoid returning negative values for clock_gettime(CLOCK_BOOTTIME) [GH 3434]</span></span>
-* <span data-ttu-id="263bc-313">在 WSL binfmt 解释器中处理符号链接 [GH 3424]</span><span class="sxs-lookup"><span data-stu-id="263bc-313">Handle symlinks in the WSL binfmt interpreter [GH 3424]</span></span>
-* <span data-ttu-id="263bc-314">更好地处理线程组领先者文件描述符清理。</span><span class="sxs-lookup"><span data-stu-id="263bc-314">Better handling of threadgroup leader file descriptor cleanup.</span></span>
-* <span data-ttu-id="263bc-315">切换 WSL 以使用 KeQueryInterruptTimePrecise 而不是 KeQueryPerformanceCounter，以避免溢出 [GH 3252]</span><span class="sxs-lookup"><span data-stu-id="263bc-315">Switch WSL to use KeQueryInterruptTimePrecise instead of KeQueryPerformanceCounter to avoid overflow [GH 3252]</span></span>
-* <span data-ttu-id="263bc-316">Ptrace attach 可能导致系统调用返回错误值 [GH 1731]</span><span class="sxs-lookup"><span data-stu-id="263bc-316">Ptrace attach may cause bad return value from system calls [GH 1731]</span></span>
-* <span data-ttu-id="263bc-317">修复多个 AF_UNIX 相关问题 [GH 3371]</span><span class="sxs-lookup"><span data-stu-id="263bc-317">Fix several AF_UNIX related issues [GH 3371]</span></span>
-* <span data-ttu-id="263bc-318">修复以下问题：如果当前工作目录的长度少于 5 个字符，可能导致 WSL interop 失败 [GH 3379]</span><span class="sxs-lookup"><span data-stu-id="263bc-318">Fix issue that could cause WSL interop to fail if the current working directory is less than 5 characters long [GH 3379]</span></span>
-* <span data-ttu-id="263bc-319">避免导致无法与不存在的端口建立环回连接的一秒延迟 [GH 3286]</span><span class="sxs-lookup"><span data-stu-id="263bc-319">Avoid one second delay failing loopback connections to non-existent ports [GH 3286]</span></span>
-* <span data-ttu-id="263bc-320">添加 /proc/sys/fs/file-max 存根文件 [GH 2893]</span><span class="sxs-lookup"><span data-stu-id="263bc-320">Add /proc/sys/fs/file-max stub file [GH 2893]</span></span>
-* <span data-ttu-id="263bc-321">更准确的 IPV6 范围信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-321">More accurate IPV6 scope information.</span></span>
-* <span data-ttu-id="263bc-322">PR_SET_PTRACER 支持 [GH 3053]</span><span class="sxs-lookup"><span data-stu-id="263bc-322">PR_SET_PTRACER support [GH 3053]</span></span>
-* <span data-ttu-id="263bc-323">管道文件系统意外清除边缘触发的 epoll 事件 [GH 3276]</span><span class="sxs-lookup"><span data-stu-id="263bc-323">Pipe filesystem inadvertently clearing edge-triggered epoll event [GH 3276]</span></span>
-* <span data-ttu-id="263bc-324">通过 NTFS 符号链接启动的 Win32 可执行文件不遵循符号链接命名约定 [GH 2909]</span><span class="sxs-lookup"><span data-stu-id="263bc-324">Win32 executable launched via NTFS symlink doesn't respect symlink name [GH 2909]</span></span>
-* <span data-ttu-id="263bc-325">改善了 zombie 支持 [GH 1353]</span><span class="sxs-lookup"><span data-stu-id="263bc-325">Improved zombie support [GH 1353]</span></span>
-* <span data-ttu-id="263bc-326">添加 wsl.conf 项用于控制 Windows interop 行为 [GH 1493]</span><span class="sxs-lookup"><span data-stu-id="263bc-326">Add wsl.conf entries for controlling Windows interop behavior [GH 1493]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-310">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-310">WSL</span></span>
+* <span data-ttu-id="aa113-311">Setpriority syscall 权限检查过于严格，导致无法更改同一线程的优先级 [GH 1838]</span><span class="sxs-lookup"><span data-stu-id="aa113-311">Setpriority syscall permission check too strict for changing same thread priority [GH 1838]</span></span>
+* <span data-ttu-id="aa113-312">确保对启动时间使用无偏差的中断时间，以避免返回 clock_gettime(CLOCK_BOOTTIME) 的负值 [GH 3434]</span><span class="sxs-lookup"><span data-stu-id="aa113-312">Ensure that unbiased interrupt time is used for boot time to avoid returning negative values for clock_gettime(CLOCK_BOOTTIME) [GH 3434]</span></span>
+* <span data-ttu-id="aa113-313">在 WSL binfmt 解释器中处理符号链接 [GH 3424]</span><span class="sxs-lookup"><span data-stu-id="aa113-313">Handle symlinks in the WSL binfmt interpreter [GH 3424]</span></span>
+* <span data-ttu-id="aa113-314">更好地处理线程组领先者文件描述符清理。</span><span class="sxs-lookup"><span data-stu-id="aa113-314">Better handling of threadgroup leader file descriptor cleanup.</span></span>
+* <span data-ttu-id="aa113-315">切换 WSL 以使用 KeQueryInterruptTimePrecise 而不是 KeQueryPerformanceCounter，以避免溢出 [GH 3252]</span><span class="sxs-lookup"><span data-stu-id="aa113-315">Switch WSL to use KeQueryInterruptTimePrecise instead of KeQueryPerformanceCounter to avoid overflow [GH 3252]</span></span>
+* <span data-ttu-id="aa113-316">Ptrace attach 可能导致系统调用返回错误值 [GH 1731]</span><span class="sxs-lookup"><span data-stu-id="aa113-316">Ptrace attach may cause bad return value from system calls [GH 1731]</span></span>
+* <span data-ttu-id="aa113-317">修复多个 AF_UNIX 相关问题 [GH 3371]</span><span class="sxs-lookup"><span data-stu-id="aa113-317">Fix several AF_UNIX related issues [GH 3371]</span></span>
+* <span data-ttu-id="aa113-318">修复以下问题：如果当前工作目录的长度少于 5 个字符，可能导致 WSL interop 失败 [GH 3379]</span><span class="sxs-lookup"><span data-stu-id="aa113-318">Fix issue that could cause WSL interop to fail if the current working directory is less than 5 characters long [GH 3379]</span></span>
+* <span data-ttu-id="aa113-319">避免导致无法与不存在的端口建立环回连接的一秒延迟 [GH 3286]</span><span class="sxs-lookup"><span data-stu-id="aa113-319">Avoid one second delay failing loopback connections to non-existent ports [GH 3286]</span></span>
+* <span data-ttu-id="aa113-320">添加 /proc/sys/fs/file-max 存根文件 [GH 2893]</span><span class="sxs-lookup"><span data-stu-id="aa113-320">Add /proc/sys/fs/file-max stub file [GH 2893]</span></span>
+* <span data-ttu-id="aa113-321">更准确的 IPV6 范围信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-321">More accurate IPV6 scope information.</span></span>
+* <span data-ttu-id="aa113-322">PR_SET_PTRACER 支持 [GH 3053]</span><span class="sxs-lookup"><span data-stu-id="aa113-322">PR_SET_PTRACER support [GH 3053]</span></span>
+* <span data-ttu-id="aa113-323">管道文件系统意外清除边缘触发的 epoll 事件 [GH 3276]</span><span class="sxs-lookup"><span data-stu-id="aa113-323">Pipe filesystem inadvertently clearing edge-triggered epoll event [GH 3276]</span></span>
+* <span data-ttu-id="aa113-324">通过 NTFS 符号链接启动的 Win32 可执行文件不遵循符号链接命名约定 [GH 2909]</span><span class="sxs-lookup"><span data-stu-id="aa113-324">Win32 executable launched via NTFS symlink doesn't respect symlink name [GH 2909]</span></span>
+* <span data-ttu-id="aa113-325">改善了 zombie 支持 [GH 1353]</span><span class="sxs-lookup"><span data-stu-id="aa113-325">Improved zombie support [GH 1353]</span></span>
+* <span data-ttu-id="aa113-326">添加 wsl.conf 项用于控制 Windows interop 行为 [GH 1493]</span><span class="sxs-lookup"><span data-stu-id="aa113-326">Add wsl.conf entries for controlling Windows interop behavior [GH 1493]</span></span>
   ```
     [interop]
 
@@ -366,98 +366,98 @@ wslconfig.exe /terminate <DistributionName>
 
     appendWindowsPath=false # append Windows path to $PATH variable; default is true
   ```
-* <span data-ttu-id="263bc-327">修复 getsockname 不是始终返回 UNIX 套接字系列类型的问题 [GH 1774]</span><span class="sxs-lookup"><span data-stu-id="263bc-327">Fix for getsockname not always returning UNIX socket family type [GH 1774]</span></span>
-* <span data-ttu-id="263bc-328">添加对 TIOCSTI 的支持 [GH 1863]</span><span class="sxs-lookup"><span data-stu-id="263bc-328">Add support for TIOCSTI [GH 1863]</span></span>
-* <span data-ttu-id="263bc-329">连接进程中的非阻塞套接字应返回写入尝试的 EAGAIN [GH 2846]</span><span class="sxs-lookup"><span data-stu-id="263bc-329">Non-blocking sockets in the process of connecting should return EAGAIN for write attempts [GH 2846]</span></span>
-* <span data-ttu-id="263bc-330">支持已装载的 VHD 上的 interop [GH 3246、3291]</span><span class="sxs-lookup"><span data-stu-id="263bc-330">Support interop on mounted VHDs [GH 3246, 3291]</span></span>
-* <span data-ttu-id="263bc-331">修复根文件夹的权限检查问题 [GH 3304]</span><span class="sxs-lookup"><span data-stu-id="263bc-331">Fix permission checking issue on root folder [GH 3304]</span></span>
-* <span data-ttu-id="263bc-332">对 TTY 键盘 ioctl KDGKBTYPE、KDGKBMODE 和 KDSKBMODE 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-332">Limited support for TTY keyboard ioctls KDGKBTYPE, KDGKBMODE and KDSKBMODE.</span></span>
-* <span data-ttu-id="263bc-333">即使在后台启动，Windows UI 应用也应该能够执行。</span><span class="sxs-lookup"><span data-stu-id="263bc-333">Windows UI apps should execute even when launched in the background.</span></span>
-* <span data-ttu-id="263bc-334">添加 wsl -u 或 --user 选项 [GH 1203]</span><span class="sxs-lookup"><span data-stu-id="263bc-334">Add wsl -u or --user option [GH 1203]</span></span>
-* <span data-ttu-id="263bc-335">修复启用快速启动时的 WSL 启动问题 [GH 2576]</span><span class="sxs-lookup"><span data-stu-id="263bc-335">Fix WSL launch issues when fast startup is enabled [GH 2576]</span></span>
-* <span data-ttu-id="263bc-336">Unix 套接字需要保留断开连接的对等凭据 [GH 3183]</span><span class="sxs-lookup"><span data-stu-id="263bc-336">Unix sockets need to retain disconnected peer credentials [GH 3183]</span></span>
-* <span data-ttu-id="263bc-337">使用 EAGAIN 时非阻塞 Unix 套接字无限期失败 [GH 3191]</span><span class="sxs-lookup"><span data-stu-id="263bc-337">Non-blocking Unix sockets failing indefinitely with EAGAIN [GH 3191]</span></span>
-* <span data-ttu-id="263bc-338">case=off 是新的默认 drvfs 装入点类型 [GH 2937、3212、3328]</span><span class="sxs-lookup"><span data-stu-id="263bc-338">case=off is the new default drvfs mount type [GH 2937, 3212, 3328]</span></span>
-    * <span data-ttu-id="263bc-339">有关详细信息，请参阅[博客](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-339">See [blog](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/) for more information.</span></span>
-* <span data-ttu-id="263bc-340">添加 wslconfig/terminate 以停止正在运行的分发版。</span><span class="sxs-lookup"><span data-stu-id="263bc-340">Add wslconfig /terminate to stop running distributions.</span></span>
-* <span data-ttu-id="263bc-341">修复 WSL shell 上下文菜单项无法正确处理包含空格的路径的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-341">Fix issue with the WSL shell context menu entries that do not correctly handle paths with spaces.</span></span>
-* <span data-ttu-id="263bc-342">公开按目录区分大小写作为扩展属性</span><span class="sxs-lookup"><span data-stu-id="263bc-342">Expose per-directory case sensitivity as an extended attribute</span></span>
-* <span data-ttu-id="263bc-343">ARM64：模拟缓存维护操作。</span><span class="sxs-lookup"><span data-stu-id="263bc-343">ARM64: Emulate cache maintenance operations.</span></span> <span data-ttu-id="263bc-344">解决 [.NET 问题](https://github.com/dotnet/core/issues/1561)。</span><span class="sxs-lookup"><span data-stu-id="263bc-344">Resolve [dotnet issue](https://github.com/dotnet/core/issues/1561).</span></span>
-* <span data-ttu-id="263bc-345">DrvFs：只取消转义专用范围中与已转义字符对应的字符。</span><span class="sxs-lookup"><span data-stu-id="263bc-345">DrvFs: only unescape characters in the private range that correspond to an escaped character.</span></span>
-* <span data-ttu-id="263bc-346">修复 ELF 分析程序解释器长度验证中的一位偏移错误 [GH 3154]</span><span class="sxs-lookup"><span data-stu-id="263bc-346">Fix off-by-one error in ELF parser interpreter length validation [GH 3154]</span></span>
-* <span data-ttu-id="263bc-347">包含过去时间的 WSL 绝对计时器不会激发 [GH 3091]</span><span class="sxs-lookup"><span data-stu-id="263bc-347">WSL absolute timers with a time in the past do not fire [GH 3091]</span></span>
-* <span data-ttu-id="263bc-348">确保新建的重分析点在父目录中以此类类型列出。</span><span class="sxs-lookup"><span data-stu-id="263bc-348">Ensure newly created reparse points are listed as such in the parent directory.</span></span>
-* <span data-ttu-id="263bc-349">以原子方式在 DrvFs 中创建区分大小写的目录。</span><span class="sxs-lookup"><span data-stu-id="263bc-349">Atomically create case sensitive directories in DrvFs.</span></span>
-* <span data-ttu-id="263bc-350">修复一个附加的问题：即使文件存在，多线程操作也可能返回 ENOENT。</span><span class="sxs-lookup"><span data-stu-id="263bc-350">Fixed an additional issue where multithreaded operations could return ENOENT even though the file exists.</span></span> <span data-ttu-id="263bc-351">[GH 2712]</span><span class="sxs-lookup"><span data-stu-id="263bc-351">[GH 2712]</span></span>
-* <span data-ttu-id="263bc-352">修复了启用 UMCI 时 WSL 启动失败的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-352">Fixed WSL launch failure when UMCI is enabled.</span></span> <span data-ttu-id="263bc-353">[GH 3020]</span><span class="sxs-lookup"><span data-stu-id="263bc-353">[GH 3020]</span></span>
-* <span data-ttu-id="263bc-354">添加浏览器上下文菜单用于启动 WSL [GH 437、603、1836]。</span><span class="sxs-lookup"><span data-stu-id="263bc-354">Add explorer context menu to launch WSL [GH 437, 603, 1836].</span></span> <span data-ttu-id="263bc-355">若要使用此菜单，请在资源管理器窗口中按住 Shift 键的同时单击右键。</span><span class="sxs-lookup"><span data-stu-id="263bc-355">To use, hold shift and right-click when in an explorer window.</span></span>
-* <span data-ttu-id="263bc-356">修复 Unix 套接字非阻塞行为 [GH 2822、3100]</span><span class="sxs-lookup"><span data-stu-id="263bc-356">Fix Unix socket non-blocking behavior [GH 2822, 3100]</span></span>
-* <span data-ttu-id="263bc-357">修复 GH 2026 中报告的 NETLINK 命令挂起问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-357">Fix hanging NETLINK command as reported in GH 2026.</span></span>
-* <span data-ttu-id="263bc-358">添加对装载传播标志的支持 [GH 2911]。</span><span class="sxs-lookup"><span data-stu-id="263bc-358">Add support for mount propagation flags [GH 2911].</span></span>
-* <span data-ttu-id="263bc-359">修复截断后不会导致 inotify 事件的问题 [GH 2978]。</span><span class="sxs-lookup"><span data-stu-id="263bc-359">Fix issue with truncate not causing inotify events [GH 2978].</span></span>
-* <span data-ttu-id="263bc-360">为 wsl.exe 添加 --exec 选项，以便在不使用 shell 的情况下调用单个二进制文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-360">Add --exec option for wsl.exe to invoke a single binary without a shell.</span></span>
-* <span data-ttu-id="263bc-361">为 wsl.exe 添加 --distribution 选项，以选择特定的分发版。</span><span class="sxs-lookup"><span data-stu-id="263bc-361">Add --distribution option for wsl.exe to select a specific distro.</span></span>
-* <span data-ttu-id="263bc-362">对 dmesg 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-362">Limited support for dmesg.</span></span> <span data-ttu-id="263bc-363">现在，应用程序会将日志记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="263bc-363">Applications can now log to dmesg.</span></span> <span data-ttu-id="263bc-364">WSL 驱动程序会将有限的信息记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="263bc-364">WSL driver logs limited information to dmesg.</span></span> <span data-ttu-id="263bc-365">将来，此功能可能会扩展，以便从驱动程序发送其他信息/诊断数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-365">In future, this can be extended to carry other information/diagnostics from the driver.</span></span>
-    * <span data-ttu-id="263bc-366">注意：目前通过 `/dev/kmsg` 设备接口支持 dmesg。</span><span class="sxs-lookup"><span data-stu-id="263bc-366">Note: dmesg is currently supported through the `/dev/kmsg` device interface.</span></span> <span data-ttu-id="263bc-367">尚不支持 `syslog` syscall 接口。</span><span class="sxs-lookup"><span data-stu-id="263bc-367">`syslog` syscall interface is not yet supported.</span></span> <span data-ttu-id="263bc-368">此外，某些 `dmesg` 命令行选项（例如 `-S`、`-C`）不起作用。</span><span class="sxs-lookup"><span data-stu-id="263bc-368">And, so, some of the `dmesg` command line options such as `-S`, `-C` don't work.</span></span>
-* <span data-ttu-id="263bc-369">更改串行设备的默认 gid 和模式，以匹配本机 [GH 3042]</span><span class="sxs-lookup"><span data-stu-id="263bc-369">Change default gid and mode of serial devices to match native [GH 3042]</span></span>
-* <span data-ttu-id="263bc-370">DrvFs 现在支持扩展属性。</span><span class="sxs-lookup"><span data-stu-id="263bc-370">DrvFs now supports extended attributes.</span></span>
-    * <span data-ttu-id="263bc-371">注意：DrvFs 对扩展属性的名称施加一些限制。</span><span class="sxs-lookup"><span data-stu-id="263bc-371">Note: DrvFs has some limitations on the name of extended attributes.</span></span> <span data-ttu-id="263bc-372">不允许使用某些字符（例如“/”、“:”和“\*”），并且扩展属性名称在 DrvFs 上不区分大小写</span><span class="sxs-lookup"><span data-stu-id="263bc-372">Some characters (like '/', ':' and '\*') are not allowed, and extended attribute names are not case sensitive on DrvFs</span></span>
+* <span data-ttu-id="aa113-327">修复 getsockname 不是始终返回 UNIX 套接字系列类型的问题 [GH 1774]</span><span class="sxs-lookup"><span data-stu-id="aa113-327">Fix for getsockname not always returning UNIX socket family type [GH 1774]</span></span>
+* <span data-ttu-id="aa113-328">添加对 TIOCSTI 的支持 [GH 1863]</span><span class="sxs-lookup"><span data-stu-id="aa113-328">Add support for TIOCSTI [GH 1863]</span></span>
+* <span data-ttu-id="aa113-329">连接进程中的非阻塞套接字应返回写入尝试的 EAGAIN [GH 2846]</span><span class="sxs-lookup"><span data-stu-id="aa113-329">Non-blocking sockets in the process of connecting should return EAGAIN for write attempts [GH 2846]</span></span>
+* <span data-ttu-id="aa113-330">支持已装载的 VHD 上的 interop [GH 3246、3291]</span><span class="sxs-lookup"><span data-stu-id="aa113-330">Support interop on mounted VHDs [GH 3246, 3291]</span></span>
+* <span data-ttu-id="aa113-331">修复根文件夹的权限检查问题 [GH 3304]</span><span class="sxs-lookup"><span data-stu-id="aa113-331">Fix permission checking issue on root folder [GH 3304]</span></span>
+* <span data-ttu-id="aa113-332">对 TTY 键盘 ioctl KDGKBTYPE、KDGKBMODE 和 KDSKBMODE 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-332">Limited support for TTY keyboard ioctls KDGKBTYPE, KDGKBMODE and KDSKBMODE.</span></span>
+* <span data-ttu-id="aa113-333">即使在后台启动，Windows UI 应用也应该能够执行。</span><span class="sxs-lookup"><span data-stu-id="aa113-333">Windows UI apps should execute even when launched in the background.</span></span>
+* <span data-ttu-id="aa113-334">添加 wsl -u 或 --user 选项 [GH 1203]</span><span class="sxs-lookup"><span data-stu-id="aa113-334">Add wsl -u or --user option [GH 1203]</span></span>
+* <span data-ttu-id="aa113-335">修复启用快速启动时的 WSL 启动问题 [GH 2576]</span><span class="sxs-lookup"><span data-stu-id="aa113-335">Fix WSL launch issues when fast startup is enabled [GH 2576]</span></span>
+* <span data-ttu-id="aa113-336">Unix 套接字需要保留断开连接的对等凭据 [GH 3183]</span><span class="sxs-lookup"><span data-stu-id="aa113-336">Unix sockets need to retain disconnected peer credentials [GH 3183]</span></span>
+* <span data-ttu-id="aa113-337">使用 EAGAIN 时非阻塞 Unix 套接字无限期失败 [GH 3191]</span><span class="sxs-lookup"><span data-stu-id="aa113-337">Non-blocking Unix sockets failing indefinitely with EAGAIN [GH 3191]</span></span>
+* <span data-ttu-id="aa113-338">case=off 是新的默认 drvfs 装入点类型 [GH 2937、3212、3328]</span><span class="sxs-lookup"><span data-stu-id="aa113-338">case=off is the new default drvfs mount type [GH 2937, 3212, 3328]</span></span>
+    * <span data-ttu-id="aa113-339">有关详细信息，请参阅[博客](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-339">See [blog](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/) for more information.</span></span>
+* <span data-ttu-id="aa113-340">添加 wslconfig/terminate 以停止正在运行的分发版。</span><span class="sxs-lookup"><span data-stu-id="aa113-340">Add wslconfig /terminate to stop running distributions.</span></span>
+* <span data-ttu-id="aa113-341">修复 WSL shell 上下文菜单项无法正确处理包含空格的路径的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-341">Fix issue with the WSL shell context menu entries that do not correctly handle paths with spaces.</span></span>
+* <span data-ttu-id="aa113-342">公开按目录区分大小写作为扩展属性</span><span class="sxs-lookup"><span data-stu-id="aa113-342">Expose per-directory case sensitivity as an extended attribute</span></span>
+* <span data-ttu-id="aa113-343">ARM64：模拟缓存维护操作。</span><span class="sxs-lookup"><span data-stu-id="aa113-343">ARM64: Emulate cache maintenance operations.</span></span> <span data-ttu-id="aa113-344">解决 [.NET 问题](https://github.com/dotnet/core/issues/1561)。</span><span class="sxs-lookup"><span data-stu-id="aa113-344">Resolve [dotnet issue](https://github.com/dotnet/core/issues/1561).</span></span>
+* <span data-ttu-id="aa113-345">DrvFs：只取消转义专用范围中与已转义字符对应的字符。</span><span class="sxs-lookup"><span data-stu-id="aa113-345">DrvFs: only unescape characters in the private range that correspond to an escaped character.</span></span>
+* <span data-ttu-id="aa113-346">修复 ELF 分析程序解释器长度验证中的一位偏移错误 [GH 3154]</span><span class="sxs-lookup"><span data-stu-id="aa113-346">Fix off-by-one error in ELF parser interpreter length validation [GH 3154]</span></span>
+* <span data-ttu-id="aa113-347">包含过去时间的 WSL 绝对计时器不会激发 [GH 3091]</span><span class="sxs-lookup"><span data-stu-id="aa113-347">WSL absolute timers with a time in the past do not fire [GH 3091]</span></span>
+* <span data-ttu-id="aa113-348">确保新建的重分析点在父目录中以此类类型列出。</span><span class="sxs-lookup"><span data-stu-id="aa113-348">Ensure newly created reparse points are listed as such in the parent directory.</span></span>
+* <span data-ttu-id="aa113-349">以原子方式在 DrvFs 中创建区分大小写的目录。</span><span class="sxs-lookup"><span data-stu-id="aa113-349">Atomically create case sensitive directories in DrvFs.</span></span>
+* <span data-ttu-id="aa113-350">修复一个附加的问题：即使文件存在，多线程操作也可能返回 ENOENT。</span><span class="sxs-lookup"><span data-stu-id="aa113-350">Fixed an additional issue where multithreaded operations could return ENOENT even though the file exists.</span></span> <span data-ttu-id="aa113-351">[GH 2712]</span><span class="sxs-lookup"><span data-stu-id="aa113-351">[GH 2712]</span></span>
+* <span data-ttu-id="aa113-352">修复了启用 UMCI 时 WSL 启动失败的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-352">Fixed WSL launch failure when UMCI is enabled.</span></span> <span data-ttu-id="aa113-353">[GH 3020]</span><span class="sxs-lookup"><span data-stu-id="aa113-353">[GH 3020]</span></span>
+* <span data-ttu-id="aa113-354">添加浏览器上下文菜单用于启动 WSL [GH 437、603、1836]。</span><span class="sxs-lookup"><span data-stu-id="aa113-354">Add explorer context menu to launch WSL [GH 437, 603, 1836].</span></span> <span data-ttu-id="aa113-355">若要使用此菜单，请在资源管理器窗口中按住 Shift 键的同时单击右键。</span><span class="sxs-lookup"><span data-stu-id="aa113-355">To use, hold shift and right-click when in an explorer window.</span></span>
+* <span data-ttu-id="aa113-356">修复 Unix 套接字非阻塞行为 [GH 2822、3100]</span><span class="sxs-lookup"><span data-stu-id="aa113-356">Fix Unix socket non-blocking behavior [GH 2822, 3100]</span></span>
+* <span data-ttu-id="aa113-357">修复 GH 2026 中报告的 NETLINK 命令挂起问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-357">Fix hanging NETLINK command as reported in GH 2026.</span></span>
+* <span data-ttu-id="aa113-358">添加对装载传播标志的支持 [GH 2911]。</span><span class="sxs-lookup"><span data-stu-id="aa113-358">Add support for mount propagation flags [GH 2911].</span></span>
+* <span data-ttu-id="aa113-359">修复截断后不会导致 inotify 事件的问题 [GH 2978]。</span><span class="sxs-lookup"><span data-stu-id="aa113-359">Fix issue with truncate not causing inotify events [GH 2978].</span></span>
+* <span data-ttu-id="aa113-360">为 wsl.exe 添加 --exec 选项，以便在不使用 shell 的情况下调用单个二进制文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-360">Add --exec option for wsl.exe to invoke a single binary without a shell.</span></span>
+* <span data-ttu-id="aa113-361">为 wsl.exe 添加 --distribution 选项，以选择特定的分发版。</span><span class="sxs-lookup"><span data-stu-id="aa113-361">Add --distribution option for wsl.exe to select a specific distro.</span></span>
+* <span data-ttu-id="aa113-362">对 dmesg 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-362">Limited support for dmesg.</span></span> <span data-ttu-id="aa113-363">现在，应用程序会将日志记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="aa113-363">Applications can now log to dmesg.</span></span> <span data-ttu-id="aa113-364">WSL 驱动程序会将有限的信息记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="aa113-364">WSL driver logs limited information to dmesg.</span></span> <span data-ttu-id="aa113-365">将来，此功能可能会扩展，以便从驱动程序发送其他信息/诊断数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-365">In future, this can be extended to carry other information/diagnostics from the driver.</span></span>
+    * <span data-ttu-id="aa113-366">注意：目前通过 `/dev/kmsg` 设备接口支持 dmesg。</span><span class="sxs-lookup"><span data-stu-id="aa113-366">Note: dmesg is currently supported through the `/dev/kmsg` device interface.</span></span> <span data-ttu-id="aa113-367">尚不支持 `syslog` syscall 接口。</span><span class="sxs-lookup"><span data-stu-id="aa113-367">`syslog` syscall interface is not yet supported.</span></span> <span data-ttu-id="aa113-368">此外，某些 `dmesg` 命令行选项（例如 `-S`、`-C`）不起作用。</span><span class="sxs-lookup"><span data-stu-id="aa113-368">And, so, some of the `dmesg` command line options such as `-S`, `-C` don't work.</span></span>
+* <span data-ttu-id="aa113-369">更改串行设备的默认 gid 和模式，以匹配本机 [GH 3042]</span><span class="sxs-lookup"><span data-stu-id="aa113-369">Change default gid and mode of serial devices to match native [GH 3042]</span></span>
+* <span data-ttu-id="aa113-370">DrvFs 现在支持扩展属性。</span><span class="sxs-lookup"><span data-stu-id="aa113-370">DrvFs now supports extended attributes.</span></span>
+    * <span data-ttu-id="aa113-371">注意：DrvFs 对扩展属性的名称施加一些限制。</span><span class="sxs-lookup"><span data-stu-id="aa113-371">Note: DrvFs has some limitations on the name of extended attributes.</span></span> <span data-ttu-id="aa113-372">不允许使用某些字符（例如“/”、“:”和“\*”），并且扩展属性名称在 DrvFs 上不区分大小写</span><span class="sxs-lookup"><span data-stu-id="aa113-372">Some characters (like '/', ':' and '\*') are not allowed, and extended attribute names are not case sensitive on DrvFs</span></span>
 
-## <a name="build-18252-skip-ahead"></a><span data-ttu-id="263bc-373">内部版本 18252 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="263bc-373">Build 18252 (Skip Ahead)</span></span>
-<span data-ttu-id="263bc-374">有关内部版本 18252 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/03/announcing-windows-10-insider-preview-build-18252/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-374">For general Windows information on build 18252 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/10/03/announcing-windows-10-insider-preview-build-18252/).</span></span>
+## <a name="build-18252-skip-ahead"></a><span data-ttu-id="aa113-373">内部版本 18252 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="aa113-373">Build 18252 (Skip Ahead)</span></span>
+<span data-ttu-id="aa113-374">有关内部版本 18252 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/10/03/announcing-windows-10-insider-preview-build-18252/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-374">For general Windows information on build 18252 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/10/03/announcing-windows-10-insider-preview-build-18252/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-375">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-375">WSL</span></span>
-* <span data-ttu-id="263bc-376">将 init 和 bsdtar 二进制文件移出 lxssmanager dll，移入单独的 tools 文件夹</span><span class="sxs-lookup"><span data-stu-id="263bc-376">Move init and bsdtar binaries out of lxssmanager dll and into a separate tools folder</span></span>
-* <span data-ttu-id="263bc-377">修复在使用 CLONE_FILES 的情况下，关闭文件描述符时出现的争用</span><span class="sxs-lookup"><span data-stu-id="263bc-377">Fix race around closing file descriptor when using CLONE_FILES</span></span>
-* <span data-ttu-id="263bc-378">处理转换 DrvFs 路径时 /proc/pid/mountinfo 中的可选字段</span><span class="sxs-lookup"><span data-stu-id="263bc-378">Handle optional fields in /proc/pid/mountinfo when translating DrvFs paths</span></span>
-* <span data-ttu-id="263bc-379">允许 DrvFs mknod 成功，但不为 S_IFREG 提供元数据支持</span><span class="sxs-lookup"><span data-stu-id="263bc-379">Allow DrvFs mknod to succeed without metadata support for S_IFREG</span></span>
-* <span data-ttu-id="263bc-380">应为 DrvFs 上创建的只读文件设置只读属性 [GH 3411]</span><span class="sxs-lookup"><span data-stu-id="263bc-380">Readonly files created on DrvFs should have the readonly attribute set [GH 3411]</span></span>
-* <span data-ttu-id="263bc-381">添加 /sbin/mount.drvfs 帮助器用于处理 DrvFs 装载</span><span class="sxs-lookup"><span data-stu-id="263bc-381">Add /sbin/mount.drvfs helper to handle DrvFs mounting</span></span>
-* <span data-ttu-id="263bc-382">在 DrvFs 中使用 POSIX rename。</span><span class="sxs-lookup"><span data-stu-id="263bc-382">Use POSIX rename in DrvFs.</span></span>
-* <span data-ttu-id="263bc-383">允许在无卷 GUID 的卷上执行路径转换。</span><span class="sxs-lookup"><span data-stu-id="263bc-383">Allow path translation on volumes without a volume GUID.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-375">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-375">WSL</span></span>
+* <span data-ttu-id="aa113-376">将 init 和 bsdtar 二进制文件移出 lxssmanager dll，移入单独的 tools 文件夹</span><span class="sxs-lookup"><span data-stu-id="aa113-376">Move init and bsdtar binaries out of lxssmanager dll and into a separate tools folder</span></span>
+* <span data-ttu-id="aa113-377">修复在使用 CLONE_FILES 的情况下，关闭文件描述符时出现的争用</span><span class="sxs-lookup"><span data-stu-id="aa113-377">Fix race around closing file descriptor when using CLONE_FILES</span></span>
+* <span data-ttu-id="aa113-378">处理转换 DrvFs 路径时 /proc/pid/mountinfo 中的可选字段</span><span class="sxs-lookup"><span data-stu-id="aa113-378">Handle optional fields in /proc/pid/mountinfo when translating DrvFs paths</span></span>
+* <span data-ttu-id="aa113-379">允许 DrvFs mknod 成功，但不为 S_IFREG 提供元数据支持</span><span class="sxs-lookup"><span data-stu-id="aa113-379">Allow DrvFs mknod to succeed without metadata support for S_IFREG</span></span>
+* <span data-ttu-id="aa113-380">应为 DrvFs 上创建的只读文件设置只读属性 [GH 3411]</span><span class="sxs-lookup"><span data-stu-id="aa113-380">Readonly files created on DrvFs should have the readonly attribute set [GH 3411]</span></span>
+* <span data-ttu-id="aa113-381">添加 /sbin/mount.drvfs 帮助器用于处理 DrvFs 装载</span><span class="sxs-lookup"><span data-stu-id="aa113-381">Add /sbin/mount.drvfs helper to handle DrvFs mounting</span></span>
+* <span data-ttu-id="aa113-382">在 DrvFs 中使用 POSIX rename。</span><span class="sxs-lookup"><span data-stu-id="aa113-382">Use POSIX rename in DrvFs.</span></span>
+* <span data-ttu-id="aa113-383">允许在无卷 GUID 的卷上执行路径转换。</span><span class="sxs-lookup"><span data-stu-id="aa113-383">Allow path translation on volumes without a volume GUID.</span></span>
 
-## <a name="build-17738-fast"></a><span data-ttu-id="263bc-384">内部版本 17738 (Fast)</span><span class="sxs-lookup"><span data-stu-id="263bc-384">Build 17738 (Fast)</span></span>
-<span data-ttu-id="263bc-385">有关内部版本 17738 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/08/14/announcing-windows-10-insider-preview-build-17738/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-385">For general Windows information on build 17738 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/08/14/announcing-windows-10-insider-preview-build-17738/).</span></span>
+## <a name="build-17738-fast"></a><span data-ttu-id="aa113-384">内部版本 17738 (Fast)</span><span class="sxs-lookup"><span data-stu-id="aa113-384">Build 17738 (Fast)</span></span>
+<span data-ttu-id="aa113-385">有关内部版本 17738 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/08/14/announcing-windows-10-insider-preview-build-17738/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-385">For general Windows information on build 17738 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/08/14/announcing-windows-10-insider-preview-build-17738/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-386">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-386">WSL</span></span>
-* <span data-ttu-id="263bc-387">Setpriority syscall 权限检查过于严格，导致无法更改同一线程的优先级 [GH 1838]</span><span class="sxs-lookup"><span data-stu-id="263bc-387">Setpriority syscall permission check too strict for changing same thread priority [GH 1838]</span></span>
-* <span data-ttu-id="263bc-388">确保对启动时间使用无偏差的中断时间，以避免返回 clock_gettime(CLOCK_BOOTTIME) 的负值 [GH 3434]</span><span class="sxs-lookup"><span data-stu-id="263bc-388">Ensure that unbiased interrupt time is used for boot time to avoid returning negative values for clock_gettime(CLOCK_BOOTTIME) [GH 3434]</span></span>
-* <span data-ttu-id="263bc-389">在 WSL binfmt 解释器中处理符号链接 [GH 3424]</span><span class="sxs-lookup"><span data-stu-id="263bc-389">Handle symlinks in the WSL binfmt interpreter [GH 3424]</span></span>
-* <span data-ttu-id="263bc-390">更好地处理线程组领先者文件描述符清理。</span><span class="sxs-lookup"><span data-stu-id="263bc-390">Better handling of threadgroup leader file descriptor cleanup.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-386">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-386">WSL</span></span>
+* <span data-ttu-id="aa113-387">Setpriority syscall 权限检查过于严格，导致无法更改同一线程的优先级 [GH 1838]</span><span class="sxs-lookup"><span data-stu-id="aa113-387">Setpriority syscall permission check too strict for changing same thread priority [GH 1838]</span></span>
+* <span data-ttu-id="aa113-388">确保对启动时间使用无偏差的中断时间，以避免返回 clock_gettime(CLOCK_BOOTTIME) 的负值 [GH 3434]</span><span class="sxs-lookup"><span data-stu-id="aa113-388">Ensure that unbiased interrupt time is used for boot time to avoid returning negative values for clock_gettime(CLOCK_BOOTTIME) [GH 3434]</span></span>
+* <span data-ttu-id="aa113-389">在 WSL binfmt 解释器中处理符号链接 [GH 3424]</span><span class="sxs-lookup"><span data-stu-id="aa113-389">Handle symlinks in the WSL binfmt interpreter [GH 3424]</span></span>
+* <span data-ttu-id="aa113-390">更好地处理线程组领先者文件描述符清理。</span><span class="sxs-lookup"><span data-stu-id="aa113-390">Better handling of threadgroup leader file descriptor cleanup.</span></span>
 
-## <a name="build-17728-fast"></a><span data-ttu-id="263bc-391">内部版本 17728 (Fast)</span><span class="sxs-lookup"><span data-stu-id="263bc-391">Build 17728 (Fast)</span></span>
-<span data-ttu-id="263bc-392">有关内部版本 17728 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/31/announcing-windows-10-insider-preview-build-17728/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-392">For general Windows information on build 17728 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/31/announcing-windows-10-insider-preview-build-17728/).</span></span>
+## <a name="build-17728-fast"></a><span data-ttu-id="aa113-391">内部版本 17728 (Fast)</span><span class="sxs-lookup"><span data-stu-id="aa113-391">Build 17728 (Fast)</span></span>
+<span data-ttu-id="aa113-392">有关内部版本 17728 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/31/announcing-windows-10-insider-preview-build-17728/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-392">For general Windows information on build 17728 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/31/announcing-windows-10-insider-preview-build-17728/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-393">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-393">WSL</span></span>
-* <span data-ttu-id="263bc-394">切换 WSL 以使用 KeQueryInterruptTimePrecise 而不是 KeQueryPerformanceCounter，以避免溢出 [GH 3252]</span><span class="sxs-lookup"><span data-stu-id="263bc-394">Switch WSL to use KeQueryInterruptTimePrecise instead of KeQueryPerformanceCounter to avoid overflow [GH 3252]</span></span>
-* <span data-ttu-id="263bc-395">Ptrace attach 可能导致系统调用返回错误值 [GH 1731]</span><span class="sxs-lookup"><span data-stu-id="263bc-395">Ptrace attach may cause bad return value from system calls [GH 1731]</span></span>
-* <span data-ttu-id="263bc-396">修复一些 AF_UNIX 相关的问题 [GH 3371]</span><span class="sxs-lookup"><span data-stu-id="263bc-396">Fix a number of AF_UNIX related issues [GH 3371]</span></span>
-* <span data-ttu-id="263bc-397">修复以下问题：如果当前工作目录的长度少于 5 个字符，可能导致 WSL interop 失败 [GH 3379]</span><span class="sxs-lookup"><span data-stu-id="263bc-397">Fix issue that could cause WSL interop to fail if the current working directory is less than 5 characters long [GH 3379]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-393">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-393">WSL</span></span>
+* <span data-ttu-id="aa113-394">切换 WSL 以使用 KeQueryInterruptTimePrecise 而不是 KeQueryPerformanceCounter，以避免溢出 [GH 3252]</span><span class="sxs-lookup"><span data-stu-id="aa113-394">Switch WSL to use KeQueryInterruptTimePrecise instead of KeQueryPerformanceCounter to avoid overflow [GH 3252]</span></span>
+* <span data-ttu-id="aa113-395">Ptrace attach 可能导致系统调用返回错误值 [GH 1731]</span><span class="sxs-lookup"><span data-stu-id="aa113-395">Ptrace attach may cause bad return value from system calls [GH 1731]</span></span>
+* <span data-ttu-id="aa113-396">修复一些 AF_UNIX 相关的问题 [GH 3371]</span><span class="sxs-lookup"><span data-stu-id="aa113-396">Fix a number of AF_UNIX related issues [GH 3371]</span></span>
+* <span data-ttu-id="aa113-397">修复以下问题：如果当前工作目录的长度少于 5 个字符，可能导致 WSL interop 失败 [GH 3379]</span><span class="sxs-lookup"><span data-stu-id="aa113-397">Fix issue that could cause WSL interop to fail if the current working directory is less than 5 characters long [GH 3379]</span></span>
 
-## <a name="build-18204-skip-ahead"></a><span data-ttu-id="263bc-398">内部版本 18204 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="263bc-398">Build 18204 (Skip Ahead)</span></span>
-<span data-ttu-id="263bc-399">有关内部版本 18204 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-399">For general Windows information on build 18204 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/).</span></span>
+## <a name="build-18204-skip-ahead"></a><span data-ttu-id="aa113-398">内部版本 18204 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="aa113-398">Build 18204 (Skip Ahead)</span></span>
+<span data-ttu-id="aa113-399">有关内部版本 18204 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-399">For general Windows information on build 18204 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-400">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-400">WSL</span></span>
-* <span data-ttu-id="263bc-401">管道文件系统意外清除边缘触发的 epoll 事件 [GH 3276]</span><span class="sxs-lookup"><span data-stu-id="263bc-401">Pipe filesystem inadvertenly clearing edge-triggered epoll event [GH 3276]</span></span>
-* <span data-ttu-id="263bc-402">通过 NTFS 符号链接启动的 Win32 可执行文件不遵循符号链接命名约定 [GH 2909]</span><span class="sxs-lookup"><span data-stu-id="263bc-402">Win32 executable launched via NTFS symlink doesn't respect symlink name [GH 2909]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-400">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-400">WSL</span></span>
+* <span data-ttu-id="aa113-401">管道文件系统意外清除边缘触发的 epoll 事件 [GH 3276]</span><span class="sxs-lookup"><span data-stu-id="aa113-401">Pipe filesystem inadvertenly clearing edge-triggered epoll event [GH 3276]</span></span>
+* <span data-ttu-id="aa113-402">通过 NTFS 符号链接启动的 Win32 可执行文件不遵循符号链接命名约定 [GH 2909]</span><span class="sxs-lookup"><span data-stu-id="aa113-402">Win32 executable launched via NTFS symlink doesn't respect symlink name [GH 2909]</span></span>
 
-## <a name="build-17723-fast"></a><span data-ttu-id="263bc-403">内部版本 17723 (Fast)</span><span class="sxs-lookup"><span data-stu-id="263bc-403">Build 17723 (Fast)</span></span>
-<span data-ttu-id="263bc-404">有关内部版本 17723 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-404">For general Windows information on build 17723 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/).</span></span>
+## <a name="build-17723-fast"></a><span data-ttu-id="aa113-403">内部版本 17723 (Fast)</span><span class="sxs-lookup"><span data-stu-id="aa113-403">Build 17723 (Fast)</span></span>
+<span data-ttu-id="aa113-404">有关内部版本 17723 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-404">For general Windows information on build 17723 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/25/announcing-windows-10-insider-preview-build-17723-and-build-18204/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-405">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-405">WSL</span></span>
-* <span data-ttu-id="263bc-406">避免导致无法与不存在的端口建立环回连接的一秒延迟 [GH 3286]</span><span class="sxs-lookup"><span data-stu-id="263bc-406">Avoid one second delay failing loopback connections to non-existent ports [GH 3286]</span></span>
-* <span data-ttu-id="263bc-407">添加 /proc/sys/fs/file-max 存根文件 [GH 2893]</span><span class="sxs-lookup"><span data-stu-id="263bc-407">Add /proc/sys/fs/file-max stub file [GH 2893]</span></span>
-* <span data-ttu-id="263bc-408">更准确的 IPV6 范围信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-408">More accurate IPV6 scope information.</span></span>
-* <span data-ttu-id="263bc-409">PR_SET_PTRACER 支持 [GH 3053]</span><span class="sxs-lookup"><span data-stu-id="263bc-409">PR_SET_PTRACER support [GH 3053]</span></span>
-* <span data-ttu-id="263bc-410">管道文件系统意外清除边缘触发的 epoll 事件 [GH 3276]</span><span class="sxs-lookup"><span data-stu-id="263bc-410">Pipe filesystem inadvertenly clearing edge-triggered epoll event [GH 3276]</span></span>
-* <span data-ttu-id="263bc-411">通过 NTFS 符号链接启动的 Win32 可执行文件不遵循符号链接命名约定 [GH 2909]</span><span class="sxs-lookup"><span data-stu-id="263bc-411">Win32 executable launched via NTFS symlink doesn't respect symlink name [GH 2909]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-405">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-405">WSL</span></span>
+* <span data-ttu-id="aa113-406">避免导致无法与不存在的端口建立环回连接的一秒延迟 [GH 3286]</span><span class="sxs-lookup"><span data-stu-id="aa113-406">Avoid one second delay failing loopback connections to non-existent ports [GH 3286]</span></span>
+* <span data-ttu-id="aa113-407">添加 /proc/sys/fs/file-max 存根文件 [GH 2893]</span><span class="sxs-lookup"><span data-stu-id="aa113-407">Add /proc/sys/fs/file-max stub file [GH 2893]</span></span>
+* <span data-ttu-id="aa113-408">更准确的 IPV6 范围信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-408">More accurate IPV6 scope information.</span></span>
+* <span data-ttu-id="aa113-409">PR_SET_PTRACER 支持 [GH 3053]</span><span class="sxs-lookup"><span data-stu-id="aa113-409">PR_SET_PTRACER support [GH 3053]</span></span>
+* <span data-ttu-id="aa113-410">管道文件系统意外清除边缘触发的 epoll 事件 [GH 3276]</span><span class="sxs-lookup"><span data-stu-id="aa113-410">Pipe filesystem inadvertenly clearing edge-triggered epoll event [GH 3276]</span></span>
+* <span data-ttu-id="aa113-411">通过 NTFS 符号链接启动的 Win32 可执行文件不遵循符号链接命名约定 [GH 2909]</span><span class="sxs-lookup"><span data-stu-id="aa113-411">Win32 executable launched via NTFS symlink doesn't respect symlink name [GH 2909]</span></span>
 
-## <a name="build-17713"></a><span data-ttu-id="263bc-412">内部版本 17713</span><span class="sxs-lookup"><span data-stu-id="263bc-412">Build 17713</span></span>
-<span data-ttu-id="263bc-413">有关内部版本 17713 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/11/announcing-windows-10-insider-preview-build-17713/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-413">For general Windows information on build 17713 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/11/announcing-windows-10-insider-preview-build-17713/).</span></span>
+## <a name="build-17713"></a><span data-ttu-id="aa113-412">内部版本 17713</span><span class="sxs-lookup"><span data-stu-id="aa113-412">Build 17713</span></span>
+<span data-ttu-id="aa113-413">有关内部版本 17713 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/07/11/announcing-windows-10-insider-preview-build-17713/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-413">For general Windows information on build 17713 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/07/11/announcing-windows-10-insider-preview-build-17713/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-414">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-414">WSL</span></span>
-* <span data-ttu-id="263bc-415">改善了 zombie 支持 [GH 1353]</span><span class="sxs-lookup"><span data-stu-id="263bc-415">Improved zombie support [GH 1353]</span></span>
-* <span data-ttu-id="263bc-416">添加 wsl.conf 项用于控制 Windows interop 行为 [GH 1493]</span><span class="sxs-lookup"><span data-stu-id="263bc-416">Add wsl.conf entries for controlling Windows interop behavior [GH 1493]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-414">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-414">WSL</span></span>
+* <span data-ttu-id="aa113-415">改善了 zombie 支持 [GH 1353]</span><span class="sxs-lookup"><span data-stu-id="aa113-415">Improved zombie support [GH 1353]</span></span>
+* <span data-ttu-id="aa113-416">添加 wsl.conf 项用于控制 Windows interop 行为 [GH 1493]</span><span class="sxs-lookup"><span data-stu-id="aa113-416">Add wsl.conf entries for controlling Windows interop behavior [GH 1493]</span></span>
   ```
     [interop]
 
@@ -465,335 +465,335 @@ wslconfig.exe /terminate <DistributionName>
 
     appendWindowsPath=false # append Windows path to $PATH variable; default is true
   ```
-* <span data-ttu-id="263bc-417">修复 getsockname 不是始终返回 UNIX 套接字系列类型的问题 [GH 1774]</span><span class="sxs-lookup"><span data-stu-id="263bc-417">Fix for getsockname not always returning UNIX socket family type [GH 1774]</span></span>
-* <span data-ttu-id="263bc-418">添加对 TIOCSTI 的支持 [GH 1863]</span><span class="sxs-lookup"><span data-stu-id="263bc-418">Add support for TIOCSTI [GH 1863]</span></span>
-* <span data-ttu-id="263bc-419">连接进程中的非阻塞套接字应返回写入尝试的 EAGAIN [GH 2846]</span><span class="sxs-lookup"><span data-stu-id="263bc-419">Non-blocking sockets in the process of connecting should return EAGAIN for write attempts [GH 2846]</span></span>
-* <span data-ttu-id="263bc-420">支持已装载的 VHD 上的 interop [GH 3246、3291]</span><span class="sxs-lookup"><span data-stu-id="263bc-420">Support interop on mounted VHDs [GH 3246, 3291]</span></span>
-* <span data-ttu-id="263bc-421">修复根文件夹的权限检查问题 [GH 3304]</span><span class="sxs-lookup"><span data-stu-id="263bc-421">Fix permission checking issue on root folder [GH 3304]</span></span>
-* <span data-ttu-id="263bc-422">对 TTY 键盘 ioctl KDGKBTYPE、KDGKBMODE 和 KDSKBMODE 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-422">Limited support for TTY keyboard ioctls KDGKBTYPE, KDGKBMODE and KDSKBMODE.</span></span>
-* <span data-ttu-id="263bc-423">即使在后台启动，Windows UI 应用也应该能够执行。</span><span class="sxs-lookup"><span data-stu-id="263bc-423">Windows UI apps should execute even when launched in the background.</span></span>
+* <span data-ttu-id="aa113-417">修复 getsockname 不是始终返回 UNIX 套接字系列类型的问题 [GH 1774]</span><span class="sxs-lookup"><span data-stu-id="aa113-417">Fix for getsockname not always returning UNIX socket family type [GH 1774]</span></span>
+* <span data-ttu-id="aa113-418">添加对 TIOCSTI 的支持 [GH 1863]</span><span class="sxs-lookup"><span data-stu-id="aa113-418">Add support for TIOCSTI [GH 1863]</span></span>
+* <span data-ttu-id="aa113-419">连接进程中的非阻塞套接字应返回写入尝试的 EAGAIN [GH 2846]</span><span class="sxs-lookup"><span data-stu-id="aa113-419">Non-blocking sockets in the process of connecting should return EAGAIN for write attempts [GH 2846]</span></span>
+* <span data-ttu-id="aa113-420">支持已装载的 VHD 上的 interop [GH 3246、3291]</span><span class="sxs-lookup"><span data-stu-id="aa113-420">Support interop on mounted VHDs [GH 3246, 3291]</span></span>
+* <span data-ttu-id="aa113-421">修复根文件夹的权限检查问题 [GH 3304]</span><span class="sxs-lookup"><span data-stu-id="aa113-421">Fix permission checking issue on root folder [GH 3304]</span></span>
+* <span data-ttu-id="aa113-422">对 TTY 键盘 ioctl KDGKBTYPE、KDGKBMODE 和 KDSKBMODE 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-422">Limited support for TTY keyboard ioctls KDGKBTYPE, KDGKBMODE and KDSKBMODE.</span></span>
+* <span data-ttu-id="aa113-423">即使在后台启动，Windows UI 应用也应该能够执行。</span><span class="sxs-lookup"><span data-stu-id="aa113-423">Windows UI apps should execute even when launched in the background.</span></span>
 
-## <a name="build-17704"></a><span data-ttu-id="263bc-424">内部版本 17704</span><span class="sxs-lookup"><span data-stu-id="263bc-424">Build 17704</span></span>
-<span data-ttu-id="263bc-425">有关内部版本 17704 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/06/27/announcing-windows-10-insider-preview-build-17704/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-425">For general Windows information on build 17704 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/06/27/announcing-windows-10-insider-preview-build-17704/).</span></span>
+## <a name="build-17704"></a><span data-ttu-id="aa113-424">内部版本 17704</span><span class="sxs-lookup"><span data-stu-id="aa113-424">Build 17704</span></span>
+<span data-ttu-id="aa113-425">有关内部版本 17704 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/06/27/announcing-windows-10-insider-preview-build-17704/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-425">For general Windows information on build 17704 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/06/27/announcing-windows-10-insider-preview-build-17704/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-426">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-426">WSL</span></span>
-* <span data-ttu-id="263bc-427">添加 wsl -u 或 --user 选项 [GH 1203]</span><span class="sxs-lookup"><span data-stu-id="263bc-427">Add wsl -u or --user option [GH 1203]</span></span>
-* <span data-ttu-id="263bc-428">修复启用快速启动时的 WSL 启动问题 [GH 2576]</span><span class="sxs-lookup"><span data-stu-id="263bc-428">Fix WSL launch issues when fast startup is enabled [GH 2576]</span></span>
-* <span data-ttu-id="263bc-429">Unix 套接字需要保留断开连接的对等凭据 [GH 3183]</span><span class="sxs-lookup"><span data-stu-id="263bc-429">Unix sockets need to retain disconnected peer credentials [GH 3183]</span></span>
-* <span data-ttu-id="263bc-430">使用 EAGAIN 时非阻塞 Unix 套接字无限期失败 [GH 3191]</span><span class="sxs-lookup"><span data-stu-id="263bc-430">Non-blocking Unix sockets failing indefinitely with EAGAIN [GH 3191]</span></span>
-* <span data-ttu-id="263bc-431">case=off 是新的默认 drvfs 装入点类型 [GH 2937、3212、3328]</span><span class="sxs-lookup"><span data-stu-id="263bc-431">case=off is the new default drvfs mount type [GH 2937, 3212, 3328]</span></span>
-    * <span data-ttu-id="263bc-432">有关详细信息，请参阅[博客](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-432">See [blog](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/) for more information.</span></span>
-* <span data-ttu-id="263bc-433">添加 wslconfig/terminate 以停止正在运行的分发版。</span><span class="sxs-lookup"><span data-stu-id="263bc-433">Add wslconfig /terminate to stop running distributions.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-426">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-426">WSL</span></span>
+* <span data-ttu-id="aa113-427">添加 wsl -u 或 --user 选项 [GH 1203]</span><span class="sxs-lookup"><span data-stu-id="aa113-427">Add wsl -u or --user option [GH 1203]</span></span>
+* <span data-ttu-id="aa113-428">修复启用快速启动时的 WSL 启动问题 [GH 2576]</span><span class="sxs-lookup"><span data-stu-id="aa113-428">Fix WSL launch issues when fast startup is enabled [GH 2576]</span></span>
+* <span data-ttu-id="aa113-429">Unix 套接字需要保留断开连接的对等凭据 [GH 3183]</span><span class="sxs-lookup"><span data-stu-id="aa113-429">Unix sockets need to retain disconnected peer credentials [GH 3183]</span></span>
+* <span data-ttu-id="aa113-430">使用 EAGAIN 时非阻塞 Unix 套接字无限期失败 [GH 3191]</span><span class="sxs-lookup"><span data-stu-id="aa113-430">Non-blocking Unix sockets failing indefinitely with EAGAIN [GH 3191]</span></span>
+* <span data-ttu-id="aa113-431">case=off 是新的默认 drvfs 装入点类型 [GH 2937、3212、3328]</span><span class="sxs-lookup"><span data-stu-id="aa113-431">case=off is the new default drvfs mount type [GH 2937, 3212, 3328]</span></span>
+    * <span data-ttu-id="aa113-432">有关详细信息，请参阅[博客](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-432">See [blog](https://blogs.msdn.microsoft.com/commandline/2018/06/14/improved-per-directory-case-sensitivity-support-in-wsl/) for more information.</span></span>
+* <span data-ttu-id="aa113-433">添加 wslconfig/terminate 以停止正在运行的分发版。</span><span class="sxs-lookup"><span data-stu-id="aa113-433">Add wslconfig /terminate to stop running distributions.</span></span>
 
-## <a name="build-17692"></a><span data-ttu-id="263bc-434">版本 17692</span><span class="sxs-lookup"><span data-stu-id="263bc-434">Build 17692</span></span>
-<span data-ttu-id="263bc-435">有关内部版本 17692 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/06/14/announcing-windows-10-insider-preview-build-17692)。</span><span class="sxs-lookup"><span data-stu-id="263bc-435">For general Windows information on build 17692 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/06/14/announcing-windows-10-insider-preview-build-17692).</span></span>
+## <a name="build-17692"></a><span data-ttu-id="aa113-434">版本 17692</span><span class="sxs-lookup"><span data-stu-id="aa113-434">Build 17692</span></span>
+<span data-ttu-id="aa113-435">有关内部版本 17692 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/06/14/announcing-windows-10-insider-preview-build-17692)。</span><span class="sxs-lookup"><span data-stu-id="aa113-435">For general Windows information on build 17692 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/06/14/announcing-windows-10-insider-preview-build-17692).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-436">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-436">WSL</span></span>
-* <span data-ttu-id="263bc-437">修复 WSL shell 上下文菜单项无法正确处理包含空格的路径的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-437">Fix issue with the WSL shell context menu entries that do not correctly handle paths with spaces.</span></span>
-* <span data-ttu-id="263bc-438">公开按目录区分大小写作为扩展属性</span><span class="sxs-lookup"><span data-stu-id="263bc-438">Expose per-directory case sensitivity as an extended attribute</span></span>
-* <span data-ttu-id="263bc-439">ARM64：模拟缓存维护操作。</span><span class="sxs-lookup"><span data-stu-id="263bc-439">ARM64: Emulate cache maintenance operations.</span></span> <span data-ttu-id="263bc-440">解决 [.NET 问题](https://github.com/dotnet/core/issues/1561)。</span><span class="sxs-lookup"><span data-stu-id="263bc-440">Resolve [dotnet issue](https://github.com/dotnet/core/issues/1561).</span></span>
-* <span data-ttu-id="263bc-441">DrvFs：只取消转义专用范围中与已转义字符对应的字符。</span><span class="sxs-lookup"><span data-stu-id="263bc-441">DrvFs: only unescape characters in the private range that correspond to an escaped character.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-436">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-436">WSL</span></span>
+* <span data-ttu-id="aa113-437">修复 WSL shell 上下文菜单项无法正确处理包含空格的路径的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-437">Fix issue with the WSL shell context menu entries that do not correctly handle paths with spaces.</span></span>
+* <span data-ttu-id="aa113-438">公开按目录区分大小写作为扩展属性</span><span class="sxs-lookup"><span data-stu-id="aa113-438">Expose per-directory case sensitivity as an extended attribute</span></span>
+* <span data-ttu-id="aa113-439">ARM64：模拟缓存维护操作。</span><span class="sxs-lookup"><span data-stu-id="aa113-439">ARM64: Emulate cache maintenance operations.</span></span> <span data-ttu-id="aa113-440">解决 [.NET 问题](https://github.com/dotnet/core/issues/1561)。</span><span class="sxs-lookup"><span data-stu-id="aa113-440">Resolve [dotnet issue](https://github.com/dotnet/core/issues/1561).</span></span>
+* <span data-ttu-id="aa113-441">DrvFs：只取消转义专用范围中与已转义字符对应的字符。</span><span class="sxs-lookup"><span data-stu-id="aa113-441">DrvFs: only unescape characters in the private range that correspond to an escaped character.</span></span>
 
-## <a name="build-17686"></a><span data-ttu-id="263bc-442">版本 17686</span><span class="sxs-lookup"><span data-stu-id="263bc-442">Build 17686</span></span>
-<span data-ttu-id="263bc-443">有关内部版本 17686 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/06/06/announcing-windows-10-insider-preview-build-17686)。</span><span class="sxs-lookup"><span data-stu-id="263bc-443">For general Windows information on build 17686 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/06/06/announcing-windows-10-insider-preview-build-17686).</span></span>
+## <a name="build-17686"></a><span data-ttu-id="aa113-442">版本 17686</span><span class="sxs-lookup"><span data-stu-id="aa113-442">Build 17686</span></span>
+<span data-ttu-id="aa113-443">有关内部版本 17686 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/06/06/announcing-windows-10-insider-preview-build-17686)。</span><span class="sxs-lookup"><span data-stu-id="aa113-443">For general Windows information on build 17686 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/06/06/announcing-windows-10-insider-preview-build-17686).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-444">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-444">WSL</span></span>
-* <span data-ttu-id="263bc-445">修复 ELF 分析程序解释器长度验证中的一位偏移错误 [GH 3154]</span><span class="sxs-lookup"><span data-stu-id="263bc-445">Fix off-by-one error in ELF parser interpreter length validation [GH 3154]</span></span>
-* <span data-ttu-id="263bc-446">包含过去时间的 WSL 绝对计时器不会激发 [GH 3091]</span><span class="sxs-lookup"><span data-stu-id="263bc-446">WSL absolute timers with a time in the past do not fire [GH 3091]</span></span>
-* <span data-ttu-id="263bc-447">确保新建的重分析点在父目录中以此类类型列出。</span><span class="sxs-lookup"><span data-stu-id="263bc-447">Ensure newly created reparse points are listed as such in the parent directory.</span></span>
-* <span data-ttu-id="263bc-448">以原子方式在 DrvFs 中创建区分大小写的目录。</span><span class="sxs-lookup"><span data-stu-id="263bc-448">Atomically create case sensitive directories in DrvFs.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-444">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-444">WSL</span></span>
+* <span data-ttu-id="aa113-445">修复 ELF 分析程序解释器长度验证中的一位偏移错误 [GH 3154]</span><span class="sxs-lookup"><span data-stu-id="aa113-445">Fix off-by-one error in ELF parser interpreter length validation [GH 3154]</span></span>
+* <span data-ttu-id="aa113-446">包含过去时间的 WSL 绝对计时器不会激发 [GH 3091]</span><span class="sxs-lookup"><span data-stu-id="aa113-446">WSL absolute timers with a time in the past do not fire [GH 3091]</span></span>
+* <span data-ttu-id="aa113-447">确保新建的重分析点在父目录中以此类类型列出。</span><span class="sxs-lookup"><span data-stu-id="aa113-447">Ensure newly created reparse points are listed as such in the parent directory.</span></span>
+* <span data-ttu-id="aa113-448">以原子方式在 DrvFs 中创建区分大小写的目录。</span><span class="sxs-lookup"><span data-stu-id="aa113-448">Atomically create case sensitive directories in DrvFs.</span></span>
 
-## <a name="build-17677"></a><span data-ttu-id="263bc-449">内部版本 17677</span><span class="sxs-lookup"><span data-stu-id="263bc-449">Build 17677</span></span>
-<span data-ttu-id="263bc-450">有关内部版本 17677 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/05/24/announcing-windows-10-insider-preview-build-17677/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-450">For general Windows information on build 17677 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/05/24/announcing-windows-10-insider-preview-build-17677/).</span></span>
+## <a name="build-17677"></a><span data-ttu-id="aa113-449">内部版本 17677</span><span class="sxs-lookup"><span data-stu-id="aa113-449">Build 17677</span></span>
+<span data-ttu-id="aa113-450">有关内部版本 17677 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/05/24/announcing-windows-10-insider-preview-build-17677/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-450">For general Windows information on build 17677 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/05/24/announcing-windows-10-insider-preview-build-17677/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-451">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-451">WSL</span></span>
-* <span data-ttu-id="263bc-452">修复一个附加的问题：即使文件存在，多线程操作也可能返回 ENOENT。</span><span class="sxs-lookup"><span data-stu-id="263bc-452">Fixed an additional issue where multithreaded operations could return ENOENT even though the file exists.</span></span> <span data-ttu-id="263bc-453">[GH 2712]</span><span class="sxs-lookup"><span data-stu-id="263bc-453">[GH 2712]</span></span>
-* <span data-ttu-id="263bc-454">修复了启用 UMCI 时 WSL 启动失败的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-454">Fixed WSL launch failure when UMCI is enabled.</span></span> <span data-ttu-id="263bc-455">[GH 3020]</span><span class="sxs-lookup"><span data-stu-id="263bc-455">[GH 3020]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-451">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-451">WSL</span></span>
+* <span data-ttu-id="aa113-452">修复一个附加的问题：即使文件存在，多线程操作也可能返回 ENOENT。</span><span class="sxs-lookup"><span data-stu-id="aa113-452">Fixed an additional issue where multithreaded operations could return ENOENT even though the file exists.</span></span> <span data-ttu-id="aa113-453">[GH 2712]</span><span class="sxs-lookup"><span data-stu-id="aa113-453">[GH 2712]</span></span>
+* <span data-ttu-id="aa113-454">修复了启用 UMCI 时 WSL 启动失败的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-454">Fixed WSL launch failure when UMCI is enabled.</span></span> <span data-ttu-id="aa113-455">[GH 3020]</span><span class="sxs-lookup"><span data-stu-id="aa113-455">[GH 3020]</span></span>
 
-## <a name="build-17666"></a><span data-ttu-id="263bc-456">内部版本 17666</span><span class="sxs-lookup"><span data-stu-id="263bc-456">Build 17666</span></span>
-<span data-ttu-id="263bc-457">有关内部版本 17666 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/05/09/announcing-windows-10-insider-preview-build-17666/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-457">For general Windows information on build 17666 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/05/09/announcing-windows-10-insider-preview-build-17666/).</span></span>
+## <a name="build-17666"></a><span data-ttu-id="aa113-456">内部版本 17666</span><span class="sxs-lookup"><span data-stu-id="aa113-456">Build 17666</span></span>
+<span data-ttu-id="aa113-457">有关内部版本 17666 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/05/09/announcing-windows-10-insider-preview-build-17666/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-457">For general Windows information on build 17666 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/05/09/announcing-windows-10-insider-preview-build-17666/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-458">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-458">WSL</span></span>
-#### <a name="warning-there-is-an-issue-preventing-wsl-from-running-on-some-amd-chipsets-gh-3134-a-fix-is-ready-and-making-its-way-to-the-insider-build-branch"></a><span data-ttu-id="263bc-459">警告：某个问题会阻止 WSL 在某些 AMD 芯片组上运行 [GH 3134]。</span><span class="sxs-lookup"><span data-stu-id="263bc-459">WARNING: There is an issue preventing WSL from running on some AMD chipsets [GH 3134].</span></span> <span data-ttu-id="263bc-460">修复程序已准备就绪，即将在 Insider Build 分支中发布。</span><span class="sxs-lookup"><span data-stu-id="263bc-460">A fix is ready and making its way to the Insider Build branch.</span></span>
-* <span data-ttu-id="263bc-461">添加浏览器上下文菜单用于启动 WSL [GH 437、603、1836]。</span><span class="sxs-lookup"><span data-stu-id="263bc-461">Add explorer context menu to launch WSL [GH 437, 603, 1836].</span></span> <span data-ttu-id="263bc-462">若要使用此菜单，请在资源管理器窗口中按住 Shift 键的同时单击右键。</span><span class="sxs-lookup"><span data-stu-id="263bc-462">To use hold shift and right-click when in an explorer window.</span></span>
-* <span data-ttu-id="263bc-463">修复 Unix 套接字非阻塞行为 [GH 2822、3100]</span><span class="sxs-lookup"><span data-stu-id="263bc-463">Fix unix socket non-blocking behavior [GH 2822, 3100]</span></span>
-* <span data-ttu-id="263bc-464">修复 GH 2026 中报告的 NETLINK 命令挂起问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-464">Fix hanging NETLINK command as reported in GH 2026.</span></span>
-* <span data-ttu-id="263bc-465">添加对装载传播标志的支持 [GH 2911]。</span><span class="sxs-lookup"><span data-stu-id="263bc-465">Add support for mount propagation flags [GH 2911].</span></span>
-* <span data-ttu-id="263bc-466">修复截断后不会导致 inotify 事件的问题 [GH 2978]。</span><span class="sxs-lookup"><span data-stu-id="263bc-466">Fix issue with truncate not causing inotify events [GH 2978].</span></span>
-* <span data-ttu-id="263bc-467">为 wsl.exe 添加 --exec 选项，以便在不使用 shell 的情况下调用单个二进制文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-467">Add --exec option for wsl.exe to invoke a single binary without a shell.</span></span>
-* <span data-ttu-id="263bc-468">为 wsl.exe 添加 --distribution 选项，以选择特定的分发版。</span><span class="sxs-lookup"><span data-stu-id="263bc-468">Add --distribution option for wsl.exe to select a specific distro.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-458">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-458">WSL</span></span>
+#### <a name="warning-there-is-an-issue-preventing-wsl-from-running-on-some-amd-chipsets-gh-3134-a-fix-is-ready-and-making-its-way-to-the-insider-build-branch"></a><span data-ttu-id="aa113-459">警告：某个问题会阻止 WSL 在某些 AMD 芯片组上运行 [GH 3134]。</span><span class="sxs-lookup"><span data-stu-id="aa113-459">WARNING: There is an issue preventing WSL from running on some AMD chipsets [GH 3134].</span></span> <span data-ttu-id="aa113-460">修复程序已准备就绪，即将在 Insider Build 分支中发布。</span><span class="sxs-lookup"><span data-stu-id="aa113-460">A fix is ready and making its way to the Insider Build branch.</span></span>
+* <span data-ttu-id="aa113-461">添加浏览器上下文菜单用于启动 WSL [GH 437、603、1836]。</span><span class="sxs-lookup"><span data-stu-id="aa113-461">Add explorer context menu to launch WSL [GH 437, 603, 1836].</span></span> <span data-ttu-id="aa113-462">若要使用此菜单，请在资源管理器窗口中按住 Shift 键的同时单击右键。</span><span class="sxs-lookup"><span data-stu-id="aa113-462">To use hold shift and right-click when in an explorer window.</span></span>
+* <span data-ttu-id="aa113-463">修复 Unix 套接字非阻塞行为 [GH 2822、3100]</span><span class="sxs-lookup"><span data-stu-id="aa113-463">Fix unix socket non-blocking behavior [GH 2822, 3100]</span></span>
+* <span data-ttu-id="aa113-464">修复 GH 2026 中报告的 NETLINK 命令挂起问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-464">Fix hanging NETLINK command as reported in GH 2026.</span></span>
+* <span data-ttu-id="aa113-465">添加对装载传播标志的支持 [GH 2911]。</span><span class="sxs-lookup"><span data-stu-id="aa113-465">Add support for mount propagation flags [GH 2911].</span></span>
+* <span data-ttu-id="aa113-466">修复截断后不会导致 inotify 事件的问题 [GH 2978]。</span><span class="sxs-lookup"><span data-stu-id="aa113-466">Fix issue with truncate not causing inotify events [GH 2978].</span></span>
+* <span data-ttu-id="aa113-467">为 wsl.exe 添加 --exec 选项，以便在不使用 shell 的情况下调用单个二进制文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-467">Add --exec option for wsl.exe to invoke a single binary without a shell.</span></span>
+* <span data-ttu-id="aa113-468">为 wsl.exe 添加 --distribution 选项，以选择特定的分发版。</span><span class="sxs-lookup"><span data-stu-id="aa113-468">Add --distribution option for wsl.exe to select a specific distro.</span></span>
 
-## <a name="build-17655-skip-ahead"></a><span data-ttu-id="263bc-469">内部版本 17655 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="263bc-469">Build 17655 (Skip Ahead)</span></span>
-<span data-ttu-id="263bc-470">有关内部版本 17655 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/04/25/announcing-windows-10-insider-preview-build-17655-for-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-470">For general Windows information on build 17655 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/04/25/announcing-windows-10-insider-preview-build-17655-for-skip-ahead/).</span></span>
+## <a name="build-17655-skip-ahead"></a><span data-ttu-id="aa113-469">内部版本 17655 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="aa113-469">Build 17655 (Skip Ahead)</span></span>
+<span data-ttu-id="aa113-470">有关内部版本 17655 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/04/25/announcing-windows-10-insider-preview-build-17655-for-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-470">For general Windows information on build 17655 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/04/25/announcing-windows-10-insider-preview-build-17655-for-skip-ahead/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-471">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-471">WSL</span></span>
-* <span data-ttu-id="263bc-472">对 dmesg 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-472">Limited support for dmesg.</span></span> <span data-ttu-id="263bc-473">现在，应用程序会将日志记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="263bc-473">Applications can now log to dmesg.</span></span> <span data-ttu-id="263bc-474">WSL 驱动程序会将有限的信息记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="263bc-474">WSL driver logs limited information to dmesg.</span></span> <span data-ttu-id="263bc-475">将来，此功能可能会扩展，以便从驱动程序发送其他信息/诊断数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-475">In future, this can be extended to carry other information/diagnostics from the driver.</span></span>
-    * <span data-ttu-id="263bc-476">注意：目前通过 `/dev/kmsg` 设备接口支持 dmesg。</span><span class="sxs-lookup"><span data-stu-id="263bc-476">Note: dmesg is currently supported through the `/dev/kmsg` device interface.</span></span> <span data-ttu-id="263bc-477">尚不支持 `syslog` sycall 接口。</span><span class="sxs-lookup"><span data-stu-id="263bc-477">`syslog` sycall interface is not yet supported.</span></span> <span data-ttu-id="263bc-478">此外，某些 `dmesg` 命令行选项（例如 `-S`、`-C`）不起作用。</span><span class="sxs-lookup"><span data-stu-id="263bc-478">And, so, some of the `dmesg` command line options such as `-S`, `-C` don't work.</span></span>
-* <span data-ttu-id="263bc-479">修复了即使文件存在，多线程操作也可能返回 ENOENT 的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-479">Fixed an issue where multithreaded operations could return ENOENT even though the file exists.</span></span> <span data-ttu-id="263bc-480">[GH 2712]</span><span class="sxs-lookup"><span data-stu-id="263bc-480">[GH 2712]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-471">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-471">WSL</span></span>
+* <span data-ttu-id="aa113-472">对 dmesg 的有限支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-472">Limited support for dmesg.</span></span> <span data-ttu-id="aa113-473">现在，应用程序会将日志记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="aa113-473">Applications can now log to dmesg.</span></span> <span data-ttu-id="aa113-474">WSL 驱动程序会将有限的信息记录到 dmesg。</span><span class="sxs-lookup"><span data-stu-id="aa113-474">WSL driver logs limited information to dmesg.</span></span> <span data-ttu-id="aa113-475">将来，此功能可能会扩展，以便从驱动程序发送其他信息/诊断数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-475">In future, this can be extended to carry other information/diagnostics from the driver.</span></span>
+    * <span data-ttu-id="aa113-476">注意：目前通过 `/dev/kmsg` 设备接口支持 dmesg。</span><span class="sxs-lookup"><span data-stu-id="aa113-476">Note: dmesg is currently supported through the `/dev/kmsg` device interface.</span></span> <span data-ttu-id="aa113-477">尚不支持 `syslog` sycall 接口。</span><span class="sxs-lookup"><span data-stu-id="aa113-477">`syslog` sycall interface is not yet supported.</span></span> <span data-ttu-id="aa113-478">此外，某些 `dmesg` 命令行选项（例如 `-S`、`-C`）不起作用。</span><span class="sxs-lookup"><span data-stu-id="aa113-478">And, so, some of the `dmesg` command line options such as `-S`, `-C` don't work.</span></span>
+* <span data-ttu-id="aa113-479">修复了即使文件存在，多线程操作也可能返回 ENOENT 的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-479">Fixed an issue where multithreaded operations could return ENOENT even though the file exists.</span></span> <span data-ttu-id="aa113-480">[GH 2712]</span><span class="sxs-lookup"><span data-stu-id="aa113-480">[GH 2712]</span></span>
 
-## <a name="build-17639-skip-ahead"></a><span data-ttu-id="263bc-481">内部版本 17639 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="263bc-481">Build 17639 (Skip Ahead)</span></span>
-<span data-ttu-id="263bc-482">有关内部版本 17639 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/04/04/announcing-windows-10-insider-preview-build-17639-for-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-482">For general Windows information on build 17639 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/04/04/announcing-windows-10-insider-preview-build-17639-for-skip-ahead/).</span></span>
+## <a name="build-17639-skip-ahead"></a><span data-ttu-id="aa113-481">内部版本 17639 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="aa113-481">Build 17639 (Skip Ahead)</span></span>
+<span data-ttu-id="aa113-482">有关内部版本 17639 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/04/04/announcing-windows-10-insider-preview-build-17639-for-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-482">For general Windows information on build 17639 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/04/04/announcing-windows-10-insider-preview-build-17639-for-skip-ahead/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-483">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-483">WSL</span></span>
-* <span data-ttu-id="263bc-484">更改串行设备的默认 gid 和模式，以匹配本机 [GH 3042]</span><span class="sxs-lookup"><span data-stu-id="263bc-484">Change default gid and mode of serial devices to match native [GH 3042]</span></span>
-* <span data-ttu-id="263bc-485">DrvFs 现在支持扩展属性。</span><span class="sxs-lookup"><span data-stu-id="263bc-485">DrvFs now supports extended attributes.</span></span>
-    * <span data-ttu-id="263bc-486">注意：DrvFs 对扩展属性的名称施加一些限制。</span><span class="sxs-lookup"><span data-stu-id="263bc-486">Note: DrvFs has some limitations on the name of extended attributes.</span></span> <span data-ttu-id="263bc-487">具体而言，不允许使用某些字符（例如“/”、“:”和“\*”），并且扩展属性名称在 DrvFs 上不区分大小写</span><span class="sxs-lookup"><span data-stu-id="263bc-487">In particular, some characters (like '/', ':' and '\*') are not allowed, and extended attribute names are not case sensitive on DrvFs</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-483">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-483">WSL</span></span>
+* <span data-ttu-id="aa113-484">更改串行设备的默认 gid 和模式，以匹配本机 [GH 3042]</span><span class="sxs-lookup"><span data-stu-id="aa113-484">Change default gid and mode of serial devices to match native [GH 3042]</span></span>
+* <span data-ttu-id="aa113-485">DrvFs 现在支持扩展属性。</span><span class="sxs-lookup"><span data-stu-id="aa113-485">DrvFs now supports extended attributes.</span></span>
+    * <span data-ttu-id="aa113-486">注意：DrvFs 对扩展属性的名称施加一些限制。</span><span class="sxs-lookup"><span data-stu-id="aa113-486">Note: DrvFs has some limitations on the name of extended attributes.</span></span> <span data-ttu-id="aa113-487">具体而言，不允许使用某些字符（例如“/”、“:”和“\*”），并且扩展属性名称在 DrvFs 上不区分大小写</span><span class="sxs-lookup"><span data-stu-id="aa113-487">In particular, some characters (like '/', ':' and '\*') are not allowed, and extended attribute names are not case sensitive on DrvFs</span></span>
 
-## <a name="build-17133-fast"></a><span data-ttu-id="263bc-488">内部版本 17133 (Fast)</span><span class="sxs-lookup"><span data-stu-id="263bc-488">Build 17133 (Fast)</span></span>
-<span data-ttu-id="263bc-489">有关内部版本 17133 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/27/announcing-windows-10-insider-preview-build-17133-for-fast/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-489">For general Windows information on build 17133 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/27/announcing-windows-10-insider-preview-build-17133-for-fast/).</span></span>
+## <a name="build-17133-fast"></a><span data-ttu-id="aa113-488">内部版本 17133 (Fast)</span><span class="sxs-lookup"><span data-stu-id="aa113-488">Build 17133 (Fast)</span></span>
+<span data-ttu-id="aa113-489">有关内部版本 17133 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/27/announcing-windows-10-insider-preview-build-17133-for-fast/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-489">For general Windows information on build 17133 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/27/announcing-windows-10-insider-preview-build-17133-for-fast/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-490">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-490">WSL</span></span>
-* <span data-ttu-id="263bc-491">修复 WSL 中的挂起问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-491">Fix for hang in WSL.</span></span> <span data-ttu-id="263bc-492">[GH 3039、3034]</span><span class="sxs-lookup"><span data-stu-id="263bc-492">[GH 3039, 3034]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-490">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-490">WSL</span></span>
+* <span data-ttu-id="aa113-491">修复 WSL 中的挂起问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-491">Fix for hang in WSL.</span></span> <span data-ttu-id="aa113-492">[GH 3039、3034]</span><span class="sxs-lookup"><span data-stu-id="aa113-492">[GH 3039, 3034]</span></span>
 
-## <a name="build-17128-fast"></a><span data-ttu-id="263bc-493">内部版本 17128 (Fast)</span><span class="sxs-lookup"><span data-stu-id="263bc-493">Build 17128 (Fast)</span></span>
-<span data-ttu-id="263bc-494">有关内部版本 17128 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-494">For general Windows information on build 17128 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/).</span></span>
+## <a name="build-17128-fast"></a><span data-ttu-id="aa113-493">内部版本 17128 (Fast)</span><span class="sxs-lookup"><span data-stu-id="aa113-493">Build 17128 (Fast)</span></span>
+<span data-ttu-id="aa113-494">有关内部版本 17128 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-494">For general Windows information on build 17128 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-495">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-495">WSL</span></span>
-* <span data-ttu-id="263bc-496">无</span><span class="sxs-lookup"><span data-stu-id="263bc-496">None</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-495">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-495">WSL</span></span>
+* <span data-ttu-id="aa113-496">无</span><span class="sxs-lookup"><span data-stu-id="aa113-496">None</span></span>
 
-## <a name="build-17627-skip-ahead"></a><span data-ttu-id="263bc-497">内部版本 17627 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="263bc-497">Build 17627 (Skip Ahead)</span></span>
-<span data-ttu-id="263bc-498">有关内部版本 17627 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-498">For general Windows information on build 17627 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/).</span></span>
+## <a name="build-17627-skip-ahead"></a><span data-ttu-id="aa113-497">内部版本 17627 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="aa113-497">Build 17627 (Skip Ahead)</span></span>
+<span data-ttu-id="aa113-498">有关内部版本 17627 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-498">For general Windows information on build 17627 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-499">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-499">WSL</span></span>
-* <span data-ttu-id="263bc-500">添加对 futex pi 感知操作的支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-500">Add support for the futex pi-aware operations.</span></span> <span data-ttu-id="263bc-501">[GH 1006]</span><span class="sxs-lookup"><span data-stu-id="263bc-501">[GH 1006]</span></span>
-    * <span data-ttu-id="263bc-502">请注意，WSL 功能目前不支持优先级，因此存在一些限制，但标准用法应该不会受到阻止。</span><span class="sxs-lookup"><span data-stu-id="263bc-502">Note that priorities are not currently a supported WSL feature so there are limitations, but standard usage should be unblocked.</span></span>
-* <span data-ttu-id="263bc-503">对 WSL 进程的 Windows 防火墙支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-503">Windows firewall support for WSL processes.</span></span> <span data-ttu-id="263bc-504">[GH 1852]</span><span class="sxs-lookup"><span data-stu-id="263bc-504">[GH 1852]</span></span>
-    * <span data-ttu-id="263bc-505">例如，若要允许 WSL python 进程侦听任何端口，请使用提升的 Windows cmd：```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```</span><span class="sxs-lookup"><span data-stu-id="263bc-505">For example, to allow the WSL python process to listen on any port, use the elevated Windows cmd: ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```</span></span>
-    * <span data-ttu-id="263bc-506">有关如何添加防火墙规则的更多详细信息，请参阅[链接](https://support.microsoft.com/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)</span><span class="sxs-lookup"><span data-stu-id="263bc-506">For additional details on how to add firewall rules, see [link](https://support.microsoft.com/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)</span></span>
-* <span data-ttu-id="263bc-507">使用 wsl.exe 时遵循用户的默认 shell。</span><span class="sxs-lookup"><span data-stu-id="263bc-507">Respect user's default shell when using wsl.exe.</span></span> <span data-ttu-id="263bc-508">[GH 2372]</span><span class="sxs-lookup"><span data-stu-id="263bc-508">[GH 2372]</span></span>
-* <span data-ttu-id="263bc-509">将所有网络接口报告为以太网。</span><span class="sxs-lookup"><span data-stu-id="263bc-509">Report all network interfaces as ethernet.</span></span> <span data-ttu-id="263bc-510">[GH 2996]</span><span class="sxs-lookup"><span data-stu-id="263bc-510">[GH 2996]</span></span>
-* <span data-ttu-id="263bc-511">更好地处理损坏的 /etc/passwd 文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-511">Better handling of corrupt /etc/passwd file.</span></span> <span data-ttu-id="263bc-512">[GH 3001]</span><span class="sxs-lookup"><span data-stu-id="263bc-512">[GH 3001]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-499">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-499">WSL</span></span>
+* <span data-ttu-id="aa113-500">添加对 futex pi 感知操作的支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-500">Add support for the futex pi-aware operations.</span></span> <span data-ttu-id="aa113-501">[GH 1006]</span><span class="sxs-lookup"><span data-stu-id="aa113-501">[GH 1006]</span></span>
+    * <span data-ttu-id="aa113-502">请注意，WSL 功能目前不支持优先级，因此存在一些限制，但标准用法应该不会受到阻止。</span><span class="sxs-lookup"><span data-stu-id="aa113-502">Note that priorities are not currently a supported WSL feature so there are limitations, but standard usage should be unblocked.</span></span>
+* <span data-ttu-id="aa113-503">对 WSL 进程的 Windows 防火墙支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-503">Windows firewall support for WSL processes.</span></span> <span data-ttu-id="aa113-504">[GH 1852]</span><span class="sxs-lookup"><span data-stu-id="aa113-504">[GH 1852]</span></span>
+    * <span data-ttu-id="aa113-505">例如，若要允许 WSL python 进程侦听任何端口，请使用提升的 Windows cmd：```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```</span><span class="sxs-lookup"><span data-stu-id="aa113-505">For example, to allow the WSL python process to listen on any port, use the elevated Windows cmd: ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```</span></span>
+    * <span data-ttu-id="aa113-506">有关如何添加防火墙规则的更多详细信息，请参阅[链接](https://support.microsoft.com/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)</span><span class="sxs-lookup"><span data-stu-id="aa113-506">For additional details on how to add firewall rules, see [link](https://support.microsoft.com/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)</span></span>
+* <span data-ttu-id="aa113-507">使用 wsl.exe 时遵循用户的默认 shell。</span><span class="sxs-lookup"><span data-stu-id="aa113-507">Respect user's default shell when using wsl.exe.</span></span> <span data-ttu-id="aa113-508">[GH 2372]</span><span class="sxs-lookup"><span data-stu-id="aa113-508">[GH 2372]</span></span>
+* <span data-ttu-id="aa113-509">将所有网络接口报告为以太网。</span><span class="sxs-lookup"><span data-stu-id="aa113-509">Report all network interfaces as ethernet.</span></span> <span data-ttu-id="aa113-510">[GH 2996]</span><span class="sxs-lookup"><span data-stu-id="aa113-510">[GH 2996]</span></span>
+* <span data-ttu-id="aa113-511">更好地处理损坏的 /etc/passwd 文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-511">Better handling of corrupt /etc/passwd file.</span></span> <span data-ttu-id="aa113-512">[GH 3001]</span><span class="sxs-lookup"><span data-stu-id="aa113-512">[GH 3001]</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-513">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-513">Console</span></span>
-* <span data-ttu-id="263bc-514">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-514">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-513">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-513">Console</span></span>
+* <span data-ttu-id="aa113-514">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-514">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-515">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-515">LTP Results:</span></span>
-<span data-ttu-id="263bc-516">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-516">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-515">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-515">LTP Results:</span></span>
+<span data-ttu-id="aa113-516">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-516">Testing in progress.</span></span>
 
-## <a name="build-17618-skip-ahead"></a><span data-ttu-id="263bc-517">内部版本 17618 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="263bc-517">Build 17618 (Skip Ahead)</span></span>
-<span data-ttu-id="263bc-518">有关内部版本 17618 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/07/announcing-windows-10-insider-preview-build-17618-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-518">For general Windows information on build 17618 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/07/announcing-windows-10-insider-preview-build-17618-skip-ahead/).</span></span>
+## <a name="build-17618-skip-ahead"></a><span data-ttu-id="aa113-517">内部版本 17618 (Skip Ahead)</span><span class="sxs-lookup"><span data-stu-id="aa113-517">Build 17618 (Skip Ahead)</span></span>
+<span data-ttu-id="aa113-518">有关内部版本 17618 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/03/07/announcing-windows-10-insider-preview-build-17618-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-518">For general Windows information on build 17618 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/03/07/announcing-windows-10-insider-preview-build-17618-skip-ahead/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-519">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-519">WSL</span></span>
-* <span data-ttu-id="263bc-520">引入用于 NT interop 的伪控制台功能 [GH 988、1366、1433、1542、2370、2406]。</span><span class="sxs-lookup"><span data-stu-id="263bc-520">Introduce pseudoconsole functionality for NT interop [GH 988, 1366, 1433, 1542, 2370, 2406].</span></span>
-* <span data-ttu-id="263bc-521">传统的安装机制 (lxrun.exe) 已弃用。</span><span class="sxs-lookup"><span data-stu-id="263bc-521">The legacy install mechanism (lxrun.exe) has been deprecated.</span></span> <span data-ttu-id="263bc-522">支持用于安装分发版的机制是 Microsoft Store。</span><span class="sxs-lookup"><span data-stu-id="263bc-522">The supported mechanism for installing distributions is through the Microsoft Store.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-519">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-519">WSL</span></span>
+* <span data-ttu-id="aa113-520">引入用于 NT interop 的伪控制台功能 [GH 988、1366、1433、1542、2370、2406]。</span><span class="sxs-lookup"><span data-stu-id="aa113-520">Introduce pseudoconsole functionality for NT interop [GH 988, 1366, 1433, 1542, 2370, 2406].</span></span>
+* <span data-ttu-id="aa113-521">传统的安装机制 (lxrun.exe) 已弃用。</span><span class="sxs-lookup"><span data-stu-id="aa113-521">The legacy install mechanism (lxrun.exe) has been deprecated.</span></span> <span data-ttu-id="aa113-522">支持用于安装分发版的机制是 Microsoft Store。</span><span class="sxs-lookup"><span data-stu-id="aa113-522">The supported mechanism for installing distributions is through the Microsoft Store.</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-523">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-523">Console</span></span>
-* <span data-ttu-id="263bc-524">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-524">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-523">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-523">Console</span></span>
+* <span data-ttu-id="aa113-524">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-524">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-525">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-525">LTP Results:</span></span>
-<span data-ttu-id="263bc-526">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-526">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-525">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-525">LTP Results:</span></span>
+<span data-ttu-id="aa113-526">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-526">Testing in progress.</span></span>
 
-## <a name="build-17110"></a><span data-ttu-id="263bc-527">版本 17110</span><span class="sxs-lookup"><span data-stu-id="263bc-527">Build 17110</span></span>
-<span data-ttu-id="263bc-528">有关内部版本 17110 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/27/announcing-windows-10-insider-preview-build-17110-fast/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-528">For general Windows information on build 17110 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/27/announcing-windows-10-insider-preview-build-17110-fast/).</span></span>
+## <a name="build-17110"></a><span data-ttu-id="aa113-527">版本 17110</span><span class="sxs-lookup"><span data-stu-id="aa113-527">Build 17110</span></span>
+<span data-ttu-id="aa113-528">有关内部版本 17110 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/27/announcing-windows-10-insider-preview-build-17110-fast/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-528">For general Windows information on build 17110 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/27/announcing-windows-10-insider-preview-build-17110-fast/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-529">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-529">WSL</span></span>
-* <span data-ttu-id="263bc-530">允许从 Windows 终止 /init [GH 2928]。</span><span class="sxs-lookup"><span data-stu-id="263bc-530">Allow /init to be terminated from Windows [GH 2928].</span></span>
-* <span data-ttu-id="263bc-531">现在，DrvFs 默认使用按目录区分大小写（相当于使用“case=dir”装载选项）。</span><span class="sxs-lookup"><span data-stu-id="263bc-531">DrvFs now uses per-directory case sensitivity by default (equivalent to the "case=dir" mount option).</span></span>
-    * <span data-ttu-id="263bc-532">使用“case=dir”（旧行为）需要设置注册表项。</span><span class="sxs-lookup"><span data-stu-id="263bc-532">Using "case=force" (the old behavior) requires setting a registry key.</span></span> <span data-ttu-id="263bc-533">如果需要使用“case=dir”，请运行以下命令来启用它：reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1</span><span class="sxs-lookup"><span data-stu-id="263bc-533">Run the following command to enable "case=force" if you need to use it: reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1</span></span>
-    * <span data-ttu-id="263bc-534">如果在旧版 Windows 中使用 WSL 创建的现有目录需要区分大小写，请使用 fsutil.exe 将其标记为区分大小写：fsutil.exe file setcasesensitiveinfo <path> enable</span><span class="sxs-lookup"><span data-stu-id="263bc-534">If you have existing directories created with WSL in older version of Windows which need to be case sensitive, use fsutil.exe to mark them as case sensitive: fsutil.exe file setcasesensitiveinfo <path> enable</span></span>
-* <span data-ttu-id="263bc-535">NULL 终止从 uname syscall 返回的字符串。</span><span class="sxs-lookup"><span data-stu-id="263bc-535">NULL terminate strings returned from the uname syscall.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-529">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-529">WSL</span></span>
+* <span data-ttu-id="aa113-530">允许从 Windows 终止 /init [GH 2928]。</span><span class="sxs-lookup"><span data-stu-id="aa113-530">Allow /init to be terminated from Windows [GH 2928].</span></span>
+* <span data-ttu-id="aa113-531">现在，DrvFs 默认使用按目录区分大小写（相当于使用“case=dir”装载选项）。</span><span class="sxs-lookup"><span data-stu-id="aa113-531">DrvFs now uses per-directory case sensitivity by default (equivalent to the "case=dir" mount option).</span></span>
+    * <span data-ttu-id="aa113-532">使用“case=dir”（旧行为）需要设置注册表项。</span><span class="sxs-lookup"><span data-stu-id="aa113-532">Using "case=force" (the old behavior) requires setting a registry key.</span></span> <span data-ttu-id="aa113-533">如果需要使用“case=dir”，请运行以下命令来启用它：reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1</span><span class="sxs-lookup"><span data-stu-id="aa113-533">Run the following command to enable "case=force" if you need to use it: reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1</span></span>
+    * <span data-ttu-id="aa113-534">如果在旧版 Windows 中使用 WSL 创建的现有目录需要区分大小写，请使用 fsutil.exe 将其标记为区分大小写：fsutil.exe file setcasesensitiveinfo <path> enable</span><span class="sxs-lookup"><span data-stu-id="aa113-534">If you have existing directories created with WSL in older version of Windows which need to be case sensitive, use fsutil.exe to mark them as case sensitive: fsutil.exe file setcasesensitiveinfo <path> enable</span></span>
+* <span data-ttu-id="aa113-535">NULL 终止从 uname syscall 返回的字符串。</span><span class="sxs-lookup"><span data-stu-id="aa113-535">NULL terminate strings returned from the uname syscall.</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-536">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-536">Console</span></span>
-* <span data-ttu-id="263bc-537">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-537">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-536">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-536">Console</span></span>
+* <span data-ttu-id="aa113-537">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-537">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-538">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-538">LTP Results:</span></span>
-<span data-ttu-id="263bc-539">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-539">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-538">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-538">LTP Results:</span></span>
+<span data-ttu-id="aa113-539">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-539">Testing in progress.</span></span>
 
-## <a name="build-17107"></a><span data-ttu-id="263bc-540">内部版本 17107</span><span class="sxs-lookup"><span data-stu-id="263bc-540">Build 17107</span></span>
-<span data-ttu-id="263bc-541">有关内部版本 17107 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/23/announcing-windows-10-insider-preview-build-17107-fast-ring/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-541">For general Windows information on build 17107 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/23/announcing-windows-10-insider-preview-build-17107-fast-ring/).</span></span>
+## <a name="build-17107"></a><span data-ttu-id="aa113-540">内部版本 17107</span><span class="sxs-lookup"><span data-stu-id="aa113-540">Build 17107</span></span>
+<span data-ttu-id="aa113-541">有关内部版本 17107 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/23/announcing-windows-10-insider-preview-build-17107-fast-ring/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-541">For general Windows information on build 17107 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/23/announcing-windows-10-insider-preview-build-17107-fast-ring/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-542">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-542">WSL</span></span>
-* <span data-ttu-id="263bc-543">支持主 pty 终结点上的 TCSETSF 和 TCSETSW [GH 2552]。</span><span class="sxs-lookup"><span data-stu-id="263bc-543">Support TCSETSF and TCSETSW on master pty endpoints [GH 2552].</span></span>
-* <span data-ttu-id="263bc-544">启动同步 interop 进程可能会导致 EINVAL [GH 2813]。</span><span class="sxs-lookup"><span data-stu-id="263bc-544">Starting simultaneous interop processes can result in EINVAL [GH 2813].</span></span>
-* <span data-ttu-id="263bc-545">修复 PTRACE_ATTACH 以在 /proc/pid/status 中显示正确的跟踪状态。</span><span class="sxs-lookup"><span data-stu-id="263bc-545">Fix PTRACE_ATTACH to show proper tracing status in /proc/pid/status.</span></span>
-* <span data-ttu-id="263bc-546">修复以下争用问题：在不清除 TID 地址的情况下，通过 CLEARTID 和 SETTID 标志克隆的生存期较短的进程可能会退出。</span><span class="sxs-lookup"><span data-stu-id="263bc-546">Fix race where short-lived processes cloned with both the CLEARTID and SETTID flags could exit without clearing the TID address.</span></span>
-* <span data-ttu-id="263bc-547">在从 17093 以前的内部版本迁移期间，升级 Linux 文件系统目录时会显示一条消息。</span><span class="sxs-lookup"><span data-stu-id="263bc-547">Display a message when upgrading the Linux file system directories when moving from a pre-17093 build.</span></span> <span data-ttu-id="263bc-548">有关 17093 文件系统更改的更多详细信息，请参阅 [17093](https://github.com/MicrosoftDocs/WSL/blob/live/WSL/release-notes.md#build-17093) 的发行说明。</span><span class="sxs-lookup"><span data-stu-id="263bc-548">For more details on the 17093 file system changes, see the release notes for [17093](https://github.com/MicrosoftDocs/WSL/blob/live/WSL/release-notes.md#build-17093).</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-542">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-542">WSL</span></span>
+* <span data-ttu-id="aa113-543">支持主 pty 终结点上的 TCSETSF 和 TCSETSW [GH 2552]。</span><span class="sxs-lookup"><span data-stu-id="aa113-543">Support TCSETSF and TCSETSW on master pty endpoints [GH 2552].</span></span>
+* <span data-ttu-id="aa113-544">启动同步 interop 进程可能会导致 EINVAL [GH 2813]。</span><span class="sxs-lookup"><span data-stu-id="aa113-544">Starting simultaneous interop processes can result in EINVAL [GH 2813].</span></span>
+* <span data-ttu-id="aa113-545">修复 PTRACE_ATTACH 以在 /proc/pid/status 中显示正确的跟踪状态。</span><span class="sxs-lookup"><span data-stu-id="aa113-545">Fix PTRACE_ATTACH to show proper tracing status in /proc/pid/status.</span></span>
+* <span data-ttu-id="aa113-546">修复以下争用问题：在不清除 TID 地址的情况下，通过 CLEARTID 和 SETTID 标志克隆的生存期较短的进程可能会退出。</span><span class="sxs-lookup"><span data-stu-id="aa113-546">Fix race where short-lived processes cloned with both the CLEARTID and SETTID flags could exit without clearing the TID address.</span></span>
+* <span data-ttu-id="aa113-547">在从 17093 以前的内部版本迁移期间，升级 Linux 文件系统目录时会显示一条消息。</span><span class="sxs-lookup"><span data-stu-id="aa113-547">Display a message when upgrading the Linux file system directories when moving from a pre-17093 build.</span></span> <span data-ttu-id="aa113-548">有关 17093 文件系统更改的更多详细信息，请参阅 [17093](https://github.com/MicrosoftDocs/WSL/blob/live/WSL/release-notes.md#build-17093) 的发行说明。</span><span class="sxs-lookup"><span data-stu-id="aa113-548">For more details on the 17093 file system changes, see the release notes for [17093](https://github.com/MicrosoftDocs/WSL/blob/live/WSL/release-notes.md#build-17093).</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-549">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-549">Console</span></span>
-* <span data-ttu-id="263bc-550">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-550">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-549">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-549">Console</span></span>
+* <span data-ttu-id="aa113-550">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-550">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-551">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-551">LTP Results:</span></span>
-<span data-ttu-id="263bc-552">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-552">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-551">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-551">LTP Results:</span></span>
+<span data-ttu-id="aa113-552">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-552">Testing in progress.</span></span>
 
-## <a name="build-17101"></a><span data-ttu-id="263bc-553">内部版本 17101</span><span class="sxs-lookup"><span data-stu-id="263bc-553">Build 17101</span></span>
-<span data-ttu-id="263bc-554">有关内部版本 17101 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/14/announcing-windows-10-insider-preview-build-17101-fast-build-17604-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-554">For general Windows information on build 17101 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/14/announcing-windows-10-insider-preview-build-17101-fast-build-17604-skip-ahead/).</span></span>
+## <a name="build-17101"></a><span data-ttu-id="aa113-553">内部版本 17101</span><span class="sxs-lookup"><span data-stu-id="aa113-553">Build 17101</span></span>
+<span data-ttu-id="aa113-554">有关内部版本 17101 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/14/announcing-windows-10-insider-preview-build-17101-fast-build-17604-skip-ahead/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-554">For general Windows information on build 17101 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/14/announcing-windows-10-insider-preview-build-17101-fast-build-17604-skip-ahead/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-555">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-555">WSL</span></span>
-* <span data-ttu-id="263bc-556">signalfd 支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-556">Support for signalfd.</span></span> <span data-ttu-id="263bc-557">[GH 129]</span><span class="sxs-lookup"><span data-stu-id="263bc-557">[GH 129]</span></span>
-* <span data-ttu-id="263bc-558">支持包含非法 NTFS 字符的文件名，现在会将这些字符编码为专用 Unicode 字符。</span><span class="sxs-lookup"><span data-stu-id="263bc-558">Support file-names containing illegal NTFS characters by encoding them as private Unicode characters.</span></span> <span data-ttu-id="263bc-559">[GH 1514]</span><span class="sxs-lookup"><span data-stu-id="263bc-559">[GH 1514]</span></span>
-* <span data-ttu-id="263bc-560">不支持写入时，自动装载将回退到只读。</span><span class="sxs-lookup"><span data-stu-id="263bc-560">Auto mount will fallback to read-only when write is not supported.</span></span> <span data-ttu-id="263bc-561">[GH 2603]</span><span class="sxs-lookup"><span data-stu-id="263bc-561">[GH 2603]</span></span>
-* <span data-ttu-id="263bc-562">允许粘贴 Unicode 代理项对（类似于表情符号）。</span><span class="sxs-lookup"><span data-stu-id="263bc-562">Allow pasting of Unicode surrogate pairs (like emoji characters).</span></span> <span data-ttu-id="263bc-563">[GH 2765]</span><span class="sxs-lookup"><span data-stu-id="263bc-563">[GH 2765]</span></span>
-* <span data-ttu-id="263bc-564">/proc 和/sys 中的伪文件应从 select、poll、epoll 等命令返回 read 和 write ready [GH 2838]</span><span class="sxs-lookup"><span data-stu-id="263bc-564">Pseudo-files in /proc and /sys should return read and write ready from select, poll, epoll, et al. [GH 2838]</span></span>
-* <span data-ttu-id="263bc-565">修复当注册表被篡改或损坏时，可能导致服务进入无限循环的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-565">Fix issue that could cause service to go into infinite loop when the registry has been tampered with or is corrupt.</span></span>
-* <span data-ttu-id="263bc-566">修复 netlink 消息，以便能够使用更新版本（上游 4.14）的 iproute2。</span><span class="sxs-lookup"><span data-stu-id="263bc-566">Fix netlink messages to work with newer (upstream 4.14) version of iproute2.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-555">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-555">WSL</span></span>
+* <span data-ttu-id="aa113-556">signalfd 支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-556">Support for signalfd.</span></span> <span data-ttu-id="aa113-557">[GH 129]</span><span class="sxs-lookup"><span data-stu-id="aa113-557">[GH 129]</span></span>
+* <span data-ttu-id="aa113-558">支持包含非法 NTFS 字符的文件名，现在会将这些字符编码为专用 Unicode 字符。</span><span class="sxs-lookup"><span data-stu-id="aa113-558">Support file-names containing illegal NTFS characters by encoding them as private Unicode characters.</span></span> <span data-ttu-id="aa113-559">[GH 1514]</span><span class="sxs-lookup"><span data-stu-id="aa113-559">[GH 1514]</span></span>
+* <span data-ttu-id="aa113-560">不支持写入时，自动装载将回退到只读。</span><span class="sxs-lookup"><span data-stu-id="aa113-560">Auto mount will fallback to read-only when write is not supported.</span></span> <span data-ttu-id="aa113-561">[GH 2603]</span><span class="sxs-lookup"><span data-stu-id="aa113-561">[GH 2603]</span></span>
+* <span data-ttu-id="aa113-562">允许粘贴 Unicode 代理项对（类似于表情符号）。</span><span class="sxs-lookup"><span data-stu-id="aa113-562">Allow pasting of Unicode surrogate pairs (like emoji characters).</span></span> <span data-ttu-id="aa113-563">[GH 2765]</span><span class="sxs-lookup"><span data-stu-id="aa113-563">[GH 2765]</span></span>
+* <span data-ttu-id="aa113-564">/proc 和/sys 中的伪文件应从 select、poll、epoll 等命令返回 read 和 write ready [GH 2838]</span><span class="sxs-lookup"><span data-stu-id="aa113-564">Pseudo-files in /proc and /sys should return read and write ready from select, poll, epoll, et al. [GH 2838]</span></span>
+* <span data-ttu-id="aa113-565">修复当注册表被篡改或损坏时，可能导致服务进入无限循环的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-565">Fix issue that could cause service to go into infinite loop when the registry has been tampered with or is corrupt.</span></span>
+* <span data-ttu-id="aa113-566">修复 netlink 消息，以便能够使用更新版本（上游 4.14）的 iproute2。</span><span class="sxs-lookup"><span data-stu-id="aa113-566">Fix netlink messages to work with newer (upstream 4.14) version of iproute2.</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-567">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-567">Console</span></span>
-* <span data-ttu-id="263bc-568">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-568">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-567">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-567">Console</span></span>
+* <span data-ttu-id="aa113-568">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-568">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-569">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-569">LTP Results:</span></span>
-<span data-ttu-id="263bc-570">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-570">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-569">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-569">LTP Results:</span></span>
+<span data-ttu-id="aa113-570">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-570">Testing in progress.</span></span>
 
-## <a name="build-17093"></a><span data-ttu-id="263bc-571">内部版本 17093</span><span class="sxs-lookup"><span data-stu-id="263bc-571">Build 17093</span></span>
-<span data-ttu-id="263bc-572">有关内部版本 17093 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-572">For general Windows information on build 17093 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/).</span></span>
+## <a name="build-17093"></a><span data-ttu-id="aa113-571">内部版本 17093</span><span class="sxs-lookup"><span data-stu-id="aa113-571">Build 17093</span></span>
+<span data-ttu-id="aa113-572">有关内部版本 17093 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-572">For general Windows information on build 17093 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/).</span></span>
 
-#### <a name="important"></a><span data-ttu-id="263bc-573">重要说明：</span><span class="sxs-lookup"><span data-stu-id="263bc-573">Important:</span></span>
-<span data-ttu-id="263bc-574">升级到此内部版本后，首次启动 WSL 时，需要执行一些操作来升级 Linux 文件系统目录。</span><span class="sxs-lookup"><span data-stu-id="263bc-574">When starting WSL for the first time after upgrading to this build, it needs to perform some work upgrading the Linux file system directories.</span></span> <span data-ttu-id="263bc-575">这可能需要几分钟时间，因此 WSL 的启动速度看上去可能很慢。</span><span class="sxs-lookup"><span data-stu-id="263bc-575">This may take up to several minutes, so WSL may appear to start slowly.</span></span> <span data-ttu-id="263bc-576">对于从 Store 安装的每个分发版，只需执行此操作一次。</span><span class="sxs-lookup"><span data-stu-id="263bc-576">This should only happen once for each distribution you have installed from the store.</span></span>
-* <span data-ttu-id="263bc-577">改善了 DrvFs 中的区分大小写支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-577">Improved case sensitivity support in DrvFs.</span></span>
-    * <span data-ttu-id="263bc-578">DrvFs 现在支持按目录区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-578">DrvFs now supports per-directory case sensitivity.</span></span> <span data-ttu-id="263bc-579">这是一个可对目录设置的新标志，用于指示应将这些目录中的所有操作视为区分大小写，使得 Windows 应用程序能够正确打开按大小写区分的文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-579">This is a new flag that can be set on directories to indicate all operations in those directories should be treated as case sensitive, which allows even Windows applications to correctly open files that differ only by case.</span></span>
-    * <span data-ttu-id="263bc-580">DrvFs 提供新的装载选项用于按目录控制区分大小写状态</span><span class="sxs-lookup"><span data-stu-id="263bc-580">DrvFs has new mount options controlling case sensitivity on a per-directory basis</span></span>
-        * <span data-ttu-id="263bc-581">case=force：将所有目录视为区分大小写（驱动器根目录除外）。</span><span class="sxs-lookup"><span data-stu-id="263bc-581">case=force: all directories are treated as case sensitive (except for the drive root).</span></span> <span data-ttu-id="263bc-582">使用 WSL 创建的新目录将标记为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-582">New directories created with WSL are marked as case sensitive.</span></span> <span data-ttu-id="263bc-583">这也是一种传统行为，不过，它会将新目录标记为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-583">This is the legacy behavior except for marking new directories case sensitive.</span></span>
-        * <span data-ttu-id="263bc-584">case=dir：只将带有按目录区分大小写标志的目录视为区分大小写；其他目录不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-584">case=dir: only directories with the per-directory case sensitivity flag are treated as case sensitive; other directories are case insensitive.</span></span> <span data-ttu-id="263bc-585">使用 WSL 创建的新目录将标记为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-585">New directories created with WSL are marked as case sensitive.</span></span>
-        * <span data-ttu-id="263bc-586">case=off：只将带有按目录区分大小写标志的目录视为区分大小写；其他目录不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-586">case=off: only directories with the per-directory case sensitivity flag are treated as case sensitive; other directories are case insensitive.</span></span> <span data-ttu-id="263bc-587">使用 WSL 创建的新目录将标记为不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-587">New directories created with WSL are marked as case insensitive.</span></span>
-    * <span data-ttu-id="263bc-588">注意：不会对旧版本中的 WSL 创建的目录设置此标志，因此，如果使用“case=dir”选项，则不会将这些目录视为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-588">Note: directories created by WSL in previous releases do not have this flag set, so will not be treated as case sensitive if you use the "case=dir" option.</span></span> <span data-ttu-id="263bc-589">即将推出一种对现有目录设置此标志的方法。</span><span class="sxs-lookup"><span data-stu-id="263bc-589">A way to set this flag on existing directories is coming soon.</span></span>
-    * <span data-ttu-id="263bc-590">使用这些选项进行装载的示例（对于现有的驱动器，必须先卸载，然后才能使用不同选项装载）：sudo mount -t drvfs C: /mnt/c -o case=dir</span><span class="sxs-lookup"><span data-stu-id="263bc-590">Example of mounting with these options (for existing drives, you must first unmount before you can mount with different options): sudo mount -t drvfs C: /mnt/c -o case=dir</span></span>
-    * <span data-ttu-id="263bc-591">目前，case=force 仍是默认选项。</span><span class="sxs-lookup"><span data-stu-id="263bc-591">For now, case=force is still the default option.</span></span> <span data-ttu-id="263bc-592">以后将更改为 case=dir。</span><span class="sxs-lookup"><span data-stu-id="263bc-592">This will be changed to case=dir in the future.</span></span>
-* <span data-ttu-id="263bc-593">现在，在装载 DrvFs 时，可以在 Windows 路径中使用正斜杠，例如：sudo mount -t drvfs //server/share /mnt/share</span><span class="sxs-lookup"><span data-stu-id="263bc-593">You can now use forward slashes in Windows paths when mounting DrvFs, e.g.: sudo mount -t drvfs //server/share /mnt/share</span></span>
-* <span data-ttu-id="263bc-594">WSL 现在会在实例启动期间处理 /etc/fstab 文件 [GH 2636]。</span><span class="sxs-lookup"><span data-stu-id="263bc-594">WSL now processes the /etc/fstab file during instance start [GH 2636].</span></span>
-    * <span data-ttu-id="263bc-595">这种处理是在自动装载 DrvFs 驱动器之前完成的；fstab 已装载的任何驱动器不会自动重新装载，使你可以更改特定驱动器的装入点。</span><span class="sxs-lookup"><span data-stu-id="263bc-595">This is done prior to automatically mounting DrvFs drives; any drives that were already mounted by fstab will not be remounted automatically, allowing you to change the mount point for specific drives.</span></span>
-    * <span data-ttu-id="263bc-596">可以使用 wsl.conf 禁用此行为。</span><span class="sxs-lookup"><span data-stu-id="263bc-596">This behavior can be turned off using wsl.conf.</span></span>
-* <span data-ttu-id="263bc-597">/proc 中的 mount、mountinfo 和 mountstats 文件会正确转义反斜杠和空格等特殊字符 [GH 2799]</span><span class="sxs-lookup"><span data-stu-id="263bc-597">The mount, mountinfo and mountstats files in /proc properly escape special characters like backslashes and spaces [GH 2799]</span></span>
-* <span data-ttu-id="263bc-598">在启用元数据的情况下使用 DrvFs 创建的特殊文件（例如 WSL 符号链接，或 fifos 和 sockets）现在可以从 Windows 复制和移动。</span><span class="sxs-lookup"><span data-stu-id="263bc-598">Special files created with DrvFs such as WSL symbolic links, or fifos and sockets when metadata is enabled, can now be copied and moved from Windows.</span></span>
+#### <a name="important"></a><span data-ttu-id="aa113-573">重要说明：</span><span class="sxs-lookup"><span data-stu-id="aa113-573">Important:</span></span>
+<span data-ttu-id="aa113-574">升级到此内部版本后，首次启动 WSL 时，需要执行一些操作来升级 Linux 文件系统目录。</span><span class="sxs-lookup"><span data-stu-id="aa113-574">When starting WSL for the first time after upgrading to this build, it needs to perform some work upgrading the Linux file system directories.</span></span> <span data-ttu-id="aa113-575">这可能需要几分钟时间，因此 WSL 的启动速度看上去可能很慢。</span><span class="sxs-lookup"><span data-stu-id="aa113-575">This may take up to several minutes, so WSL may appear to start slowly.</span></span> <span data-ttu-id="aa113-576">对于从 Store 安装的每个分发版，只需执行此操作一次。</span><span class="sxs-lookup"><span data-stu-id="aa113-576">This should only happen once for each distribution you have installed from the store.</span></span>
+* <span data-ttu-id="aa113-577">改善了 DrvFs 中的区分大小写支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-577">Improved case sensitivity support in DrvFs.</span></span>
+    * <span data-ttu-id="aa113-578">DrvFs 现在支持按目录区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-578">DrvFs now supports per-directory case sensitivity.</span></span> <span data-ttu-id="aa113-579">这是一个可对目录设置的新标志，用于指示应将这些目录中的所有操作视为区分大小写，使得 Windows 应用程序能够正确打开按大小写区分的文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-579">This is a new flag that can be set on directories to indicate all operations in those directories should be treated as case sensitive, which allows even Windows applications to correctly open files that differ only by case.</span></span>
+    * <span data-ttu-id="aa113-580">DrvFs 提供新的装载选项用于按目录控制区分大小写状态</span><span class="sxs-lookup"><span data-stu-id="aa113-580">DrvFs has new mount options controlling case sensitivity on a per-directory basis</span></span>
+        * <span data-ttu-id="aa113-581">case=force：将所有目录视为区分大小写（驱动器根目录除外）。</span><span class="sxs-lookup"><span data-stu-id="aa113-581">case=force: all directories are treated as case sensitive (except for the drive root).</span></span> <span data-ttu-id="aa113-582">使用 WSL 创建的新目录将标记为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-582">New directories created with WSL are marked as case sensitive.</span></span> <span data-ttu-id="aa113-583">这也是一种传统行为，不过，它会将新目录标记为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-583">This is the legacy behavior except for marking new directories case sensitive.</span></span>
+        * <span data-ttu-id="aa113-584">case=dir：只将带有按目录区分大小写标志的目录视为区分大小写；其他目录不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-584">case=dir: only directories with the per-directory case sensitivity flag are treated as case sensitive; other directories are case insensitive.</span></span> <span data-ttu-id="aa113-585">使用 WSL 创建的新目录将标记为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-585">New directories created with WSL are marked as case sensitive.</span></span>
+        * <span data-ttu-id="aa113-586">case=off：只将带有按目录区分大小写标志的目录视为区分大小写；其他目录不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-586">case=off: only directories with the per-directory case sensitivity flag are treated as case sensitive; other directories are case insensitive.</span></span> <span data-ttu-id="aa113-587">使用 WSL 创建的新目录将标记为不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-587">New directories created with WSL are marked as case insensitive.</span></span>
+    * <span data-ttu-id="aa113-588">注意：不会对旧版本中的 WSL 创建的目录设置此标志，因此，如果使用“case=dir”选项，则不会将这些目录视为区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-588">Note: directories created by WSL in previous releases do not have this flag set, so will not be treated as case sensitive if you use the "case=dir" option.</span></span> <span data-ttu-id="aa113-589">即将推出一种对现有目录设置此标志的方法。</span><span class="sxs-lookup"><span data-stu-id="aa113-589">A way to set this flag on existing directories is coming soon.</span></span>
+    * <span data-ttu-id="aa113-590">使用这些选项进行装载的示例（对于现有的驱动器，必须先卸载，然后才能使用不同选项装载）：sudo mount -t drvfs C: /mnt/c -o case=dir</span><span class="sxs-lookup"><span data-stu-id="aa113-590">Example of mounting with these options (for existing drives, you must first unmount before you can mount with different options): sudo mount -t drvfs C: /mnt/c -o case=dir</span></span>
+    * <span data-ttu-id="aa113-591">目前，case=force 仍是默认选项。</span><span class="sxs-lookup"><span data-stu-id="aa113-591">For now, case=force is still the default option.</span></span> <span data-ttu-id="aa113-592">以后将更改为 case=dir。</span><span class="sxs-lookup"><span data-stu-id="aa113-592">This will be changed to case=dir in the future.</span></span>
+* <span data-ttu-id="aa113-593">现在，在装载 DrvFs 时，可以在 Windows 路径中使用正斜杠，例如：sudo mount -t drvfs //server/share /mnt/share</span><span class="sxs-lookup"><span data-stu-id="aa113-593">You can now use forward slashes in Windows paths when mounting DrvFs, e.g.: sudo mount -t drvfs //server/share /mnt/share</span></span>
+* <span data-ttu-id="aa113-594">WSL 现在会在实例启动期间处理 /etc/fstab 文件 [GH 2636]。</span><span class="sxs-lookup"><span data-stu-id="aa113-594">WSL now processes the /etc/fstab file during instance start [GH 2636].</span></span>
+    * <span data-ttu-id="aa113-595">这种处理是在自动装载 DrvFs 驱动器之前完成的；fstab 已装载的任何驱动器不会自动重新装载，使你可以更改特定驱动器的装入点。</span><span class="sxs-lookup"><span data-stu-id="aa113-595">This is done prior to automatically mounting DrvFs drives; any drives that were already mounted by fstab will not be remounted automatically, allowing you to change the mount point for specific drives.</span></span>
+    * <span data-ttu-id="aa113-596">可以使用 wsl.conf 禁用此行为。</span><span class="sxs-lookup"><span data-stu-id="aa113-596">This behavior can be turned off using wsl.conf.</span></span>
+* <span data-ttu-id="aa113-597">/proc 中的 mount、mountinfo 和 mountstats 文件会正确转义反斜杠和空格等特殊字符 [GH 2799]</span><span class="sxs-lookup"><span data-stu-id="aa113-597">The mount, mountinfo and mountstats files in /proc properly escape special characters like backslashes and spaces [GH 2799]</span></span>
+* <span data-ttu-id="aa113-598">在启用元数据的情况下使用 DrvFs 创建的特殊文件（例如 WSL 符号链接，或 fifos 和 sockets）现在可以从 Windows 复制和移动。</span><span class="sxs-lookup"><span data-stu-id="aa113-598">Special files created with DrvFs such as WSL symbolic links, or fifos and sockets when metadata is enabled, can now be copied and moved from Windows.</span></span>
 
-#### <a name="wsl-is-more-configurable-with-wslconf"></a><span data-ttu-id="263bc-599">可以使用 wsl.conf 更方便地配置 WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-599">WSL is more configurable with wsl.conf</span></span>
-<span data-ttu-id="263bc-600">我们添加了一个方法，用于自动配置 WSL 中每次启动子系统时要应用的某些功能。</span><span class="sxs-lookup"><span data-stu-id="263bc-600">We added a method for you to automatically configure certain functionality in WSL that will be applied every time you launch the subsystem.</span></span> <span data-ttu-id="263bc-601">这包括自动装载选项和网络配置。</span><span class="sxs-lookup"><span data-stu-id="263bc-601">This includes automount options and network configuration.</span></span> <span data-ttu-id="263bc-602">有关详细信息，请参阅博客文章： https://aka.ms/wslconf</span><span class="sxs-lookup"><span data-stu-id="263bc-602">Learn more about it in our blog post at: https://aka.ms/wslconf</span></span>
+#### <a name="wsl-is-more-configurable-with-wslconf"></a><span data-ttu-id="aa113-599">可以使用 wsl.conf 更方便地配置 WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-599">WSL is more configurable with wsl.conf</span></span>
+<span data-ttu-id="aa113-600">我们添加了一个方法，用于自动配置 WSL 中每次启动子系统时要应用的某些功能。</span><span class="sxs-lookup"><span data-stu-id="aa113-600">We added a method for you to automatically configure certain functionality in WSL that will be applied every time you launch the subsystem.</span></span> <span data-ttu-id="aa113-601">这包括自动装载选项和网络配置。</span><span class="sxs-lookup"><span data-stu-id="aa113-601">This includes automount options and network configuration.</span></span> <span data-ttu-id="aa113-602">有关详细信息，请参阅博客文章： https://aka.ms/wslconf</span><span class="sxs-lookup"><span data-stu-id="aa113-602">Learn more about it in our blog post at: https://aka.ms/wslconf</span></span>
 
-#### <a name="af_unix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a><span data-ttu-id="263bc-603">AF_UNIX 允许在 WSL 上的 Linux 进程与 Windows 本机进程之间建立套接字连接</span><span class="sxs-lookup"><span data-stu-id="263bc-603">AF_UNIX allows socket connections between Linux processes on WSL and Windows native processes</span></span>
-<span data-ttu-id="263bc-604">现在，WSL 和 Windows 应用程序可以通过 Unix 套接字相互通信。</span><span class="sxs-lookup"><span data-stu-id="263bc-604">WSL and Windows applications can now communicate with each other over Unix sockets.</span></span> <span data-ttu-id="263bc-605">假设你要在 Windows 中运行某个服务，并使其可在 Windows 和 WSL 应用中使用。</span><span class="sxs-lookup"><span data-stu-id="263bc-605">Imagine you want to run a service in Windows and make it available to both Windows and WSL apps.</span></span> <span data-ttu-id="263bc-606">现在可以通过 Unix 套接字实现此目的。</span><span class="sxs-lookup"><span data-stu-id="263bc-606">Now, that's possible with Unix sockets.</span></span> <span data-ttu-id="263bc-607">有关详细信息，请参阅博客文章： https://aka.ms/afunixinterop</span><span class="sxs-lookup"><span data-stu-id="263bc-607">Read more in our blog post at https://aka.ms/afunixinterop</span></span>
+#### <a name="af_unix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a><span data-ttu-id="aa113-603">AF_UNIX 允许在 WSL 上的 Linux 进程与 Windows 本机进程之间建立套接字连接</span><span class="sxs-lookup"><span data-stu-id="aa113-603">AF_UNIX allows socket connections between Linux processes on WSL and Windows native processes</span></span>
+<span data-ttu-id="aa113-604">现在，WSL 和 Windows 应用程序可以通过 Unix 套接字相互通信。</span><span class="sxs-lookup"><span data-stu-id="aa113-604">WSL and Windows applications can now communicate with each other over Unix sockets.</span></span> <span data-ttu-id="aa113-605">假设你要在 Windows 中运行某个服务，并使其可在 Windows 和 WSL 应用中使用。</span><span class="sxs-lookup"><span data-stu-id="aa113-605">Imagine you want to run a service in Windows and make it available to both Windows and WSL apps.</span></span> <span data-ttu-id="aa113-606">现在可以通过 Unix 套接字实现此目的。</span><span class="sxs-lookup"><span data-stu-id="aa113-606">Now, that's possible with Unix sockets.</span></span> <span data-ttu-id="aa113-607">有关详细信息，请参阅博客文章： https://aka.ms/afunixinterop</span><span class="sxs-lookup"><span data-stu-id="aa113-607">Read more in our blog post at https://aka.ms/afunixinterop</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-608">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-608">WSL</span></span>
-* <span data-ttu-id="263bc-609">支持使用 MAP_NORESERVE 的 mmap() [GH 121、2784]</span><span class="sxs-lookup"><span data-stu-id="263bc-609">Support mmap() with MAP_NORESERVE [GH 121, 2784]</span></span>
-* <span data-ttu-id="263bc-610">支持 CLONE_PTRACE 和 CLONE_UNTRACED [GH 121、2781]</span><span class="sxs-lookup"><span data-stu-id="263bc-610">Support CLONE_PTRACE and CLONE_UNTRACED [GH 121, 2781]</span></span>
-* <span data-ttu-id="263bc-611">处理克隆中的非 SIGCHLD 终止信号 [GH 121、2781]</span><span class="sxs-lookup"><span data-stu-id="263bc-611">Handle non-SIGCHLD termination signal in clone [GH 121, 2781]</span></span>
-* <span data-ttu-id="263bc-612">存根 /proc/sys/fs/inotify/max_user_instances 和 /proc/sys/fs/inotify/max_user_watches [GH 1705]</span><span class="sxs-lookup"><span data-stu-id="263bc-612">Stub /proc/sys/fs/inotify/max_user_instances and /proc/sys/fs/inotify/max_user_watches [GH 1705]</span></span>
-* <span data-ttu-id="263bc-613">加载包含偏移量非零的负载标头的 ELF 二进制文件时出错 [GH 1884]</span><span class="sxs-lookup"><span data-stu-id="263bc-613">Error loading ELF binaries that contain load headers with non-zero offsets [GH 1884]</span></span>
-* <span data-ttu-id="263bc-614">加载映像时将尾随页字节归零。</span><span class="sxs-lookup"><span data-stu-id="263bc-614">Zero out trailing page bytes when loading images.</span></span>
-* <span data-ttu-id="263bc-615">减少 execve 以静默方式终止进程的情况</span><span class="sxs-lookup"><span data-stu-id="263bc-615">Reduce cases where execve silently terminates process</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-608">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-608">WSL</span></span>
+* <span data-ttu-id="aa113-609">支持使用 MAP_NORESERVE 的 mmap() [GH 121、2784]</span><span class="sxs-lookup"><span data-stu-id="aa113-609">Support mmap() with MAP_NORESERVE [GH 121, 2784]</span></span>
+* <span data-ttu-id="aa113-610">支持 CLONE_PTRACE 和 CLONE_UNTRACED [GH 121、2781]</span><span class="sxs-lookup"><span data-stu-id="aa113-610">Support CLONE_PTRACE and CLONE_UNTRACED [GH 121, 2781]</span></span>
+* <span data-ttu-id="aa113-611">处理克隆中的非 SIGCHLD 终止信号 [GH 121、2781]</span><span class="sxs-lookup"><span data-stu-id="aa113-611">Handle non-SIGCHLD termination signal in clone [GH 121, 2781]</span></span>
+* <span data-ttu-id="aa113-612">存根 /proc/sys/fs/inotify/max_user_instances 和 /proc/sys/fs/inotify/max_user_watches [GH 1705]</span><span class="sxs-lookup"><span data-stu-id="aa113-612">Stub /proc/sys/fs/inotify/max_user_instances and /proc/sys/fs/inotify/max_user_watches [GH 1705]</span></span>
+* <span data-ttu-id="aa113-613">加载包含偏移量非零的负载标头的 ELF 二进制文件时出错 [GH 1884]</span><span class="sxs-lookup"><span data-stu-id="aa113-613">Error loading ELF binaries that contain load headers with non-zero offsets [GH 1884]</span></span>
+* <span data-ttu-id="aa113-614">加载映像时将尾随页字节归零。</span><span class="sxs-lookup"><span data-stu-id="aa113-614">Zero out trailing page bytes when loading images.</span></span>
+* <span data-ttu-id="aa113-615">减少 execve 以静默方式终止进程的情况</span><span class="sxs-lookup"><span data-stu-id="aa113-615">Reduce cases where execve silently terminates process</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-616">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-616">Console</span></span>
-* <span data-ttu-id="263bc-617">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-617">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-616">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-616">Console</span></span>
+* <span data-ttu-id="aa113-617">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-617">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-618">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-618">LTP Results:</span></span>
-<span data-ttu-id="263bc-619">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-619">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-618">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-618">LTP Results:</span></span>
+<span data-ttu-id="aa113-619">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-619">Testing in progress.</span></span>
 
-## <a name="build-17083"></a><span data-ttu-id="263bc-620">版本 17083</span><span class="sxs-lookup"><span data-stu-id="263bc-620">Build 17083</span></span>
-<span data-ttu-id="263bc-621">有关内部版本 17083 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/01/24/announcing-windows-10-insider-preview-build-17083-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-621">For general Windows information on build 17083 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/01/24/announcing-windows-10-insider-preview-build-17083-for-pc/).</span></span>
+## <a name="build-17083"></a><span data-ttu-id="aa113-620">版本 17083</span><span class="sxs-lookup"><span data-stu-id="aa113-620">Build 17083</span></span>
+<span data-ttu-id="aa113-621">有关内部版本 17083 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/01/24/announcing-windows-10-insider-preview-build-17083-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-621">For general Windows information on build 17083 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/01/24/announcing-windows-10-insider-preview-build-17083-for-pc/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-622">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-622">WSL</span></span>
-* <span data-ttu-id="263bc-623">修复了与 epoll 相关的 bug 检查 [GH 2798、2801、2857]</span><span class="sxs-lookup"><span data-stu-id="263bc-623">Fixed bugcheck related to epoll [GH 2798, 2801, 2857]</span></span>
-* <span data-ttu-id="263bc-624">修复了关闭 ASLR 时挂起的问题 [GH 1185、2870]</span><span class="sxs-lookup"><span data-stu-id="263bc-624">Fixed hangs when turning off ASLR [GH 1185, 2870]</span></span>
-* <span data-ttu-id="263bc-625">确保 mmap 操作显示原子性 [GH 2732]</span><span class="sxs-lookup"><span data-stu-id="263bc-625">Ensure mmap operations appear atomic [GH 2732]</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-622">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-622">WSL</span></span>
+* <span data-ttu-id="aa113-623">修复了与 epoll 相关的 bug 检查 [GH 2798、2801、2857]</span><span class="sxs-lookup"><span data-stu-id="aa113-623">Fixed bugcheck related to epoll [GH 2798, 2801, 2857]</span></span>
+* <span data-ttu-id="aa113-624">修复了关闭 ASLR 时挂起的问题 [GH 1185、2870]</span><span class="sxs-lookup"><span data-stu-id="aa113-624">Fixed hangs when turning off ASLR [GH 1185, 2870]</span></span>
+* <span data-ttu-id="aa113-625">确保 mmap 操作显示原子性 [GH 2732]</span><span class="sxs-lookup"><span data-stu-id="aa113-625">Ensure mmap operations appear atomic [GH 2732]</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-626">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-626">Console</span></span>
-* <span data-ttu-id="263bc-627">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-627">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-626">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-626">Console</span></span>
+* <span data-ttu-id="aa113-627">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-627">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-628">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-628">LTP Results:</span></span>
-<span data-ttu-id="263bc-629">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-629">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-628">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-628">LTP Results:</span></span>
+<span data-ttu-id="aa113-629">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-629">Testing in progress.</span></span>
 
-## <a name="build-17074"></a><span data-ttu-id="263bc-630">内部版本 17074</span><span class="sxs-lookup"><span data-stu-id="263bc-630">Build 17074</span></span>
-<span data-ttu-id="263bc-631">有关内部版本 17074 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/01/11/announcing-windows-10-insider-preview-build-17074-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-631">For general Windows information on build 17074 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/01/11/announcing-windows-10-insider-preview-build-17074-pc/).</span></span>
+## <a name="build-17074"></a><span data-ttu-id="aa113-630">内部版本 17074</span><span class="sxs-lookup"><span data-stu-id="aa113-630">Build 17074</span></span>
+<span data-ttu-id="aa113-631">有关内部版本 17074 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2018/01/11/announcing-windows-10-insider-preview-build-17074-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-631">For general Windows information on build 17074 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2018/01/11/announcing-windows-10-insider-preview-build-17074-pc/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-632">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-632">WSL</span></span>
-* <span data-ttu-id="263bc-633">固定了 DrvFs 元数据的存储格式 [GH 2777]</span><span class="sxs-lookup"><span data-stu-id="263bc-633">Fixed storage format of DrvFs metadata [GH 2777]</span></span> </br>
-<span data-ttu-id="263bc-634">**重要说明：** 在此内部版本之前创建的 DrvFs 元数据将不正确地显示或根本不显示。</span><span class="sxs-lookup"><span data-stu-id="263bc-634">**Important:** DrvFs metadata created before this build will show up incorrectly or not at all.</span></span> <span data-ttu-id="263bc-635">若要修复受影响的文件，请使用 chmod 和 chown 重新应用元数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-635">To fix affected files, use chmod and chown to re-apply the metadata.</span></span>
-* <span data-ttu-id="263bc-636">修复了多个信号和可重启 syscall 的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-636">Fixed issue with multiple signals and restartable syscalls.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-632">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-632">WSL</span></span>
+* <span data-ttu-id="aa113-633">固定了 DrvFs 元数据的存储格式 [GH 2777]</span><span class="sxs-lookup"><span data-stu-id="aa113-633">Fixed storage format of DrvFs metadata [GH 2777]</span></span> </br>
+<span data-ttu-id="aa113-634">**重要说明：** 在此内部版本之前创建的 DrvFs 元数据将不正确地显示或根本不显示。</span><span class="sxs-lookup"><span data-stu-id="aa113-634">**Important:** DrvFs metadata created before this build will show up incorrectly or not at all.</span></span> <span data-ttu-id="aa113-635">若要修复受影响的文件，请使用 chmod 和 chown 重新应用元数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-635">To fix affected files, use chmod and chown to re-apply the metadata.</span></span>
+* <span data-ttu-id="aa113-636">修复了多个信号和可重启 syscall 的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-636">Fixed issue with multiple signals and restartable syscalls.</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-637">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-637">Console</span></span>
-* <span data-ttu-id="263bc-638">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-638">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-637">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-637">Console</span></span>
+* <span data-ttu-id="aa113-638">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-638">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-639">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-639">LTP Results:</span></span>
-<span data-ttu-id="263bc-640">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-640">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-639">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-639">LTP Results:</span></span>
+<span data-ttu-id="aa113-640">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-640">Testing in progress.</span></span>
 
-## <a name="build-17063"></a><span data-ttu-id="263bc-641">内部版本 17063</span><span class="sxs-lookup"><span data-stu-id="263bc-641">Build 17063</span></span>
-<span data-ttu-id="263bc-642">有关内部版本 17063 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-642">For general Windows information on build 17063 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/).</span></span>
+## <a name="build-17063"></a><span data-ttu-id="aa113-641">内部版本 17063</span><span class="sxs-lookup"><span data-stu-id="aa113-641">Build 17063</span></span>
+<span data-ttu-id="aa113-642">有关内部版本 17063 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-642">For general Windows information on build 17063 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/).</span></span>
 
-### <a name="wsl"></a><span data-ttu-id="263bc-643">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-643">WSL</span></span>
-* <span data-ttu-id="263bc-644">DrvFs 支持其他 Linux 元数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-644">DrvFs supports additional Linux metadata.</span></span> <span data-ttu-id="263bc-645">这样，就可以使用 chmod/chown 设置文件的所有者和模式，并可以创建特殊文件，例如 fifos、Unix 套接字和设备文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-645">This allows setting the owner and mode of files using chmod/chown, and also the creation of special files such as fifos, unix sockets and device files.</span></span> <span data-ttu-id="263bc-646">默认情况下，此功能暂时处于禁用状态，因为它仍是试验性的。</span><span class="sxs-lookup"><span data-stu-id="263bc-646">This is disabled by default for now since it's still experimental.</span></span>
-<span data-ttu-id="263bc-647">**注意：** 修复了 DrvFs 使用的元数据格式的 bug。</span><span class="sxs-lookup"><span data-stu-id="263bc-647">**Note:**  We fixed a bug in the metadata format used by DrvFs.</span></span> <span data-ttu-id="263bc-648">尽管试验性的元数据可在此内部版本中正常工作，但将来的内部版本无法正确读取此内部版本创建的元数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-648">While metadata works on this build for experimentation, future builds will not correctly read metadata created by this build.</span></span>  <span data-ttu-id="263bc-649">你可能需要手动更新已修改的文件的所有者，并且必须重新创建使用自定义设备 ID 的设备。</span><span class="sxs-lookup"><span data-stu-id="263bc-649">You might need to manually update owner for modified files and devices with a custom device ID will have to be recreated.</span></span>
+### <a name="wsl"></a><span data-ttu-id="aa113-643">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-643">WSL</span></span>
+* <span data-ttu-id="aa113-644">DrvFs 支持其他 Linux 元数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-644">DrvFs supports additional Linux metadata.</span></span> <span data-ttu-id="aa113-645">这样，就可以使用 chmod/chown 设置文件的所有者和模式，并可以创建特殊文件，例如 fifos、Unix 套接字和设备文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-645">This allows setting the owner and mode of files using chmod/chown, and also the creation of special files such as fifos, unix sockets and device files.</span></span> <span data-ttu-id="aa113-646">默认情况下，此功能暂时处于禁用状态，因为它仍是试验性的。</span><span class="sxs-lookup"><span data-stu-id="aa113-646">This is disabled by default for now since it's still experimental.</span></span>
+<span data-ttu-id="aa113-647">**注意：** 修复了 DrvFs 使用的元数据格式的 bug。</span><span class="sxs-lookup"><span data-stu-id="aa113-647">**Note:**  We fixed a bug in the metadata format used by DrvFs.</span></span> <span data-ttu-id="aa113-648">尽管试验性的元数据可在此内部版本中正常工作，但将来的内部版本无法正确读取此内部版本创建的元数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-648">While metadata works on this build for experimentation, future builds will not correctly read metadata created by this build.</span></span>  <span data-ttu-id="aa113-649">你可能需要手动更新已修改的文件的所有者，并且必须重新创建使用自定义设备 ID 的设备。</span><span class="sxs-lookup"><span data-stu-id="aa113-649">You might need to manually update owner for modified files and devices with a custom device ID will have to be recreated.</span></span>
 
-  <span data-ttu-id="263bc-650">若要启用元数据，请使用 metadata 选项装载 DrvFs（若要在现有装入点上启用，必须先将其卸载）：</span><span class="sxs-lookup"><span data-stu-id="263bc-650">To enable, mount DrvFs with the metadata option (to enable it on an existing mount, you must first unmount it):</span></span>
+  <span data-ttu-id="aa113-650">若要启用元数据，请使用 metadata 选项装载 DrvFs（若要在现有装入点上启用，必须先将其卸载）：</span><span class="sxs-lookup"><span data-stu-id="aa113-650">To enable, mount DrvFs with the metadata option (to enable it on an existing mount, you must first unmount it):</span></span>
 
   ```bash
   mount -t drvfs C: /mnt/c -o metadata
   ```
 
-  <span data-ttu-id="263bc-651">Linux 权限将作为附加元数据添加到文件；它们不会影响 Windows 权限。</span><span class="sxs-lookup"><span data-stu-id="263bc-651">Linux permissions are added as additional metadata to the file; they do not affect the Windows permissions.</span></span>  <span data-ttu-id="263bc-652">请记住，使用 Windows 编辑器编辑文件可能会删除元数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-652">Remember, editing a file using a Windows editor may remove the metadata.</span></span> <span data-ttu-id="263bc-653">在这种情况下，文件将还原为默认权限。</span><span class="sxs-lookup"><span data-stu-id="263bc-653">In this case, the file will revert to its default permissions.</span></span>
+  <span data-ttu-id="aa113-651">Linux 权限将作为附加元数据添加到文件；它们不会影响 Windows 权限。</span><span class="sxs-lookup"><span data-stu-id="aa113-651">Linux permissions are added as additional metadata to the file; they do not affect the Windows permissions.</span></span>  <span data-ttu-id="aa113-652">请记住，使用 Windows 编辑器编辑文件可能会删除元数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-652">Remember, editing a file using a Windows editor may remove the metadata.</span></span> <span data-ttu-id="aa113-653">在这种情况下，文件将还原为默认权限。</span><span class="sxs-lookup"><span data-stu-id="aa113-653">In this case, the file will revert to its default permissions.</span></span>
 
-* <span data-ttu-id="263bc-654">已将 mount 选项添加到 DrvFs，用于控制不包含元数据的文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-654">Added mount options to DrvFs to control files without metadata.</span></span>
-  * <span data-ttu-id="263bc-655">uid：所有文件的所有者使用的用户 ID。</span><span class="sxs-lookup"><span data-stu-id="263bc-655">uid: the user ID used for the owner of all files.</span></span>
-  * <span data-ttu-id="263bc-656">gid：所有文件的所有者使用的组 ID。</span><span class="sxs-lookup"><span data-stu-id="263bc-656">gid: the group ID used for the owner of all files.</span></span>
-  * <span data-ttu-id="263bc-657">umask：要对所有文件和目录排除的权限的八进制掩码。</span><span class="sxs-lookup"><span data-stu-id="263bc-657">umask: an octal mask of permissions to exclude for all files and directories.</span></span>
-  * <span data-ttu-id="263bc-658">fmask：要对所有常规文件排除的权限的八进制掩码。</span><span class="sxs-lookup"><span data-stu-id="263bc-658">fmask: an octal mask of permissions to exclude for all regular files.</span></span>
-  * <span data-ttu-id="263bc-659">dmask：要对所有目录排除的权限的八进制掩码。</span><span class="sxs-lookup"><span data-stu-id="263bc-659">dmask: an octal mask of permissions to exclude for all directories.</span></span>
+* <span data-ttu-id="aa113-654">已将 mount 选项添加到 DrvFs，用于控制不包含元数据的文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-654">Added mount options to DrvFs to control files without metadata.</span></span>
+  * <span data-ttu-id="aa113-655">uid：所有文件的所有者使用的用户 ID。</span><span class="sxs-lookup"><span data-stu-id="aa113-655">uid: the user ID used for the owner of all files.</span></span>
+  * <span data-ttu-id="aa113-656">gid：所有文件的所有者使用的组 ID。</span><span class="sxs-lookup"><span data-stu-id="aa113-656">gid: the group ID used for the owner of all files.</span></span>
+  * <span data-ttu-id="aa113-657">umask：要对所有文件和目录排除的权限的八进制掩码。</span><span class="sxs-lookup"><span data-stu-id="aa113-657">umask: an octal mask of permissions to exclude for all files and directories.</span></span>
+  * <span data-ttu-id="aa113-658">fmask：要对所有常规文件排除的权限的八进制掩码。</span><span class="sxs-lookup"><span data-stu-id="aa113-658">fmask: an octal mask of permissions to exclude for all regular files.</span></span>
+  * <span data-ttu-id="aa113-659">dmask：要对所有目录排除的权限的八进制掩码。</span><span class="sxs-lookup"><span data-stu-id="aa113-659">dmask: an octal mask of permissions to exclude for all directories.</span></span>
 
-  <span data-ttu-id="263bc-660">例如：</span><span class="sxs-lookup"><span data-stu-id="263bc-660">For example:</span></span>
+  <span data-ttu-id="aa113-660">例如：</span><span class="sxs-lookup"><span data-stu-id="aa113-660">For example:</span></span>
   ```
   mount -t drvfs C: /mnt/c -o uid=1000,gid=1000,umask=22,fmask=111
   ```
 
-  <span data-ttu-id="263bc-661">与 metadata 选项相结合可以指定不包含元数据的文件的默认权限。</span><span class="sxs-lookup"><span data-stu-id="263bc-661">Combine with the metadata option to specify default permissions for files without metadata.</span></span>
+  <span data-ttu-id="aa113-661">与 metadata 选项相结合可以指定不包含元数据的文件的默认权限。</span><span class="sxs-lookup"><span data-stu-id="aa113-661">Combine with the metadata option to specify default permissions for files without metadata.</span></span>
 
-* <span data-ttu-id="263bc-662">引入了新的环境变量 `WSLENV`，用于配置环境变量在 WSL 与 Win32 之间的流动方式。</span><span class="sxs-lookup"><span data-stu-id="263bc-662">Introduced a new environment variable, `WSLENV`, to configure how environment variables flow between WSL and Win32.</span></span>
+* <span data-ttu-id="aa113-662">引入了新的环境变量 `WSLENV`，用于配置环境变量在 WSL 与 Win32 之间的流动方式。</span><span class="sxs-lookup"><span data-stu-id="aa113-662">Introduced a new environment variable, `WSLENV`, to configure how environment variables flow between WSL and Win32.</span></span>
 
-  <span data-ttu-id="263bc-663">例如：</span><span class="sxs-lookup"><span data-stu-id="263bc-663">For example:</span></span>
+  <span data-ttu-id="aa113-663">例如：</span><span class="sxs-lookup"><span data-stu-id="aa113-663">For example:</span></span>
 
   ``` bash
   WSLENV=GOPATH/l:USERPROFILE/pu:DISPLAY
   ```
 
-  <span data-ttu-id="263bc-664">`WSLENV` 是在从 Win32 启动 WSL 进程或者从 WSL 启动 Win32 进程时可以包含的环境变量的冒号分隔列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-664">`WSLENV` is a colon-delimited list of environment variables that can be included when launching WSL processes from Win32 or Win32 processes from WSL.</span></span>  <span data-ttu-id="263bc-665">每个变量可以使用斜杠后接一个用于指定其转换方式的标志作为后缀。</span><span class="sxs-lookup"><span data-stu-id="263bc-665">Each variable can be suffixed with a slash followed by flags to specify how it is translated.</span></span>
-  * <span data-ttu-id="263bc-666">p：值是应在 WSL 路径与 Win32 路径之间进行转换的路径。</span><span class="sxs-lookup"><span data-stu-id="263bc-666">p: The value is a path that should be translated between WSL paths and Win32 paths.</span></span>
-  * <span data-ttu-id="263bc-667">l：值是路径列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-667">l: The value is a list of paths.</span></span> <span data-ttu-id="263bc-668">在 WSL 中，它是冒号分隔的列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-668">In WSL, it is a colon-delimited list.</span></span> <span data-ttu-id="263bc-669">在 Win32 中，它是分号分隔的列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-669">In Win32, it is a semicolon-delimited list.</span></span>
-  * <span data-ttu-id="263bc-670">u：仅当从 Win32 调用 WSL 时才应该包含该值</span><span class="sxs-lookup"><span data-stu-id="263bc-670">u: The value should only be included when invoking WSL from Win32</span></span>
-  * <span data-ttu-id="263bc-671">w：仅当从 WSL 调用 Win32 时才应该包含该值</span><span class="sxs-lookup"><span data-stu-id="263bc-671">w: The value should only be included when invoking Win32 from WSL</span></span>
+  <span data-ttu-id="aa113-664">`WSLENV` 是在从 Win32 启动 WSL 进程或者从 WSL 启动 Win32 进程时可以包含的环境变量的冒号分隔列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-664">`WSLENV` is a colon-delimited list of environment variables that can be included when launching WSL processes from Win32 or Win32 processes from WSL.</span></span>  <span data-ttu-id="aa113-665">每个变量可以使用斜杠后接一个用于指定其转换方式的标志作为后缀。</span><span class="sxs-lookup"><span data-stu-id="aa113-665">Each variable can be suffixed with a slash followed by flags to specify how it is translated.</span></span>
+  * <span data-ttu-id="aa113-666">p：值是应在 WSL 路径与 Win32 路径之间进行转换的路径。</span><span class="sxs-lookup"><span data-stu-id="aa113-666">p: The value is a path that should be translated between WSL paths and Win32 paths.</span></span>
+  * <span data-ttu-id="aa113-667">l：值是路径列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-667">l: The value is a list of paths.</span></span> <span data-ttu-id="aa113-668">在 WSL 中，它是冒号分隔的列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-668">In WSL, it is a colon-delimited list.</span></span> <span data-ttu-id="aa113-669">在 Win32 中，它是分号分隔的列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-669">In Win32, it is a semicolon-delimited list.</span></span>
+  * <span data-ttu-id="aa113-670">u：仅当从 Win32 调用 WSL 时才应该包含该值</span><span class="sxs-lookup"><span data-stu-id="aa113-670">u: The value should only be included when invoking WSL from Win32</span></span>
+  * <span data-ttu-id="aa113-671">w：仅当从 WSL 调用 Win32 时才应该包含该值</span><span class="sxs-lookup"><span data-stu-id="aa113-671">w: The value should only be included when invoking Win32 from WSL</span></span>
 
-  <span data-ttu-id="263bc-672">可以在 .bashrc 中或者在用户的自定义 Windows 环境中设置 `WSLENV`。</span><span class="sxs-lookup"><span data-stu-id="263bc-672">You can set `WSLENV` in .bashrc or in the custom Windows environment for your user.</span></span>
+  <span data-ttu-id="aa113-672">可以在 .bashrc 中或者在用户的自定义 Windows 环境中设置 `WSLENV`。</span><span class="sxs-lookup"><span data-stu-id="aa113-672">You can set `WSLENV` in .bashrc or in the custom Windows environment for your user.</span></span>
 
-* <span data-ttu-id="263bc-673">drvfs 装入点会正确保留 tar、cp -p 中的时间戳 (GH 1939)</span><span class="sxs-lookup"><span data-stu-id="263bc-673">drvfs mounts correctly preserves timestamps from tar, cp -p (GH 1939)</span></span>
-* <span data-ttu-id="263bc-674">drvfs 符号链接会报告正确的大小 (GH 2641)</span><span class="sxs-lookup"><span data-stu-id="263bc-674">drvfs symlinks report the correct size (GH 2641)</span></span>
-* <span data-ttu-id="263bc-675">read/write 适用于极大的 IO 大小 (GH 2653)</span><span class="sxs-lookup"><span data-stu-id="263bc-675">read/write works for very large IO sizes (GH 2653)</span></span>
-* <span data-ttu-id="263bc-676">waitpid 适用于进程组 ID (GH 2534)</span><span class="sxs-lookup"><span data-stu-id="263bc-676">waitpid works with process group IDs (GH 2534)</span></span>
-* <span data-ttu-id="263bc-677">极大改善了大型保留区域的 mmap 性能；改善了 ghc 性能 (GH 1671)</span><span class="sxs-lookup"><span data-stu-id="263bc-677">significantly improved mmap performance for large reserve regions; improves ghc performance (GH 1671)</span></span>
-* <span data-ttu-id="263bc-678">READ_IMPLIES_EXEC 的个性化支持；修复 maxima 和 clisp (GH 1185)</span><span class="sxs-lookup"><span data-stu-id="263bc-678">personality supports for READ_IMPLIES_EXEC; fixes maxima and clisp (GH 1185)</span></span>
-* <span data-ttu-id="263bc-679">mprotect 支持 PROT_GROWSDOWN；修复 clisp (GH 1128)</span><span class="sxs-lookup"><span data-stu-id="263bc-679">mprotect supports PROT_GROWSDOWN; fixes clisp (GH 1128)</span></span>
-* <span data-ttu-id="263bc-680">overcommit 模式的页面错误修复；修复 sbcl (GH 1128)</span><span class="sxs-lookup"><span data-stu-id="263bc-680">page fault fixes in overcommit mode; fixes sbcl (GH 1128)</span></span>
-* <span data-ttu-id="263bc-681">clone 支持更多标志组合</span><span class="sxs-lookup"><span data-stu-id="263bc-681">clone supports more flags combinations</span></span>
-* <span data-ttu-id="263bc-682">支持 epoll 文件的 select/epoll（以前为 no-op）。</span><span class="sxs-lookup"><span data-stu-id="263bc-682">Support select/epoll of epoll files (previously a no-op).</span></span>
-* <span data-ttu-id="263bc-683">通知未实现的 syscall 的 ptrace。</span><span class="sxs-lookup"><span data-stu-id="263bc-683">Notify ptrace of unimplemented syscalls.</span></span>
-* <span data-ttu-id="263bc-684">忽略生成 resolv.conf 名称服务器时不启动的接口 [GH 2694]</span><span class="sxs-lookup"><span data-stu-id="263bc-684">Ignore interfaces that are not up when generating resolv.conf nameservers [GH 2694]</span></span>
-* <span data-ttu-id="263bc-685">枚举没有物理地址的网络接口。</span><span class="sxs-lookup"><span data-stu-id="263bc-685">Enumerate network interfaces with no physical address.</span></span> <span data-ttu-id="263bc-686">[GH 2685]</span><span class="sxs-lookup"><span data-stu-id="263bc-686">[GH 2685]</span></span>
-* <span data-ttu-id="263bc-687">其他 bug 修复和改进。</span><span class="sxs-lookup"><span data-stu-id="263bc-687">Additional bug fixes and improvements.</span></span>
+* <span data-ttu-id="aa113-673">drvfs 装入点会正确保留 tar、cp -p 中的时间戳 (GH 1939)</span><span class="sxs-lookup"><span data-stu-id="aa113-673">drvfs mounts correctly preserves timestamps from tar, cp -p (GH 1939)</span></span>
+* <span data-ttu-id="aa113-674">drvfs 符号链接会报告正确的大小 (GH 2641)</span><span class="sxs-lookup"><span data-stu-id="aa113-674">drvfs symlinks report the correct size (GH 2641)</span></span>
+* <span data-ttu-id="aa113-675">read/write 适用于极大的 IO 大小 (GH 2653)</span><span class="sxs-lookup"><span data-stu-id="aa113-675">read/write works for very large IO sizes (GH 2653)</span></span>
+* <span data-ttu-id="aa113-676">waitpid 适用于进程组 ID (GH 2534)</span><span class="sxs-lookup"><span data-stu-id="aa113-676">waitpid works with process group IDs (GH 2534)</span></span>
+* <span data-ttu-id="aa113-677">极大改善了大型保留区域的 mmap 性能；改善了 ghc 性能 (GH 1671)</span><span class="sxs-lookup"><span data-stu-id="aa113-677">significantly improved mmap performance for large reserve regions; improves ghc performance (GH 1671)</span></span>
+* <span data-ttu-id="aa113-678">READ_IMPLIES_EXEC 的个性化支持；修复 maxima 和 clisp (GH 1185)</span><span class="sxs-lookup"><span data-stu-id="aa113-678">personality supports for READ_IMPLIES_EXEC; fixes maxima and clisp (GH 1185)</span></span>
+* <span data-ttu-id="aa113-679">mprotect 支持 PROT_GROWSDOWN；修复 clisp (GH 1128)</span><span class="sxs-lookup"><span data-stu-id="aa113-679">mprotect supports PROT_GROWSDOWN; fixes clisp (GH 1128)</span></span>
+* <span data-ttu-id="aa113-680">overcommit 模式的页面错误修复；修复 sbcl (GH 1128)</span><span class="sxs-lookup"><span data-stu-id="aa113-680">page fault fixes in overcommit mode; fixes sbcl (GH 1128)</span></span>
+* <span data-ttu-id="aa113-681">clone 支持更多标志组合</span><span class="sxs-lookup"><span data-stu-id="aa113-681">clone supports more flags combinations</span></span>
+* <span data-ttu-id="aa113-682">支持 epoll 文件的 select/epoll（以前为 no-op）。</span><span class="sxs-lookup"><span data-stu-id="aa113-682">Support select/epoll of epoll files (previously a no-op).</span></span>
+* <span data-ttu-id="aa113-683">通知未实现的 syscall 的 ptrace。</span><span class="sxs-lookup"><span data-stu-id="aa113-683">Notify ptrace of unimplemented syscalls.</span></span>
+* <span data-ttu-id="aa113-684">忽略生成 resolv.conf 名称服务器时不启动的接口 [GH 2694]</span><span class="sxs-lookup"><span data-stu-id="aa113-684">Ignore interfaces that are not up when generating resolv.conf nameservers [GH 2694]</span></span>
+* <span data-ttu-id="aa113-685">枚举没有物理地址的网络接口。</span><span class="sxs-lookup"><span data-stu-id="aa113-685">Enumerate network interfaces with no physical address.</span></span> <span data-ttu-id="aa113-686">[GH 2685]</span><span class="sxs-lookup"><span data-stu-id="aa113-686">[GH 2685]</span></span>
+* <span data-ttu-id="aa113-687">其他 bug 修复和改进。</span><span class="sxs-lookup"><span data-stu-id="aa113-687">Additional bug fixes and improvements.</span></span>
 
-### <a name="linux-tools-available-to-developers-on-windows"></a><span data-ttu-id="263bc-688">适用于 Windows 上的开发人员的 Linux 工具</span><span class="sxs-lookup"><span data-stu-id="263bc-688">Linux tools available to developers on Windows</span></span>
+### <a name="linux-tools-available-to-developers-on-windows"></a><span data-ttu-id="aa113-688">适用于 Windows 上的开发人员的 Linux 工具</span><span class="sxs-lookup"><span data-stu-id="aa113-688">Linux tools available to developers on Windows</span></span>
 
-* <span data-ttu-id="263bc-689">Windows 命令行工具链包括 bsdtar (tar) 和 curl。</span><span class="sxs-lookup"><span data-stu-id="263bc-689">Windows Command line Toolchain includes bsdtar (tar) and curl.</span></span>
-  <span data-ttu-id="263bc-690">请阅读[此博客](https://aka.ms/tarcurlwindows)来详细了解如何添加这两个新工具，以及它们如何打造 Windows 上的开发人员体验。</span><span class="sxs-lookup"><span data-stu-id="263bc-690">Read [this blog](https://aka.ms/tarcurlwindows) to learn more about the addition of these two new tools and see how they're shaping the developer experience on Windows.</span></span>
+* <span data-ttu-id="aa113-689">Windows 命令行工具链包括 bsdtar (tar) 和 curl。</span><span class="sxs-lookup"><span data-stu-id="aa113-689">Windows Command line Toolchain includes bsdtar (tar) and curl.</span></span>
+  <span data-ttu-id="aa113-690">请阅读[此博客](https://aka.ms/tarcurlwindows)来详细了解如何添加这两个新工具，以及它们如何打造 Windows 上的开发人员体验。</span><span class="sxs-lookup"><span data-stu-id="aa113-690">Read [this blog](https://aka.ms/tarcurlwindows) to learn more about the addition of these two new tools and see how they're shaping the developer experience on Windows.</span></span>
 
-*   <span data-ttu-id="263bc-691">`AF_UNIX` 适用于 Windows 预览体验成员 SDK (17061+)。</span><span class="sxs-lookup"><span data-stu-id="263bc-691">`AF_UNIX` is available in the Windows Insider SDK (17061+).</span></span>
-  <span data-ttu-id="263bc-692">请阅读[此博客](https://blogs.msdn.microsoft.com/commandline/2017/12/19/af_unix-comes-to-windows/)来详细了解 `AF_UNIX`，以及 Windows 上的开发人员如何使用它。</span><span class="sxs-lookup"><span data-stu-id="263bc-692">Read [this blog](https://blogs.msdn.microsoft.com/commandline/2017/12/19/af_unix-comes-to-windows/) to learn more about `AF_UNIX` and how developers on Windows can use it.</span></span>
+*   <span data-ttu-id="aa113-691">`AF_UNIX` 适用于 Windows 预览体验成员 SDK (17061+)。</span><span class="sxs-lookup"><span data-stu-id="aa113-691">`AF_UNIX` is available in the Windows Insider SDK (17061+).</span></span>
+  <span data-ttu-id="aa113-692">请阅读[此博客](https://blogs.msdn.microsoft.com/commandline/2017/12/19/af_unix-comes-to-windows/)来详细了解 `AF_UNIX`，以及 Windows 上的开发人员如何使用它。</span><span class="sxs-lookup"><span data-stu-id="aa113-692">Read [this blog](https://blogs.msdn.microsoft.com/commandline/2017/12/19/af_unix-comes-to-windows/) to learn more about `AF_UNIX` and how developers on Windows can use it.</span></span>
 
-### <a name="console"></a><span data-ttu-id="263bc-693">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-693">Console</span></span>
-* <span data-ttu-id="263bc-694">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-694">No fixes.</span></span>
+### <a name="console"></a><span data-ttu-id="aa113-693">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-693">Console</span></span>
+* <span data-ttu-id="aa113-694">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-694">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-695">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-695">LTP Results:</span></span>
-<span data-ttu-id="263bc-696">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-696">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-695">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-695">LTP Results:</span></span>
+<span data-ttu-id="aa113-696">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-696">Testing in progress.</span></span>
 
 
-## <a name="build-17046"></a><span data-ttu-id="263bc-697">内部版本 17046</span><span class="sxs-lookup"><span data-stu-id="263bc-697">Build 17046</span></span>
+## <a name="build-17046"></a><span data-ttu-id="aa113-697">内部版本 17046</span><span class="sxs-lookup"><span data-stu-id="aa113-697">Build 17046</span></span>
 
-<span data-ttu-id="263bc-698">有关内部版本 17046 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/11/22/announcing-windows-10-insider-preview-build-17046-pc)。</span><span class="sxs-lookup"><span data-stu-id="263bc-698">For general Windows information on build 17046 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/11/22/announcing-windows-10-insider-preview-build-17046-pc).</span></span>
+<span data-ttu-id="aa113-698">有关内部版本 17046 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/11/22/announcing-windows-10-insider-preview-build-17046-pc)。</span><span class="sxs-lookup"><span data-stu-id="aa113-698">For general Windows information on build 17046 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/11/22/announcing-windows-10-insider-preview-build-17046-pc).</span></span>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-699">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-699">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-700">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-700">WSL</span></span>
-- <span data-ttu-id="263bc-701">允许进程在没有活动终端的情况下运行。</span><span class="sxs-lookup"><span data-stu-id="263bc-701">Allow processes to run without an active terminal.</span></span> <span data-ttu-id="263bc-702">[GH 709、1007、1511、2252、2391 等]</span><span class="sxs-lookup"><span data-stu-id="263bc-702">[GH 709, 1007, 1511, 2252, 2391, et al.]</span></span>
-- <span data-ttu-id="263bc-703">更好地支持 CLONE_VFORK 和 CLONE_VM。</span><span class="sxs-lookup"><span data-stu-id="263bc-703">Better support of CLONE_VFORK and CLONE_VM.</span></span> <span data-ttu-id="263bc-704">[GH 1878、2615]</span><span class="sxs-lookup"><span data-stu-id="263bc-704">[GH 1878, 2615]</span></span>
-- <span data-ttu-id="263bc-705">跳过 WSL 网络操作的 TDI 筛选器驱动程序。</span><span class="sxs-lookup"><span data-stu-id="263bc-705">Skip TDI filter drivers for WSL networking operations.</span></span> <span data-ttu-id="263bc-706">[GH 1554]</span><span class="sxs-lookup"><span data-stu-id="263bc-706">[GH 1554]</span></span>
-- <span data-ttu-id="263bc-707">在满足特定的条件时，DrvFs 将创建 NT 符号链接。</span><span class="sxs-lookup"><span data-stu-id="263bc-707">DrvFs creates NT symlinks when certain conditions are met.</span></span> <span data-ttu-id="263bc-708">[GH 353、1475、2602]</span><span class="sxs-lookup"><span data-stu-id="263bc-708">[GH 353, 1475, 2602]</span></span>
-    - <span data-ttu-id="263bc-709">链接目标必须是相对性的，不能跨任何装入点或符号链接，并且必须存在。</span><span class="sxs-lookup"><span data-stu-id="263bc-709">The link target must be relative, must not cross any mount points or symlinks, and must exist.</span></span>
-    - <span data-ttu-id="263bc-710">除非已启用开发人员模式，否则用户必须具有 SE_CREATE_SYMBOLIC_LINK_PRIVILEGE（这通常需要以提升的权限启动 wsl.exe）。</span><span class="sxs-lookup"><span data-stu-id="263bc-710">The user must have SE_CREATE_SYMBOLIC_LINK_PRIVILEGE (this normally requires you to launch wsl.exe elevated), unless Developer Mode is turned on.</span></span>
-    - <span data-ttu-id="263bc-711">在所有其他情况下，DrvFs 仍会创建 WSL 符号链接。</span><span class="sxs-lookup"><span data-stu-id="263bc-711">In all other situations, DrvFs still creates WSL symlinks.</span></span>
-- <span data-ttu-id="263bc-712">允许同时运行提升和未提升的 WSL 实例。</span><span class="sxs-lookup"><span data-stu-id="263bc-712">Allow running elevated and non-elevated WSL instances simultaneously.</span></span>
-- <span data-ttu-id="263bc-713">支持 /proc/sys/kernel/yama/ptrace_scope</span><span class="sxs-lookup"><span data-stu-id="263bc-713">Support /proc/sys/kernel/yama/ptrace_scope</span></span>
-- <span data-ttu-id="263bc-714">添加 wslpath 用于执行 WSL<->Windows 路径转换。</span><span class="sxs-lookup"><span data-stu-id="263bc-714">Add wslpath to do WSL<->Windows path conversions.</span></span> <span data-ttu-id="263bc-715">[GH 522、1243、1834、2327 等]</span><span class="sxs-lookup"><span data-stu-id="263bc-715">[GH 522, 1243, 1834, 2327, et al.]</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-699">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-699">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-700">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-700">WSL</span></span>
+- <span data-ttu-id="aa113-701">允许进程在没有活动终端的情况下运行。</span><span class="sxs-lookup"><span data-stu-id="aa113-701">Allow processes to run without an active terminal.</span></span> <span data-ttu-id="aa113-702">[GH 709、1007、1511、2252、2391 等]</span><span class="sxs-lookup"><span data-stu-id="aa113-702">[GH 709, 1007, 1511, 2252, 2391, et al.]</span></span>
+- <span data-ttu-id="aa113-703">更好地支持 CLONE_VFORK 和 CLONE_VM。</span><span class="sxs-lookup"><span data-stu-id="aa113-703">Better support of CLONE_VFORK and CLONE_VM.</span></span> <span data-ttu-id="aa113-704">[GH 1878、2615]</span><span class="sxs-lookup"><span data-stu-id="aa113-704">[GH 1878, 2615]</span></span>
+- <span data-ttu-id="aa113-705">跳过 WSL 网络操作的 TDI 筛选器驱动程序。</span><span class="sxs-lookup"><span data-stu-id="aa113-705">Skip TDI filter drivers for WSL networking operations.</span></span> <span data-ttu-id="aa113-706">[GH 1554]</span><span class="sxs-lookup"><span data-stu-id="aa113-706">[GH 1554]</span></span>
+- <span data-ttu-id="aa113-707">在满足特定的条件时，DrvFs 将创建 NT 符号链接。</span><span class="sxs-lookup"><span data-stu-id="aa113-707">DrvFs creates NT symlinks when certain conditions are met.</span></span> <span data-ttu-id="aa113-708">[GH 353、1475、2602]</span><span class="sxs-lookup"><span data-stu-id="aa113-708">[GH 353, 1475, 2602]</span></span>
+    - <span data-ttu-id="aa113-709">链接目标必须是相对性的，不能跨任何装入点或符号链接，并且必须存在。</span><span class="sxs-lookup"><span data-stu-id="aa113-709">The link target must be relative, must not cross any mount points or symlinks, and must exist.</span></span>
+    - <span data-ttu-id="aa113-710">除非已启用开发人员模式，否则用户必须具有 SE_CREATE_SYMBOLIC_LINK_PRIVILEGE（这通常需要以提升的权限启动 wsl.exe）。</span><span class="sxs-lookup"><span data-stu-id="aa113-710">The user must have SE_CREATE_SYMBOLIC_LINK_PRIVILEGE (this normally requires you to launch wsl.exe elevated), unless Developer Mode is turned on.</span></span>
+    - <span data-ttu-id="aa113-711">在所有其他情况下，DrvFs 仍会创建 WSL 符号链接。</span><span class="sxs-lookup"><span data-stu-id="aa113-711">In all other situations, DrvFs still creates WSL symlinks.</span></span>
+- <span data-ttu-id="aa113-712">允许同时运行提升和未提升的 WSL 实例。</span><span class="sxs-lookup"><span data-stu-id="aa113-712">Allow running elevated and non-elevated WSL instances simultaneously.</span></span>
+- <span data-ttu-id="aa113-713">支持 /proc/sys/kernel/yama/ptrace_scope</span><span class="sxs-lookup"><span data-stu-id="aa113-713">Support /proc/sys/kernel/yama/ptrace_scope</span></span>
+- <span data-ttu-id="aa113-714">添加 wslpath 用于执行 WSL<->Windows 路径转换。</span><span class="sxs-lookup"><span data-stu-id="aa113-714">Add wslpath to do WSL<->Windows path conversions.</span></span> <span data-ttu-id="aa113-715">[GH 522、1243、1834、2327 等]</span><span class="sxs-lookup"><span data-stu-id="aa113-715">[GH 522, 1243, 1834, 2327, et al.]</span></span>
   ```
     wslpath usage:
       -a    force result to absolute path format
@@ -803,629 +803,629 @@ wslconfig.exe /terminate <DistributionName>
 
       EX: wslpath 'c:\users'
   ```
-  #### <a name="console"></a><span data-ttu-id="263bc-716">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-716">Console</span></span>
-- <span data-ttu-id="263bc-717">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-717">No fixes.</span></span>
+  #### <a name="console"></a><span data-ttu-id="aa113-716">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-716">Console</span></span>
+- <span data-ttu-id="aa113-717">无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-717">No fixes.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-718">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-718">LTP Results:</span></span>
-<span data-ttu-id="263bc-719">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-719">Testing in progress.</span></span>
-
-
-## <a name="build-17040"></a><span data-ttu-id="263bc-720">内部版本 17040</span><span class="sxs-lookup"><span data-stu-id="263bc-720">Build 17040</span></span>
-
-<span data-ttu-id="263bc-721">有关内部版本 17040 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/11/16/announcing-windows-10-insider-preview-build-17040-pc)。</span><span class="sxs-lookup"><span data-stu-id="263bc-721">For general Windows information on build 17040 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/11/16/announcing-windows-10-insider-preview-build-17040-pc).</span></span><br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-718">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-718">LTP Results:</span></span>
+<span data-ttu-id="aa113-719">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-719">Testing in progress.</span></span>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-722">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-722">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-723">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-723">WSL</span></span>
-- <span data-ttu-id="263bc-724">自 17035 以来无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-724">No fixes since 17035.</span></span>
+## <a name="build-17040"></a><span data-ttu-id="aa113-720">内部版本 17040</span><span class="sxs-lookup"><span data-stu-id="aa113-720">Build 17040</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-725">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-725">Console</span></span>
-- <span data-ttu-id="263bc-726">自 17035 以来无修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-726">No fixes since 17035.</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-727">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-727">LTP Results:</span></span>
-<span data-ttu-id="263bc-728">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-728">Testing in progress.</span></span>
-
-## <a name="build-17035"></a><span data-ttu-id="263bc-729">内部版本 17035</span><span class="sxs-lookup"><span data-stu-id="263bc-729">Build 17035</span></span>
-
-<span data-ttu-id="263bc-730">有关内部版本 17035 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/11/08/announcing-windows-10-insider-preview-build-17035-pc)。</span><span class="sxs-lookup"><span data-stu-id="263bc-730">For general Windows information on build 17035 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/11/08/announcing-windows-10-insider-preview-build-17035-pc).</span></span><br/>
+<span data-ttu-id="aa113-721">有关内部版本 17040 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/11/16/announcing-windows-10-insider-preview-build-17040-pc)。</span><span class="sxs-lookup"><span data-stu-id="aa113-721">For general Windows information on build 17040 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/11/16/announcing-windows-10-insider-preview-build-17040-pc).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-731">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-731">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-732">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-732">WSL</span></span>
-- <span data-ttu-id="263bc-733">访问 DrvFs 上的文件偶尔会失败并出现 EINVAL。</span><span class="sxs-lookup"><span data-stu-id="263bc-733">Accessing files on DrvFs could occasionally fail with EINVAL.</span></span> <span data-ttu-id="263bc-734">[GH 2448]</span><span class="sxs-lookup"><span data-stu-id="263bc-734">[GH 2448]</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-722">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-722">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-723">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-723">WSL</span></span>
+- <span data-ttu-id="aa113-724">自 17035 以来无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-724">No fixes since 17035.</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-735">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-735">Console</span></span>
-- <span data-ttu-id="263bc-736">在 VT 模式下插入/删除行时丢失一些颜色。</span><span class="sxs-lookup"><span data-stu-id="263bc-736">Some color loss when inserting/deleting lines in VT mode.</span></span>
+#### <a name="console"></a><span data-ttu-id="aa113-725">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-725">Console</span></span>
+- <span data-ttu-id="aa113-726">自 17035 以来无修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-726">No fixes since 17035.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-737">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-737">LTP Results:</span></span>
-<span data-ttu-id="263bc-738">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-738">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-727">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-727">LTP Results:</span></span>
+<span data-ttu-id="aa113-728">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-728">Testing in progress.</span></span>
 
-## <a name="build-17025"></a><span data-ttu-id="263bc-739">内部版本 17025</span><span class="sxs-lookup"><span data-stu-id="263bc-739">Build 17025</span></span>
+## <a name="build-17035"></a><span data-ttu-id="aa113-729">内部版本 17035</span><span class="sxs-lookup"><span data-stu-id="aa113-729">Build 17035</span></span>
 
-<span data-ttu-id="263bc-740">有关内部版本 17025 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/10/25/announcing-windows-10-insider-preview-build-17025-pc)。</span><span class="sxs-lookup"><span data-stu-id="263bc-740">For general Windows information on build 17025 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/10/25/announcing-windows-10-insider-preview-build-17025-pc).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-741">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-741">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-742">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-742">WSL</span></span>
-- <span data-ttu-id="263bc-743">在新的前台进程组中启动初始进程 [GH 1653、2510]。</span><span class="sxs-lookup"><span data-stu-id="263bc-743">Start initial processes in a new foreground process group [GH 1653, 2510].</span></span>
-- <span data-ttu-id="263bc-744">SIGHUP 传递修复 [GH 2496]。</span><span class="sxs-lookup"><span data-stu-id="263bc-744">SIGHUP delivery fixes [GH 2496].</span></span>
-- <span data-ttu-id="263bc-745">如果未提供虚拟网桥名称，将生成默认名称 [GH 2497]。</span><span class="sxs-lookup"><span data-stu-id="263bc-745">Generate default virtual bridge name if none provided [GH 2497].</span></span>
-- <span data-ttu-id="263bc-746">实现 /proc/sys/kernel/random/boot_id [GH 2518]。</span><span class="sxs-lookup"><span data-stu-id="263bc-746">Implement /proc/sys/kernel/random/boot_id [GH 2518].</span></span>
-- <span data-ttu-id="263bc-747">更多 interop stdout/stderr 管道修复措施。</span><span class="sxs-lookup"><span data-stu-id="263bc-747">More interop stdout/stderr pipe fixes.</span></span>
-- <span data-ttu-id="263bc-748">存根 syncfs 系统调用。</span><span class="sxs-lookup"><span data-stu-id="263bc-748">Stub syncfs system call.</span></span>
-
-#### <a name="console"></a><span data-ttu-id="263bc-749">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-749">Console</span></span>
-- <span data-ttu-id="263bc-750">修复第三方控制台的输入 VT 转换 [GH 111]</span><span class="sxs-lookup"><span data-stu-id="263bc-750">Fix input VT translation for third party consoles [GH 111]</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-751">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-751">LTP Results:</span></span>
-<span data-ttu-id="263bc-752">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-752">Testing in progress.</span></span>
-
-## <a name="build-17017"></a><span data-ttu-id="263bc-753">内部版本 17017</span><span class="sxs-lookup"><span data-stu-id="263bc-753">Build 17017</span></span>
-
-<span data-ttu-id="263bc-754">有关内部版本 17017 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/10/13/announcing-windows-10-insider-preview-build-17017-pc)。</span><span class="sxs-lookup"><span data-stu-id="263bc-754">For general Windows information on build 17017 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/10/13/announcing-windows-10-insider-preview-build-17017-pc).</span></span><br/>
+<span data-ttu-id="aa113-730">有关内部版本 17035 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/11/08/announcing-windows-10-insider-preview-build-17035-pc)。</span><span class="sxs-lookup"><span data-stu-id="aa113-730">For general Windows information on build 17035 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/11/08/announcing-windows-10-insider-preview-build-17035-pc).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-755">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-755">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-756">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-756">WSL</span></span>
-- <span data-ttu-id="263bc-757">忽略空的 ELF 程序标头 [GH 330]。</span><span class="sxs-lookup"><span data-stu-id="263bc-757">Ignore empty ELF program headers [GH 330].</span></span>
-- <span data-ttu-id="263bc-758">允许 LxssManager 为非交互式用户创建 WSL 实例（ssh 和计划任务支持）[GH 777、1602]。</span><span class="sxs-lookup"><span data-stu-id="263bc-758">Allow LxssManager to create WSL instances for non-interactive users (ssh and scheduled task support) [GH 777, 1602].</span></span>
-- <span data-ttu-id="263bc-759">支持 WSL->Win32->WSL（“起始”）方案 [GH 1228]。</span><span class="sxs-lookup"><span data-stu-id="263bc-759">Support WSL->Win32->WSL ("inception") scenarios [GH 1228].</span></span>
-- <span data-ttu-id="263bc-760">有限支持终止通过 interop 调用的控制台应用 [GH 1614]。</span><span class="sxs-lookup"><span data-stu-id="263bc-760">Limited support for termination of console apps invoked via interop [GH 1614].</span></span>
-- <span data-ttu-id="263bc-761">支持 devpts 的装载选项 [GH 1948]。</span><span class="sxs-lookup"><span data-stu-id="263bc-761">Support mount options for devpts [GH 1948].</span></span>
-- <span data-ttu-id="263bc-762">Ptrace 阻止子级启动 [GH 2333]。</span><span class="sxs-lookup"><span data-stu-id="263bc-762">Ptrace blocking child startup [GH 2333].</span></span>
-- <span data-ttu-id="263bc-763">EPOLLET 缺少某些事件 [GH 2462]。</span><span class="sxs-lookup"><span data-stu-id="263bc-763">EPOLLET missing some events [GH 2462].</span></span>
-- <span data-ttu-id="263bc-764">返回 PTRACE_GETSIGINFO 的更多数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-764">Return more data for PTRACE_GETSIGINFO.</span></span>
-- <span data-ttu-id="263bc-765">结合 lseek 运行 Getdents 会提供错误的结果。</span><span class="sxs-lookup"><span data-stu-id="263bc-765">Getdents with lseek gives incorrect results.</span></span>
-- <span data-ttu-id="263bc-766">修复某些 Win32 interop 应用挂起，并等待在没有更多数据的管道中提供输入的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-766">Fix some Win32 interop app hangs, waiting for input on a pipe that has no more data.</span></span>
-- <span data-ttu-id="263bc-767">tty/pty 文件的 O_ASYNC 支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-767">O_ASYNC support for tty/pty files.</span></span>
-- <span data-ttu-id="263bc-768">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-768">Additional improvements and bug fixes</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-731">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-731">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-732">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-732">WSL</span></span>
+- <span data-ttu-id="aa113-733">访问 DrvFs 上的文件偶尔会失败并出现 EINVAL。</span><span class="sxs-lookup"><span data-stu-id="aa113-733">Accessing files on DrvFs could occasionally fail with EINVAL.</span></span> <span data-ttu-id="aa113-734">[GH 2448]</span><span class="sxs-lookup"><span data-stu-id="aa113-734">[GH 2448]</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-769">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-769">Console</span></span>
-- <span data-ttu-id="263bc-770">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-770">No Console related changes in this release.</span></span>
+#### <a name="console"></a><span data-ttu-id="aa113-735">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-735">Console</span></span>
+- <span data-ttu-id="aa113-736">在 VT 模式下插入/删除行时丢失一些颜色。</span><span class="sxs-lookup"><span data-stu-id="aa113-736">Some color loss when inserting/deleting lines in VT mode.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-771">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-771">LTP Results:</span></span>
-<span data-ttu-id="263bc-772">正在测试。</span><span class="sxs-lookup"><span data-stu-id="263bc-772">Testing in progress.</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-737">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-737">LTP Results:</span></span>
+<span data-ttu-id="aa113-738">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-738">Testing in progress.</span></span>
 
-## <a name="fall-creators-update"></a><span data-ttu-id="263bc-773">Fall Creators Update</span><span class="sxs-lookup"><span data-stu-id="263bc-773">Fall Creators Update</span></span>
+## <a name="build-17025"></a><span data-ttu-id="aa113-739">内部版本 17025</span><span class="sxs-lookup"><span data-stu-id="aa113-739">Build 17025</span></span>
 
-## <a name="build-16288"></a><span data-ttu-id="263bc-774">内部版本 16288</span><span class="sxs-lookup"><span data-stu-id="263bc-774">Build 16288</span></span>
-
-<span data-ttu-id="263bc-775">有关内部版本 16288 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/09/12/announcing-windows-10-insider-preview-build-16288-pc-build-15250-mobile/#7pLWQbj23JisfzV5.97/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-775">For general Windows information on build 16288 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/09/12/announcing-windows-10-insider-preview-build-16288-pc-build-15250-mobile/#7pLWQbj23JisfzV5.97/).</span></span><br/>
+<span data-ttu-id="aa113-740">有关内部版本 17025 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/10/25/announcing-windows-10-insider-preview-build-17025-pc)。</span><span class="sxs-lookup"><span data-stu-id="aa113-740">For general Windows information on build 17025 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/10/25/announcing-windows-10-insider-preview-build-17025-pc).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-776">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-776">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-777">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-777">WSL</span></span>
-- <span data-ttu-id="263bc-778">正确初始化和报告套接字文件描述符的 uid、gid 和模式 [GH 2490]</span><span class="sxs-lookup"><span data-stu-id="263bc-778">Correctly initialize and report uid, gid, and mode for socket file descriptors [GH 2490]</span></span>
-- <span data-ttu-id="263bc-779">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-779">Additional improvements and bug fixes</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-741">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-741">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-742">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-742">WSL</span></span>
+- <span data-ttu-id="aa113-743">在新的前台进程组中启动初始进程 [GH 1653、2510]。</span><span class="sxs-lookup"><span data-stu-id="aa113-743">Start initial processes in a new foreground process group [GH 1653, 2510].</span></span>
+- <span data-ttu-id="aa113-744">SIGHUP 传递修复 [GH 2496]。</span><span class="sxs-lookup"><span data-stu-id="aa113-744">SIGHUP delivery fixes [GH 2496].</span></span>
+- <span data-ttu-id="aa113-745">如果未提供虚拟网桥名称，将生成默认名称 [GH 2497]。</span><span class="sxs-lookup"><span data-stu-id="aa113-745">Generate default virtual bridge name if none provided [GH 2497].</span></span>
+- <span data-ttu-id="aa113-746">实现 /proc/sys/kernel/random/boot_id [GH 2518]。</span><span class="sxs-lookup"><span data-stu-id="aa113-746">Implement /proc/sys/kernel/random/boot_id [GH 2518].</span></span>
+- <span data-ttu-id="aa113-747">更多 interop stdout/stderr 管道修复措施。</span><span class="sxs-lookup"><span data-stu-id="aa113-747">More interop stdout/stderr pipe fixes.</span></span>
+- <span data-ttu-id="aa113-748">存根 syncfs 系统调用。</span><span class="sxs-lookup"><span data-stu-id="aa113-748">Stub syncfs system call.</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-780">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-780">Console</span></span>
-- <span data-ttu-id="263bc-781">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-781">No Console related changes in this release.</span></span>
+#### <a name="console"></a><span data-ttu-id="aa113-749">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-749">Console</span></span>
+- <span data-ttu-id="aa113-750">修复第三方控制台的输入 VT 转换 [GH 111]</span><span class="sxs-lookup"><span data-stu-id="aa113-750">Fix input VT translation for third party consoles [GH 111]</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-782">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-782">LTP Results:</span></span>
-<span data-ttu-id="263bc-783">自 16273 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-783">No change since 16273</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-751">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-751">LTP Results:</span></span>
+<span data-ttu-id="aa113-752">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-752">Testing in progress.</span></span>
 
-## <a name="build-16278"></a><span data-ttu-id="263bc-784">内部版本 16278</span><span class="sxs-lookup"><span data-stu-id="263bc-784">Build 16278</span></span>
+## <a name="build-17017"></a><span data-ttu-id="aa113-753">内部版本 17017</span><span class="sxs-lookup"><span data-stu-id="aa113-753">Build 17017</span></span>
 
-<span data-ttu-id="263bc-785">有关内部版本 162738 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/29/announcing-windows-10-insider-preview-build-16278-pc/#HMz6Xq7Su68WKi0t.97/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-785">For general Windows information on build 162738 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/29/announcing-windows-10-insider-preview-build-16278-pc/#HMz6Xq7Su68WKi0t.97/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-786">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-786">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-787">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-787">WSL</span></span>
-- <span data-ttu-id="263bc-788">分解 LX MM 状态时显式取消映射文件后备节的映射视图 [GH 2415]</span><span class="sxs-lookup"><span data-stu-id="263bc-788">Explicitly unmap mapped views of file backed sections when tearing down LX MM state [GH 2415]</span></span>
-- <span data-ttu-id="263bc-789">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-789">Additional improvements and bug fixes</span></span>
-
-#### <a name="console"></a><span data-ttu-id="263bc-790">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-790">Console</span></span>
-- <span data-ttu-id="263bc-791">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-791">No Console related changes in this release.</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-792">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-792">LTP Results:</span></span>
-<span data-ttu-id="263bc-793">自 16273 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-793">No change since 16273</span></span>
-
-## <a name="build-16275"></a><span data-ttu-id="263bc-794">内部版本 16275</span><span class="sxs-lookup"><span data-stu-id="263bc-794">Build 16275</span></span>
-
-<span data-ttu-id="263bc-795">有关内部版本 162735 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/25/announcing-windows-10-insider-preview-build-16275-pc-build-15245-mobile/#8QkxWqQbY37yZslV.97/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-795">For general Windows information on build 162735 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/25/announcing-windows-10-insider-preview-build-16275-pc-build-15245-mobile/#8QkxWqQbY37yZslV.97/).</span></span><br/>
+<span data-ttu-id="aa113-754">有关内部版本 17017 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/10/13/announcing-windows-10-insider-preview-build-17017-pc)。</span><span class="sxs-lookup"><span data-stu-id="aa113-754">For general Windows information on build 17017 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/10/13/announcing-windows-10-insider-preview-build-17017-pc).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-796">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-796">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-797">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-797">WSL</span></span>
-- <span data-ttu-id="263bc-798">此版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-798">No WSL related changes in this release.</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-755">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-755">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-756">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-756">WSL</span></span>
+- <span data-ttu-id="aa113-757">忽略空的 ELF 程序标头 [GH 330]。</span><span class="sxs-lookup"><span data-stu-id="aa113-757">Ignore empty ELF program headers [GH 330].</span></span>
+- <span data-ttu-id="aa113-758">允许 LxssManager 为非交互式用户创建 WSL 实例（ssh 和计划任务支持）[GH 777、1602]。</span><span class="sxs-lookup"><span data-stu-id="aa113-758">Allow LxssManager to create WSL instances for non-interactive users (ssh and scheduled task support) [GH 777, 1602].</span></span>
+- <span data-ttu-id="aa113-759">支持 WSL->Win32->WSL（“起始”）方案 [GH 1228]。</span><span class="sxs-lookup"><span data-stu-id="aa113-759">Support WSL->Win32->WSL ("inception") scenarios [GH 1228].</span></span>
+- <span data-ttu-id="aa113-760">有限支持终止通过 interop 调用的控制台应用 [GH 1614]。</span><span class="sxs-lookup"><span data-stu-id="aa113-760">Limited support for termination of console apps invoked via interop [GH 1614].</span></span>
+- <span data-ttu-id="aa113-761">支持 devpts 的装载选项 [GH 1948]。</span><span class="sxs-lookup"><span data-stu-id="aa113-761">Support mount options for devpts [GH 1948].</span></span>
+- <span data-ttu-id="aa113-762">Ptrace 阻止子级启动 [GH 2333]。</span><span class="sxs-lookup"><span data-stu-id="aa113-762">Ptrace blocking child startup [GH 2333].</span></span>
+- <span data-ttu-id="aa113-763">EPOLLET 缺少某些事件 [GH 2462]。</span><span class="sxs-lookup"><span data-stu-id="aa113-763">EPOLLET missing some events [GH 2462].</span></span>
+- <span data-ttu-id="aa113-764">返回 PTRACE_GETSIGINFO 的更多数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-764">Return more data for PTRACE_GETSIGINFO.</span></span>
+- <span data-ttu-id="aa113-765">结合 lseek 运行 Getdents 会提供错误的结果。</span><span class="sxs-lookup"><span data-stu-id="aa113-765">Getdents with lseek gives incorrect results.</span></span>
+- <span data-ttu-id="aa113-766">修复某些 Win32 interop 应用挂起，并等待在没有更多数据的管道中提供输入的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-766">Fix some Win32 interop app hangs, waiting for input on a pipe that has no more data.</span></span>
+- <span data-ttu-id="aa113-767">tty/pty 文件的 O_ASYNC 支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-767">O_ASYNC support for tty/pty files.</span></span>
+- <span data-ttu-id="aa113-768">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-768">Additional improvements and bug fixes</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-799">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-799">Console</span></span>
-- <span data-ttu-id="263bc-800">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-800">No Console related changes in this release.</span></span>
+#### <a name="console"></a><span data-ttu-id="aa113-769">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-769">Console</span></span>
+- <span data-ttu-id="aa113-770">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-770">No Console related changes in this release.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-801">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-801">LTP Results:</span></span>
-<span data-ttu-id="263bc-802">自 16273 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-802">No change since 16273</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-771">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-771">LTP Results:</span></span>
+<span data-ttu-id="aa113-772">正在测试。</span><span class="sxs-lookup"><span data-stu-id="aa113-772">Testing in progress.</span></span>
 
-## <a name="build-16273"></a><span data-ttu-id="263bc-803">内部版本 16273</span><span class="sxs-lookup"><span data-stu-id="263bc-803">Build 16273</span></span>
+## <a name="fall-creators-update"></a><span data-ttu-id="aa113-773">Fall Creators Update</span><span class="sxs-lookup"><span data-stu-id="aa113-773">Fall Creators Update</span></span>
 
-<span data-ttu-id="263bc-804">有关内部版本 16273 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/23/announcing-windows-10-insider-preview-build-16273-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-804">For general Windows information on build 16273 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/23/announcing-windows-10-insider-preview-build-16273-pc/).</span></span><br/>
+## <a name="build-16288"></a><span data-ttu-id="aa113-774">内部版本 16288</span><span class="sxs-lookup"><span data-stu-id="aa113-774">Build 16288</span></span>
 
-
-### <a name="fixed"></a><span data-ttu-id="263bc-805">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-805">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-806">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-806">WSL</span></span>
-- <span data-ttu-id="263bc-807">修复了 DrvFs 有时报告目录的错误文件类型的问题 [GH 2392]</span><span class="sxs-lookup"><span data-stu-id="263bc-807">Fixed an issue where DrvFs sometimes reported the wrong file type for directories [GH 2392]</span></span>
-- <span data-ttu-id="263bc-808">允许创建 NETLINK_KOBJECT_UEVENT 套接字来取消阻止使用 UEVENT 的程序 [GH 1121、2293、2242、2295、2235、648、637]</span><span class="sxs-lookup"><span data-stu-id="263bc-808">Allow creation of NETLINK_KOBJECT_UEVENT sockets to unblock programs that use uevent [GH 1121, 2293, 2242, 2295, 2235, 648, 637]</span></span>
-- <span data-ttu-id="263bc-809">添加对非阻塞连接的支持 [GH 903、1391、1584、1585、1829、2290、2314]</span><span class="sxs-lookup"><span data-stu-id="263bc-809">Add support for non-blocking connect [GH 903, 1391, 1584, 1585, 1829, 2290, 2314]</span></span>
-- <span data-ttu-id="263bc-810">实现 CLONE_FS 克隆系统调用标志 [GH 2242]</span><span class="sxs-lookup"><span data-stu-id="263bc-810">Implement CLONE_FS clone system call flag [GH 2242]</span></span>
-- <span data-ttu-id="263bc-811">修复有关在 NT interop 中不会正确处理制表符或引号的问题 [GH 1625、2164]</span><span class="sxs-lookup"><span data-stu-id="263bc-811">Fix issues around not handling tabs or quotes correctly in NT interop [GH 1625, 2164]</span></span>
-- <span data-ttu-id="263bc-812">解决尝试重新启动 WSL 实例时发生的拒绝访问错误 [GH 651、2095]</span><span class="sxs-lookup"><span data-stu-id="263bc-812">Resolve access denied error when trying to re-launch WSL instances [GH 651, 2095]</span></span>
-- <span data-ttu-id="263bc-813">实现 futex FUTEX_REQUEUE 和 FUTEX_CMP_REQUEUE 操作 [GH 2242]</span><span class="sxs-lookup"><span data-stu-id="263bc-813">Implement futex FUTEX_REQUEUE and FUTEX_CMP_REQUEUE operations [GH 2242]</span></span>
-- <span data-ttu-id="263bc-814">修复各种 SysFs 文件的权限 [GH 2214]</span><span class="sxs-lookup"><span data-stu-id="263bc-814">Fix permissions for various SysFs files [GH 2214]</span></span>
-- <span data-ttu-id="263bc-815">修复设置过程中 Haskell 堆栈挂起的问题 [GH 2290]</span><span class="sxs-lookup"><span data-stu-id="263bc-815">Fix Haskell stack hang during setup [GH 2290]</span></span>
-- <span data-ttu-id="263bc-816">实现 binfmt_misc“C”、“O”和“P”标志 [GH 2103]</span><span class="sxs-lookup"><span data-stu-id="263bc-816">Implement binfmt_misc 'C' 'O' and 'P' flags [GH 2103]</span></span>
-- <span data-ttu-id="263bc-817">添加 /proc/sys/kernel /shmmax /shmmni 和 /threads-max [GH 1753]</span><span class="sxs-lookup"><span data-stu-id="263bc-817">Add /proc/sys/kernel /shmmax /shmmni & /threads-max [GH 1753]</span></span>
-- <span data-ttu-id="263bc-818">添加对 ioprio_set 系统调用的部分支持 [GH 498]</span><span class="sxs-lookup"><span data-stu-id="263bc-818">Add partial support for ioprio_set system call [GH 498]</span></span>
-- <span data-ttu-id="263bc-819">存根 SO_REUSEPORT 和添加 netlink 套接字的 SO_PASSCRED 支持 [GH 69]</span><span class="sxs-lookup"><span data-stu-id="263bc-819">Stub SO_REUSEPORT & adding support for SO_PASSCRED for netlink sockets [GH 69]</span></span>
-- <span data-ttu-id="263bc-820">如果当前正在安装或卸载分发版，将从 RegisterDistribuiton 返回不同的错误代码。</span><span class="sxs-lookup"><span data-stu-id="263bc-820">Return different error codes from RegisterDistribuiton if a distribution is currently being installed or uninstalled.</span></span>
-- <span data-ttu-id="263bc-821">允许通过 wslconfig.exe 取消注册部分安装的 WSL 分发版</span><span class="sxs-lookup"><span data-stu-id="263bc-821">Allow unregistration of partially installed WSL distributions via wslconfig.exe</span></span>
-- <span data-ttu-id="263bc-822">修复 udp::msg_peek 的 python 套接字测试挂起问题</span><span class="sxs-lookup"><span data-stu-id="263bc-822">Fix python socket test hang from udp::msg_peek</span></span>
-- <span data-ttu-id="263bc-823">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-823">Additional improvements and bug fixes</span></span>
-
-#### <a name="console"></a><span data-ttu-id="263bc-824">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-824">Console</span></span>
-- <span data-ttu-id="263bc-825">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-825">No Console related changes in this release.</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-826">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-826">LTP Results:</span></span>
-<span data-ttu-id="263bc-827">测试总数：1904</span><span class="sxs-lookup"><span data-stu-id="263bc-827">Total Tests: 1904</span></span><br/>
-<span data-ttu-id="263bc-828">跳过的测试总数：209</span><span class="sxs-lookup"><span data-stu-id="263bc-828">Total Skipped Tests: 209</span></span><br/>
-<span data-ttu-id="263bc-829">失败总数：229</span><span class="sxs-lookup"><span data-stu-id="263bc-829">Total Failures: 229</span></span><br/>
-[<span data-ttu-id="263bc-830">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-830">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/16273)<br/>
-
-## <a name="build-16257"></a><span data-ttu-id="263bc-831">版本 16257</span><span class="sxs-lookup"><span data-stu-id="263bc-831">Build 16257</span></span>
-
-<span data-ttu-id="263bc-832">有关内部版本 16257 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-832">For general Windows information on build 16257 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-775">有关内部版本 16288 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/09/12/announcing-windows-10-insider-preview-build-16288-pc-build-15250-mobile/#7pLWQbj23JisfzV5.97/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-775">For general Windows information on build 16288 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/09/12/announcing-windows-10-insider-preview-build-16288-pc-build-15250-mobile/#7pLWQbj23JisfzV5.97/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-833">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-833">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-834">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-834">WSL</span></span>
-- <span data-ttu-id="263bc-835">实现 prlimit64 系统调用</span><span class="sxs-lookup"><span data-stu-id="263bc-835">Implement prlimit64 system call</span></span>
-- <span data-ttu-id="263bc-836">添加对 ulimit -n 的支持 (setrlimit RLIMIT_NOFILE) [GH 1688]</span><span class="sxs-lookup"><span data-stu-id="263bc-836">Add support for ulimit -n (setrlimit RLIMIT_NOFILE) [GH 1688]</span></span>
-- <span data-ttu-id="263bc-837">TCP 套接字的存根 MSG_MORE [GH 2351]</span><span class="sxs-lookup"><span data-stu-id="263bc-837">Stub MSG_MORE for TCP sockets [GH 2351]</span></span>
-- <span data-ttu-id="263bc-838">修复无效的 AT_EXECFN 辅助矢量行为 [GH 2133]</span><span class="sxs-lookup"><span data-stu-id="263bc-838">Fix invalid AT_EXECFN auxiliary vector behavior [GH 2133]</span></span>
-- <span data-ttu-id="263bc-839">修复 console/tty 的 copy/paste 行为，并添加更适当的完整缓冲区处理 [GH 2204、2131]</span><span class="sxs-lookup"><span data-stu-id="263bc-839">Fix copy/paste behavior for console/tty, and add better full buffer handling [GH 2204, 2131]</span></span>
-- <span data-ttu-id="263bc-840">在 set-user-ID 和 set-group-ID 程序的辅助矢量中设置 AT_SECURE [GH 2031]</span><span class="sxs-lookup"><span data-stu-id="263bc-840">Set AT_SECURE in auxiliary vector for set-user-ID and set-group-ID programs [GH 2031]</span></span>
-- <span data-ttu-id="263bc-841">伪终端主终结点不处理 TIOCPGRP [GH 1063]</span><span class="sxs-lookup"><span data-stu-id="263bc-841">Psuedo-terminal master endpoint not handling TIOCPGRP [GH 1063]</span></span>
-- <span data-ttu-id="263bc-842">修复 lseek 在 LxFs 中的回退目录行为 [GH 2310]</span><span class="sxs-lookup"><span data-stu-id="263bc-842">Fix lseek does to rewind directories in LxFs [GH 2310]</span></span>
-- <span data-ttu-id="263bc-843">重度使用后 /dev/ptmx 锁定 [GH 1882]</span><span class="sxs-lookup"><span data-stu-id="263bc-843">/dev/ptmx locks up after heavy usage [GH 1882]</span></span>
-- <span data-ttu-id="263bc-844">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-844">Additional improvements and bug fixes</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-776">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-776">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-777">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-777">WSL</span></span>
+- <span data-ttu-id="aa113-778">正确初始化和报告套接字文件描述符的 uid、gid 和模式 [GH 2490]</span><span class="sxs-lookup"><span data-stu-id="aa113-778">Correctly initialize and report uid, gid, and mode for socket file descriptors [GH 2490]</span></span>
+- <span data-ttu-id="aa113-779">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-779">Additional improvements and bug fixes</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-845">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-845">Console</span></span>
-- <span data-ttu-id="263bc-846">修复横线/下划线四处可见的问题 [GH 2168]</span><span class="sxs-lookup"><span data-stu-id="263bc-846">Fix for horizontal Lines/Underscores Everywhere [GH 2168]</span></span>
-- <span data-ttu-id="263bc-847">修复进程顺序更改，使 NPM 更难以关闭的问题 [GH 2170]</span><span class="sxs-lookup"><span data-stu-id="263bc-847">Fix for process order changed making NPM harder to close [GH 2170]</span></span>
-- <span data-ttu-id="263bc-848">添加了新的色彩方案： https://blogs.msdn.microsoft.com/commandline/2017/08/02/updating-the-windows-console-colors/</span><span class="sxs-lookup"><span data-stu-id="263bc-848">Added our new color scheme: https://blogs.msdn.microsoft.com/commandline/2017/08/02/updating-the-windows-console-colors/</span></span>
+#### <a name="console"></a><span data-ttu-id="aa113-780">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-780">Console</span></span>
+- <span data-ttu-id="aa113-781">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-781">No Console related changes in this release.</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-849">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-849">LTP Results:</span></span>
-<span data-ttu-id="263bc-850">自 16251 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-850">No change since 16251</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-782">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-782">LTP Results:</span></span>
+<span data-ttu-id="aa113-783">自 16273 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-783">No change since 16273</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-851">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-851">Syscall Support</span></span>
-<span data-ttu-id="263bc-852">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-852">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-853">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-853">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+## <a name="build-16278"></a><span data-ttu-id="aa113-784">内部版本 16278</span><span class="sxs-lookup"><span data-stu-id="aa113-784">Build 16278</span></span>
+
+<span data-ttu-id="aa113-785">有关内部版本 162738 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/29/announcing-windows-10-insider-preview-build-16278-pc/#HMz6Xq7Su68WKi0t.97/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-785">For general Windows information on build 162738 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/29/announcing-windows-10-insider-preview-build-16278-pc/#HMz6Xq7Su68WKi0t.97/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-786">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-786">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-787">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-787">WSL</span></span>
+- <span data-ttu-id="aa113-788">分解 LX MM 状态时显式取消映射文件后备节的映射视图 [GH 2415]</span><span class="sxs-lookup"><span data-stu-id="aa113-788">Explicitly unmap mapped views of file backed sections when tearing down LX MM state [GH 2415]</span></span>
+- <span data-ttu-id="aa113-789">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-789">Additional improvements and bug fixes</span></span>
+
+#### <a name="console"></a><span data-ttu-id="aa113-790">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-790">Console</span></span>
+- <span data-ttu-id="aa113-791">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-791">No Console related changes in this release.</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-792">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-792">LTP Results:</span></span>
+<span data-ttu-id="aa113-793">自 16273 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-793">No change since 16273</span></span>
+
+## <a name="build-16275"></a><span data-ttu-id="aa113-794">内部版本 16275</span><span class="sxs-lookup"><span data-stu-id="aa113-794">Build 16275</span></span>
+
+<span data-ttu-id="aa113-795">有关内部版本 162735 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/25/announcing-windows-10-insider-preview-build-16275-pc-build-15245-mobile/#8QkxWqQbY37yZslV.97/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-795">For general Windows information on build 162735 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/25/announcing-windows-10-insider-preview-build-16275-pc-build-15245-mobile/#8QkxWqQbY37yZslV.97/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-796">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-796">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-797">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-797">WSL</span></span>
+- <span data-ttu-id="aa113-798">此版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-798">No WSL related changes in this release.</span></span>
+
+#### <a name="console"></a><span data-ttu-id="aa113-799">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-799">Console</span></span>
+- <span data-ttu-id="aa113-800">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-800">No Console related changes in this release.</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-801">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-801">LTP Results:</span></span>
+<span data-ttu-id="aa113-802">自 16273 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-802">No change since 16273</span></span>
+
+## <a name="build-16273"></a><span data-ttu-id="aa113-803">内部版本 16273</span><span class="sxs-lookup"><span data-stu-id="aa113-803">Build 16273</span></span>
+
+<span data-ttu-id="aa113-804">有关内部版本 16273 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/23/announcing-windows-10-insider-preview-build-16273-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-804">For general Windows information on build 16273 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/23/announcing-windows-10-insider-preview-build-16273-pc/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-805">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-805">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-806">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-806">WSL</span></span>
+- <span data-ttu-id="aa113-807">修复了 DrvFs 有时报告目录的错误文件类型的问题 [GH 2392]</span><span class="sxs-lookup"><span data-stu-id="aa113-807">Fixed an issue where DrvFs sometimes reported the wrong file type for directories [GH 2392]</span></span>
+- <span data-ttu-id="aa113-808">允许创建 NETLINK_KOBJECT_UEVENT 套接字来取消阻止使用 UEVENT 的程序 [GH 1121、2293、2242、2295、2235、648、637]</span><span class="sxs-lookup"><span data-stu-id="aa113-808">Allow creation of NETLINK_KOBJECT_UEVENT sockets to unblock programs that use uevent [GH 1121, 2293, 2242, 2295, 2235, 648, 637]</span></span>
+- <span data-ttu-id="aa113-809">添加对非阻塞连接的支持 [GH 903、1391、1584、1585、1829、2290、2314]</span><span class="sxs-lookup"><span data-stu-id="aa113-809">Add support for non-blocking connect [GH 903, 1391, 1584, 1585, 1829, 2290, 2314]</span></span>
+- <span data-ttu-id="aa113-810">实现 CLONE_FS 克隆系统调用标志 [GH 2242]</span><span class="sxs-lookup"><span data-stu-id="aa113-810">Implement CLONE_FS clone system call flag [GH 2242]</span></span>
+- <span data-ttu-id="aa113-811">修复有关在 NT interop 中不会正确处理制表符或引号的问题 [GH 1625、2164]</span><span class="sxs-lookup"><span data-stu-id="aa113-811">Fix issues around not handling tabs or quotes correctly in NT interop [GH 1625, 2164]</span></span>
+- <span data-ttu-id="aa113-812">解决尝试重新启动 WSL 实例时发生的拒绝访问错误 [GH 651、2095]</span><span class="sxs-lookup"><span data-stu-id="aa113-812">Resolve access denied error when trying to re-launch WSL instances [GH 651, 2095]</span></span>
+- <span data-ttu-id="aa113-813">实现 futex FUTEX_REQUEUE 和 FUTEX_CMP_REQUEUE 操作 [GH 2242]</span><span class="sxs-lookup"><span data-stu-id="aa113-813">Implement futex FUTEX_REQUEUE and FUTEX_CMP_REQUEUE operations [GH 2242]</span></span>
+- <span data-ttu-id="aa113-814">修复各种 SysFs 文件的权限 [GH 2214]</span><span class="sxs-lookup"><span data-stu-id="aa113-814">Fix permissions for various SysFs files [GH 2214]</span></span>
+- <span data-ttu-id="aa113-815">修复设置过程中 Haskell 堆栈挂起的问题 [GH 2290]</span><span class="sxs-lookup"><span data-stu-id="aa113-815">Fix Haskell stack hang during setup [GH 2290]</span></span>
+- <span data-ttu-id="aa113-816">实现 binfmt_misc“C”、“O”和“P”标志 [GH 2103]</span><span class="sxs-lookup"><span data-stu-id="aa113-816">Implement binfmt_misc 'C' 'O' and 'P' flags [GH 2103]</span></span>
+- <span data-ttu-id="aa113-817">添加 /proc/sys/kernel /shmmax /shmmni 和 /threads-max [GH 1753]</span><span class="sxs-lookup"><span data-stu-id="aa113-817">Add /proc/sys/kernel /shmmax /shmmni & /threads-max [GH 1753]</span></span>
+- <span data-ttu-id="aa113-818">添加对 ioprio_set 系统调用的部分支持 [GH 498]</span><span class="sxs-lookup"><span data-stu-id="aa113-818">Add partial support for ioprio_set system call [GH 498]</span></span>
+- <span data-ttu-id="aa113-819">存根 SO_REUSEPORT 和添加 netlink 套接字的 SO_PASSCRED 支持 [GH 69]</span><span class="sxs-lookup"><span data-stu-id="aa113-819">Stub SO_REUSEPORT & adding support for SO_PASSCRED for netlink sockets [GH 69]</span></span>
+- <span data-ttu-id="aa113-820">如果当前正在安装或卸载分发版，将从 RegisterDistribuiton 返回不同的错误代码。</span><span class="sxs-lookup"><span data-stu-id="aa113-820">Return different error codes from RegisterDistribuiton if a distribution is currently being installed or uninstalled.</span></span>
+- <span data-ttu-id="aa113-821">允许通过 wslconfig.exe 取消注册部分安装的 WSL 分发版</span><span class="sxs-lookup"><span data-stu-id="aa113-821">Allow unregistration of partially installed WSL distributions via wslconfig.exe</span></span>
+- <span data-ttu-id="aa113-822">修复 udp::msg_peek 的 python 套接字测试挂起问题</span><span class="sxs-lookup"><span data-stu-id="aa113-822">Fix python socket test hang from udp::msg_peek</span></span>
+- <span data-ttu-id="aa113-823">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-823">Additional improvements and bug fixes</span></span>
+
+#### <a name="console"></a><span data-ttu-id="aa113-824">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-824">Console</span></span>
+- <span data-ttu-id="aa113-825">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-825">No Console related changes in this release.</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-826">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-826">LTP Results:</span></span>
+<span data-ttu-id="aa113-827">测试总数：1904</span><span class="sxs-lookup"><span data-stu-id="aa113-827">Total Tests: 1904</span></span><br/>
+<span data-ttu-id="aa113-828">跳过的测试总数：209</span><span class="sxs-lookup"><span data-stu-id="aa113-828">Total Skipped Tests: 209</span></span><br/>
+<span data-ttu-id="aa113-829">失败总数：229</span><span class="sxs-lookup"><span data-stu-id="aa113-829">Total Failures: 229</span></span><br/>
+[<span data-ttu-id="aa113-830">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-830">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/16273)<br/>
+
+## <a name="build-16257"></a><span data-ttu-id="aa113-831">版本 16257</span><span class="sxs-lookup"><span data-stu-id="aa113-831">Build 16257</span></span>
+
+<span data-ttu-id="aa113-832">有关内部版本 16257 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-832">For general Windows information on build 16257 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-833">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-833">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-834">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-834">WSL</span></span>
+- <span data-ttu-id="aa113-835">实现 prlimit64 系统调用</span><span class="sxs-lookup"><span data-stu-id="aa113-835">Implement prlimit64 system call</span></span>
+- <span data-ttu-id="aa113-836">添加对 ulimit -n 的支持 (setrlimit RLIMIT_NOFILE) [GH 1688]</span><span class="sxs-lookup"><span data-stu-id="aa113-836">Add support for ulimit -n (setrlimit RLIMIT_NOFILE) [GH 1688]</span></span>
+- <span data-ttu-id="aa113-837">TCP 套接字的存根 MSG_MORE [GH 2351]</span><span class="sxs-lookup"><span data-stu-id="aa113-837">Stub MSG_MORE for TCP sockets [GH 2351]</span></span>
+- <span data-ttu-id="aa113-838">修复无效的 AT_EXECFN 辅助矢量行为 [GH 2133]</span><span class="sxs-lookup"><span data-stu-id="aa113-838">Fix invalid AT_EXECFN auxiliary vector behavior [GH 2133]</span></span>
+- <span data-ttu-id="aa113-839">修复 console/tty 的 copy/paste 行为，并添加更适当的完整缓冲区处理 [GH 2204、2131]</span><span class="sxs-lookup"><span data-stu-id="aa113-839">Fix copy/paste behavior for console/tty, and add better full buffer handling [GH 2204, 2131]</span></span>
+- <span data-ttu-id="aa113-840">在 set-user-ID 和 set-group-ID 程序的辅助矢量中设置 AT_SECURE [GH 2031]</span><span class="sxs-lookup"><span data-stu-id="aa113-840">Set AT_SECURE in auxiliary vector for set-user-ID and set-group-ID programs [GH 2031]</span></span>
+- <span data-ttu-id="aa113-841">伪终端主终结点不处理 TIOCPGRP [GH 1063]</span><span class="sxs-lookup"><span data-stu-id="aa113-841">Psuedo-terminal master endpoint not handling TIOCPGRP [GH 1063]</span></span>
+- <span data-ttu-id="aa113-842">修复 lseek 在 LxFs 中的回退目录行为 [GH 2310]</span><span class="sxs-lookup"><span data-stu-id="aa113-842">Fix lseek does to rewind directories in LxFs [GH 2310]</span></span>
+- <span data-ttu-id="aa113-843">重度使用后 /dev/ptmx 锁定 [GH 1882]</span><span class="sxs-lookup"><span data-stu-id="aa113-843">/dev/ptmx locks up after heavy usage [GH 1882]</span></span>
+- <span data-ttu-id="aa113-844">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-844">Additional improvements and bug fixes</span></span>
+
+#### <a name="console"></a><span data-ttu-id="aa113-845">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-845">Console</span></span>
+- <span data-ttu-id="aa113-846">修复横线/下划线四处可见的问题 [GH 2168]</span><span class="sxs-lookup"><span data-stu-id="aa113-846">Fix for horizontal Lines/Underscores Everywhere [GH 2168]</span></span>
+- <span data-ttu-id="aa113-847">修复进程顺序更改，使 NPM 更难以关闭的问题 [GH 2170]</span><span class="sxs-lookup"><span data-stu-id="aa113-847">Fix for process order changed making NPM harder to close [GH 2170]</span></span>
+- <span data-ttu-id="aa113-848">添加了新的色彩方案： https://blogs.msdn.microsoft.com/commandline/2017/08/02/updating-the-windows-console-colors/</span><span class="sxs-lookup"><span data-stu-id="aa113-848">Added our new color scheme: https://blogs.msdn.microsoft.com/commandline/2017/08/02/updating-the-windows-console-colors/</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-849">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-849">LTP Results:</span></span>
+<span data-ttu-id="aa113-850">自 16251 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-850">No change since 16251</span></span>
+
+### <a name="syscall-support"></a><span data-ttu-id="aa113-851">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-851">Syscall Support</span></span>
+<span data-ttu-id="aa113-852">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-852">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-853">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-853">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `prlimit64`<br/>
 
-### <a name="known-issues"></a><span data-ttu-id="263bc-854">已知问题</span><span class="sxs-lookup"><span data-stu-id="263bc-854">Known Issues</span></span>
-#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>[<span data-ttu-id="263bc-855">GitHub 问题 2392：WSL 无法识别 Windows 文件夹 ...</span><span class="sxs-lookup"><span data-stu-id="263bc-855">GitHub Issue 2392: Windows Folders not recognized by WSL ...</span></span>](https://github.com/Microsoft/BashOnWindows/issues/2392)
-<span data-ttu-id="263bc-856">在内部版本 16257 中，WSL 在通过 `/mnt/c/...` 枚举 Windows 文件/文件夹时会出现问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-856">In build 16257, WSL has issues when enumerating Windows files/folders via `/mnt/c/...`.</span></span>
-<span data-ttu-id="263bc-857">此问题已修复，修复程序将在 2017 年 8 月 14 日开始的周内，在预览体验成员内部版本中发布。</span><span class="sxs-lookup"><span data-stu-id="263bc-857">This issue has been fixed and should be released in Insiders build during week commencing 8/14/2017.</span></span>
+### <a name="known-issues"></a><span data-ttu-id="aa113-854">已知问题</span><span class="sxs-lookup"><span data-stu-id="aa113-854">Known Issues</span></span>
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>[<span data-ttu-id="aa113-855">GitHub 问题 2392：WSL 无法识别 Windows 文件夹 ...</span><span class="sxs-lookup"><span data-stu-id="aa113-855">GitHub Issue 2392: Windows Folders not recognized by WSL ...</span></span>](https://github.com/Microsoft/BashOnWindows/issues/2392)
+<span data-ttu-id="aa113-856">在内部版本 16257 中，WSL 在通过 `/mnt/c/...` 枚举 Windows 文件/文件夹时会出现问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-856">In build 16257, WSL has issues when enumerating Windows files/folders via `/mnt/c/...`.</span></span>
+<span data-ttu-id="aa113-857">此问题已修复，修复程序将在 2017 年 8 月 14 日开始的周内，在预览体验成员内部版本中发布。</span><span class="sxs-lookup"><span data-stu-id="aa113-857">This issue has been fixed and should be released in Insiders build during week commencing 8/14/2017.</span></span>
 
 <br/>
 
-## <a name="build-16251"></a><span data-ttu-id="263bc-858">内部版本 16251</span><span class="sxs-lookup"><span data-stu-id="263bc-858">Build 16251</span></span>
+## <a name="build-16251"></a><span data-ttu-id="aa113-858">内部版本 16251</span><span class="sxs-lookup"><span data-stu-id="aa113-858">Build 16251</span></span>
 
-<span data-ttu-id="263bc-859">有关内部版本 16251 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/07/26/announcing-windows-10-insider-preview-build-16251-pc-build-15235-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-859">For general Windows information on build 16251 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/07/26/announcing-windows-10-insider-preview-build-16251-pc-build-15235-mobile/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-860">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-860">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-861">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-861">WSL</span></span>
-- <span data-ttu-id="263bc-862">从 WSL 可选组件中删除 beta 标记，有关详细信息，请参阅[博客文章](https://blogs.msdn.microsoft.com/commandline/2017/07/28/windows-subsystem-for-linux-out-of-beta/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-862">Remove beta tag from WSL optional component, see [blog post](https://blogs.msdn.microsoft.com/commandline/2017/07/28/windows-subsystem-for-linux-out-of-beta/) for details.</span></span>
-- <span data-ttu-id="263bc-863">在执行时正确初始化 set-user-ID 和 set-group-ID 二进制文件的 saved-set uid 和 gid [GH 962、1415、2072]</span><span class="sxs-lookup"><span data-stu-id="263bc-863">Correctly initialize saved-set uid and gid for set-user-ID and set-group-ID binaries on exec [GH 962, 1415, 2072]</span></span>
-- <span data-ttu-id="263bc-864">添加了对 ptrace PTRACE_O_TRACEEXIT 的支持 [GH 555]</span><span class="sxs-lookup"><span data-stu-id="263bc-864">Added support for ptrace PTRACE_O_TRACEEXIT [GH 555]</span></span>
-- <span data-ttu-id="263bc-865">添加了对包含 NT_FPREGSET 的 ptrace PTRACE_GETFPREGS 和 PTRACE_GETREGSET 的支持 [GH 555]</span><span class="sxs-lookup"><span data-stu-id="263bc-865">Added support for ptrace PTRACE_GETFPREGS and PTRACE_GETREGSET with NT_FPREGSET [GH 555]</span></span>
-- <span data-ttu-id="263bc-866">修复了 ptrace 在忽略信号时停止的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-866">Fixed ptrace to stop on ignored signals</span></span>
-- <span data-ttu-id="263bc-867">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-867">Additional improvements and bug fixes</span></span>
-
-#### <a name="console"></a><span data-ttu-id="263bc-868">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-868">Console</span></span>
-- <span data-ttu-id="263bc-869">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-869">No Console related changes in this release.</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-870">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-870">LTP Results:</span></span>
-<span data-ttu-id="263bc-871">通过的测试数：768</span><span class="sxs-lookup"><span data-stu-id="263bc-871">Number of Passing Tests: 768</span></span></br>
-<span data-ttu-id="263bc-872">失败的测试数：244</span><span class="sxs-lookup"><span data-stu-id="263bc-872">Number of Failing Tests: 244</span></span></br>
-<span data-ttu-id="263bc-873">跳过的测试数：96</span><span class="sxs-lookup"><span data-stu-id="263bc-873">Number of Skipped Tests: 96</span></span></br>
-[<span data-ttu-id="263bc-874">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-874">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/16251)<br/>
-
-</br>
-
-## <a name="build-16241"></a><span data-ttu-id="263bc-875">内部版本 16241</span><span class="sxs-lookup"><span data-stu-id="263bc-875">Build 16241</span></span>
-
-<span data-ttu-id="263bc-876">有关内部版本 16241 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/07/13/announcing-windows-10-insider-preview-build-16241-pc-build-15230-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-876">For general Windows information on build 16241 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/07/13/announcing-windows-10-insider-preview-build-16241-pc-build-15230-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-859">有关内部版本 16251 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/07/26/announcing-windows-10-insider-preview-build-16251-pc-build-15235-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-859">For general Windows information on build 16251 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/07/26/announcing-windows-10-insider-preview-build-16251-pc-build-15235-mobile/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-877">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-877">Fixed</span></span>
-#### <a name="wsl"></a><span data-ttu-id="263bc-878">WSL</span><span class="sxs-lookup"><span data-stu-id="263bc-878">WSL</span></span>
-- <span data-ttu-id="263bc-879">此版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-879">No WSL related changes in this release.</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-860">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-860">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-861">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-861">WSL</span></span>
+- <span data-ttu-id="aa113-862">从 WSL 可选组件中删除 beta 标记，有关详细信息，请参阅[博客文章](https://blogs.msdn.microsoft.com/commandline/2017/07/28/windows-subsystem-for-linux-out-of-beta/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-862">Remove beta tag from WSL optional component, see [blog post](https://blogs.msdn.microsoft.com/commandline/2017/07/28/windows-subsystem-for-linux-out-of-beta/) for details.</span></span>
+- <span data-ttu-id="aa113-863">在执行时正确初始化 set-user-ID 和 set-group-ID 二进制文件的 saved-set uid 和 gid [GH 962、1415、2072]</span><span class="sxs-lookup"><span data-stu-id="aa113-863">Correctly initialize saved-set uid and gid for set-user-ID and set-group-ID binaries on exec [GH 962, 1415, 2072]</span></span>
+- <span data-ttu-id="aa113-864">添加了对 ptrace PTRACE_O_TRACEEXIT 的支持 [GH 555]</span><span class="sxs-lookup"><span data-stu-id="aa113-864">Added support for ptrace PTRACE_O_TRACEEXIT [GH 555]</span></span>
+- <span data-ttu-id="aa113-865">添加了对包含 NT_FPREGSET 的 ptrace PTRACE_GETFPREGS 和 PTRACE_GETREGSET 的支持 [GH 555]</span><span class="sxs-lookup"><span data-stu-id="aa113-865">Added support for ptrace PTRACE_GETFPREGS and PTRACE_GETREGSET with NT_FPREGSET [GH 555]</span></span>
+- <span data-ttu-id="aa113-866">修复了 ptrace 在忽略信号时停止的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-866">Fixed ptrace to stop on ignored signals</span></span>
+- <span data-ttu-id="aa113-867">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-867">Additional improvements and bug fixes</span></span>
 
-#### <a name="console"></a><span data-ttu-id="263bc-880">控制台</span><span class="sxs-lookup"><span data-stu-id="263bc-880">Console</span></span>
-- <span data-ttu-id="263bc-881">修复输出跨行 DEC 的错误字符的问题，最初报告位于[此处](https://www.reddit.com/r/Windows10/comments/6in82t/i_believe_ive_found_the_most_obscure_bug_ever/)</span><span class="sxs-lookup"><span data-stu-id="263bc-881">Fix for outputting the wrong character for the crossing-lines DEC, originally reported [here](https://www.reddit.com/r/Windows10/comments/6in82t/i_believe_ive_found_the_most_obscure_bug_ever/)</span></span>
-- <span data-ttu-id="263bc-882">修复代码页 65001 (utf8) 中不显示输出文本的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-882">Fix for no output text being displayed in codepage 65001 (utf8)</span></span>
-- <span data-ttu-id="263bc-883">更改选择内容时，不会将对某种颜色的 RGB 值所做的更改传输到调色板的其他部分。</span><span class="sxs-lookup"><span data-stu-id="263bc-883">Do not transfer changes made to one color's RGB values to other parts of the palette on selection change.</span></span> <span data-ttu-id="263bc-884">这在一定程度上使得控制台属性表变得更易于使用。</span><span class="sxs-lookup"><span data-stu-id="263bc-884">This will make the console properties sheet a lot easier to use.</span></span>
-- <span data-ttu-id="263bc-885">Ctrl+S 似乎不起作用</span><span class="sxs-lookup"><span data-stu-id="263bc-885">Ctrl+S doesn't appear to work correctly</span></span>
-- <span data-ttu-id="263bc-886">ANSI 转义代码中根本没有 Un-Bold/-Dim [GH 2174]</span><span class="sxs-lookup"><span data-stu-id="263bc-886">Un-Bold/-Dim completely absent from ANSI escape codes [GH 2174]</span></span>
-- <span data-ttu-id="263bc-887">控制台不正常支持 Vim 色彩主题 [GH 1706]</span><span class="sxs-lookup"><span data-stu-id="263bc-887">Console doesn't correctly support Vim color themes [GH 1706]</span></span>
-- <span data-ttu-id="263bc-888">无法粘贴特定的字符 [GH 2149]</span><span class="sxs-lookup"><span data-stu-id="263bc-888">Cannot paste particular characters [GH 2149]</span></span>
-- <span data-ttu-id="263bc-889">当编辑/命令行上有内容时，重复流的调整大小操作以奇怪的方式与 bash 窗口调整大小操作交互 [GH ConEmu 1123]</span><span class="sxs-lookup"><span data-stu-id="263bc-889">Reflow resize interacts strangely with resizing a bash window when stuff is on the edit/command line [GH ConEmu 1123]</span></span>
-- <span data-ttu-id="263bc-890">按 Ctrl-L 不会清屏 [GH 1978]</span><span class="sxs-lookup"><span data-stu-id="263bc-890">Ctrl-L leaves the screen dirty [GH 1978]</span></span>
-- <span data-ttu-id="263bc-891">在 HDPI 上显示 VT 时的控制台呈现 bug [GH 1907]</span><span class="sxs-lookup"><span data-stu-id="263bc-891">Console rendering bug when displaying VT on HDPI [GH 1907]</span></span>
-- <span data-ttu-id="263bc-892">日文字符出现乱码和 Unicode 字符 U+30FB [GH 2146]</span><span class="sxs-lookup"><span data-stu-id="263bc-892">Japansese characters look strange with Unicode Character U+30FB [GH 2146]</span></span>
-- <span data-ttu-id="263bc-893">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-893">Additional improvements and bug fixes</span></span>
+#### <a name="console"></a><span data-ttu-id="aa113-868">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-868">Console</span></span>
+- <span data-ttu-id="aa113-869">此版本中没有控制台相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-869">No Console related changes in this release.</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-870">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-870">LTP Results:</span></span>
+<span data-ttu-id="aa113-871">通过的测试数：768</span><span class="sxs-lookup"><span data-stu-id="aa113-871">Number of Passing Tests: 768</span></span></br>
+<span data-ttu-id="aa113-872">失败的测试数：244</span><span class="sxs-lookup"><span data-stu-id="aa113-872">Number of Failing Tests: 244</span></span></br>
+<span data-ttu-id="aa113-873">跳过的测试数：96</span><span class="sxs-lookup"><span data-stu-id="aa113-873">Number of Skipped Tests: 96</span></span></br>
+[<span data-ttu-id="aa113-874">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-874">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/16251)<br/>
 
 </br>
 
-## <a name="build-16237"></a><span data-ttu-id="263bc-894">版本 16237</span><span class="sxs-lookup"><span data-stu-id="263bc-894">Build 16237</span></span>
+## <a name="build-16241"></a><span data-ttu-id="aa113-875">内部版本 16241</span><span class="sxs-lookup"><span data-stu-id="aa113-875">Build 16241</span></span>
 
-<span data-ttu-id="263bc-895">有关内部版本 16237 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/07/07/announcing-windows-10-insider-preview-build-16237-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-895">For general Windows information on build 16237 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/07/07/announcing-windows-10-insider-preview-build-16237-pc/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-896">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-896">Fixed</span></span>
-- <span data-ttu-id="263bc-897">对 lxfs 中不包含 EA 的文件使用默认属性 (root, root, 0000)</span><span class="sxs-lookup"><span data-stu-id="263bc-897">Use default attributes for files without EAs in lxfs (root, root, 0000)</span></span>
-- <span data-ttu-id="263bc-898">添加了对使用扩展属性的分发版的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-898">Added support for distributions that use extended attributes</span></span>
-- <span data-ttu-id="263bc-899">修复 getdents 和 getdents64 返回的项的填充</span><span class="sxs-lookup"><span data-stu-id="263bc-899">Fix padding for entries returned by getdents and getdents64</span></span>
-- <span data-ttu-id="263bc-900">修复针对 shmctl SHM_STAT 系统调用的权限检查 [GH 2068]</span><span class="sxs-lookup"><span data-stu-id="263bc-900">Fix permissions check for the shmctl SHM_STAT system call [GH 2068]</span></span>
-- <span data-ttu-id="263bc-901">修复了 tty 的错误初始 epoll 状态 [GH 2231]</span><span class="sxs-lookup"><span data-stu-id="263bc-901">Fixed incorrect initial epoll state for ttys [GH 2231]</span></span>
-- <span data-ttu-id="263bc-902">修复 DrvFs readdir 不返回所有项的问题 [GH 2077]</span><span class="sxs-lookup"><span data-stu-id="263bc-902">Fix DrvFs readdir not returning all entries [GH 2077]</span></span>
-- <span data-ttu-id="263bc-903">修复取消链接文件时的 LxFs readdir [GH 2077]</span><span class="sxs-lookup"><span data-stu-id="263bc-903">Fix LxFs readdir when files are unlinked [GH 2077]</span></span>
-- <span data-ttu-id="263bc-904">允许通过 procfs 重新打开未链接的 drvfs 文件</span><span class="sxs-lookup"><span data-stu-id="263bc-904">Allow unlinked drvfs files to be reopened through procfs</span></span>
-- <span data-ttu-id="263bc-905">添加了用于禁用 WSL 功能的全局注册表项重写（interop/驱动器装载）</span><span class="sxs-lookup"><span data-stu-id="263bc-905">Added global registry key override for disabling WSL features (interop / drive mounting)</span></span>
-- <span data-ttu-id="263bc-906">修复 DrvFs（和 LxFs）的“统计信息”中的错误块计数 [GH 1894]</span><span class="sxs-lookup"><span data-stu-id="263bc-906">Fix incorrect block count in "stat" for DrvFs (and LxFs) [GH 1894]</span></span>
-- <span data-ttu-id="263bc-907">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-907">Additional improvements and bug fixes</span></span>
-
-</br>
-
-## <a name="build-16232"></a><span data-ttu-id="263bc-908">内部版本 16232</span><span class="sxs-lookup"><span data-stu-id="263bc-908">Build 16232</span></span>
-
-<span data-ttu-id="263bc-909">有关内部版本 16232 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-909">For general Windows information on build 16232 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-876">有关内部版本 16241 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/07/13/announcing-windows-10-insider-preview-build-16241-pc-build-15230-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-876">For general Windows information on build 16241 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/07/13/announcing-windows-10-insider-preview-build-16241-pc-build-15230-mobile/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-910">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-910">Fixed</span></span>
-- <span data-ttu-id="263bc-911">此版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-911">No WSL related changes in this release.</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-877">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-877">Fixed</span></span>
+#### <a name="wsl"></a><span data-ttu-id="aa113-878">WSL</span><span class="sxs-lookup"><span data-stu-id="aa113-878">WSL</span></span>
+- <span data-ttu-id="aa113-879">此版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-879">No WSL related changes in this release.</span></span>
+
+#### <a name="console"></a><span data-ttu-id="aa113-880">控制台</span><span class="sxs-lookup"><span data-stu-id="aa113-880">Console</span></span>
+- <span data-ttu-id="aa113-881">修复输出跨行 DEC 的错误字符的问题，最初报告位于[此处](https://www.reddit.com/r/Windows10/comments/6in82t/i_believe_ive_found_the_most_obscure_bug_ever/)</span><span class="sxs-lookup"><span data-stu-id="aa113-881">Fix for outputting the wrong character for the crossing-lines DEC, originally reported [here](https://www.reddit.com/r/Windows10/comments/6in82t/i_believe_ive_found_the_most_obscure_bug_ever/)</span></span>
+- <span data-ttu-id="aa113-882">修复代码页 65001 (utf8) 中不显示输出文本的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-882">Fix for no output text being displayed in codepage 65001 (utf8)</span></span>
+- <span data-ttu-id="aa113-883">更改选择内容时，不会将对某种颜色的 RGB 值所做的更改传输到调色板的其他部分。</span><span class="sxs-lookup"><span data-stu-id="aa113-883">Do not transfer changes made to one color's RGB values to other parts of the palette on selection change.</span></span> <span data-ttu-id="aa113-884">这在一定程度上使得控制台属性表变得更易于使用。</span><span class="sxs-lookup"><span data-stu-id="aa113-884">This will make the console properties sheet a lot easier to use.</span></span>
+- <span data-ttu-id="aa113-885">Ctrl+S 似乎不起作用</span><span class="sxs-lookup"><span data-stu-id="aa113-885">Ctrl+S doesn't appear to work correctly</span></span>
+- <span data-ttu-id="aa113-886">ANSI 转义代码中根本没有 Un-Bold/-Dim [GH 2174]</span><span class="sxs-lookup"><span data-stu-id="aa113-886">Un-Bold/-Dim completely absent from ANSI escape codes [GH 2174]</span></span>
+- <span data-ttu-id="aa113-887">控制台不正常支持 Vim 色彩主题 [GH 1706]</span><span class="sxs-lookup"><span data-stu-id="aa113-887">Console doesn't correctly support Vim color themes [GH 1706]</span></span>
+- <span data-ttu-id="aa113-888">无法粘贴特定的字符 [GH 2149]</span><span class="sxs-lookup"><span data-stu-id="aa113-888">Cannot paste particular characters [GH 2149]</span></span>
+- <span data-ttu-id="aa113-889">当编辑/命令行上有内容时，重复流的调整大小操作以奇怪的方式与 bash 窗口调整大小操作交互 [GH ConEmu 1123]</span><span class="sxs-lookup"><span data-stu-id="aa113-889">Reflow resize interacts strangely with resizing a bash window when stuff is on the edit/command line [GH ConEmu 1123]</span></span>
+- <span data-ttu-id="aa113-890">按 Ctrl-L 不会清屏 [GH 1978]</span><span class="sxs-lookup"><span data-stu-id="aa113-890">Ctrl-L leaves the screen dirty [GH 1978]</span></span>
+- <span data-ttu-id="aa113-891">在 HDPI 上显示 VT 时的控制台呈现 bug [GH 1907]</span><span class="sxs-lookup"><span data-stu-id="aa113-891">Console rendering bug when displaying VT on HDPI [GH 1907]</span></span>
+- <span data-ttu-id="aa113-892">日文字符出现乱码和 Unicode 字符 U+30FB [GH 2146]</span><span class="sxs-lookup"><span data-stu-id="aa113-892">Japansese characters look strange with Unicode Character U+30FB [GH 2146]</span></span>
+- <span data-ttu-id="aa113-893">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-893">Additional improvements and bug fixes</span></span>
 
 </br>
 
-## <a name="build-16226"></a><span data-ttu-id="263bc-912">内部版本 16226</span><span class="sxs-lookup"><span data-stu-id="263bc-912">Build 16226</span></span>
+## <a name="build-16237"></a><span data-ttu-id="aa113-894">版本 16237</span><span class="sxs-lookup"><span data-stu-id="aa113-894">Build 16237</span></span>
 
-<span data-ttu-id="263bc-913">有关内部版本 16226 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/06/21/announcing-windows-10-insider-preview-build-16226-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-913">For general Windows information on build 16226 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/06/21/announcing-windows-10-insider-preview-build-16226-pc/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-914">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-914">Fixed</span></span>
-- <span data-ttu-id="263bc-915">xattr 相关的 syscall 支持（getxattr、setxattr、listxattr、removexattr）。</span><span class="sxs-lookup"><span data-stu-id="263bc-915">xattr related syscalls support (getxattr, setxattr, listxattr, removexattr).</span></span>
-- <span data-ttu-id="263bc-916">security.capablity xattr 支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-916">security.capablity xattr support.</span></span>
-- <span data-ttu-id="263bc-917">改善了与某些文件系统和筛选器（包括非 MS SMB 服务器）的兼容性。</span><span class="sxs-lookup"><span data-stu-id="263bc-917">Improved compatibility with certain file systems and filters, including non-MS SMB servers.</span></span> <span data-ttu-id="263bc-918">[GH #1952]</span><span class="sxs-lookup"><span data-stu-id="263bc-918">[GH #1952]</span></span>
-- <span data-ttu-id="263bc-919">改善了对 OneDrive 占位符、GVFS 占位符和精简 OS 压缩文件的支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-919">Improved support for OneDrive placeholders, GVFS placeholders, and Compact OS compressed files.</span></span>
-- <span data-ttu-id="263bc-920">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-920">Additional improvements and bug fixes</span></span>
-
-</br>
-
-## <a name="build-16215"></a><span data-ttu-id="263bc-921">内部版本 16215</span><span class="sxs-lookup"><span data-stu-id="263bc-921">Build 16215</span></span>
-
-<span data-ttu-id="263bc-922">有关内部版本 16215 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/06/08/announcing-windows-10-insider-preview-build-16215-pc-build-15222-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-922">For general Windows information on build 16215 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/06/08/announcing-windows-10-insider-preview-build-16215-pc-build-15222-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-895">有关内部版本 16237 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/07/07/announcing-windows-10-insider-preview-build-16237-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-895">For general Windows information on build 16237 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/07/07/announcing-windows-10-insider-preview-build-16237-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-923">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-923">Fixed</span></span>
-- <span data-ttu-id="263bc-924">WSL 不再需要开发人员模式。</span><span class="sxs-lookup"><span data-stu-id="263bc-924">WSL no longer requires developer mode.</span></span>
-- <span data-ttu-id="263bc-925">支持 drvfs 中的目录接合。</span><span class="sxs-lookup"><span data-stu-id="263bc-925">Support directory junctions in drvfs.</span></span>
-- <span data-ttu-id="263bc-926">处理 WSL appx 分发包的卸载。</span><span class="sxs-lookup"><span data-stu-id="263bc-926">Handle uninstalling of WSL distribution appx packages.</span></span>
-- <span data-ttu-id="263bc-927">更新 procfs 以显示专用映射和共享映射。</span><span class="sxs-lookup"><span data-stu-id="263bc-927">Update procfs to show private and shared mappings.</span></span>
-- <span data-ttu-id="263bc-928">为 wslconfig.exe 添加清理部分安装或已卸载的分发版的功能。</span><span class="sxs-lookup"><span data-stu-id="263bc-928">Add ability for wslconfig.exe to clean up distributions that are partially installed or uninstalled.</span></span>
-- <span data-ttu-id="263bc-929">添加了对 TCP 套接字的 IP_MTU_DISCOVER 的支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-929">Added support for IP_MTU_DISCOVER for TCP sockets.</span></span> <span data-ttu-id="263bc-930">[GH 1639、2115、2205]</span><span class="sxs-lookup"><span data-stu-id="263bc-930">[GH 1639, 2115, 2205]</span></span>
-- <span data-ttu-id="263bc-931">推断 AF_INADDR 路由的协议系列。</span><span class="sxs-lookup"><span data-stu-id="263bc-931">Infer protocol family for routes to AF_INADDR.</span></span>
-- <span data-ttu-id="263bc-932">串行设备改进 [GH 1929]。</span><span class="sxs-lookup"><span data-stu-id="263bc-932">Serial device improvements [GH 1929].</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-896">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-896">Fixed</span></span>
+- <span data-ttu-id="aa113-897">对 lxfs 中不包含 EA 的文件使用默认属性 (root, root, 0000)</span><span class="sxs-lookup"><span data-stu-id="aa113-897">Use default attributes for files without EAs in lxfs (root, root, 0000)</span></span>
+- <span data-ttu-id="aa113-898">添加了对使用扩展属性的分发版的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-898">Added support for distributions that use extended attributes</span></span>
+- <span data-ttu-id="aa113-899">修复 getdents 和 getdents64 返回的项的填充</span><span class="sxs-lookup"><span data-stu-id="aa113-899">Fix padding for entries returned by getdents and getdents64</span></span>
+- <span data-ttu-id="aa113-900">修复针对 shmctl SHM_STAT 系统调用的权限检查 [GH 2068]</span><span class="sxs-lookup"><span data-stu-id="aa113-900">Fix permissions check for the shmctl SHM_STAT system call [GH 2068]</span></span>
+- <span data-ttu-id="aa113-901">修复了 tty 的错误初始 epoll 状态 [GH 2231]</span><span class="sxs-lookup"><span data-stu-id="aa113-901">Fixed incorrect initial epoll state for ttys [GH 2231]</span></span>
+- <span data-ttu-id="aa113-902">修复 DrvFs readdir 不返回所有项的问题 [GH 2077]</span><span class="sxs-lookup"><span data-stu-id="aa113-902">Fix DrvFs readdir not returning all entries [GH 2077]</span></span>
+- <span data-ttu-id="aa113-903">修复取消链接文件时的 LxFs readdir [GH 2077]</span><span class="sxs-lookup"><span data-stu-id="aa113-903">Fix LxFs readdir when files are unlinked [GH 2077]</span></span>
+- <span data-ttu-id="aa113-904">允许通过 procfs 重新打开未链接的 drvfs 文件</span><span class="sxs-lookup"><span data-stu-id="aa113-904">Allow unlinked drvfs files to be reopened through procfs</span></span>
+- <span data-ttu-id="aa113-905">添加了用于禁用 WSL 功能的全局注册表项重写（interop/驱动器装载）</span><span class="sxs-lookup"><span data-stu-id="aa113-905">Added global registry key override for disabling WSL features (interop / drive mounting)</span></span>
+- <span data-ttu-id="aa113-906">修复 DrvFs（和 LxFs）的“统计信息”中的错误块计数 [GH 1894]</span><span class="sxs-lookup"><span data-stu-id="aa113-906">Fix incorrect block count in "stat" for DrvFs (and LxFs) [GH 1894]</span></span>
+- <span data-ttu-id="aa113-907">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-907">Additional improvements and bug fixes</span></span>
 
 </br>
 
-## <a name="build-16199"></a><span data-ttu-id="263bc-933">内部版本 16199</span><span class="sxs-lookup"><span data-stu-id="263bc-933">Build 16199</span></span>
+## <a name="build-16232"></a><span data-ttu-id="aa113-908">内部版本 16232</span><span class="sxs-lookup"><span data-stu-id="aa113-908">Build 16232</span></span>
 
-<span data-ttu-id="263bc-934">有关内部版本 16199 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/05/17/announcing-windows-10-insider-preview-build-16199-pc-build-15215-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-934">For general Windows information on build 16199 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/05/17/announcing-windows-10-insider-preview-build-16199-pc-build-15215-mobile/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-935">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-935">Fixed</span></span>
-- <span data-ttu-id="263bc-936">这些版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-936">No WSL related changes in these releases.</span></span>
-
-</br>
-
-## <a name="build-16193"></a><span data-ttu-id="263bc-937">内部版本 16193</span><span class="sxs-lookup"><span data-stu-id="263bc-937">Build 16193</span></span>
-
-<span data-ttu-id="263bc-938">有关内部版本 16193 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/05/11/announcing-windows-10-insider-preview-build-16193-pc-build-15213-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-938">For general Windows information on build 16193 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/05/11/announcing-windows-10-insider-preview-build-16193-pc-build-15213-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-909">有关内部版本 16232 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-909">For general Windows information on build 16232 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-939">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-939">Fixed</span></span>
-- <span data-ttu-id="263bc-940">发送 SIGCONT 与终止线程组之间的争用状态 [GH 1973]</span><span class="sxs-lookup"><span data-stu-id="263bc-940">Race condition between sending SIGCONT and a threadgroup terminating [GH 1973]</span></span>
-- <span data-ttu-id="263bc-941">更改 tty 和 pty 设备以报告 FILE_DEVICE_NAMED_PIPE 而不是 FILE_DEVICE_CONSOLE [GH 1840]</span><span class="sxs-lookup"><span data-stu-id="263bc-941">change tty and pty devices to report FILE_DEVICE_NAMED_PIPE instead of FILE_DEVICE_CONSOLE [GH 1840]</span></span>
-- <span data-ttu-id="263bc-942">IP_OPTIONS 的 SSH 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-942">SSH fix for IP_OPTIONS</span></span>
-- <span data-ttu-id="263bc-943">已将 DrvFs 装载移到初始化守护程序 [GH 1862、1968、1767、1933]</span><span class="sxs-lookup"><span data-stu-id="263bc-943">Moved DrvFs mounting to init daemon [GH 1862, 1968, 1767, 1933]</span></span>
-- <span data-ttu-id="263bc-944">在 DrvFs 中添加了遵循 NT 符号链接的支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-944">Added support in DrvFs for following NT symlinks.</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-910">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-910">Fixed</span></span>
+- <span data-ttu-id="aa113-911">此版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-911">No WSL related changes in this release.</span></span>
 
 </br>
 
-## <a name="build-16184"></a><span data-ttu-id="263bc-945">内部版本 16184</span><span class="sxs-lookup"><span data-stu-id="263bc-945">Build 16184</span></span>
+## <a name="build-16226"></a><span data-ttu-id="aa113-912">内部版本 16226</span><span class="sxs-lookup"><span data-stu-id="aa113-912">Build 16226</span></span>
 
-<span data-ttu-id="263bc-946">有关内部版本 16184 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/28/announcing-windows-10-insider-preview-build-16184-pc-build-15208-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-946">For general Windows information on build 16184 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/28/announcing-windows-10-insider-preview-build-16184-pc-build-15208-mobile/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-947">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-947">Fixed</span></span>
-- <span data-ttu-id="263bc-948">删除了 apt 包维护任务 (lxrun.exe /update)</span><span class="sxs-lookup"><span data-stu-id="263bc-948">Removed apt package maintenance task (lxrun.exe /update)</span></span>
-- <span data-ttu-id="263bc-949">修复了 node.js 中的 Windows 进程不显示输出的问题 [GH 1840]</span><span class="sxs-lookup"><span data-stu-id="263bc-949">Fixed output not showing up in from Windows processes in node.js [GH 1840]</span></span>
-- <span data-ttu-id="263bc-950">放宽 lxcore 中的对齐要求 [GH 1794]</span><span class="sxs-lookup"><span data-stu-id="263bc-950">Relax alignment requirements in lxcore [GH 1794]</span></span>
-- <span data-ttu-id="263bc-951">修复了许多系统调用中处理 AT_EMPTY_PATH 标志的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-951">Fixed handling of the AT_EMPTY_PATH flag in a numer of system calls.</span></span>
-- <span data-ttu-id="263bc-952">修复了删除存在已打开句柄的 DrvFs 文件时，导致文件出现未定义的行为的问题 [GH 544、966、1357、1535、1615]</span><span class="sxs-lookup"><span data-stu-id="263bc-952">Fixed issue where deleting DrvFs files with open handles will cause the file to exhibit undefined behavior [GH 544,966,1357,1535,1615]</span></span>
-- <span data-ttu-id="263bc-953">/etc/hosts 现在会从 Windows hosts 文件 (%windir%\system32\drivers\etc\hosts) 继承项 [GH 1495]</span><span class="sxs-lookup"><span data-stu-id="263bc-953">/etc/hosts will now inherit entries from the Windows hosts file (%windir%\system32\drivers\etc\hosts) [GH 1495]</span></span>
-
-</br>
-
-## <a name="build-16179"></a><span data-ttu-id="263bc-954">内部版本 16179</span><span class="sxs-lookup"><span data-stu-id="263bc-954">Build 16179</span></span>
-
-<span data-ttu-id="263bc-955">有关内部版本 16179 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/19/announcing-windows-10-insider-preview-build-16179-pc-build-15205-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-955">For general Windows information on build 16179 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/19/announcing-windows-10-insider-preview-build-16179-pc-build-15205-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-913">有关内部版本 16226 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/06/21/announcing-windows-10-insider-preview-build-16226-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-913">For general Windows information on build 16226 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/06/21/announcing-windows-10-insider-preview-build-16226-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-956">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-956">Fixed</span></span>
-- <span data-ttu-id="263bc-957">本周没有 WSL 更改。</span><span class="sxs-lookup"><span data-stu-id="263bc-957">No WSL changes this week.</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-914">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-914">Fixed</span></span>
+- <span data-ttu-id="aa113-915">xattr 相关的 syscall 支持（getxattr、setxattr、listxattr、removexattr）。</span><span class="sxs-lookup"><span data-stu-id="aa113-915">xattr related syscalls support (getxattr, setxattr, listxattr, removexattr).</span></span>
+- <span data-ttu-id="aa113-916">security.capablity xattr 支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-916">security.capablity xattr support.</span></span>
+- <span data-ttu-id="aa113-917">改善了与某些文件系统和筛选器（包括非 MS SMB 服务器）的兼容性。</span><span class="sxs-lookup"><span data-stu-id="aa113-917">Improved compatibility with certain file systems and filters, including non-MS SMB servers.</span></span> <span data-ttu-id="aa113-918">[GH #1952]</span><span class="sxs-lookup"><span data-stu-id="aa113-918">[GH #1952]</span></span>
+- <span data-ttu-id="aa113-919">改善了对 OneDrive 占位符、GVFS 占位符和精简 OS 压缩文件的支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-919">Improved support for OneDrive placeholders, GVFS placeholders, and Compact OS compressed files.</span></span>
+- <span data-ttu-id="aa113-920">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-920">Additional improvements and bug fixes</span></span>
 
 </br>
 
-## <a name="build-16176"></a><span data-ttu-id="263bc-958">内部版本 16176</span><span class="sxs-lookup"><span data-stu-id="263bc-958">Build 16176</span></span>
+## <a name="build-16215"></a><span data-ttu-id="aa113-921">内部版本 16215</span><span class="sxs-lookup"><span data-stu-id="aa113-921">Build 16215</span></span>
 
-<span data-ttu-id="263bc-959">有关内部版本 16176 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-959">For general Windows information on build 16176 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-922">有关内部版本 16215 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/06/08/announcing-windows-10-insider-preview-build-16215-pc-build-15222-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-922">For general Windows information on build 16215 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/06/08/announcing-windows-10-insider-preview-build-16215-pc-build-15222-mobile/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-960">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-960">Fixed</span></span>
-
-- [<span data-ttu-id="263bc-961">已启用串行支持</span><span class="sxs-lookup"><span data-stu-id="263bc-961">Enabled serial support</span></span>](https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/)
-- <span data-ttu-id="263bc-962">添加了 IP 套接字选项 IP_OPTIONS [GH 1116]</span><span class="sxs-lookup"><span data-stu-id="263bc-962">Added IP socket option IP_OPTIONS [GH 1116]</span></span>
-- <span data-ttu-id="263bc-963">实现了 pwritev 函数（将文件上传到 nginx/PHP-FPM 时）[GH 1506]</span><span class="sxs-lookup"><span data-stu-id="263bc-963">Implemented pwritev function (while uploading file to nginx/PHP-FPM) [GH 1506]</span></span>
-- <span data-ttu-id="263bc-964">添加了 IP 套接字选项 IP_MULTICAST_IF 和 IPV6_MULTICAST_IF [GH 990]</span><span class="sxs-lookup"><span data-stu-id="263bc-964">Added IP socket options IP_MULTICAST_IF & IPV6_MULTICAST_IF [GH 990]</span></span>
-- <span data-ttu-id="263bc-965">支持套接字选项 IP_MULTICAST_LOOP 和 IPV6_MULTICAST_LOOP [GH 1678]</span><span class="sxs-lookup"><span data-stu-id="263bc-965">Support for socket option IP_MULTICAST_LOOP & IPV6_MULTICAST_LOOP [GH 1678]</span></span>
-- <span data-ttu-id="263bc-966">为应用节点、traceroute、dig、nslookup、主机添加了 IP(V6)_MTU 套接字选项</span><span class="sxs-lookup"><span data-stu-id="263bc-966">Added IP(V6)_MTU socket option for apps node, traceroute, dig, nslookup, host</span></span>
-- <span data-ttu-id="263bc-967">添加了 IP 套接字选项 IPV6_UNICAST_HOPS</span><span class="sxs-lookup"><span data-stu-id="263bc-967">Added IP socket option IPV6_UNICAST_HOPS</span></span>
-- [<span data-ttu-id="263bc-968">文件系统改进</span><span class="sxs-lookup"><span data-stu-id="263bc-968">Filesystem Improvements</span></span>](https://blogs.msdn.microsoft.com/wsl/2017/04/18/file-system-improvements-to-the-windows-subsystem-for-linux/)
-    * <span data-ttu-id="263bc-969">允许装载 UNC 路径</span><span class="sxs-lookup"><span data-stu-id="263bc-969">Allow mounting of UNC paths</span></span>
-    * <span data-ttu-id="263bc-970">在 drvfs 中启用 CDFS 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-970">Enable CDFS support in drvfs</span></span>
-    * <span data-ttu-id="263bc-971">正确处理 drvfs 中网络文件系统的权限</span><span class="sxs-lookup"><span data-stu-id="263bc-971">Correctly handle permissions for network file systems in drvfs</span></span>
-    * <span data-ttu-id="263bc-972">在 drvfs 中添加远程驱动器的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-972">Add support for remote drives to drvfs</span></span>
-    * <span data-ttu-id="263bc-973">在 drvfs 中启用 FAT 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-973">Enable FAT support in drvfs</span></span>
-- <span data-ttu-id="263bc-974">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-974">Additional fixes and Improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-975">LTP 结果</span><span class="sxs-lookup"><span data-stu-id="263bc-975">LTP Results</span></span>
-<span data-ttu-id="263bc-976">自 15042 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-976">No changes since 15042</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-923">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-923">Fixed</span></span>
+- <span data-ttu-id="aa113-924">WSL 不再需要开发人员模式。</span><span class="sxs-lookup"><span data-stu-id="aa113-924">WSL no longer requires developer mode.</span></span>
+- <span data-ttu-id="aa113-925">支持 drvfs 中的目录接合。</span><span class="sxs-lookup"><span data-stu-id="aa113-925">Support directory junctions in drvfs.</span></span>
+- <span data-ttu-id="aa113-926">处理 WSL appx 分发包的卸载。</span><span class="sxs-lookup"><span data-stu-id="aa113-926">Handle uninstalling of WSL distribution appx packages.</span></span>
+- <span data-ttu-id="aa113-927">更新 procfs 以显示专用映射和共享映射。</span><span class="sxs-lookup"><span data-stu-id="aa113-927">Update procfs to show private and shared mappings.</span></span>
+- <span data-ttu-id="aa113-928">为 wslconfig.exe 添加清理部分安装或已卸载的分发版的功能。</span><span class="sxs-lookup"><span data-stu-id="aa113-928">Add ability for wslconfig.exe to clean up distributions that are partially installed or uninstalled.</span></span>
+- <span data-ttu-id="aa113-929">添加了对 TCP 套接字的 IP_MTU_DISCOVER 的支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-929">Added support for IP_MTU_DISCOVER for TCP sockets.</span></span> <span data-ttu-id="aa113-930">[GH 1639、2115、2205]</span><span class="sxs-lookup"><span data-stu-id="aa113-930">[GH 1639, 2115, 2205]</span></span>
+- <span data-ttu-id="aa113-931">推断 AF_INADDR 路由的协议系列。</span><span class="sxs-lookup"><span data-stu-id="aa113-931">Infer protocol family for routes to AF_INADDR.</span></span>
+- <span data-ttu-id="aa113-932">串行设备改进 [GH 1929]。</span><span class="sxs-lookup"><span data-stu-id="aa113-932">Serial device improvements [GH 1929].</span></span>
 
 </br>
 
-## <a name="build-16170"></a><span data-ttu-id="263bc-977">内部版本 16170</span><span class="sxs-lookup"><span data-stu-id="263bc-977">Build 16170</span></span>
+## <a name="build-16199"></a><span data-ttu-id="aa113-933">内部版本 16199</span><span class="sxs-lookup"><span data-stu-id="aa113-933">Build 16199</span></span>
 
-<span data-ttu-id="263bc-978">有关内部版本 16170 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/07/announcing-windows-10-insider-preview-build-16170-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-978">For general Windows information on build 16170 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/07/announcing-windows-10-insider-preview-build-16170-pc/).</span></span><br/>
+<span data-ttu-id="aa113-934">有关内部版本 16199 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/05/17/announcing-windows-10-insider-preview-build-16199-pc-build-15215-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-934">For general Windows information on build 16199 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/05/17/announcing-windows-10-insider-preview-build-16199-pc-build-15215-mobile/).</span></span><br/>
 
-<span data-ttu-id="263bc-979">我们发布的新[博客文章](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/)中介绍了我们在测试 WSL 方面所做的努力。</span><span class="sxs-lookup"><span data-stu-id="263bc-979">We released a new [blog post](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/) discussing our efforts to test WSL.</span></span>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-980">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-980">Fixed</span></span>
-
-- <span data-ttu-id="263bc-981">支持套接字选项 IP_ADD_MEMBERSHIP 和 IPV6_ADD_MEMBERSHIP [GH 1678]</span><span class="sxs-lookup"><span data-stu-id="263bc-981">Support socket option IP_ADD_MEMBERSHIP & IPV6_ADD_MEMBERSHIP [GH 1678]</span></span>
-- <span data-ttu-id="263bc-982">添加对 PTRACE_OLDSETOPTIONS 的支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-982">Add support for PTRACE_OLDSETOPTIONS.</span></span> <span data-ttu-id="263bc-983">[GH 1692]</span><span class="sxs-lookup"><span data-stu-id="263bc-983">[GH 1692]</span></span>
-- <span data-ttu-id="263bc-984">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-984">Additional fixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-985">LTP 结果</span><span class="sxs-lookup"><span data-stu-id="263bc-985">LTP Results</span></span>
-<span data-ttu-id="263bc-986">自 15042 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-986">No changes since 15042</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-935">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-935">Fixed</span></span>
+- <span data-ttu-id="aa113-936">这些版本中没有 WSL 相关的更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-936">No WSL related changes in these releases.</span></span>
 
 </br>
 
-## <a name="build-15046-to-windows-10-creators-update"></a><span data-ttu-id="263bc-987">内部版本 15046 到 Windows 10 创意者更新</span><span class="sxs-lookup"><span data-stu-id="263bc-987">Build 15046 to Windows 10 Creators Update</span></span>
-<span data-ttu-id="263bc-988">我们未计划在 Windows 10 创意者更新中包含其他 WSL 修复或功能。</span><span class="sxs-lookup"><span data-stu-id="263bc-988">There are no more WSL fixes or features planned for inclusion in the Creators Update to Windows 10.</span></span> <span data-ttu-id="263bc-989">WSL 的发行说明将在未来几周恢复发布，其中补充了面向下一个 Windows 更新主要版本的信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-989">Release notes for WSL will resume in the coming weeks for additions targeting the next major Windows Update.</span></span> <span data-ttu-id="263bc-990">有关内部版本 15046 和将来的预览体验版的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/28/announcing-windows-10-insider-preview-build-15046-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-990">For general Windows information on build 15046 and future Insider releases visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/28/announcing-windows-10-insider-preview-build-15046-pc/).</span></span> <br/><br/>
+## <a name="build-16193"></a><span data-ttu-id="aa113-937">内部版本 16193</span><span class="sxs-lookup"><span data-stu-id="aa113-937">Build 16193</span></span>
+
+<span data-ttu-id="aa113-938">有关内部版本 16193 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/05/11/announcing-windows-10-insider-preview-build-16193-pc-build-15213-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-938">For general Windows information on build 16193 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/05/11/announcing-windows-10-insider-preview-build-16193-pc-build-15213-mobile/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-939">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-939">Fixed</span></span>
+- <span data-ttu-id="aa113-940">发送 SIGCONT 与终止线程组之间的争用状态 [GH 1973]</span><span class="sxs-lookup"><span data-stu-id="aa113-940">Race condition between sending SIGCONT and a threadgroup terminating [GH 1973]</span></span>
+- <span data-ttu-id="aa113-941">更改 tty 和 pty 设备以报告 FILE_DEVICE_NAMED_PIPE 而不是 FILE_DEVICE_CONSOLE [GH 1840]</span><span class="sxs-lookup"><span data-stu-id="aa113-941">change tty and pty devices to report FILE_DEVICE_NAMED_PIPE instead of FILE_DEVICE_CONSOLE [GH 1840]</span></span>
+- <span data-ttu-id="aa113-942">IP_OPTIONS 的 SSH 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-942">SSH fix for IP_OPTIONS</span></span>
+- <span data-ttu-id="aa113-943">已将 DrvFs 装载移到初始化守护程序 [GH 1862、1968、1767、1933]</span><span class="sxs-lookup"><span data-stu-id="aa113-943">Moved DrvFs mounting to init daemon [GH 1862, 1968, 1767, 1933]</span></span>
+- <span data-ttu-id="aa113-944">在 DrvFs 中添加了遵循 NT 符号链接的支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-944">Added support in DrvFs for following NT symlinks.</span></span>
+
+</br>
+
+## <a name="build-16184"></a><span data-ttu-id="aa113-945">内部版本 16184</span><span class="sxs-lookup"><span data-stu-id="aa113-945">Build 16184</span></span>
+
+<span data-ttu-id="aa113-946">有关内部版本 16184 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/28/announcing-windows-10-insider-preview-build-16184-pc-build-15208-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-946">For general Windows information on build 16184 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/28/announcing-windows-10-insider-preview-build-16184-pc-build-15208-mobile/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-947">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-947">Fixed</span></span>
+- <span data-ttu-id="aa113-948">删除了 apt 包维护任务 (lxrun.exe /update)</span><span class="sxs-lookup"><span data-stu-id="aa113-948">Removed apt package maintenance task (lxrun.exe /update)</span></span>
+- <span data-ttu-id="aa113-949">修复了 node.js 中的 Windows 进程不显示输出的问题 [GH 1840]</span><span class="sxs-lookup"><span data-stu-id="aa113-949">Fixed output not showing up in from Windows processes in node.js [GH 1840]</span></span>
+- <span data-ttu-id="aa113-950">放宽 lxcore 中的对齐要求 [GH 1794]</span><span class="sxs-lookup"><span data-stu-id="aa113-950">Relax alignment requirements in lxcore [GH 1794]</span></span>
+- <span data-ttu-id="aa113-951">修复了许多系统调用中处理 AT_EMPTY_PATH 标志的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-951">Fixed handling of the AT_EMPTY_PATH flag in a numer of system calls.</span></span>
+- <span data-ttu-id="aa113-952">修复了删除存在已打开句柄的 DrvFs 文件时，导致文件出现未定义的行为的问题 [GH 544、966、1357、1535、1615]</span><span class="sxs-lookup"><span data-stu-id="aa113-952">Fixed issue where deleting DrvFs files with open handles will cause the file to exhibit undefined behavior [GH 544,966,1357,1535,1615]</span></span>
+- <span data-ttu-id="aa113-953">/etc/hosts 现在会从 Windows hosts 文件 (%windir%\system32\drivers\etc\hosts) 继承项 [GH 1495]</span><span class="sxs-lookup"><span data-stu-id="aa113-953">/etc/hosts will now inherit entries from the Windows hosts file (%windir%\system32\drivers\etc\hosts) [GH 1495]</span></span>
+
+</br>
+
+## <a name="build-16179"></a><span data-ttu-id="aa113-954">内部版本 16179</span><span class="sxs-lookup"><span data-stu-id="aa113-954">Build 16179</span></span>
+
+<span data-ttu-id="aa113-955">有关内部版本 16179 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/19/announcing-windows-10-insider-preview-build-16179-pc-build-15205-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-955">For general Windows information on build 16179 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/19/announcing-windows-10-insider-preview-build-16179-pc-build-15205-mobile/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-956">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-956">Fixed</span></span>
+- <span data-ttu-id="aa113-957">本周没有 WSL 更改。</span><span class="sxs-lookup"><span data-stu-id="aa113-957">No WSL changes this week.</span></span>
+
+</br>
+
+## <a name="build-16176"></a><span data-ttu-id="aa113-958">内部版本 16176</span><span class="sxs-lookup"><span data-stu-id="aa113-958">Build 16176</span></span>
+
+<span data-ttu-id="aa113-959">有关内部版本 16176 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-959">For general Windows information on build 16176 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-960">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-960">Fixed</span></span>
+
+- [<span data-ttu-id="aa113-961">已启用串行支持</span><span class="sxs-lookup"><span data-stu-id="aa113-961">Enabled serial support</span></span>](https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/)
+- <span data-ttu-id="aa113-962">添加了 IP 套接字选项 IP_OPTIONS [GH 1116]</span><span class="sxs-lookup"><span data-stu-id="aa113-962">Added IP socket option IP_OPTIONS [GH 1116]</span></span>
+- <span data-ttu-id="aa113-963">实现了 pwritev 函数（将文件上传到 nginx/PHP-FPM 时）[GH 1506]</span><span class="sxs-lookup"><span data-stu-id="aa113-963">Implemented pwritev function (while uploading file to nginx/PHP-FPM) [GH 1506]</span></span>
+- <span data-ttu-id="aa113-964">添加了 IP 套接字选项 IP_MULTICAST_IF 和 IPV6_MULTICAST_IF [GH 990]</span><span class="sxs-lookup"><span data-stu-id="aa113-964">Added IP socket options IP_MULTICAST_IF & IPV6_MULTICAST_IF [GH 990]</span></span>
+- <span data-ttu-id="aa113-965">支持套接字选项 IP_MULTICAST_LOOP 和 IPV6_MULTICAST_LOOP [GH 1678]</span><span class="sxs-lookup"><span data-stu-id="aa113-965">Support for socket option IP_MULTICAST_LOOP & IPV6_MULTICAST_LOOP [GH 1678]</span></span>
+- <span data-ttu-id="aa113-966">为应用节点、traceroute、dig、nslookup、主机添加了 IP(V6)_MTU 套接字选项</span><span class="sxs-lookup"><span data-stu-id="aa113-966">Added IP(V6)_MTU socket option for apps node, traceroute, dig, nslookup, host</span></span>
+- <span data-ttu-id="aa113-967">添加了 IP 套接字选项 IPV6_UNICAST_HOPS</span><span class="sxs-lookup"><span data-stu-id="aa113-967">Added IP socket option IPV6_UNICAST_HOPS</span></span>
+- [<span data-ttu-id="aa113-968">文件系统改进</span><span class="sxs-lookup"><span data-stu-id="aa113-968">Filesystem Improvements</span></span>](https://blogs.msdn.microsoft.com/wsl/2017/04/18/file-system-improvements-to-the-windows-subsystem-for-linux/)
+    * <span data-ttu-id="aa113-969">允许装载 UNC 路径</span><span class="sxs-lookup"><span data-stu-id="aa113-969">Allow mounting of UNC paths</span></span>
+    * <span data-ttu-id="aa113-970">在 drvfs 中启用 CDFS 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-970">Enable CDFS support in drvfs</span></span>
+    * <span data-ttu-id="aa113-971">正确处理 drvfs 中网络文件系统的权限</span><span class="sxs-lookup"><span data-stu-id="aa113-971">Correctly handle permissions for network file systems in drvfs</span></span>
+    * <span data-ttu-id="aa113-972">在 drvfs 中添加远程驱动器的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-972">Add support for remote drives to drvfs</span></span>
+    * <span data-ttu-id="aa113-973">在 drvfs 中启用 FAT 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-973">Enable FAT support in drvfs</span></span>
+- <span data-ttu-id="aa113-974">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-974">Additional fixes and Improvements</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-975">LTP 结果</span><span class="sxs-lookup"><span data-stu-id="aa113-975">LTP Results</span></span>
+<span data-ttu-id="aa113-976">自 15042 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-976">No changes since 15042</span></span>
+
+</br>
+
+## <a name="build-16170"></a><span data-ttu-id="aa113-977">内部版本 16170</span><span class="sxs-lookup"><span data-stu-id="aa113-977">Build 16170</span></span>
+
+<span data-ttu-id="aa113-978">有关内部版本 16170 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/07/announcing-windows-10-insider-preview-build-16170-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-978">For general Windows information on build 16170 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/04/07/announcing-windows-10-insider-preview-build-16170-pc/).</span></span><br/>
+
+<span data-ttu-id="aa113-979">我们发布的新[博客文章](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/)中介绍了我们在测试 WSL 方面所做的努力。</span><span class="sxs-lookup"><span data-stu-id="aa113-979">We released a new [blog post](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/) discussing our efforts to test WSL.</span></span>
+
+### <a name="fixed"></a><span data-ttu-id="aa113-980">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-980">Fixed</span></span>
+
+- <span data-ttu-id="aa113-981">支持套接字选项 IP_ADD_MEMBERSHIP 和 IPV6_ADD_MEMBERSHIP [GH 1678]</span><span class="sxs-lookup"><span data-stu-id="aa113-981">Support socket option IP_ADD_MEMBERSHIP & IPV6_ADD_MEMBERSHIP [GH 1678]</span></span>
+- <span data-ttu-id="aa113-982">添加对 PTRACE_OLDSETOPTIONS 的支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-982">Add support for PTRACE_OLDSETOPTIONS.</span></span> <span data-ttu-id="aa113-983">[GH 1692]</span><span class="sxs-lookup"><span data-stu-id="aa113-983">[GH 1692]</span></span>
+- <span data-ttu-id="aa113-984">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-984">Additional fixes and improvements</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-985">LTP 结果</span><span class="sxs-lookup"><span data-stu-id="aa113-985">LTP Results</span></span>
+<span data-ttu-id="aa113-986">自 15042 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-986">No changes since 15042</span></span>
+
+</br>
+
+## <a name="build-15046-to-windows-10-creators-update"></a><span data-ttu-id="aa113-987">内部版本 15046 到 Windows 10 创意者更新</span><span class="sxs-lookup"><span data-stu-id="aa113-987">Build 15046 to Windows 10 Creators Update</span></span>
+<span data-ttu-id="aa113-988">我们未计划在 Windows 10 创意者更新中包含其他 WSL 修复或功能。</span><span class="sxs-lookup"><span data-stu-id="aa113-988">There are no more WSL fixes or features planned for inclusion in the Creators Update to Windows 10.</span></span> <span data-ttu-id="aa113-989">WSL 的发行说明将在未来几周恢复发布，其中补充了面向下一个 Windows 更新主要版本的信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-989">Release notes for WSL will resume in the coming weeks for additions targeting the next major Windows Update.</span></span> <span data-ttu-id="aa113-990">有关内部版本 15046 和将来的预览体验版的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/28/announcing-windows-10-insider-preview-build-15046-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-990">For general Windows information on build 15046 and future Insider releases visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/28/announcing-windows-10-insider-preview-build-15046-pc/).</span></span> <br/><br/>
  <br/>
 
-## <a name="build-15042"></a><span data-ttu-id="263bc-991">内部版本 15042</span><span class="sxs-lookup"><span data-stu-id="263bc-991">Build 15042</span></span>
+## <a name="build-15042"></a><span data-ttu-id="aa113-991">内部版本 15042</span><span class="sxs-lookup"><span data-stu-id="aa113-991">Build 15042</span></span>
 
-<span data-ttu-id="263bc-992">有关内部版本 15042 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/24/announcing-windows-10-insider-preview-build-15042-pc-build-15043-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-992">For general Windows information on build 15042 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/24/announcing-windows-10-insider-preview-build-15042-pc-build-15043-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-992">有关内部版本 15042 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/24/announcing-windows-10-insider-preview-build-15042-pc-build-15043-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-992">For general Windows information on build 15042 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/24/announcing-windows-10-insider-preview-build-15042-pc-build-15043-mobile/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-993">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-993">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-993">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-993">Fixed</span></span>
 
-- <span data-ttu-id="263bc-994">修复删除以“...”结尾的路径时出现死锁的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-994">Fix for a deadlock when removing a path ending in ".."</span></span>
-- <span data-ttu-id="263bc-995">修复了 FIONBIO 在成功时不返回 0 的问题 [GH 1683]</span><span class="sxs-lookup"><span data-stu-id="263bc-995">Fixed an issue where FIONBIO not returning 0 on success [GH 1683]</span></span>
-- <span data-ttu-id="263bc-996">修复了 inet 数据报套接字的零长度读取问题</span><span class="sxs-lookup"><span data-stu-id="263bc-996">Fixed issue with zero-length reads of inet datagram sockets</span></span>
-- <span data-ttu-id="263bc-997">修复 drvfs inode 查找中的争用状况可能导致死锁的问题 [GH 1675]</span><span class="sxs-lookup"><span data-stu-id="263bc-997">Fix possible deadlock due to race condition in drvfs inode lookup [GH 1675]</span></span>
-- <span data-ttu-id="263bc-998">扩展了对 unix 套接字辅助数据的支持；SCM_CREDENTIALS 和 SCM_RIGHTS [GH 514、613、1326]</span><span class="sxs-lookup"><span data-stu-id="263bc-998">Extended support for unix socket ancillary data; SCM_CREDENTIALS and SCM_RIGHTS [GH 514, 613, 1326]</span></span>
-- <span data-ttu-id="263bc-999">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-999">Additional fixes and improvements</span></span>
+- <span data-ttu-id="aa113-994">修复删除以“...”结尾的路径时出现死锁的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-994">Fix for a deadlock when removing a path ending in ".."</span></span>
+- <span data-ttu-id="aa113-995">修复了 FIONBIO 在成功时不返回 0 的问题 [GH 1683]</span><span class="sxs-lookup"><span data-stu-id="aa113-995">Fixed an issue where FIONBIO not returning 0 on success [GH 1683]</span></span>
+- <span data-ttu-id="aa113-996">修复了 inet 数据报套接字的零长度读取问题</span><span class="sxs-lookup"><span data-stu-id="aa113-996">Fixed issue with zero-length reads of inet datagram sockets</span></span>
+- <span data-ttu-id="aa113-997">修复 drvfs inode 查找中的争用状况可能导致死锁的问题 [GH 1675]</span><span class="sxs-lookup"><span data-stu-id="aa113-997">Fix possible deadlock due to race condition in drvfs inode lookup [GH 1675]</span></span>
+- <span data-ttu-id="aa113-998">扩展了对 unix 套接字辅助数据的支持；SCM_CREDENTIALS 和 SCM_RIGHTS [GH 514、613、1326]</span><span class="sxs-lookup"><span data-stu-id="aa113-998">Extended support for unix socket ancillary data; SCM_CREDENTIALS and SCM_RIGHTS [GH 514, 613, 1326]</span></span>
+- <span data-ttu-id="aa113-999">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-999">Additional fixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1000">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1000">LTP Results:</span></span>
-<span data-ttu-id="263bc-1001">通过的测试数：737</span><span class="sxs-lookup"><span data-stu-id="263bc-1001">Number of Passing Test: 737</span></span></br>
-<span data-ttu-id="263bc-1002">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="263bc-1002">Number of non-Passing (failing, skipped, etc…): 255</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1000">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1000">LTP Results:</span></span>
+<span data-ttu-id="aa113-1001">通过的测试数：737</span><span class="sxs-lookup"><span data-stu-id="aa113-1001">Number of Passing Test: 737</span></span></br>
+<span data-ttu-id="aa113-1002">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="aa113-1002">Number of non-Passing (failing, skipped, etc…): 255</span></span>
 
 </br>
 
-## <a name="build-15031"></a><span data-ttu-id="263bc-1003">内部版本 15031</span><span class="sxs-lookup"><span data-stu-id="263bc-1003">Build 15031</span></span>
+## <a name="build-15031"></a><span data-ttu-id="aa113-1003">内部版本 15031</span><span class="sxs-lookup"><span data-stu-id="aa113-1003">Build 15031</span></span>
 
-<span data-ttu-id="263bc-1004">有关内部版本 15031 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/08/announcing-windows-10-insider-preview-build-15031-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1004">For general Windows information on build 15031 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/08/announcing-windows-10-insider-preview-build-15031-pc/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1005">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1005">Fixed</span></span>
-
-- <span data-ttu-id="263bc-1006">修复了 time(2) 偶尔行为异常的 bug。</span><span class="sxs-lookup"><span data-stu-id="263bc-1006">Fixed a bug where time(2) would sporadically misbehave.</span></span>
-- <span data-ttu-id="263bc-1007">修复了 \*SIGPROCMASK syscall 可能损坏信号掩码的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-1007">Fixed and issue where \*SIGPROCMASK syscalls could corrupt signal mask.</span></span>
-- <span data-ttu-id="263bc-1008">现在会在 WSL 进程创建通知中返回完整的命令行长度。</span><span class="sxs-lookup"><span data-stu-id="263bc-1008">Now return full command line length in WSL process creation notification.</span></span> <span data-ttu-id="263bc-1009">[GH 1632]</span><span class="sxs-lookup"><span data-stu-id="263bc-1009">[GH 1632]</span></span>
-- <span data-ttu-id="263bc-1010">WSL 现在会针对 GDB 挂起通过 ptrace 报告线程退出。</span><span class="sxs-lookup"><span data-stu-id="263bc-1010">WSL now reports thread exit through ptrace for GDB hangs.</span></span> <span data-ttu-id="263bc-1011">[GH 1196]</span><span class="sxs-lookup"><span data-stu-id="263bc-1011">[GH 1196]</span></span>
-- <span data-ttu-id="263bc-1012">修复了在收到繁重 tmux IO 后 ptys 挂起的 bug。</span><span class="sxs-lookup"><span data-stu-id="263bc-1012">Fixed bug where ptys would hang after heavy tmux IO.</span></span> <span data-ttu-id="263bc-1013">[GH 1358]</span><span class="sxs-lookup"><span data-stu-id="263bc-1013">[GH 1358]</span></span>
-- <span data-ttu-id="263bc-1014">修复了许多系统调用中的超时验证（futex、semtimedop、ppoll、sigtimedwait、itimer、timer_create）</span><span class="sxs-lookup"><span data-stu-id="263bc-1014">Fixed timeout validation in many system calls (futex, semtimedop, ppoll, sigtimedwait, itimer, timer_create)</span></span>
-- <span data-ttu-id="263bc-1015">添加了 eventfd EFD_SEMAPHORE 支持 [GH 452]</span><span class="sxs-lookup"><span data-stu-id="263bc-1015">Added eventfd EFD_SEMAPHORE support [GH 452]</span></span>
-- <span data-ttu-id="263bc-1016">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1016">Additional fixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1017">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1017">LTP Results:</span></span>
-<span data-ttu-id="263bc-1018">通过的测试数：737</span><span class="sxs-lookup"><span data-stu-id="263bc-1018">Number of Passing Test: 737</span></span></br>
-<span data-ttu-id="263bc-1019">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="263bc-1019">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
-[<span data-ttu-id="263bc-1020">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1020">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15031)<br/>
-
-<br/>
-
-## <a name="build-15025"></a><span data-ttu-id="263bc-1021">内部版本 15025</span><span class="sxs-lookup"><span data-stu-id="263bc-1021">Build 15025</span></span>
-
-<span data-ttu-id="263bc-1022">有关内部版本 15025 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/01/announcing-windows-10-insider-preview-build-15025-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1022">For general Windows information on build 15025 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/01/announcing-windows-10-insider-preview-build-15025-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1004">有关内部版本 15031 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/08/announcing-windows-10-insider-preview-build-15031-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1004">For general Windows information on build 15031 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/08/announcing-windows-10-insider-preview-build-15031-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1023">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1023">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1005">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1005">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1024">修复破坏 grep 2.27 的 bug [GH 1578]</span><span class="sxs-lookup"><span data-stu-id="263bc-1024">Fix for bug that broke grep 2.27 [GH 1578]</span></span>
-- <span data-ttu-id="263bc-1025">为 eventfd2 syscall 实现了 EFD_SEMAPHORE 标志 [GH 452]</span><span class="sxs-lookup"><span data-stu-id="263bc-1025">Implemented EFD_SEMAPHORE flag for eventfd2 syscall [GH 452]</span></span>
-- <span data-ttu-id="263bc-1026">实现了 /proc/[pid]/net/ipv6_route [GH 1608]</span><span class="sxs-lookup"><span data-stu-id="263bc-1026">Implemented /proc/[pid]/net/ipv6_route [GH 1608]</span></span>
-- <span data-ttu-id="263bc-1027">针对 unix 流套接字的信号驱动 IO 支持 [GH 393、68]</span><span class="sxs-lookup"><span data-stu-id="263bc-1027">Signal driven IO support for unix stream sockets [GH 393, 68]</span></span>
-- <span data-ttu-id="263bc-1028">支持 F_GETPIPE_SZ 和 F_SETPIPE_SZ [GH 1012]</span><span class="sxs-lookup"><span data-stu-id="263bc-1028">Support F_GETPIPE_SZ and F_SETPIPE_SZ [GH 1012]</span></span>
-- <span data-ttu-id="263bc-1029">实现 recvmmsg() syscall [GH 1531]</span><span class="sxs-lookup"><span data-stu-id="263bc-1029">Implement recvmmsg() syscall [GH 1531]</span></span>
-- <span data-ttu-id="263bc-1030">修复了 epoll_wait() 不等待的 bug [GH 1609]</span><span class="sxs-lookup"><span data-stu-id="263bc-1030">Fixed bug where epoll_wait() wasn't waiting [GH 1609]</span></span>
-- <span data-ttu-id="263bc-1031">实现 /proc/version_signature</span><span class="sxs-lookup"><span data-stu-id="263bc-1031">Implement /proc/version_signature</span></span>
-- <span data-ttu-id="263bc-1032">现在，如果两个文件描述符引用同一管道，则 syscall 会返回失败</span><span class="sxs-lookup"><span data-stu-id="263bc-1032">Tee syscall now returns failure if both file descriptors refer to the same pipe</span></span>
-- <span data-ttu-id="263bc-1033">为 Unix 套接字的 SO_PEERCRED 实现了正确的行为</span><span class="sxs-lookup"><span data-stu-id="263bc-1033">Implemented correct behavior for SO_PEERCRED for Unix sockets</span></span>
-- <span data-ttu-id="263bc-1034">修复了 tkill syscall 处理无效参数的方法</span><span class="sxs-lookup"><span data-stu-id="263bc-1034">Fixed tkill syscall invalid parameter handling</span></span>
-- <span data-ttu-id="263bc-1035">做出更改以提高 drvfs 的性能</span><span class="sxs-lookup"><span data-stu-id="263bc-1035">Changes to increase the preformace of drvfs</span></span>
-- <span data-ttu-id="263bc-1036">针对 Ruby IO 阻塞的次要修复</span><span class="sxs-lookup"><span data-stu-id="263bc-1036">Minor fix for Ruby IO blocking</span></span>
-- <span data-ttu-id="263bc-1037">修复了 recvmsg() 对 inet 套接字的 MSG_DONTWAIT 标志返回 EINVAL 的问题 [GH 1296]</span><span class="sxs-lookup"><span data-stu-id="263bc-1037">Fixed recvmsg() returning EINVAL for the MSG_DONTWAIT flag for inet sockets [GH 1296]</span></span>
-- <span data-ttu-id="263bc-1038">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1038">Additional fixes and improvements</span></span>
+- <span data-ttu-id="aa113-1006">修复了 time(2) 偶尔行为异常的 bug。</span><span class="sxs-lookup"><span data-stu-id="aa113-1006">Fixed a bug where time(2) would sporadically misbehave.</span></span>
+- <span data-ttu-id="aa113-1007">修复了 \*SIGPROCMASK syscall 可能损坏信号掩码的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-1007">Fixed and issue where \*SIGPROCMASK syscalls could corrupt signal mask.</span></span>
+- <span data-ttu-id="aa113-1008">现在会在 WSL 进程创建通知中返回完整的命令行长度。</span><span class="sxs-lookup"><span data-stu-id="aa113-1008">Now return full command line length in WSL process creation notification.</span></span> <span data-ttu-id="aa113-1009">[GH 1632]</span><span class="sxs-lookup"><span data-stu-id="aa113-1009">[GH 1632]</span></span>
+- <span data-ttu-id="aa113-1010">WSL 现在会针对 GDB 挂起通过 ptrace 报告线程退出。</span><span class="sxs-lookup"><span data-stu-id="aa113-1010">WSL now reports thread exit through ptrace for GDB hangs.</span></span> <span data-ttu-id="aa113-1011">[GH 1196]</span><span class="sxs-lookup"><span data-stu-id="aa113-1011">[GH 1196]</span></span>
+- <span data-ttu-id="aa113-1012">修复了在收到繁重 tmux IO 后 ptys 挂起的 bug。</span><span class="sxs-lookup"><span data-stu-id="aa113-1012">Fixed bug where ptys would hang after heavy tmux IO.</span></span> <span data-ttu-id="aa113-1013">[GH 1358]</span><span class="sxs-lookup"><span data-stu-id="aa113-1013">[GH 1358]</span></span>
+- <span data-ttu-id="aa113-1014">修复了许多系统调用中的超时验证（futex、semtimedop、ppoll、sigtimedwait、itimer、timer_create）</span><span class="sxs-lookup"><span data-stu-id="aa113-1014">Fixed timeout validation in many system calls (futex, semtimedop, ppoll, sigtimedwait, itimer, timer_create)</span></span>
+- <span data-ttu-id="aa113-1015">添加了 eventfd EFD_SEMAPHORE 支持 [GH 452]</span><span class="sxs-lookup"><span data-stu-id="aa113-1015">Added eventfd EFD_SEMAPHORE support [GH 452]</span></span>
+- <span data-ttu-id="aa113-1016">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1016">Additional fixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1039">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1039">LTP Results:</span></span>
-<span data-ttu-id="263bc-1040">通过的测试数：732</span><span class="sxs-lookup"><span data-stu-id="263bc-1040">Number of Passing Test: 732</span></span></br>
-<span data-ttu-id="263bc-1041">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="263bc-1041">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
-[<span data-ttu-id="263bc-1042">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1042">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15025)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1017">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1017">LTP Results:</span></span>
+<span data-ttu-id="aa113-1018">通过的测试数：737</span><span class="sxs-lookup"><span data-stu-id="aa113-1018">Number of Passing Test: 737</span></span></br>
+<span data-ttu-id="aa113-1019">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="aa113-1019">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
+[<span data-ttu-id="aa113-1020">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1020">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15031)<br/>
 
 <br/>
 
-## <a name="build-15019"></a><span data-ttu-id="263bc-1043">内部版本 15019</span><span class="sxs-lookup"><span data-stu-id="263bc-1043">Build 15019</span></span>
+## <a name="build-15025"></a><span data-ttu-id="aa113-1021">内部版本 15025</span><span class="sxs-lookup"><span data-stu-id="aa113-1021">Build 15025</span></span>
 
-<span data-ttu-id="263bc-1044">有关内部版本 15019 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/01/27/announcing-windows-10-insider-preview-build-15019-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1044">For general Windows information on build 15019 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/01/27/announcing-windows-10-insider-preview-build-15019-pc/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1045">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1045">Fixed</span></span>
-
-- <span data-ttu-id="263bc-1046">修复了 htop 等工具在 procfs 中错误报告 CPU 使用率的 bug（GH 823、945、971）</span><span class="sxs-lookup"><span data-stu-id="263bc-1046">Fixed bug that incorrectly reported CPU usage in procfs for tools like htop (GH 823, 945, 971)</span></span>
-- <span data-ttu-id="263bc-1047">对现有的文件结合 O_TRUNC 调用 open() 时，inotify 现在会在 IN_OPEN 的前面生成 IN_MODIFY</span><span class="sxs-lookup"><span data-stu-id="263bc-1047">When calling open() with O_TRUNC on an existing file inotify now generates IN_MODIFY before IN_OPEN</span></span>
-- <span data-ttu-id="263bc-1048">修复 unix 套接字 getsockopt SO_ERROR 以启用 postgress [GH 61、1354]</span><span class="sxs-lookup"><span data-stu-id="263bc-1048">Fixes to unix socket getsockopt SO_ERROR to enable postgress [GH 61, 1354]</span></span>
-- <span data-ttu-id="263bc-1049">为 GO 语言实现 /proc/sys/net/core/somaxconn</span><span class="sxs-lookup"><span data-stu-id="263bc-1049">Implement /proc/sys/net/core/somaxconn for the GO language</span></span>
-- <span data-ttu-id="263bc-1050">Apt-get package update 后台任务现在会在视图中以隐藏方式运行</span><span class="sxs-lookup"><span data-stu-id="263bc-1050">Apt-get package update background task now runs hidden from view</span></span>
-- <span data-ttu-id="263bc-1051">清除 ipv6 localhost 的范围（Spring-Framework(Java) 失败）。</span><span class="sxs-lookup"><span data-stu-id="263bc-1051">Clear scope for ipv6 localhost (Spring-Framework(Java) failure).</span></span>
-- <span data-ttu-id="263bc-1052">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1052">Additional fixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1053">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1053">LTP Results:</span></span>
-<span data-ttu-id="263bc-1054">通过的测试数：714</span><span class="sxs-lookup"><span data-stu-id="263bc-1054">Number of Passing Test: 714</span></span> </br>
-<span data-ttu-id="263bc-1055">未通过的测试数（失败、已跳过等）：249</span><span class="sxs-lookup"><span data-stu-id="263bc-1055">Number of non-Passing (failing, skipped, etc…): 249</span></span> </br>
-[<span data-ttu-id="263bc-1056">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1056">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15019)<br/>
-
-<br/>
-
-## <a name="build-15014"></a><span data-ttu-id="263bc-1057">内部版本 15014</span><span class="sxs-lookup"><span data-stu-id="263bc-1057">Build 15014</span></span>
-
-<span data-ttu-id="263bc-1058">有关内部版本 15014 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/01/19/announcing-windows-10-insider-preview-build-15014-for-pc-and-mobile-hello-windows-insiders-today-we-are-excited-to-be-releasing-windows-10-insider-preview-build-15014-for-pc-and-mobile)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1058">For general Windows information on build 15014 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/01/19/announcing-windows-10-insider-preview-build-15014-for-pc-and-mobile-hello-windows-insiders-today-we-are-excited-to-be-releasing-windows-10-insider-preview-build-15014-for-pc-and-mobile).</span></span><br/>
+<span data-ttu-id="aa113-1022">有关内部版本 15025 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/02/01/announcing-windows-10-insider-preview-build-15025-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1022">For general Windows information on build 15025 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/02/01/announcing-windows-10-insider-preview-build-15025-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1059">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1059">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1023">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1023">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1060">Ctrl+C 现在可按预期方式工作</span><span class="sxs-lookup"><span data-stu-id="263bc-1060">Ctrl+C now works as intended</span></span>
-- <span data-ttu-id="263bc-1061">htop 和 ps auxw 现在会显示正确的资源利用率 (GH #516)</span><span class="sxs-lookup"><span data-stu-id="263bc-1061">htop and ps auxw now show correct resource utilization (GH #516)</span></span>
-- <span data-ttu-id="263bc-1062">NT 异常到信号的基本转换。</span><span class="sxs-lookup"><span data-stu-id="263bc-1062">Basic translation of NT exceptions to signals.</span></span> <span data-ttu-id="263bc-1063">(GH #513)</span><span class="sxs-lookup"><span data-stu-id="263bc-1063">(GH #513)</span></span>
-- <span data-ttu-id="263bc-1064">当空间耗尽时，fallocate 现在会失败并返回 ENOSPC，而不是返回 EINVAL (GH #1571)</span><span class="sxs-lookup"><span data-stu-id="263bc-1064">fallocate now fails with ENOSPC  when running out of space instead of EINVAL (GH #1571)</span></span>
-- <span data-ttu-id="263bc-1065">添加了 /proc/sys/kernel/sem。</span><span class="sxs-lookup"><span data-stu-id="263bc-1065">Added /proc/sys/kernel/sem.</span></span>
-- <span data-ttu-id="263bc-1066">实现了 semop 和 semtimedop 系统调用</span><span class="sxs-lookup"><span data-stu-id="263bc-1066">Implemented semop and semtimedop system calls</span></span>
-- <span data-ttu-id="263bc-1067">修复了 IP_RECVTOS 和 IPV6_RECVTCLASS 套接字选项的 nslookup 错误 (GH 69)</span><span class="sxs-lookup"><span data-stu-id="263bc-1067">Fixed nslookup errors with IP_RECVTOS & IPV6_RECVTCLASS socket option (GH 69)</span></span>
-- <span data-ttu-id="263bc-1068">支持套接字选项 IP_RECVTTL 和 IPV6_RECVHOPLIMIT</span><span class="sxs-lookup"><span data-stu-id="263bc-1068">Support for socket options IP_RECVTTL and IPV6_RECVHOPLIMIT</span></span>
-- <span data-ttu-id="263bc-1069">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1069">Additional fixes and improvements</span></span>
+- <span data-ttu-id="aa113-1024">修复破坏 grep 2.27 的 bug [GH 1578]</span><span class="sxs-lookup"><span data-stu-id="aa113-1024">Fix for bug that broke grep 2.27 [GH 1578]</span></span>
+- <span data-ttu-id="aa113-1025">为 eventfd2 syscall 实现了 EFD_SEMAPHORE 标志 [GH 452]</span><span class="sxs-lookup"><span data-stu-id="aa113-1025">Implemented EFD_SEMAPHORE flag for eventfd2 syscall [GH 452]</span></span>
+- <span data-ttu-id="aa113-1026">实现了 /proc/[pid]/net/ipv6_route [GH 1608]</span><span class="sxs-lookup"><span data-stu-id="aa113-1026">Implemented /proc/[pid]/net/ipv6_route [GH 1608]</span></span>
+- <span data-ttu-id="aa113-1027">针对 unix 流套接字的信号驱动 IO 支持 [GH 393、68]</span><span class="sxs-lookup"><span data-stu-id="aa113-1027">Signal driven IO support for unix stream sockets [GH 393, 68]</span></span>
+- <span data-ttu-id="aa113-1028">支持 F_GETPIPE_SZ 和 F_SETPIPE_SZ [GH 1012]</span><span class="sxs-lookup"><span data-stu-id="aa113-1028">Support F_GETPIPE_SZ and F_SETPIPE_SZ [GH 1012]</span></span>
+- <span data-ttu-id="aa113-1029">实现 recvmmsg() syscall [GH 1531]</span><span class="sxs-lookup"><span data-stu-id="aa113-1029">Implement recvmmsg() syscall [GH 1531]</span></span>
+- <span data-ttu-id="aa113-1030">修复了 epoll_wait() 不等待的 bug [GH 1609]</span><span class="sxs-lookup"><span data-stu-id="aa113-1030">Fixed bug where epoll_wait() wasn't waiting [GH 1609]</span></span>
+- <span data-ttu-id="aa113-1031">实现 /proc/version_signature</span><span class="sxs-lookup"><span data-stu-id="aa113-1031">Implement /proc/version_signature</span></span>
+- <span data-ttu-id="aa113-1032">现在，如果两个文件描述符引用同一管道，则 syscall 会返回失败</span><span class="sxs-lookup"><span data-stu-id="aa113-1032">Tee syscall now returns failure if both file descriptors refer to the same pipe</span></span>
+- <span data-ttu-id="aa113-1033">为 Unix 套接字的 SO_PEERCRED 实现了正确的行为</span><span class="sxs-lookup"><span data-stu-id="aa113-1033">Implemented correct behavior for SO_PEERCRED for Unix sockets</span></span>
+- <span data-ttu-id="aa113-1034">修复了 tkill syscall 处理无效参数的方法</span><span class="sxs-lookup"><span data-stu-id="aa113-1034">Fixed tkill syscall invalid parameter handling</span></span>
+- <span data-ttu-id="aa113-1035">做出更改以提高 drvfs 的性能</span><span class="sxs-lookup"><span data-stu-id="aa113-1035">Changes to increase the preformace of drvfs</span></span>
+- <span data-ttu-id="aa113-1036">针对 Ruby IO 阻塞的次要修复</span><span class="sxs-lookup"><span data-stu-id="aa113-1036">Minor fix for Ruby IO blocking</span></span>
+- <span data-ttu-id="aa113-1037">修复了 recvmsg() 对 inet 套接字的 MSG_DONTWAIT 标志返回 EINVAL 的问题 [GH 1296]</span><span class="sxs-lookup"><span data-stu-id="aa113-1037">Fixed recvmsg() returning EINVAL for the MSG_DONTWAIT flag for inet sockets [GH 1296]</span></span>
+- <span data-ttu-id="aa113-1038">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1038">Additional fixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1070">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1070">LTP Results:</span></span>
-<span data-ttu-id="263bc-1071">通过的测试数：709</span><span class="sxs-lookup"><span data-stu-id="263bc-1071">Number of Passing Test: 709</span></span> </br>
-<span data-ttu-id="263bc-1072">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="263bc-1072">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
-[<span data-ttu-id="263bc-1073">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1073">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15014)<br/>
-
-### <a name="syscall-summary"></a><span data-ttu-id="263bc-1074">Syscall 摘要</span><span class="sxs-lookup"><span data-stu-id="263bc-1074">Syscall Summary</span></span>
-<span data-ttu-id="263bc-1075">Syscall 总数：384</span><span class="sxs-lookup"><span data-stu-id="263bc-1075">Total Syscalls: 384</span></span> </br>
-<span data-ttu-id="263bc-1076">已实现总数：235</span><span class="sxs-lookup"><span data-stu-id="263bc-1076">Total Implemented: 235</span></span> </br>
-<span data-ttu-id="263bc-1077">已存根总数：22</span><span class="sxs-lookup"><span data-stu-id="263bc-1077">Total Stubbed: 22</span></span> </br>
-<span data-ttu-id="263bc-1078">未实现总数：127</span><span class="sxs-lookup"><span data-stu-id="263bc-1078">Total Unimplemented: 127</span></span> </br>
-[<span data-ttu-id="263bc-1079">详细分解</span><span class="sxs-lookup"><span data-stu-id="263bc-1079">Detailed Breakdown</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15014/Syscalls.txt)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1039">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1039">LTP Results:</span></span>
+<span data-ttu-id="aa113-1040">通过的测试数：732</span><span class="sxs-lookup"><span data-stu-id="aa113-1040">Number of Passing Test: 732</span></span></br>
+<span data-ttu-id="aa113-1041">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="aa113-1041">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
+[<span data-ttu-id="aa113-1042">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1042">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15025)<br/>
 
 <br/>
 
-## <a name="build-15007"></a><span data-ttu-id="263bc-1080">内部版本 15007</span><span class="sxs-lookup"><span data-stu-id="263bc-1080">Build 15007</span></span>
+## <a name="build-15019"></a><span data-ttu-id="aa113-1043">内部版本 15019</span><span class="sxs-lookup"><span data-stu-id="aa113-1043">Build 15019</span></span>
 
-<span data-ttu-id="263bc-1081">有关内部版本 15007 的一般 Windows 信息，请访问 [Windows 博客]( https://blogs.windows.com/windowsexperience/2017/01/12/announcing-windows-10-insider-preview-build-15007-pc-mobile)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1081">For general Windows information on build 15007 visit the [Windows Blog]( https://blogs.windows.com/windowsexperience/2017/01/12/announcing-windows-10-insider-preview-build-15007-pc-mobile).</span></span><br/>
+<span data-ttu-id="aa113-1044">有关内部版本 15019 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/01/27/announcing-windows-10-insider-preview-build-15019-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1044">For general Windows information on build 15019 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/01/27/announcing-windows-10-insider-preview-build-15019-pc/).</span></span><br/>
 
 
-### <a name="known-issue"></a><span data-ttu-id="263bc-1082">已知问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1082">Known Issue</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1045">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1045">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1083">已知 bug：控制台无法识别某些 Ctrl + <key> 输入。</span><span class="sxs-lookup"><span data-stu-id="263bc-1083">There is a known bug where the console does not recognize some Ctrl + <key> input.</span></span>  <span data-ttu-id="263bc-1084">这包括将充当普通“c”按键的 ctrl-c 命令。</span><span class="sxs-lookup"><span data-stu-id="263bc-1084">This includes the ctrl-c command which will act as a normal 'c' keypress.</span></span>
+- <span data-ttu-id="aa113-1046">修复了 htop 等工具在 procfs 中错误报告 CPU 使用率的 bug（GH 823、945、971）</span><span class="sxs-lookup"><span data-stu-id="aa113-1046">Fixed bug that incorrectly reported CPU usage in procfs for tools like htop (GH 823, 945, 971)</span></span>
+- <span data-ttu-id="aa113-1047">对现有的文件结合 O_TRUNC 调用 open() 时，inotify 现在会在 IN_OPEN 的前面生成 IN_MODIFY</span><span class="sxs-lookup"><span data-stu-id="aa113-1047">When calling open() with O_TRUNC on an existing file inotify now generates IN_MODIFY before IN_OPEN</span></span>
+- <span data-ttu-id="aa113-1048">修复 unix 套接字 getsockopt SO_ERROR 以启用 postgress [GH 61、1354]</span><span class="sxs-lookup"><span data-stu-id="aa113-1048">Fixes to unix socket getsockopt SO_ERROR to enable postgress [GH 61, 1354]</span></span>
+- <span data-ttu-id="aa113-1049">为 GO 语言实现 /proc/sys/net/core/somaxconn</span><span class="sxs-lookup"><span data-stu-id="aa113-1049">Implement /proc/sys/net/core/somaxconn for the GO language</span></span>
+- <span data-ttu-id="aa113-1050">Apt-get package update 后台任务现在会在视图中以隐藏方式运行</span><span class="sxs-lookup"><span data-stu-id="aa113-1050">Apt-get package update background task now runs hidden from view</span></span>
+- <span data-ttu-id="aa113-1051">清除 ipv6 localhost 的范围（Spring-Framework(Java) 失败）。</span><span class="sxs-lookup"><span data-stu-id="aa113-1051">Clear scope for ipv6 localhost (Spring-Framework(Java) failure).</span></span>
+- <span data-ttu-id="aa113-1052">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1052">Additional fixes and improvements</span></span>
 
-  - <span data-ttu-id="263bc-1085">解决方法：将备用键映射到 Ctrl+C。</span><span class="sxs-lookup"><span data-stu-id="263bc-1085">Workaround: Map an alternate key to Ctrl+C.</span></span> <span data-ttu-id="263bc-1086">例如，若要将 Ctrl+K 映射到 Ctrl+C，请执行：`stty intr \^k`。</span><span class="sxs-lookup"><span data-stu-id="263bc-1086">For example, to map Ctrl+K to Ctrl+C do: `stty intr \^k`.</span></span>  <span data-ttu-id="263bc-1087">这种映射是按终端进行的，每次启动 bash 都必须执行。</span><span class="sxs-lookup"><span data-stu-id="263bc-1087">This mapping is per terminal and will have to be done *every* time bash is launched.</span></span> <span data-ttu-id="263bc-1088">用户可以探索该选项，以将此映射包含在其 `.bashrc` 中</span><span class="sxs-lookup"><span data-stu-id="263bc-1088">Users can explore the option to include this in their `.bashrc`</span></span>
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1089">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1089">Fixed</span></span>
-
-- <span data-ttu-id="263bc-1090">更正了运行 WSL 会消耗 100% 的 CPU 核心的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1090">Corrected the issue where running WSL would consume 100% of a CPU core</span></span>
-- <span data-ttu-id="263bc-1091">现在支持套接字选项 IP_PKTINFO、IPV6_RECVPKTINFO。</span><span class="sxs-lookup"><span data-stu-id="263bc-1091">Socket option IP_PKTINFO, IPV6_RECVPKTINFO now supported.</span></span> <span data-ttu-id="263bc-1092">（GH #851、987）</span><span class="sxs-lookup"><span data-stu-id="263bc-1092">(GH #851, 987)</span></span>
-- <span data-ttu-id="263bc-1093">在 lxcore 中将网络接口物理地址截断为 16 个字节（GH #1452、1414、1343、468、308）</span><span class="sxs-lookup"><span data-stu-id="263bc-1093">Truncate network interface physical address to 16 bytes in lxcore (GH #1452, 1414, 1343, 468, 308)</span></span>
-- <span data-ttu-id="263bc-1094">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1094">Additional fixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1095">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1095">LTP Results:</span></span>
-<span data-ttu-id="263bc-1096">通过的测试数：709</span><span class="sxs-lookup"><span data-stu-id="263bc-1096">Number of Passing Test: 709</span></span> </br>
-<span data-ttu-id="263bc-1097">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="263bc-1097">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
-[<span data-ttu-id="263bc-1098">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1098">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15007)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1053">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1053">LTP Results:</span></span>
+<span data-ttu-id="aa113-1054">通过的测试数：714</span><span class="sxs-lookup"><span data-stu-id="aa113-1054">Number of Passing Test: 714</span></span> </br>
+<span data-ttu-id="aa113-1055">未通过的测试数（失败、已跳过等）：249</span><span class="sxs-lookup"><span data-stu-id="aa113-1055">Number of non-Passing (failing, skipped, etc…): 249</span></span> </br>
+[<span data-ttu-id="aa113-1056">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1056">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15019)<br/>
 
 <br/>
 
-## <a name="build-15002"></a><span data-ttu-id="263bc-1099">内部版本 15002</span><span class="sxs-lookup"><span data-stu-id="263bc-1099">Build 15002</span></span>
+## <a name="build-15014"></a><span data-ttu-id="aa113-1057">内部版本 15014</span><span class="sxs-lookup"><span data-stu-id="aa113-1057">Build 15014</span></span>
 
-<span data-ttu-id="263bc-1100">有关内部版本 15002 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/01/09/announcing-windows-10-insider-preview-build-15002-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1100">For general Windows information on build 15002 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/01/09/announcing-windows-10-insider-preview-build-15002-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1058">有关内部版本 15014 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/01/19/announcing-windows-10-insider-preview-build-15014-for-pc-and-mobile-hello-windows-insiders-today-we-are-excited-to-be-releasing-windows-10-insider-preview-build-15014-for-pc-and-mobile)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1058">For general Windows information on build 15014 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/01/19/announcing-windows-10-insider-preview-build-15014-for-pc-and-mobile-hello-windows-insiders-today-we-are-excited-to-be-releasing-windows-10-insider-preview-build-15014-for-pc-and-mobile).</span></span><br/>
 
 
-### <a name="known-issue"></a><span data-ttu-id="263bc-1101">已知问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1101">Known Issue</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1059">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1059">Fixed</span></span>
 
-<span data-ttu-id="263bc-1102">两个已知问题：</span><span class="sxs-lookup"><span data-stu-id="263bc-1102">Two known issues:</span></span>
-- <span data-ttu-id="263bc-1103">已知 bug：控制台无法识别某些 Ctrl + <key> 输入。</span><span class="sxs-lookup"><span data-stu-id="263bc-1103">There is a known bug where the console does not recognize some Ctrl + <key> input.</span></span>  <span data-ttu-id="263bc-1104">这包括将充当普通“c”按键的 ctrl-c 命令。</span><span class="sxs-lookup"><span data-stu-id="263bc-1104">This includes the ctrl-c command which will act as a normal 'c' keypress.</span></span>
+- <span data-ttu-id="aa113-1060">Ctrl+C 现在可按预期方式工作</span><span class="sxs-lookup"><span data-stu-id="aa113-1060">Ctrl+C now works as intended</span></span>
+- <span data-ttu-id="aa113-1061">htop 和 ps auxw 现在会显示正确的资源利用率 (GH #516)</span><span class="sxs-lookup"><span data-stu-id="aa113-1061">htop and ps auxw now show correct resource utilization (GH #516)</span></span>
+- <span data-ttu-id="aa113-1062">NT 异常到信号的基本转换。</span><span class="sxs-lookup"><span data-stu-id="aa113-1062">Basic translation of NT exceptions to signals.</span></span> <span data-ttu-id="aa113-1063">(GH #513)</span><span class="sxs-lookup"><span data-stu-id="aa113-1063">(GH #513)</span></span>
+- <span data-ttu-id="aa113-1064">当空间耗尽时，fallocate 现在会失败并返回 ENOSPC，而不是返回 EINVAL (GH #1571)</span><span class="sxs-lookup"><span data-stu-id="aa113-1064">fallocate now fails with ENOSPC  when running out of space instead of EINVAL (GH #1571)</span></span>
+- <span data-ttu-id="aa113-1065">添加了 /proc/sys/kernel/sem。</span><span class="sxs-lookup"><span data-stu-id="aa113-1065">Added /proc/sys/kernel/sem.</span></span>
+- <span data-ttu-id="aa113-1066">实现了 semop 和 semtimedop 系统调用</span><span class="sxs-lookup"><span data-stu-id="aa113-1066">Implemented semop and semtimedop system calls</span></span>
+- <span data-ttu-id="aa113-1067">修复了 IP_RECVTOS 和 IPV6_RECVTCLASS 套接字选项的 nslookup 错误 (GH 69)</span><span class="sxs-lookup"><span data-stu-id="aa113-1067">Fixed nslookup errors with IP_RECVTOS & IPV6_RECVTCLASS socket option (GH 69)</span></span>
+- <span data-ttu-id="aa113-1068">支持套接字选项 IP_RECVTTL 和 IPV6_RECVHOPLIMIT</span><span class="sxs-lookup"><span data-stu-id="aa113-1068">Support for socket options IP_RECVTTL and IPV6_RECVHOPLIMIT</span></span>
+- <span data-ttu-id="aa113-1069">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1069">Additional fixes and improvements</span></span>
 
-  - <span data-ttu-id="263bc-1105">解决方法：将备用键映射到 Ctrl+C。</span><span class="sxs-lookup"><span data-stu-id="263bc-1105">Workaround: Map an alternate key to Ctrl+C.</span></span> <span data-ttu-id="263bc-1106">例如，若要将 Ctrl+K 映射到 Ctrl+C，请执行：`stty intr \^k`。</span><span class="sxs-lookup"><span data-stu-id="263bc-1106">For example, to map Ctrl+K to Ctrl+C do: `stty intr \^k`.</span></span>  <span data-ttu-id="263bc-1107">这种映射是按终端进行的，每次启动 bash 都必须执行。</span><span class="sxs-lookup"><span data-stu-id="263bc-1107">This mapping is per terminal and will have to be done *every* time bash is launched.</span></span> <span data-ttu-id="263bc-1108">用户可以探索该选项，以将此映射包含在其 `.bashrc` 中</span><span class="sxs-lookup"><span data-stu-id="263bc-1108">Users can explore the option to include this in their `.bashrc`</span></span>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1070">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1070">LTP Results:</span></span>
+<span data-ttu-id="aa113-1071">通过的测试数：709</span><span class="sxs-lookup"><span data-stu-id="aa113-1071">Number of Passing Test: 709</span></span> </br>
+<span data-ttu-id="aa113-1072">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="aa113-1072">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
+[<span data-ttu-id="aa113-1073">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1073">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15014)<br/>
 
-- <span data-ttu-id="263bc-1109">当 WSL 运行时，系统线程将消耗 100% 的 CPU 核心。</span><span class="sxs-lookup"><span data-stu-id="263bc-1109">While WSL is running a system thread will consume 100% of a CPU core.</span></span>  <span data-ttu-id="263bc-1110">根本原因已解决并已在内部修复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1110">The root cause has been addressed and fixed internally.</span></span>
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1111">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1111">Fixed</span></span>
-
-- <span data-ttu-id="263bc-1112">现在，必须在同一权限级别创建所有 bash 会话。</span><span class="sxs-lookup"><span data-stu-id="263bc-1112">All bash sessions must now be created at the same permission level.</span></span>  <span data-ttu-id="263bc-1113">尝试在不同级别启动会话将遭到阻止。</span><span class="sxs-lookup"><span data-stu-id="263bc-1113">Attempting to start a session at a different level will be blocked.</span></span>  <span data-ttu-id="263bc-1114">这意味着，管理员和非管理员控制台不能同时运行。</span><span class="sxs-lookup"><span data-stu-id="263bc-1114">This means admin and non-admin consoles cannot run at the same time.</span></span> <span data-ttu-id="263bc-1115">(GH #626)</span><span class="sxs-lookup"><span data-stu-id="263bc-1115">(GH #626)</span></span>
-<br/>
-- <span data-ttu-id="263bc-1116">实现了以下 NETLINK_ROUTE 消息（需要 Windows 管理员）</span><span class="sxs-lookup"><span data-stu-id="263bc-1116">Implemented the following NETLINK_ROUTE messages (requires Windows admin)</span></span>
-     - <span data-ttu-id="263bc-1117">RTM_NEWADDR（支持 `ip addr add`）</span><span class="sxs-lookup"><span data-stu-id="263bc-1117">RTM_NEWADDR (supports `ip addr add`)</span></span>
-     - <span data-ttu-id="263bc-1118">RTM_NEWROUTE（支持 `ip route add`）</span><span class="sxs-lookup"><span data-stu-id="263bc-1118">RTM_NEWROUTE (supports `ip route add`)</span></span>
-     - <span data-ttu-id="263bc-1119">RTM_DELADDR（支持 `ip addr del`）</span><span class="sxs-lookup"><span data-stu-id="263bc-1119">RTM_DELADDR (supports `ip addr del`)</span></span>
-     - <span data-ttu-id="263bc-1120">RTM_DELROUTE（支持 `ip route del`）</span><span class="sxs-lookup"><span data-stu-id="263bc-1120">RTM_DELROUTE (supports `ip route del`)</span></span>
-- <span data-ttu-id="263bc-1121">用于检查要更新的包的计划任务将不再在按流量计费的连接上运行 (GH #1371)</span><span class="sxs-lookup"><span data-stu-id="263bc-1121">Scheduled task checking for packages to update will no longer run on a metered connection (GH #1371)</span></span>
-- <span data-ttu-id="263bc-1122">修复了运行 bash -c "ls -alR /" | bash -c "cat" 时管道停滞的错误 (GH #1214)</span><span class="sxs-lookup"><span data-stu-id="263bc-1122">Fixed error where piping gets stuck i.e. bash -c "ls -alR /" | bash -c "cat" (GH #1214)</span></span>
-- <span data-ttu-id="263bc-1123">实现了 TCP_KEEPCNT 套接字选项 (GH #843)</span><span class="sxs-lookup"><span data-stu-id="263bc-1123">Implemented TCP_KEEPCNT socket option (GH #843)</span></span>
-- <span data-ttu-id="263bc-1124">实现了 IP_MTU_DISCOVER INET 套接字选项（GH #720、717、170、69）</span><span class="sxs-lookup"><span data-stu-id="263bc-1124">Implemented IP_MTU_DISCOVER INET socket option (GH #720, 717, 170, 69)</span></span>
-- <span data-ttu-id="263bc-1125">删除了旧功能，以通过 NT 路径查找从 init 运行 NT 二进制文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-1125">Removed legacy functionality to run NT binaries from init with NT path lookup.</span></span> <span data-ttu-id="263bc-1126">(GH #1325)</span><span class="sxs-lookup"><span data-stu-id="263bc-1126">(GH #1325)</span></span>
-- <span data-ttu-id="263bc-1127">修复 /dev/kmsg 的模式，以允许进行组访问/其他读取访问 (0644) (GH #1321)</span><span class="sxs-lookup"><span data-stu-id="263bc-1127">Fix mode of /dev/kmsg to allow group / other read access (0644) (GH #1321)</span></span>
-- <span data-ttu-id="263bc-1128">实现了 /proc/sys/kernel/random/uuid (GH #1092)</span><span class="sxs-lookup"><span data-stu-id="263bc-1128">Implemented /proc/sys/kernel/random/uuid  (GH #1092)</span></span>
-- <span data-ttu-id="263bc-1129">更正了进程开始时间显示为 2432 年的错误 (GH #974)</span><span class="sxs-lookup"><span data-stu-id="263bc-1129">Corrected error where process start time was showing as year 2432 (GH #974)</span></span>
-- <span data-ttu-id="263bc-1130">已将默认 TERM 环境变量切换为 xterm-256color (GH #1446)</span><span class="sxs-lookup"><span data-stu-id="263bc-1130">Switched default TERM environment variable to xterm-256color (GH #1446)</span></span>
-- <span data-ttu-id="263bc-1131">修改了进程分叉期间进程提交的计算方式。</span><span class="sxs-lookup"><span data-stu-id="263bc-1131">Modified the way that process commit is calculated during process fork.</span></span> <span data-ttu-id="263bc-1132">(GH #1286)</span><span class="sxs-lookup"><span data-stu-id="263bc-1132">(GH #1286)</span></span>
-- <span data-ttu-id="263bc-1133">实现了 /proc/sys/vm/overcommit_memory。</span><span class="sxs-lookup"><span data-stu-id="263bc-1133">Implemented /proc/sys/vm/overcommit_memory.</span></span> <span data-ttu-id="263bc-1134">(GH #1286)</span><span class="sxs-lookup"><span data-stu-id="263bc-1134">(GH #1286)</span></span>
-- <span data-ttu-id="263bc-1135">实现了 /proc/net/route 文件 (GH #69)</span><span class="sxs-lookup"><span data-stu-id="263bc-1135">Implemented /proc/net/route file (GH #69)</span></span>
-- <span data-ttu-id="263bc-1136">修复了不正确本地化快捷方式名称的错误 (GH #696)</span><span class="sxs-lookup"><span data-stu-id="263bc-1136">Fixed error where shortcut name was incorrectly localized (GH #696)</span></span>
-- <span data-ttu-id="263bc-1137">修复了错误地验证程序标头必须小于（或等于）PATH_MAX 的 elf 分析逻辑。</span><span class="sxs-lookup"><span data-stu-id="263bc-1137">Fixed elf parsing logic that is incorrectly validating the program headers must be less than (or equal to) PATH_MAX.</span></span> <span data-ttu-id="263bc-1138">(GH #1048)</span><span class="sxs-lookup"><span data-stu-id="263bc-1138">(GH #1048)</span></span>
-- <span data-ttu-id="263bc-1139">为 procfs、sysfs、cgroupfs 和 binfmtfs 实现了 statfs 回调 (GH #1378)</span><span class="sxs-lookup"><span data-stu-id="263bc-1139">Implemented statfs callback for procfs, sysfs, cgroupfs, and binfmtfs (GH #1378)</span></span>
-- <span data-ttu-id="263bc-1140">修复了 AptPackageIndexUpdate 窗口不会关闭的问题（GH #1184，GH #1193 中也进行了讨论）</span><span class="sxs-lookup"><span data-stu-id="263bc-1140">Fixed AptPackageIndexUpdate windows that won't close (GH #1184, also discussed in GH #1193)</span></span>
-- <span data-ttu-id="263bc-1141">添加了 ASLR 个性化 ADDR_NO_RANDOMIZE 支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1141">Added ASLR personality  ADDR_NO_RANDOMIZE support.</span></span> <span data-ttu-id="263bc-1142">（GH #1148、1128）</span><span class="sxs-lookup"><span data-stu-id="263bc-1142">(GH #1148, 1128)</span></span>
-- <span data-ttu-id="263bc-1143">改善了 PTRACE_GETSIGINFO、SIGSEGV，在 AV 期间会提供正确的 gdb 堆栈跟踪 (GH #875)</span><span class="sxs-lookup"><span data-stu-id="263bc-1143">Improved PTRACE_GETSIGINFO, SIGSEGV, for proper gdb stack traces during AV (GH #875)</span></span>
-- <span data-ttu-id="263bc-1144">针对 patchelf 二进制文件的 Elf 分析不再失败。</span><span class="sxs-lookup"><span data-stu-id="263bc-1144">Elf parsing no longer fails for patchelf binaries.</span></span> <span data-ttu-id="263bc-1145">(GH #471)</span><span class="sxs-lookup"><span data-stu-id="263bc-1145">(GH #471)</span></span>
-- <span data-ttu-id="263bc-1146">VPN DNS 已传播到 /etc/resolv.conf（GH #416、1350）</span><span class="sxs-lookup"><span data-stu-id="263bc-1146">VPN DNS propagated to /etc/resolv.conf (GH #416, 1350)</span></span>
-- <span data-ttu-id="263bc-1147">TCP 关闭改进，可以更可靠地传输数据。</span><span class="sxs-lookup"><span data-stu-id="263bc-1147">Improvements to TCP close for more reliable data transfer.</span></span> <span data-ttu-id="263bc-1148">（GH #610、616、1025、1335）</span><span class="sxs-lookup"><span data-stu-id="263bc-1148">(GH #610, 616, 1025, 1335)</span></span>
-- <span data-ttu-id="263bc-1149">现在，在打开过多的文件时可返回正确的错误代码 (EMFILE)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1149">Now return correct error code when too many files are opened (EMFILE).</span></span> <span data-ttu-id="263bc-1150">（GH #1126、2090）</span><span class="sxs-lookup"><span data-stu-id="263bc-1150">(GH #1126, 2090)</span></span>
-- <span data-ttu-id="263bc-1151">Windows 审核日志现在会在进程创建审核中报告映像名称。</span><span class="sxs-lookup"><span data-stu-id="263bc-1151">Windows Audit log now reports the image name in process create audit.</span></span>
-- <span data-ttu-id="263bc-1152">现在，在从 bash 窗口内部启动 bash 时会正常失败</span><span class="sxs-lookup"><span data-stu-id="263bc-1152">Now gracefully fail when launching bash.exe from within a bash window</span></span>
-- <span data-ttu-id="263bc-1153">添加了在 interop 无法访问 LxFs 下的工作目录（即 notepad.exe .bashrc）时显示的错误消息</span><span class="sxs-lookup"><span data-stu-id="263bc-1153">Added error message when interop is unable to access a working directory under LxFs (i.e. notepad.exe .bashrc)</span></span>
-- <span data-ttu-id="263bc-1154">修复了 Windows 路径在 WSL 中截断的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1154">Fixed issue where Windows path was truncated in WSL</span></span>
-- <span data-ttu-id="263bc-1155">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1155">Additional fixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1156">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1156">LTP Results:</span></span>
-<span data-ttu-id="263bc-1157">通过的测试数：690</span><span class="sxs-lookup"><span data-stu-id="263bc-1157">Number of Passing Test: 690</span></span> </br>
-<span data-ttu-id="263bc-1158">未通过的测试数（失败、已跳过等）：274</span><span class="sxs-lookup"><span data-stu-id="263bc-1158">Number of non-Passing (failing, skipped, etc…): 274</span></span> </br>
-[<span data-ttu-id="263bc-1159">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1159">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15002)<br/>
+### <a name="syscall-summary"></a><span data-ttu-id="aa113-1074">Syscall 摘要</span><span class="sxs-lookup"><span data-stu-id="aa113-1074">Syscall Summary</span></span>
+<span data-ttu-id="aa113-1075">Syscall 总数：384</span><span class="sxs-lookup"><span data-stu-id="aa113-1075">Total Syscalls: 384</span></span> </br>
+<span data-ttu-id="aa113-1076">已实现总数：235</span><span class="sxs-lookup"><span data-stu-id="aa113-1076">Total Implemented: 235</span></span> </br>
+<span data-ttu-id="aa113-1077">已存根总数：22</span><span class="sxs-lookup"><span data-stu-id="aa113-1077">Total Stubbed: 22</span></span> </br>
+<span data-ttu-id="aa113-1078">未实现总数：127</span><span class="sxs-lookup"><span data-stu-id="aa113-1078">Total Unimplemented: 127</span></span> </br>
+[<span data-ttu-id="aa113-1079">详细分解</span><span class="sxs-lookup"><span data-stu-id="aa113-1079">Detailed Breakdown</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15014/Syscalls.txt)<br/>
 
 <br/>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1160">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1160">Syscall Support</span></span>
-<span data-ttu-id="263bc-1161">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1161">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1162">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1162">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+## <a name="build-15007"></a><span data-ttu-id="aa113-1080">内部版本 15007</span><span class="sxs-lookup"><span data-stu-id="aa113-1080">Build 15007</span></span>
+
+<span data-ttu-id="aa113-1081">有关内部版本 15007 的一般 Windows 信息，请访问 [Windows 博客]( https://blogs.windows.com/windowsexperience/2017/01/12/announcing-windows-10-insider-preview-build-15007-pc-mobile)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1081">For general Windows information on build 15007 visit the [Windows Blog]( https://blogs.windows.com/windowsexperience/2017/01/12/announcing-windows-10-insider-preview-build-15007-pc-mobile).</span></span><br/>
+
+
+### <a name="known-issue"></a><span data-ttu-id="aa113-1082">已知问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1082">Known Issue</span></span>
+
+- <span data-ttu-id="aa113-1083">已知 bug：控制台无法识别某些 Ctrl + <key> 输入。</span><span class="sxs-lookup"><span data-stu-id="aa113-1083">There is a known bug where the console does not recognize some Ctrl + <key> input.</span></span>  <span data-ttu-id="aa113-1084">这包括将充当普通“c”按键的 ctrl-c 命令。</span><span class="sxs-lookup"><span data-stu-id="aa113-1084">This includes the ctrl-c command which will act as a normal 'c' keypress.</span></span>
+
+  - <span data-ttu-id="aa113-1085">解决方法：将备用键映射到 Ctrl+C。</span><span class="sxs-lookup"><span data-stu-id="aa113-1085">Workaround: Map an alternate key to Ctrl+C.</span></span> <span data-ttu-id="aa113-1086">例如，若要将 Ctrl+K 映射到 Ctrl+C，请执行：`stty intr \^k`。</span><span class="sxs-lookup"><span data-stu-id="aa113-1086">For example, to map Ctrl+K to Ctrl+C do: `stty intr \^k`.</span></span>  <span data-ttu-id="aa113-1087">这种映射是按终端进行的，每次启动 bash 都必须执行。</span><span class="sxs-lookup"><span data-stu-id="aa113-1087">This mapping is per terminal and will have to be done *every* time bash is launched.</span></span> <span data-ttu-id="aa113-1088">用户可以探索该选项，以将此映射包含在其 `.bashrc` 中</span><span class="sxs-lookup"><span data-stu-id="aa113-1088">Users can explore the option to include this in their `.bashrc`</span></span>
+
+### <a name="fixed"></a><span data-ttu-id="aa113-1089">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1089">Fixed</span></span>
+
+- <span data-ttu-id="aa113-1090">更正了运行 WSL 会消耗 100% 的 CPU 核心的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1090">Corrected the issue where running WSL would consume 100% of a CPU core</span></span>
+- <span data-ttu-id="aa113-1091">现在支持套接字选项 IP_PKTINFO、IPV6_RECVPKTINFO。</span><span class="sxs-lookup"><span data-stu-id="aa113-1091">Socket option IP_PKTINFO, IPV6_RECVPKTINFO now supported.</span></span> <span data-ttu-id="aa113-1092">（GH #851、987）</span><span class="sxs-lookup"><span data-stu-id="aa113-1092">(GH #851, 987)</span></span>
+- <span data-ttu-id="aa113-1093">在 lxcore 中将网络接口物理地址截断为 16 个字节（GH #1452、1414、1343、468、308）</span><span class="sxs-lookup"><span data-stu-id="aa113-1093">Truncate network interface physical address to 16 bytes in lxcore (GH #1452, 1414, 1343, 468, 308)</span></span>
+- <span data-ttu-id="aa113-1094">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1094">Additional fixes and improvements</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1095">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1095">LTP Results:</span></span>
+<span data-ttu-id="aa113-1096">通过的测试数：709</span><span class="sxs-lookup"><span data-stu-id="aa113-1096">Number of Passing Test: 709</span></span> </br>
+<span data-ttu-id="aa113-1097">未通过的测试数（失败、已跳过等）：255</span><span class="sxs-lookup"><span data-stu-id="aa113-1097">Number of non-Passing (failing, skipped, etc…): 255</span></span> </br>
+[<span data-ttu-id="aa113-1098">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1098">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15007)<br/>
+
+<br/>
+
+## <a name="build-15002"></a><span data-ttu-id="aa113-1099">内部版本 15002</span><span class="sxs-lookup"><span data-stu-id="aa113-1099">Build 15002</span></span>
+
+<span data-ttu-id="aa113-1100">有关内部版本 15002 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/01/09/announcing-windows-10-insider-preview-build-15002-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1100">For general Windows information on build 15002 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2017/01/09/announcing-windows-10-insider-preview-build-15002-pc/).</span></span><br/>
+
+
+### <a name="known-issue"></a><span data-ttu-id="aa113-1101">已知问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1101">Known Issue</span></span>
+
+<span data-ttu-id="aa113-1102">两个已知问题：</span><span class="sxs-lookup"><span data-stu-id="aa113-1102">Two known issues:</span></span>
+- <span data-ttu-id="aa113-1103">已知 bug：控制台无法识别某些 Ctrl + <key> 输入。</span><span class="sxs-lookup"><span data-stu-id="aa113-1103">There is a known bug where the console does not recognize some Ctrl + <key> input.</span></span>  <span data-ttu-id="aa113-1104">这包括将充当普通“c”按键的 ctrl-c 命令。</span><span class="sxs-lookup"><span data-stu-id="aa113-1104">This includes the ctrl-c command which will act as a normal 'c' keypress.</span></span>
+
+  - <span data-ttu-id="aa113-1105">解决方法：将备用键映射到 Ctrl+C。</span><span class="sxs-lookup"><span data-stu-id="aa113-1105">Workaround: Map an alternate key to Ctrl+C.</span></span> <span data-ttu-id="aa113-1106">例如，若要将 Ctrl+K 映射到 Ctrl+C，请执行：`stty intr \^k`。</span><span class="sxs-lookup"><span data-stu-id="aa113-1106">For example, to map Ctrl+K to Ctrl+C do: `stty intr \^k`.</span></span>  <span data-ttu-id="aa113-1107">这种映射是按终端进行的，每次启动 bash 都必须执行。</span><span class="sxs-lookup"><span data-stu-id="aa113-1107">This mapping is per terminal and will have to be done *every* time bash is launched.</span></span> <span data-ttu-id="aa113-1108">用户可以探索该选项，以将此映射包含在其 `.bashrc` 中</span><span class="sxs-lookup"><span data-stu-id="aa113-1108">Users can explore the option to include this in their `.bashrc`</span></span>
+
+- <span data-ttu-id="aa113-1109">当 WSL 运行时，系统线程将消耗 100% 的 CPU 核心。</span><span class="sxs-lookup"><span data-stu-id="aa113-1109">While WSL is running a system thread will consume 100% of a CPU core.</span></span>  <span data-ttu-id="aa113-1110">根本原因已解决并已在内部修复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1110">The root cause has been addressed and fixed internally.</span></span>
+
+### <a name="fixed"></a><span data-ttu-id="aa113-1111">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1111">Fixed</span></span>
+
+- <span data-ttu-id="aa113-1112">现在，必须在同一权限级别创建所有 bash 会话。</span><span class="sxs-lookup"><span data-stu-id="aa113-1112">All bash sessions must now be created at the same permission level.</span></span>  <span data-ttu-id="aa113-1113">尝试在不同级别启动会话将遭到阻止。</span><span class="sxs-lookup"><span data-stu-id="aa113-1113">Attempting to start a session at a different level will be blocked.</span></span>  <span data-ttu-id="aa113-1114">这意味着，管理员和非管理员控制台不能同时运行。</span><span class="sxs-lookup"><span data-stu-id="aa113-1114">This means admin and non-admin consoles cannot run at the same time.</span></span> <span data-ttu-id="aa113-1115">(GH #626)</span><span class="sxs-lookup"><span data-stu-id="aa113-1115">(GH #626)</span></span>
+<br/>
+- <span data-ttu-id="aa113-1116">实现了以下 NETLINK_ROUTE 消息（需要 Windows 管理员）</span><span class="sxs-lookup"><span data-stu-id="aa113-1116">Implemented the following NETLINK_ROUTE messages (requires Windows admin)</span></span>
+     - <span data-ttu-id="aa113-1117">RTM_NEWADDR（支持 `ip addr add`）</span><span class="sxs-lookup"><span data-stu-id="aa113-1117">RTM_NEWADDR (supports `ip addr add`)</span></span>
+     - <span data-ttu-id="aa113-1118">RTM_NEWROUTE（支持 `ip route add`）</span><span class="sxs-lookup"><span data-stu-id="aa113-1118">RTM_NEWROUTE (supports `ip route add`)</span></span>
+     - <span data-ttu-id="aa113-1119">RTM_DELADDR（支持 `ip addr del`）</span><span class="sxs-lookup"><span data-stu-id="aa113-1119">RTM_DELADDR (supports `ip addr del`)</span></span>
+     - <span data-ttu-id="aa113-1120">RTM_DELROUTE（支持 `ip route del`）</span><span class="sxs-lookup"><span data-stu-id="aa113-1120">RTM_DELROUTE (supports `ip route del`)</span></span>
+- <span data-ttu-id="aa113-1121">用于检查要更新的包的计划任务将不再在按流量计费的连接上运行 (GH #1371)</span><span class="sxs-lookup"><span data-stu-id="aa113-1121">Scheduled task checking for packages to update will no longer run on a metered connection (GH #1371)</span></span>
+- <span data-ttu-id="aa113-1122">修复了运行 bash -c "ls -alR /" | bash -c "cat" 时管道停滞的错误 (GH #1214)</span><span class="sxs-lookup"><span data-stu-id="aa113-1122">Fixed error where piping gets stuck i.e. bash -c "ls -alR /" | bash -c "cat" (GH #1214)</span></span>
+- <span data-ttu-id="aa113-1123">实现了 TCP_KEEPCNT 套接字选项 (GH #843)</span><span class="sxs-lookup"><span data-stu-id="aa113-1123">Implemented TCP_KEEPCNT socket option (GH #843)</span></span>
+- <span data-ttu-id="aa113-1124">实现了 IP_MTU_DISCOVER INET 套接字选项（GH #720、717、170、69）</span><span class="sxs-lookup"><span data-stu-id="aa113-1124">Implemented IP_MTU_DISCOVER INET socket option (GH #720, 717, 170, 69)</span></span>
+- <span data-ttu-id="aa113-1125">删除了旧功能，以通过 NT 路径查找从 init 运行 NT 二进制文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-1125">Removed legacy functionality to run NT binaries from init with NT path lookup.</span></span> <span data-ttu-id="aa113-1126">(GH #1325)</span><span class="sxs-lookup"><span data-stu-id="aa113-1126">(GH #1325)</span></span>
+- <span data-ttu-id="aa113-1127">修复 /dev/kmsg 的模式，以允许进行组访问/其他读取访问 (0644) (GH #1321)</span><span class="sxs-lookup"><span data-stu-id="aa113-1127">Fix mode of /dev/kmsg to allow group / other read access (0644) (GH #1321)</span></span>
+- <span data-ttu-id="aa113-1128">实现了 /proc/sys/kernel/random/uuid (GH #1092)</span><span class="sxs-lookup"><span data-stu-id="aa113-1128">Implemented /proc/sys/kernel/random/uuid  (GH #1092)</span></span>
+- <span data-ttu-id="aa113-1129">更正了进程开始时间显示为 2432 年的错误 (GH #974)</span><span class="sxs-lookup"><span data-stu-id="aa113-1129">Corrected error where process start time was showing as year 2432 (GH #974)</span></span>
+- <span data-ttu-id="aa113-1130">已将默认 TERM 环境变量切换为 xterm-256color (GH #1446)</span><span class="sxs-lookup"><span data-stu-id="aa113-1130">Switched default TERM environment variable to xterm-256color (GH #1446)</span></span>
+- <span data-ttu-id="aa113-1131">修改了进程分叉期间进程提交的计算方式。</span><span class="sxs-lookup"><span data-stu-id="aa113-1131">Modified the way that process commit is calculated during process fork.</span></span> <span data-ttu-id="aa113-1132">(GH #1286)</span><span class="sxs-lookup"><span data-stu-id="aa113-1132">(GH #1286)</span></span>
+- <span data-ttu-id="aa113-1133">实现了 /proc/sys/vm/overcommit_memory。</span><span class="sxs-lookup"><span data-stu-id="aa113-1133">Implemented /proc/sys/vm/overcommit_memory.</span></span> <span data-ttu-id="aa113-1134">(GH #1286)</span><span class="sxs-lookup"><span data-stu-id="aa113-1134">(GH #1286)</span></span>
+- <span data-ttu-id="aa113-1135">实现了 /proc/net/route 文件 (GH #69)</span><span class="sxs-lookup"><span data-stu-id="aa113-1135">Implemented /proc/net/route file (GH #69)</span></span>
+- <span data-ttu-id="aa113-1136">修复了不正确本地化快捷方式名称的错误 (GH #696)</span><span class="sxs-lookup"><span data-stu-id="aa113-1136">Fixed error where shortcut name was incorrectly localized (GH #696)</span></span>
+- <span data-ttu-id="aa113-1137">修复了错误地验证程序标头必须小于（或等于）PATH_MAX 的 elf 分析逻辑。</span><span class="sxs-lookup"><span data-stu-id="aa113-1137">Fixed elf parsing logic that is incorrectly validating the program headers must be less than (or equal to) PATH_MAX.</span></span> <span data-ttu-id="aa113-1138">(GH #1048)</span><span class="sxs-lookup"><span data-stu-id="aa113-1138">(GH #1048)</span></span>
+- <span data-ttu-id="aa113-1139">为 procfs、sysfs、cgroupfs 和 binfmtfs 实现了 statfs 回调 (GH #1378)</span><span class="sxs-lookup"><span data-stu-id="aa113-1139">Implemented statfs callback for procfs, sysfs, cgroupfs, and binfmtfs (GH #1378)</span></span>
+- <span data-ttu-id="aa113-1140">修复了 AptPackageIndexUpdate 窗口不会关闭的问题（GH #1184，GH #1193 中也进行了讨论）</span><span class="sxs-lookup"><span data-stu-id="aa113-1140">Fixed AptPackageIndexUpdate windows that won't close (GH #1184, also discussed in GH #1193)</span></span>
+- <span data-ttu-id="aa113-1141">添加了 ASLR 个性化 ADDR_NO_RANDOMIZE 支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1141">Added ASLR personality  ADDR_NO_RANDOMIZE support.</span></span> <span data-ttu-id="aa113-1142">（GH #1148、1128）</span><span class="sxs-lookup"><span data-stu-id="aa113-1142">(GH #1148, 1128)</span></span>
+- <span data-ttu-id="aa113-1143">改善了 PTRACE_GETSIGINFO、SIGSEGV，在 AV 期间会提供正确的 gdb 堆栈跟踪 (GH #875)</span><span class="sxs-lookup"><span data-stu-id="aa113-1143">Improved PTRACE_GETSIGINFO, SIGSEGV, for proper gdb stack traces during AV (GH #875)</span></span>
+- <span data-ttu-id="aa113-1144">针对 patchelf 二进制文件的 Elf 分析不再失败。</span><span class="sxs-lookup"><span data-stu-id="aa113-1144">Elf parsing no longer fails for patchelf binaries.</span></span> <span data-ttu-id="aa113-1145">(GH #471)</span><span class="sxs-lookup"><span data-stu-id="aa113-1145">(GH #471)</span></span>
+- <span data-ttu-id="aa113-1146">VPN DNS 已传播到 /etc/resolv.conf（GH #416、1350）</span><span class="sxs-lookup"><span data-stu-id="aa113-1146">VPN DNS propagated to /etc/resolv.conf (GH #416, 1350)</span></span>
+- <span data-ttu-id="aa113-1147">TCP 关闭改进，可以更可靠地传输数据。</span><span class="sxs-lookup"><span data-stu-id="aa113-1147">Improvements to TCP close for more reliable data transfer.</span></span> <span data-ttu-id="aa113-1148">（GH #610、616、1025、1335）</span><span class="sxs-lookup"><span data-stu-id="aa113-1148">(GH #610, 616, 1025, 1335)</span></span>
+- <span data-ttu-id="aa113-1149">现在，在打开过多的文件时可返回正确的错误代码 (EMFILE)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1149">Now return correct error code when too many files are opened (EMFILE).</span></span> <span data-ttu-id="aa113-1150">（GH #1126、2090）</span><span class="sxs-lookup"><span data-stu-id="aa113-1150">(GH #1126, 2090)</span></span>
+- <span data-ttu-id="aa113-1151">Windows 审核日志现在会在进程创建审核中报告映像名称。</span><span class="sxs-lookup"><span data-stu-id="aa113-1151">Windows Audit log now reports the image name in process create audit.</span></span>
+- <span data-ttu-id="aa113-1152">现在，在从 bash 窗口内部启动 bash 时会正常失败</span><span class="sxs-lookup"><span data-stu-id="aa113-1152">Now gracefully fail when launching bash.exe from within a bash window</span></span>
+- <span data-ttu-id="aa113-1153">添加了在 interop 无法访问 LxFs 下的工作目录（即 notepad.exe .bashrc）时显示的错误消息</span><span class="sxs-lookup"><span data-stu-id="aa113-1153">Added error message when interop is unable to access a working directory under LxFs (i.e. notepad.exe .bashrc)</span></span>
+- <span data-ttu-id="aa113-1154">修复了 Windows 路径在 WSL 中截断的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1154">Fixed issue where Windows path was truncated in WSL</span></span>
+- <span data-ttu-id="aa113-1155">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1155">Additional fixes and improvements</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1156">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1156">LTP Results:</span></span>
+<span data-ttu-id="aa113-1157">通过的测试数：690</span><span class="sxs-lookup"><span data-stu-id="aa113-1157">Number of Passing Test: 690</span></span> </br>
+<span data-ttu-id="aa113-1158">未通过的测试数（失败、已跳过等）：274</span><span class="sxs-lookup"><span data-stu-id="aa113-1158">Number of non-Passing (failing, skipped, etc…): 274</span></span> </br>
+[<span data-ttu-id="aa113-1159">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1159">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/15002)<br/>
+
+<br/>
+
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1160">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1160">Syscall Support</span></span>
+<span data-ttu-id="aa113-1161">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1161">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1162">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1162">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `shmctl`<br/>
 `shmget`<br/>
@@ -1433,34 +1433,34 @@ wslconfig.exe /terminate <DistributionName>
 `shmat`<br/>
 <br/>
 
-## <a name="build-14986"></a><span data-ttu-id="263bc-1163">内部版本 14986</span><span class="sxs-lookup"><span data-stu-id="263bc-1163">Build 14986</span></span>
+## <a name="build-14986"></a><span data-ttu-id="aa113-1163">内部版本 14986</span><span class="sxs-lookup"><span data-stu-id="aa113-1163">Build 14986</span></span>
 
-<span data-ttu-id="263bc-1164">有关内部版本 14986 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/12/07/announcing-windows-10-insider-preview-build-14986-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1164">For general Windows information on build 14986 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/12/07/announcing-windows-10-insider-preview-build-14986-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1164">有关内部版本 14986 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/12/07/announcing-windows-10-insider-preview-build-14986-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1164">For general Windows information on build 14986 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/12/07/announcing-windows-10-insider-preview-build-14986-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1165">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1165">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1165">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1165">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1166">修复了 Netlink 和 Pty IOCTL 的 bug 检查</span><span class="sxs-lookup"><span data-stu-id="263bc-1166">Fixed bugchecks with Netlink and Pty IOCTLs</span></span>
-- <span data-ttu-id="263bc-1167">内核版本现在会报告 4.4.0-43，以便与 Xenial 保持一致</span><span class="sxs-lookup"><span data-stu-id="263bc-1167">Kernel version now reports 4.4.0-43 for consistency with Xenial</span></span>
-- <span data-ttu-id="263bc-1168">现在，当输入定向到 'nul:' 时会启动 Bash.exe (GH #1259)</span><span class="sxs-lookup"><span data-stu-id="263bc-1168">Bash.exe now launches when input directed to 'nul:' (GH #1259)</span></span>
-- <span data-ttu-id="263bc-1169">现在，procfs 中会正确报告线程 ID (GH #967)</span><span class="sxs-lookup"><span data-stu-id="263bc-1169">Thread IDs now reported correctly in procfs (GH #967)</span></span>
-- <span data-ttu-id="263bc-1170">现在，inotify_add_watch() 中支持 IN_UNMOUNT | IN_Q_OVERFLOW | IN_IGNORED | IN_ISDIR 标志 (GH #1280)</span><span class="sxs-lookup"><span data-stu-id="263bc-1170">IN_UNMOUNT | IN_Q_OVERFLOW | IN_IGNORED | IN_ISDIR flags now supported in inotify_add_watch() (GH #1280)</span></span>
-- <span data-ttu-id="263bc-1171">实现 timer_create 和相关的系统调用。</span><span class="sxs-lookup"><span data-stu-id="263bc-1171">Implement timer_create and related system calls.</span></span>  <span data-ttu-id="263bc-1172">这会启用 GHC 支持 (GH #307)</span><span class="sxs-lookup"><span data-stu-id="263bc-1172">This enables GHC support (GH #307)</span></span>
-- <span data-ttu-id="263bc-1173">修复了 ping 返回时间 0.000ms 的问题 (GH #1296)</span><span class="sxs-lookup"><span data-stu-id="263bc-1173">Fixed issue where ping returned a time of 0.000ms (GH #1296)</span></span>
-- <span data-ttu-id="263bc-1174">打开过多的文件时返回正确的错误代码。</span><span class="sxs-lookup"><span data-stu-id="263bc-1174">Return correct error code when too many files are opened.</span></span>
-- <span data-ttu-id="263bc-1175">修复了 WSL 中的问题：如果网络接口的硬件地址为 32 字节（例如 Teredo 接口），则针对该网络接口数据的 Netlink 请求将会失败并返回 EINVAL。</span><span class="sxs-lookup"><span data-stu-id="263bc-1175">Fixed issue in WSL where Netlink request for network interface data would fail with EINVAL if the interface's hardware address is 32-bytes (such as the Teredo interface)</span></span>
-   - <span data-ttu-id="263bc-1176">请注意，Linux“ip”实用工具包含一个 bug：如果 WSL 报告 32 字节硬件地址，该实用工具将会崩溃。</span><span class="sxs-lookup"><span data-stu-id="263bc-1176">Note that the Linux "ip" utility contains a bug where it will crash if WSL reports a 32-byte hardware address.</span></span> <span data-ttu-id="263bc-1177">这是“ip”（而不是 WSL）中的一个 bug。</span><span class="sxs-lookup"><span data-stu-id="263bc-1177">This is a bug in "ip", not WSL.</span></span> <span data-ttu-id="263bc-1178">“ip”实用工具会将用于输出硬件地址的字符串缓冲区的长度进行硬编码，而该缓冲区太小，无法输出 32 字节硬件地址。</span><span class="sxs-lookup"><span data-stu-id="263bc-1178">The "ip" utility hard-codes the length of the string buffer used to print the hardware address, and that buffer is too small to print a 32-byte hardware address.</span></span>
-- <span data-ttu-id="263bc-1179">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1179">Additional fixes and improvements</span></span>
+- <span data-ttu-id="aa113-1166">修复了 Netlink 和 Pty IOCTL 的 bug 检查</span><span class="sxs-lookup"><span data-stu-id="aa113-1166">Fixed bugchecks with Netlink and Pty IOCTLs</span></span>
+- <span data-ttu-id="aa113-1167">内核版本现在会报告 4.4.0-43，以便与 Xenial 保持一致</span><span class="sxs-lookup"><span data-stu-id="aa113-1167">Kernel version now reports 4.4.0-43 for consistency with Xenial</span></span>
+- <span data-ttu-id="aa113-1168">现在，当输入定向到 'nul:' 时会启动 Bash.exe (GH #1259)</span><span class="sxs-lookup"><span data-stu-id="aa113-1168">Bash.exe now launches when input directed to 'nul:' (GH #1259)</span></span>
+- <span data-ttu-id="aa113-1169">现在，procfs 中会正确报告线程 ID (GH #967)</span><span class="sxs-lookup"><span data-stu-id="aa113-1169">Thread IDs now reported correctly in procfs (GH #967)</span></span>
+- <span data-ttu-id="aa113-1170">现在，inotify_add_watch() 中支持 IN_UNMOUNT | IN_Q_OVERFLOW | IN_IGNORED | IN_ISDIR 标志 (GH #1280)</span><span class="sxs-lookup"><span data-stu-id="aa113-1170">IN_UNMOUNT | IN_Q_OVERFLOW | IN_IGNORED | IN_ISDIR flags now supported in inotify_add_watch() (GH #1280)</span></span>
+- <span data-ttu-id="aa113-1171">实现 timer_create 和相关的系统调用。</span><span class="sxs-lookup"><span data-stu-id="aa113-1171">Implement timer_create and related system calls.</span></span>  <span data-ttu-id="aa113-1172">这会启用 GHC 支持 (GH #307)</span><span class="sxs-lookup"><span data-stu-id="aa113-1172">This enables GHC support (GH #307)</span></span>
+- <span data-ttu-id="aa113-1173">修复了 ping 返回时间 0.000ms 的问题 (GH #1296)</span><span class="sxs-lookup"><span data-stu-id="aa113-1173">Fixed issue where ping returned a time of 0.000ms (GH #1296)</span></span>
+- <span data-ttu-id="aa113-1174">打开过多的文件时返回正确的错误代码。</span><span class="sxs-lookup"><span data-stu-id="aa113-1174">Return correct error code when too many files are opened.</span></span>
+- <span data-ttu-id="aa113-1175">修复了 WSL 中的问题：如果网络接口的硬件地址为 32 字节（例如 Teredo 接口），则针对该网络接口数据的 Netlink 请求将会失败并返回 EINVAL。</span><span class="sxs-lookup"><span data-stu-id="aa113-1175">Fixed issue in WSL where Netlink request for network interface data would fail with EINVAL if the interface's hardware address is 32-bytes (such as the Teredo interface)</span></span>
+   - <span data-ttu-id="aa113-1176">请注意，Linux“ip”实用工具包含一个 bug：如果 WSL 报告 32 字节硬件地址，该实用工具将会崩溃。</span><span class="sxs-lookup"><span data-stu-id="aa113-1176">Note that the Linux "ip" utility contains a bug where it will crash if WSL reports a 32-byte hardware address.</span></span> <span data-ttu-id="aa113-1177">这是“ip”（而不是 WSL）中的一个 bug。</span><span class="sxs-lookup"><span data-stu-id="aa113-1177">This is a bug in "ip", not WSL.</span></span> <span data-ttu-id="aa113-1178">“ip”实用工具会将用于输出硬件地址的字符串缓冲区的长度进行硬编码，而该缓冲区太小，无法输出 32 字节硬件地址。</span><span class="sxs-lookup"><span data-stu-id="aa113-1178">The "ip" utility hard-codes the length of the string buffer used to print the hardware address, and that buffer is too small to print a 32-byte hardware address.</span></span>
+- <span data-ttu-id="aa113-1179">其他修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1179">Additional fixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1180">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1180">LTP Results:</span></span>
-<span data-ttu-id="263bc-1181">通过的测试数：669</span><span class="sxs-lookup"><span data-stu-id="263bc-1181">Number of Passing Test: 669</span></span> </br>
-<span data-ttu-id="263bc-1182">未通过的测试数（失败、已跳过等）：258</span><span class="sxs-lookup"><span data-stu-id="263bc-1182">Number of non-Passing (failing, skipped, etc…): 258</span></span> </br>
-[<span data-ttu-id="263bc-1183">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1183">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14986)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1180">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1180">LTP Results:</span></span>
+<span data-ttu-id="aa113-1181">通过的测试数：669</span><span class="sxs-lookup"><span data-stu-id="aa113-1181">Number of Passing Test: 669</span></span> </br>
+<span data-ttu-id="aa113-1182">未通过的测试数（失败、已跳过等）：258</span><span class="sxs-lookup"><span data-stu-id="aa113-1182">Number of non-Passing (failing, skipped, etc…): 258</span></span> </br>
+[<span data-ttu-id="aa113-1183">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1183">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14986)<br/>
 
 <br/>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1184">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1184">Syscall Support</span></span>
-<span data-ttu-id="263bc-1185">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1185">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1186">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1186">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1184">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1184">Syscall Support</span></span>
+<span data-ttu-id="aa113-1185">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1185">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1186">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1186">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `timer_create`<br/>
 `timer_delete`<br/>
@@ -1468,103 +1468,103 @@ wslconfig.exe /terminate <DistributionName>
 `timer_settime`<br/>
 <br/>
 
-## <a name="build-14971"></a><span data-ttu-id="263bc-1187">内部版本 14971</span><span class="sxs-lookup"><span data-stu-id="263bc-1187">Build 14971</span></span>
+## <a name="build-14971"></a><span data-ttu-id="aa113-1187">内部版本 14971</span><span class="sxs-lookup"><span data-stu-id="aa113-1187">Build 14971</span></span>
 
-<span data-ttu-id="263bc-1188">有关内部版本 14971 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1188">For general Windows information on build 14971 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1189">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1189">Fixed</span></span>
-
- - <span data-ttu-id="263bc-1190">由于这种情况超出了我们的控制，在此内部版本的适用于 Linux 的 Windows 子系统中未做更新。</span><span class="sxs-lookup"><span data-stu-id="263bc-1190">Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.</span></span>  <span data-ttu-id="263bc-1191">定期计划的更新将在下一版本中恢复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1191">Regularly scheduled updates will resume on the next release.</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1192">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1192">LTP Results:</span></span>
-<span data-ttu-id="263bc-1193">自 14965 以来无更改</span><span class="sxs-lookup"><span data-stu-id="263bc-1193">Unchanged from 14965</span></span> </br>
-<span data-ttu-id="263bc-1194">通过的测试数：664</span><span class="sxs-lookup"><span data-stu-id="263bc-1194">Number of Passing Test: 664</span></span> </br>
-<span data-ttu-id="263bc-1195">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1195">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1196">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1196">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14965)<br/>
-
-<br/>
-
-## <a name="build-14965"></a><span data-ttu-id="263bc-1197">内部版本 14965</span><span class="sxs-lookup"><span data-stu-id="263bc-1197">Build 14965</span></span>
-
-<span data-ttu-id="263bc-1198">有关内部版本 14965 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/11/09/announcing-windows-10-insider-preview-build-14965-for-mobile-and-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1198">For general Windows information on build 14965 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/11/09/announcing-windows-10-insider-preview-build-14965-for-mobile-and-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1188">有关内部版本 14971 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1188">For general Windows information on build 14971 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1199">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1199">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1189">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1189">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1200">支持 Netlink 套接字 NETLINK_ROUTE 协议的 RTM_GETLINK 和 RTM_GETADDR (GH #468)</span><span class="sxs-lookup"><span data-stu-id="263bc-1200">Support for Netlink sockets NETLINK_ROUTE protocol's RTM_GETLINK and RTM_GETADDR (GH #468)</span></span>
-  - <span data-ttu-id="263bc-1201">为网络枚举启用 ifconfig 和 ip 命令</span><span class="sxs-lookup"><span data-stu-id="263bc-1201">Enables ifconfig and ip commands for network enumeration</span></span>
-  - <span data-ttu-id="263bc-1202">在 [WSL 网络博客文章](https://blogs.msdn.microsoft.com/wsl/2016/11/08/225/)中可以找到详细信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-1202">More information can be found in our [WSL Networking blog post](https://blogs.msdn.microsoft.com/wsl/2016/11/08/225/).</span></span>
+ - <span data-ttu-id="aa113-1190">由于这种情况超出了我们的控制，在此内部版本的适用于 Linux 的 Windows 子系统中未做更新。</span><span class="sxs-lookup"><span data-stu-id="aa113-1190">Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.</span></span>  <span data-ttu-id="aa113-1191">定期计划的更新将在下一版本中恢复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1191">Regularly scheduled updates will resume on the next release.</span></span>
 
-- <span data-ttu-id="263bc-1203">/sbin 现在默认位于用户的路径中</span><span class="sxs-lookup"><span data-stu-id="263bc-1203">/sbin is now in the user's path by default</span></span>
-- <span data-ttu-id="263bc-1204">NT 用户路径现在默认会追加到 WSL 路径（即，现在可以键入 notepad.exe，无需将 System32 添加到 Linux 路径）</span><span class="sxs-lookup"><span data-stu-id="263bc-1204">NT user path now appended to the WSL path by default (i.e. you can now type notepad.exe without adding System32 to the Linux path)</span></span>
-- <span data-ttu-id="263bc-1205">添加了对 /proc/sys/kernel/cap_last_cap 的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1205">Added support for /proc/sys/kernel/cap_last_cap</span></span>
-- <span data-ttu-id="263bc-1206">现在，如果当前工作目录包含非 ANSI 字符，则可以从 WSL 启动 NT 二进制文件 (GH #1254)</span><span class="sxs-lookup"><span data-stu-id="263bc-1206">NT Binaries can now be launched from WSL when the current working directory contains non-ansi characters (GH #1254)</span></span>
-- <span data-ttu-id="263bc-1207">允许在断开连接的 unix 流套接字上关闭。</span><span class="sxs-lookup"><span data-stu-id="263bc-1207">Allow shutdown on disconnected unix stream socket.</span></span>
-- <span data-ttu-id="263bc-1208">添加了对 PR_GET_PDEATHSIG 的支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1208">Added support for PR_GET_PDEATHSIG.</span></span>
-- <span data-ttu-id="263bc-1209">添加了对 CLONE_PARENT 的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1209">Added support for CLONE_PARENT</span></span>
-- <span data-ttu-id="263bc-1210">修复了运行 bash -c "ls -alR /" | bash -c "cat" 时管道停滞的错误 (GH #1214)</span><span class="sxs-lookup"><span data-stu-id="263bc-1210">Fixed error where piping gets stuck i.e. bash -c "ls -alR /" | bash -c "cat" (GH #1214)</span></span>
-- <span data-ttu-id="263bc-1211">处理连接到当前终端的请求。</span><span class="sxs-lookup"><span data-stu-id="263bc-1211">Handle requests to connect to the current terminal.</span></span>
-- <span data-ttu-id="263bc-1212">将 /proc/<pid>/oom_score_adj 标记为可写。</span><span class="sxs-lookup"><span data-stu-id="263bc-1212">Mark /proc/<pid>/oom_score_adj as writable.</span></span>
-- <span data-ttu-id="263bc-1213">添加 /sys/fs/cgroup 文件夹。</span><span class="sxs-lookup"><span data-stu-id="263bc-1213">Add /sys/fs/cgroup folder.</span></span>
-- <span data-ttu-id="263bc-1214">sched_setaffinity 应返回关联位掩码的数目</span><span class="sxs-lookup"><span data-stu-id="263bc-1214">sched_setaffinity should return number of affinity bits mask</span></span>
-- <span data-ttu-id="263bc-1215">修复错误地假设解释器路径长度必须小于 64 个字符的 ELF 验证逻辑。</span><span class="sxs-lookup"><span data-stu-id="263bc-1215">Fix ELF validation logic which incorrectly assumes interpreter paths must be less than 64 characters long.</span></span> <span data-ttu-id="263bc-1216">(GH #743)</span><span class="sxs-lookup"><span data-stu-id="263bc-1216">(GH #743)</span></span>
-- <span data-ttu-id="263bc-1217">打开文件描述符会使控制台窗口保持打开状态 (GH #1187)</span><span class="sxs-lookup"><span data-stu-id="263bc-1217">Open file descriptors can keep console window open (GH #1187)</span></span>
-- <span data-ttu-id="263bc-1218">修复了当目标名称包含尾随斜杠时 rename() 失败的错误 (GH #1008)</span><span class="sxs-lookup"><span data-stu-id="263bc-1218">Fixeed error where rename() failed with trailing slash on target name (GH #1008)</span></span>
-- <span data-ttu-id="263bc-1219">实现 /proc/net/dev 文件</span><span class="sxs-lookup"><span data-stu-id="263bc-1219">Implement /proc/net/dev file</span></span>
-- <span data-ttu-id="263bc-1220">修复了计时器精度导致的 0.000ms ping 错误。</span><span class="sxs-lookup"><span data-stu-id="263bc-1220">Fixed 0.000ms pings due to timer resolution.</span></span>
-- <span data-ttu-id="263bc-1221">实现了 /proc/self/environ (GH #730)</span><span class="sxs-lookup"><span data-stu-id="263bc-1221">Implemented /proc/self/environ (GH #730)</span></span>
-- <span data-ttu-id="263bc-1222">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1222">Additional bugfixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1223">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1223">LTP Results:</span></span>
-<span data-ttu-id="263bc-1224">通过的测试数：664</span><span class="sxs-lookup"><span data-stu-id="263bc-1224">Number of Passing Test: 664</span></span> </br>
-<span data-ttu-id="263bc-1225">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1225">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1226">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1226">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14965)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1192">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1192">LTP Results:</span></span>
+<span data-ttu-id="aa113-1193">自 14965 以来无更改</span><span class="sxs-lookup"><span data-stu-id="aa113-1193">Unchanged from 14965</span></span> </br>
+<span data-ttu-id="aa113-1194">通过的测试数：664</span><span class="sxs-lookup"><span data-stu-id="aa113-1194">Number of Passing Test: 664</span></span> </br>
+<span data-ttu-id="aa113-1195">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1195">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1196">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1196">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14965)<br/>
 
 <br/>
 
-## <a name="build-14959"></a><span data-ttu-id="263bc-1227">内部版本 14959</span><span class="sxs-lookup"><span data-stu-id="263bc-1227">Build 14959</span></span>
+## <a name="build-14965"></a><span data-ttu-id="aa113-1197">内部版本 14965</span><span class="sxs-lookup"><span data-stu-id="aa113-1197">Build 14965</span></span>
 
-<span data-ttu-id="263bc-1228">有关内部版本 14959 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/11/03/announcing-windows-10-insider-preview-build-14959-for-mobile-and-pc/#iI82GufJxMF3POU1.97)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1228">For general Windows information on build 14959 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/11/03/announcing-windows-10-insider-preview-build-14959-for-mobile-and-pc/#iI82GufJxMF3POU1.97).</span></span><br/>
+<span data-ttu-id="aa113-1198">有关内部版本 14965 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/11/09/announcing-windows-10-insider-preview-build-14965-for-mobile-and-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1198">For general Windows information on build 14965 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/11/09/announcing-windows-10-insider-preview-build-14965-for-mobile-and-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1229">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1229">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1199">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1199">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1230">改善了 Windows 的 Pico 进程通知。</span><span class="sxs-lookup"><span data-stu-id="263bc-1230">Improved Pico Process notification for Windows.</span></span>  <span data-ttu-id="263bc-1231">在 [WSL 博客](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/)中可以找到更多信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-1231">Additional information found on the [WSL Blog](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/).</span></span>
-- <span data-ttu-id="263bc-1232">改善了 Windows 互操作的稳定性</span><span class="sxs-lookup"><span data-stu-id="263bc-1232">Improved stability with Windows interoperability</span></span>
-- <span data-ttu-id="263bc-1233">修复了在启用企业数据保护 (EDP) 后启动 bash.exe 时出现的错误 0x80070057</span><span class="sxs-lookup"><span data-stu-id="263bc-1233">Fixed error 0x80070057 when launching bash.exe when Enterprise Data Protection (EDP) is enabled</span></span>
-- <span data-ttu-id="263bc-1234">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1234">Additional bugfixes and improvements</span></span>
+- <span data-ttu-id="aa113-1200">支持 Netlink 套接字 NETLINK_ROUTE 协议的 RTM_GETLINK 和 RTM_GETADDR (GH #468)</span><span class="sxs-lookup"><span data-stu-id="aa113-1200">Support for Netlink sockets NETLINK_ROUTE protocol's RTM_GETLINK and RTM_GETADDR (GH #468)</span></span>
+  - <span data-ttu-id="aa113-1201">为网络枚举启用 ifconfig 和 ip 命令</span><span class="sxs-lookup"><span data-stu-id="aa113-1201">Enables ifconfig and ip commands for network enumeration</span></span>
+  - <span data-ttu-id="aa113-1202">在 [WSL 网络博客文章](https://blogs.msdn.microsoft.com/wsl/2016/11/08/225/)中可以找到详细信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-1202">More information can be found in our [WSL Networking blog post](https://blogs.msdn.microsoft.com/wsl/2016/11/08/225/).</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1235">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1235">LTP Results:</span></span>
-<span data-ttu-id="263bc-1236">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="263bc-1236">Number of Passing Test: 665</span></span> </br>
-<span data-ttu-id="263bc-1237">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1237">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1238">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1238">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14959)<br/>
+- <span data-ttu-id="aa113-1203">/sbin 现在默认位于用户的路径中</span><span class="sxs-lookup"><span data-stu-id="aa113-1203">/sbin is now in the user's path by default</span></span>
+- <span data-ttu-id="aa113-1204">NT 用户路径现在默认会追加到 WSL 路径（即，现在可以键入 notepad.exe，无需将 System32 添加到 Linux 路径）</span><span class="sxs-lookup"><span data-stu-id="aa113-1204">NT user path now appended to the WSL path by default (i.e. you can now type notepad.exe without adding System32 to the Linux path)</span></span>
+- <span data-ttu-id="aa113-1205">添加了对 /proc/sys/kernel/cap_last_cap 的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1205">Added support for /proc/sys/kernel/cap_last_cap</span></span>
+- <span data-ttu-id="aa113-1206">现在，如果当前工作目录包含非 ANSI 字符，则可以从 WSL 启动 NT 二进制文件 (GH #1254)</span><span class="sxs-lookup"><span data-stu-id="aa113-1206">NT Binaries can now be launched from WSL when the current working directory contains non-ansi characters (GH #1254)</span></span>
+- <span data-ttu-id="aa113-1207">允许在断开连接的 unix 流套接字上关闭。</span><span class="sxs-lookup"><span data-stu-id="aa113-1207">Allow shutdown on disconnected unix stream socket.</span></span>
+- <span data-ttu-id="aa113-1208">添加了对 PR_GET_PDEATHSIG 的支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1208">Added support for PR_GET_PDEATHSIG.</span></span>
+- <span data-ttu-id="aa113-1209">添加了对 CLONE_PARENT 的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1209">Added support for CLONE_PARENT</span></span>
+- <span data-ttu-id="aa113-1210">修复了运行 bash -c "ls -alR /" | bash -c "cat" 时管道停滞的错误 (GH #1214)</span><span class="sxs-lookup"><span data-stu-id="aa113-1210">Fixed error where piping gets stuck i.e. bash -c "ls -alR /" | bash -c "cat" (GH #1214)</span></span>
+- <span data-ttu-id="aa113-1211">处理连接到当前终端的请求。</span><span class="sxs-lookup"><span data-stu-id="aa113-1211">Handle requests to connect to the current terminal.</span></span>
+- <span data-ttu-id="aa113-1212">将 /proc/<pid>/oom_score_adj 标记为可写。</span><span class="sxs-lookup"><span data-stu-id="aa113-1212">Mark /proc/<pid>/oom_score_adj as writable.</span></span>
+- <span data-ttu-id="aa113-1213">添加 /sys/fs/cgroup 文件夹。</span><span class="sxs-lookup"><span data-stu-id="aa113-1213">Add /sys/fs/cgroup folder.</span></span>
+- <span data-ttu-id="aa113-1214">sched_setaffinity 应返回关联位掩码的数目</span><span class="sxs-lookup"><span data-stu-id="aa113-1214">sched_setaffinity should return number of affinity bits mask</span></span>
+- <span data-ttu-id="aa113-1215">修复错误地假设解释器路径长度必须小于 64 个字符的 ELF 验证逻辑。</span><span class="sxs-lookup"><span data-stu-id="aa113-1215">Fix ELF validation logic which incorrectly assumes interpreter paths must be less than 64 characters long.</span></span> <span data-ttu-id="aa113-1216">(GH #743)</span><span class="sxs-lookup"><span data-stu-id="aa113-1216">(GH #743)</span></span>
+- <span data-ttu-id="aa113-1217">打开文件描述符会使控制台窗口保持打开状态 (GH #1187)</span><span class="sxs-lookup"><span data-stu-id="aa113-1217">Open file descriptors can keep console window open (GH #1187)</span></span>
+- <span data-ttu-id="aa113-1218">修复了当目标名称包含尾随斜杠时 rename() 失败的错误 (GH #1008)</span><span class="sxs-lookup"><span data-stu-id="aa113-1218">Fixeed error where rename() failed with trailing slash on target name (GH #1008)</span></span>
+- <span data-ttu-id="aa113-1219">实现 /proc/net/dev 文件</span><span class="sxs-lookup"><span data-stu-id="aa113-1219">Implement /proc/net/dev file</span></span>
+- <span data-ttu-id="aa113-1220">修复了计时器精度导致的 0.000ms ping 错误。</span><span class="sxs-lookup"><span data-stu-id="aa113-1220">Fixed 0.000ms pings due to timer resolution.</span></span>
+- <span data-ttu-id="aa113-1221">实现了 /proc/self/environ (GH #730)</span><span class="sxs-lookup"><span data-stu-id="aa113-1221">Implemented /proc/self/environ (GH #730)</span></span>
+- <span data-ttu-id="aa113-1222">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1222">Additional bugfixes and improvements</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1223">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1223">LTP Results:</span></span>
+<span data-ttu-id="aa113-1224">通过的测试数：664</span><span class="sxs-lookup"><span data-stu-id="aa113-1224">Number of Passing Test: 664</span></span> </br>
+<span data-ttu-id="aa113-1225">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1225">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1226">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1226">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14965)<br/>
 
 <br/>
 
-## <a name="build-14955"></a><span data-ttu-id="263bc-1239">内部版本 14955</span><span class="sxs-lookup"><span data-stu-id="263bc-1239">Build 14955</span></span>
+## <a name="build-14959"></a><span data-ttu-id="aa113-1227">内部版本 14959</span><span class="sxs-lookup"><span data-stu-id="aa113-1227">Build 14959</span></span>
 
-<span data-ttu-id="263bc-1240">有关内部版本 14955 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/10/25/announcing-windows-10-insider-preview-build-14955-for-mobile-and-pc/#guGXQzKVFrZIDUYR.97)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1240">For general Windows information on build 14955 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/10/25/announcing-windows-10-insider-preview-build-14955-for-mobile-and-pc/#guGXQzKVFrZIDUYR.97).</span></span><br/>
+<span data-ttu-id="aa113-1228">有关内部版本 14959 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/11/03/announcing-windows-10-insider-preview-build-14959-for-mobile-and-pc/#iI82GufJxMF3POU1.97)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1228">For general Windows information on build 14959 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/11/03/announcing-windows-10-insider-preview-build-14959-for-mobile-and-pc/#iI82GufJxMF3POU1.97).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1241">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1241">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1229">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1229">Fixed</span></span>
 
- - <span data-ttu-id="263bc-1242">由于这种情况超出了我们的控制，在此内部版本的适用于 Linux 的 Windows 子系统中未做更新。</span><span class="sxs-lookup"><span data-stu-id="263bc-1242">Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.</span></span>  <span data-ttu-id="263bc-1243">定期计划的更新将在下一版本中恢复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1243">Regularly scheduled updates will resume on the next release.</span></span>
+- <span data-ttu-id="aa113-1230">改善了 Windows 的 Pico 进程通知。</span><span class="sxs-lookup"><span data-stu-id="aa113-1230">Improved Pico Process notification for Windows.</span></span>  <span data-ttu-id="aa113-1231">在 [WSL 博客](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/)中可以找到更多信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-1231">Additional information found on the [WSL Blog](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/).</span></span>
+- <span data-ttu-id="aa113-1232">改善了 Windows 互操作的稳定性</span><span class="sxs-lookup"><span data-stu-id="aa113-1232">Improved stability with Windows interoperability</span></span>
+- <span data-ttu-id="aa113-1233">修复了在启用企业数据保护 (EDP) 后启动 bash.exe 时出现的错误 0x80070057</span><span class="sxs-lookup"><span data-stu-id="aa113-1233">Fixed error 0x80070057 when launching bash.exe when Enterprise Data Protection (EDP) is enabled</span></span>
+- <span data-ttu-id="aa113-1234">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1234">Additional bugfixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1244">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1244">LTP Results:</span></span>
-<span data-ttu-id="263bc-1245">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="263bc-1245">Number of Passing Test: 665</span></span> </br>
-<span data-ttu-id="263bc-1246">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1246">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1247">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1247">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14955)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1235">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1235">LTP Results:</span></span>
+<span data-ttu-id="aa113-1236">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="aa113-1236">Number of Passing Test: 665</span></span> </br>
+<span data-ttu-id="aa113-1237">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1237">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1238">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1238">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14959)<br/>
 
 <br/>
 
-## <a name="build-14951"></a><span data-ttu-id="263bc-1248">内部版本 14951</span><span class="sxs-lookup"><span data-stu-id="263bc-1248">Build 14951</span></span>
+## <a name="build-14955"></a><span data-ttu-id="aa113-1239">内部版本 14955</span><span class="sxs-lookup"><span data-stu-id="aa113-1239">Build 14955</span></span>
 
-<span data-ttu-id="263bc-1249">有关内部版本 14951 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/10/19/announcing-windows-10-insider-preview-build-14951-for-mobile-and-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1249">For general Windows information on build 14951 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/10/19/announcing-windows-10-insider-preview-build-14951-for-mobile-and-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1240">有关内部版本 14955 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/10/25/announcing-windows-10-insider-preview-build-14955-for-mobile-and-pc/#guGXQzKVFrZIDUYR.97)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1240">For general Windows information on build 14955 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/10/25/announcing-windows-10-insider-preview-build-14955-for-mobile-and-pc/#guGXQzKVFrZIDUYR.97).</span></span><br/>
 
 
-### <a name="new-feature-windows--ubuntu-interoperability"></a><span data-ttu-id="263bc-1250">新功能：Windows/Ubuntu 互操作性</span><span class="sxs-lookup"><span data-stu-id="263bc-1250">New Feature: Windows / Ubuntu Interoperability</span></span>
-<span data-ttu-id="263bc-1251">现在可以直接从 WSL 命令行调用 Windows 二进制文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-1251">Windows binaries can now be invoked directly from the WSL command line.</span></span>  <span data-ttu-id="263bc-1252">这样，用户便可以通过前所未有的方式来与其 Windows 环境和系统交互。</span><span class="sxs-lookup"><span data-stu-id="263bc-1252">This gives users the ability to interact with their Windows environment and system in a way that has not been possible.</span></span>  <span data-ttu-id="263bc-1253">举个简单的例子，用户现在可以运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="263bc-1253">As a quick example, it is now possible for users to run the following commands:</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1241">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1241">Fixed</span></span>
+
+ - <span data-ttu-id="aa113-1242">由于这种情况超出了我们的控制，在此内部版本的适用于 Linux 的 Windows 子系统中未做更新。</span><span class="sxs-lookup"><span data-stu-id="aa113-1242">Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.</span></span>  <span data-ttu-id="aa113-1243">定期计划的更新将在下一版本中恢复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1243">Regularly scheduled updates will resume on the next release.</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1244">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1244">LTP Results:</span></span>
+<span data-ttu-id="aa113-1245">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="aa113-1245">Number of Passing Test: 665</span></span> </br>
+<span data-ttu-id="aa113-1246">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1246">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1247">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1247">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14955)<br/>
+
+<br/>
+
+## <a name="build-14951"></a><span data-ttu-id="aa113-1248">内部版本 14951</span><span class="sxs-lookup"><span data-stu-id="aa113-1248">Build 14951</span></span>
+
+<span data-ttu-id="aa113-1249">有关内部版本 14951 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/10/19/announcing-windows-10-insider-preview-build-14951-for-mobile-and-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1249">For general Windows information on build 14951 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/10/19/announcing-windows-10-insider-preview-build-14951-for-mobile-and-pc/).</span></span><br/>
+
+
+### <a name="new-feature-windows--ubuntu-interoperability"></a><span data-ttu-id="aa113-1250">新功能：Windows/Ubuntu 互操作性</span><span class="sxs-lookup"><span data-stu-id="aa113-1250">New Feature: Windows / Ubuntu Interoperability</span></span>
+<span data-ttu-id="aa113-1251">现在可以直接从 WSL 命令行调用 Windows 二进制文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-1251">Windows binaries can now be invoked directly from the WSL command line.</span></span>  <span data-ttu-id="aa113-1252">这样，用户便可以通过前所未有的方式来与其 Windows 环境和系统交互。</span><span class="sxs-lookup"><span data-stu-id="aa113-1252">This gives users the ability to interact with their Windows environment and system in a way that has not been possible.</span></span>  <span data-ttu-id="aa113-1253">举个简单的例子，用户现在可以运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="aa113-1253">As a quick example, it is now possible for users to run the following commands:</span></span>
 
 ```bash
 $ export PATH=$PATH:/mnt/c/Windows/System32
@@ -1574,309 +1574,309 @@ $ ls -la | findstr.exe foo.txt
 $ cmd.exe /c dir
 ```
 
-<span data-ttu-id="263bc-1254">可在以下资源中找到详细信息：</span><span class="sxs-lookup"><span data-stu-id="263bc-1254">More information can be found at:</span></span>
+<span data-ttu-id="aa113-1254">可在以下资源中找到详细信息：</span><span class="sxs-lookup"><span data-stu-id="aa113-1254">More information can be found at:</span></span>
 
-- [<span data-ttu-id="263bc-1255">WSL 团队的互操作博客</span><span class="sxs-lookup"><span data-stu-id="263bc-1255">WSL Team Blog for Interop</span></span>](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
-- [<span data-ttu-id="263bc-1256">MSDN 互操作文档</span><span class="sxs-lookup"><span data-stu-id="263bc-1256">MSDN Interop Documentation</span></span>](https://msdn.microsoft.com/commandline/wsl/interop)<br/>
+- [<span data-ttu-id="aa113-1255">WSL 团队的互操作博客</span><span class="sxs-lookup"><span data-stu-id="aa113-1255">WSL Team Blog for Interop</span></span>](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
+- [<span data-ttu-id="aa113-1256">MSDN 互操作文档</span><span class="sxs-lookup"><span data-stu-id="aa113-1256">MSDN Interop Documentation</span></span>](https://msdn.microsoft.com/commandline/wsl/interop)<br/>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1257">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1257">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1257">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1257">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1258">现在将为所有新的 WSL 实例安装 Ubuntu 16.04 (Xenial)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1258">Ubuntu 16.04 (Xenial) is now installed for all new WSL instances.</span></span>  <span data-ttu-id="263bc-1259">使用现有 14.04 (Trusty) 实例的用户不会自动升级。</span><span class="sxs-lookup"><span data-stu-id="263bc-1259">Users with existing 14.04 (Trusty) instances will not be automatically upgraded.</span></span>
-- <span data-ttu-id="263bc-1260">现在会显示安装过程中指定的区域设置</span><span class="sxs-lookup"><span data-stu-id="263bc-1260">Locale set during install is now displayed</span></span>
-- <span data-ttu-id="263bc-1261">终端改进，包括修复了不是总能将 WSL 进程重定向到文件的 bug</span><span class="sxs-lookup"><span data-stu-id="263bc-1261">Terminal improvements including bug where redirecting a WSL process to a file does not always work</span></span>
-- <span data-ttu-id="263bc-1262">控制台生存期应与 bash.exe 生存期密切关联</span><span class="sxs-lookup"><span data-stu-id="263bc-1262">Console lifetime should be tied to bash.exe lifetime</span></span>
-- <span data-ttu-id="263bc-1263">控制台窗口大小应使用可视大小，而不是缓冲区大小</span><span class="sxs-lookup"><span data-stu-id="263bc-1263">Console window size should use visible size, not buffer size</span></span>
-- <span data-ttu-id="263bc-1264">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1264">Additional bugfixes and improvements</span></span>
+- <span data-ttu-id="aa113-1258">现在将为所有新的 WSL 实例安装 Ubuntu 16.04 (Xenial)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1258">Ubuntu 16.04 (Xenial) is now installed for all new WSL instances.</span></span>  <span data-ttu-id="aa113-1259">使用现有 14.04 (Trusty) 实例的用户不会自动升级。</span><span class="sxs-lookup"><span data-stu-id="aa113-1259">Users with existing 14.04 (Trusty) instances will not be automatically upgraded.</span></span>
+- <span data-ttu-id="aa113-1260">现在会显示安装过程中指定的区域设置</span><span class="sxs-lookup"><span data-stu-id="aa113-1260">Locale set during install is now displayed</span></span>
+- <span data-ttu-id="aa113-1261">终端改进，包括修复了不是总能将 WSL 进程重定向到文件的 bug</span><span class="sxs-lookup"><span data-stu-id="aa113-1261">Terminal improvements including bug where redirecting a WSL process to a file does not always work</span></span>
+- <span data-ttu-id="aa113-1262">控制台生存期应与 bash.exe 生存期密切关联</span><span class="sxs-lookup"><span data-stu-id="aa113-1262">Console lifetime should be tied to bash.exe lifetime</span></span>
+- <span data-ttu-id="aa113-1263">控制台窗口大小应使用可视大小，而不是缓冲区大小</span><span class="sxs-lookup"><span data-stu-id="aa113-1263">Console window size should use visible size, not buffer size</span></span>
+- <span data-ttu-id="aa113-1264">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1264">Additional bugfixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1265">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1265">LTP Results:</span></span>
-<span data-ttu-id="263bc-1266">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="263bc-1266">Number of Passing Test: 665</span></span> </br>
-<span data-ttu-id="263bc-1267">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1267">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1268">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1268">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14951)<br/>
-
-<br/>
-
-## <a name="build-14946"></a><span data-ttu-id="263bc-1269">内部版本 14946</span><span class="sxs-lookup"><span data-stu-id="263bc-1269">Build 14946</span></span>
-
-<span data-ttu-id="263bc-1270">有关内部版本 14946 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/10/13/announcing-windows-10-insider-preview-build-14946-for-pc-and-mobile/#xj8GdVooEqo4H7H7.97)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1270">For general Windows information on build 14946 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/10/13/announcing-windows-10-insider-preview-build-14946-for-pc-and-mobile/#xj8GdVooEqo4H7H7.97).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1271">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1271">Fixed</span></span>
-
-- <span data-ttu-id="263bc-1272">修复了阻止使用包含空格或引号的 NT 用户名为用户创建 WSL 用户帐户的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-1272">Fixed an issue that prevented creating WSL user accounts for users with NT usernames that contain spaces or quotes.</span></span> 
-- <span data-ttu-id="263bc-1273">更改 VolFs 和 DrvFs，以在统计信息中返回 0 作为目录的链接计数</span><span class="sxs-lookup"><span data-stu-id="263bc-1273">Change VolFs and DrvFs to return 0 for directory's link count in stat</span></span>
-- <span data-ttu-id="263bc-1274">支持 IPV6_MULTICAST_HOPS 套接字选项。</span><span class="sxs-lookup"><span data-stu-id="263bc-1274">Support IPV6_MULTICAST_HOPS socket option.</span></span>
-- <span data-ttu-id="263bc-1275">限制为每个 tty 只有一个控制台 I/O 循环。</span><span class="sxs-lookup"><span data-stu-id="263bc-1275">Limit to a single console I/O loop per tty.</span></span> <span data-ttu-id="263bc-1276">例如，可运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="263bc-1276">Example: the following command is possible:</span></span>
-  - <span data-ttu-id="263bc-1277">bash -c "echo data" | bash -c "ssh user@example.com 'cat > foo.txt'"</span><span class="sxs-lookup"><span data-stu-id="263bc-1277">bash -c "echo data" | bash -c "ssh user@example.com 'cat > foo.txt'"</span></span>
-
-- <span data-ttu-id="263bc-1278">在 /proc/cpuinfo 中将空格替换为制表符 (GH #1115)</span><span class="sxs-lookup"><span data-stu-id="263bc-1278">replace spaces with tabs in /proc/cpuinfo (GH #1115)</span></span>
-- <span data-ttu-id="263bc-1279">DrvFs 现在会显示在 mountinfo 中，其中包含一个与已装载的 Windows 卷匹配的名称</span><span class="sxs-lookup"><span data-stu-id="263bc-1279">DrvFs now appears in mountinfo with a name that matches mounted Windows volume</span></span>
-- <span data-ttu-id="263bc-1280">/home 和 /root 现在会显示在 mountinfo 中，并显示正确的名称</span><span class="sxs-lookup"><span data-stu-id="263bc-1280">/home and /root now appear in mountinfo with correct names</span></span>
-- <span data-ttu-id="263bc-1281">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1281">Additional bugfixes and improvements</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1282">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1282">LTP Results:</span></span>
-<span data-ttu-id="263bc-1283">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="263bc-1283">Number of Passing Test: 665</span></span> </br>
-<span data-ttu-id="263bc-1284">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1284">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1285">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1285">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14946)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1265">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1265">LTP Results:</span></span>
+<span data-ttu-id="aa113-1266">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="aa113-1266">Number of Passing Test: 665</span></span> </br>
+<span data-ttu-id="aa113-1267">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1267">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1268">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1268">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14951)<br/>
 
 <br/>
 
-## <a name="build-14942"></a><span data-ttu-id="263bc-1286">内部版本 14942</span><span class="sxs-lookup"><span data-stu-id="263bc-1286">Build 14942</span></span>
+## <a name="build-14946"></a><span data-ttu-id="aa113-1269">内部版本 14946</span><span class="sxs-lookup"><span data-stu-id="aa113-1269">Build 14946</span></span>
 
-<span data-ttu-id="263bc-1287">有关内部版本 14942 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/onefourninefourtwoooooo)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1287">For general Windows information on build 14942 visit the [Windows Blog](https://aka.ms/onefourninefourtwoooooo).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1288">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1288">Fixed</span></span>
-
-- <span data-ttu-id="263bc-1289">解决了一些 bug 检查问题，包括阻止 SSH 的“尝试执行不可执行的内存”网络崩溃</span><span class="sxs-lookup"><span data-stu-id="263bc-1289">A number of bugchecks addressed, including the "ATTEMPTED EXECUTE OF NOEXECUTE MEMORY" networking crash which was blocking SSH</span></span>
-- <span data-ttu-id="263bc-1290">inotifiy 现在支持从 DrvFs 上的 Windows 应用程序生成通知</span><span class="sxs-lookup"><span data-stu-id="263bc-1290">inotifiy support for notifications generated from Windows applications on DrvFs is now in</span></span>
-- <span data-ttu-id="263bc-1291">实现 mongod 的 TCP_KEEPIDLE 和 TCP_KEEPINTVL。</span><span class="sxs-lookup"><span data-stu-id="263bc-1291">Implement TCP_KEEPIDLE and TCP_KEEPINTVL for mongod.</span></span> <span data-ttu-id="263bc-1292">(GH #695)</span><span class="sxs-lookup"><span data-stu-id="263bc-1292">(GH #695)</span></span>
-- <span data-ttu-id="263bc-1293">实现 pivot_root 系统调用</span><span class="sxs-lookup"><span data-stu-id="263bc-1293">Implement the pivot_root system call</span></span>
-- <span data-ttu-id="263bc-1294">实现 SO_DONTROUTE 的套接字选项</span><span class="sxs-lookup"><span data-stu-id="263bc-1294">Implement socket option for SO_DONTROUTE</span></span>
-- <span data-ttu-id="263bc-1295">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1295">Additional bugfixes and improvements</span></span>
+<span data-ttu-id="aa113-1270">有关内部版本 14946 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/10/13/announcing-windows-10-insider-preview-build-14946-for-pc-and-mobile/#xj8GdVooEqo4H7H7.97)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1270">For general Windows information on build 14946 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/10/13/announcing-windows-10-insider-preview-build-14946-for-pc-and-mobile/#xj8GdVooEqo4H7H7.97).</span></span><br/>
 
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1296">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1296">LTP Results:</span></span>
-<span data-ttu-id="263bc-1297">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="263bc-1297">Number of Passing Test: 665</span></span> </br>
-<span data-ttu-id="263bc-1298">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="263bc-1298">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
-[<span data-ttu-id="263bc-1299">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1299">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14942)<br/>
+### <a name="fixed"></a><span data-ttu-id="aa113-1271">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1271">Fixed</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1300">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1300">Syscall Support</span></span>
-<span data-ttu-id="263bc-1301">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1301">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1302">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1302">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+- <span data-ttu-id="aa113-1272">修复了阻止使用包含空格或引号的 NT 用户名为用户创建 WSL 用户帐户的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-1272">Fixed an issue that prevented creating WSL user accounts for users with NT usernames that contain spaces or quotes.</span></span> 
+- <span data-ttu-id="aa113-1273">更改 VolFs 和 DrvFs，以在统计信息中返回 0 作为目录的链接计数</span><span class="sxs-lookup"><span data-stu-id="aa113-1273">Change VolFs and DrvFs to return 0 for directory's link count in stat</span></span>
+- <span data-ttu-id="aa113-1274">支持 IPV6_MULTICAST_HOPS 套接字选项。</span><span class="sxs-lookup"><span data-stu-id="aa113-1274">Support IPV6_MULTICAST_HOPS socket option.</span></span>
+- <span data-ttu-id="aa113-1275">限制为每个 tty 只有一个控制台 I/O 循环。</span><span class="sxs-lookup"><span data-stu-id="aa113-1275">Limit to a single console I/O loop per tty.</span></span> <span data-ttu-id="aa113-1276">例如，可运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="aa113-1276">Example: the following command is possible:</span></span>
+  - <span data-ttu-id="aa113-1277">bash -c "echo data" | bash -c "ssh user@example.com 'cat > foo.txt'"</span><span class="sxs-lookup"><span data-stu-id="aa113-1277">bash -c "echo data" | bash -c "ssh user@example.com 'cat > foo.txt'"</span></span>
+
+- <span data-ttu-id="aa113-1278">在 /proc/cpuinfo 中将空格替换为制表符 (GH #1115)</span><span class="sxs-lookup"><span data-stu-id="aa113-1278">replace spaces with tabs in /proc/cpuinfo (GH #1115)</span></span>
+- <span data-ttu-id="aa113-1279">DrvFs 现在会显示在 mountinfo 中，其中包含一个与已装载的 Windows 卷匹配的名称</span><span class="sxs-lookup"><span data-stu-id="aa113-1279">DrvFs now appears in mountinfo with a name that matches mounted Windows volume</span></span>
+- <span data-ttu-id="aa113-1280">/home 和 /root 现在会显示在 mountinfo 中，并显示正确的名称</span><span class="sxs-lookup"><span data-stu-id="aa113-1280">/home and /root now appear in mountinfo with correct names</span></span>
+- <span data-ttu-id="aa113-1281">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1281">Additional bugfixes and improvements</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1282">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1282">LTP Results:</span></span>
+<span data-ttu-id="aa113-1283">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="aa113-1283">Number of Passing Test: 665</span></span> </br>
+<span data-ttu-id="aa113-1284">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1284">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1285">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1285">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14946)<br/>
+
+<br/>
+
+## <a name="build-14942"></a><span data-ttu-id="aa113-1286">内部版本 14942</span><span class="sxs-lookup"><span data-stu-id="aa113-1286">Build 14942</span></span>
+
+<span data-ttu-id="aa113-1287">有关内部版本 14942 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/onefourninefourtwoooooo)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1287">For general Windows information on build 14942 visit the [Windows Blog](https://aka.ms/onefourninefourtwoooooo).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-1288">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1288">Fixed</span></span>
+
+- <span data-ttu-id="aa113-1289">解决了一些 bug 检查问题，包括阻止 SSH 的“尝试执行不可执行的内存”网络崩溃</span><span class="sxs-lookup"><span data-stu-id="aa113-1289">A number of bugchecks addressed, including the "ATTEMPTED EXECUTE OF NOEXECUTE MEMORY" networking crash which was blocking SSH</span></span>
+- <span data-ttu-id="aa113-1290">inotifiy 现在支持从 DrvFs 上的 Windows 应用程序生成通知</span><span class="sxs-lookup"><span data-stu-id="aa113-1290">inotifiy support for notifications generated from Windows applications on DrvFs is now in</span></span>
+- <span data-ttu-id="aa113-1291">实现 mongod 的 TCP_KEEPIDLE 和 TCP_KEEPINTVL。</span><span class="sxs-lookup"><span data-stu-id="aa113-1291">Implement TCP_KEEPIDLE and TCP_KEEPINTVL for mongod.</span></span> <span data-ttu-id="aa113-1292">(GH #695)</span><span class="sxs-lookup"><span data-stu-id="aa113-1292">(GH #695)</span></span>
+- <span data-ttu-id="aa113-1293">实现 pivot_root 系统调用</span><span class="sxs-lookup"><span data-stu-id="aa113-1293">Implement the pivot_root system call</span></span>
+- <span data-ttu-id="aa113-1294">实现 SO_DONTROUTE 的套接字选项</span><span class="sxs-lookup"><span data-stu-id="aa113-1294">Implement socket option for SO_DONTROUTE</span></span>
+- <span data-ttu-id="aa113-1295">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1295">Additional bugfixes and improvements</span></span>
+
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1296">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1296">LTP Results:</span></span>
+<span data-ttu-id="aa113-1297">通过的测试数：665</span><span class="sxs-lookup"><span data-stu-id="aa113-1297">Number of Passing Test: 665</span></span> </br>
+<span data-ttu-id="aa113-1298">未通过的测试数（失败、已跳过等）：263</span><span class="sxs-lookup"><span data-stu-id="aa113-1298">Number of non-Passing (failing, skipped, etc…): 263</span></span> </br>
+[<span data-ttu-id="aa113-1299">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1299">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14942)<br/>
+
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1300">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1300">Syscall Support</span></span>
+<span data-ttu-id="aa113-1301">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1301">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1302">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1302">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `pivot_root`<br/>
 <br/>
 
-## <a name="build-14936"></a><span data-ttu-id="263bc-1303">内部版本 14936</span><span class="sxs-lookup"><span data-stu-id="263bc-1303">Build 14936</span></span>
+## <a name="build-14936"></a><span data-ttu-id="aa113-1303">内部版本 14936</span><span class="sxs-lookup"><span data-stu-id="aa113-1303">Build 14936</span></span>
 
-<span data-ttu-id="263bc-1304">有关内部版本 14936 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/09/28/announcing-windows-10-insider-preview-build-14936-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1304">For general Windows information on build 14936 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/09/28/announcing-windows-10-insider-preview-build-14936-for-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1304">有关内部版本 14936 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/09/28/announcing-windows-10-insider-preview-build-14936-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1304">For general Windows information on build 14936 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/09/28/announcing-windows-10-insider-preview-build-14936-for-pc/).</span></span><br/>
 
 
-<span data-ttu-id="263bc-1305">注意：在即将发布的版本中，WSL 将会安装 Ubuntu 版本16.04 (Xenial) 而不是 Ubuntu 14.04 (Trusty)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1305">Note: WSL will install Ubuntu version 16.04 (Xenial) instead of Ubuntu 14.04 (Trusty) in an upcoming release.</span></span>  <span data-ttu-id="263bc-1306">此更改将应用到安装新实例的预览体验版（lxrun /install 或首次运行 bash.exe）。</span><span class="sxs-lookup"><span data-stu-id="263bc-1306">This change will apply to Insiders installing new instances (lxrun.exe /install or first run of bash.exe).</span></span>  <span data-ttu-id="263bc-1307">包含 Trusty 的现有实例不会自动升级。</span><span class="sxs-lookup"><span data-stu-id="263bc-1307">Existing instances with Trusty will not be upgraded automatically.</span></span> <span data-ttu-id="263bc-1308">用户可以使用 do-release-upgrade 命令将其 Trusty 映像升级到 Xenial。</span><span class="sxs-lookup"><span data-stu-id="263bc-1308">Users can upgrade their Trusty image to Xenial using the do-release-upgrade command.</span></span>
+<span data-ttu-id="aa113-1305">注意：在即将发布的版本中，WSL 将会安装 Ubuntu 版本16.04 (Xenial) 而不是 Ubuntu 14.04 (Trusty)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1305">Note: WSL will install Ubuntu version 16.04 (Xenial) instead of Ubuntu 14.04 (Trusty) in an upcoming release.</span></span>  <span data-ttu-id="aa113-1306">此更改将应用到安装新实例的预览体验版（lxrun /install 或首次运行 bash.exe）。</span><span class="sxs-lookup"><span data-stu-id="aa113-1306">This change will apply to Insiders installing new instances (lxrun.exe /install or first run of bash.exe).</span></span>  <span data-ttu-id="aa113-1307">包含 Trusty 的现有实例不会自动升级。</span><span class="sxs-lookup"><span data-stu-id="aa113-1307">Existing instances with Trusty will not be upgraded automatically.</span></span> <span data-ttu-id="aa113-1308">用户可以使用 do-release-upgrade 命令将其 Trusty 映像升级到 Xenial。</span><span class="sxs-lookup"><span data-stu-id="aa113-1308">Users can upgrade their Trusty image to Xenial using the do-release-upgrade command.</span></span>
 
-### <a name="known-issue"></a><span data-ttu-id="263bc-1309">已知问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1309">Known Issue</span></span>
-<span data-ttu-id="263bc-1310">WSL 遇到了某些套接字实现的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-1310">WSL is experiencing an issue with some socket implementations.</span></span>  <span data-ttu-id="263bc-1311">bug 检查将自身显示为崩溃，出现错误“尝试执行不可执行的内存”。</span><span class="sxs-lookup"><span data-stu-id="263bc-1311">The bugcheck manifests itself as a crash with the error "ATTEMPTED EXECUTE OF NOEXECUTE MEMORY".</span></span>  <span data-ttu-id="263bc-1312">此问题的最常见表现形式是使用 ssh 时发生崩溃。</span><span class="sxs-lookup"><span data-stu-id="263bc-1312">The most common manifestation of this issue is a crash when using ssh.</span></span>  <span data-ttu-id="263bc-1313">根本原因已在内部版本中修复，将会尽快推送到预览体验版。</span><span class="sxs-lookup"><span data-stu-id="263bc-1313">The root cause is fixed on internal builds and will be pushed to Insiders at the earliest opportunity.</span></span>
+### <a name="known-issue"></a><span data-ttu-id="aa113-1309">已知问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1309">Known Issue</span></span>
+<span data-ttu-id="aa113-1310">WSL 遇到了某些套接字实现的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-1310">WSL is experiencing an issue with some socket implementations.</span></span>  <span data-ttu-id="aa113-1311">bug 检查将自身显示为崩溃，出现错误“尝试执行不可执行的内存”。</span><span class="sxs-lookup"><span data-stu-id="aa113-1311">The bugcheck manifests itself as a crash with the error "ATTEMPTED EXECUTE OF NOEXECUTE MEMORY".</span></span>  <span data-ttu-id="aa113-1312">此问题的最常见表现形式是使用 ssh 时发生崩溃。</span><span class="sxs-lookup"><span data-stu-id="aa113-1312">The most common manifestation of this issue is a crash when using ssh.</span></span>  <span data-ttu-id="aa113-1313">根本原因已在内部版本中修复，将会尽快推送到预览体验版。</span><span class="sxs-lookup"><span data-stu-id="aa113-1313">The root cause is fixed on internal builds and will be pushed to Insiders at the earliest opportunity.</span></span>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1314">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1314">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1314">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1314">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1315">实现了 chroot 系统调用</span><span class="sxs-lookup"><span data-stu-id="263bc-1315">Implemented the chroot system call</span></span>
-- <span data-ttu-id="263bc-1316">inotifiy 的改进，~~包括支持从 DrvFs 上的 Windows 应用程序生成通知~~</span><span class="sxs-lookup"><span data-stu-id="263bc-1316">Improvements in inotify ~~including support for notifications generated from Windows applications on DrvFs~~</span></span>
-  - <span data-ttu-id="263bc-1317">更正：对源自 Windows 应用程序的更改的 Inotify 支持目前不可用。</span><span class="sxs-lookup"><span data-stu-id="263bc-1317">Correction: Inotify support for changes originating from Windows applications not available at this time.</span></span>
-- <span data-ttu-id="263bc-1318">与 IPV6::<port n> 的套接字绑定现在支持 IPV6_V6ONLY（GH #68、#157、#393、#460、#674、#740、#982、#996）</span><span class="sxs-lookup"><span data-stu-id="263bc-1318">Socket binding to IPV6::<port n> now supports IPV6_V6ONLY  (GH #68, #157, #393, #460, #674, #740, #982, #996)</span></span>
-- <span data-ttu-id="263bc-1319">实现了 waitid 系统调用的 WNOWAIT 行为 (GH #638)</span><span class="sxs-lookup"><span data-stu-id="263bc-1319">WNOWAIT behavior for waitid systemcall implemented (GH #638)</span></span>
-- <span data-ttu-id="263bc-1320">支持 IP 套接字选项 IP_HDRINCL 和 IP_TTL</span><span class="sxs-lookup"><span data-stu-id="263bc-1320">Support for IP socket options IP_HDRINCL and IP_TTL</span></span>
-- <span data-ttu-id="263bc-1321">零长度 read() 应立即返回 (GH #975)</span><span class="sxs-lookup"><span data-stu-id="263bc-1321">Zero-length read() should return immediately (GH #975)</span></span>
-- <span data-ttu-id="263bc-1322">在 .tar 文件中正确处理不包含 NULL 终止符的文件名和文件名前缀。</span><span class="sxs-lookup"><span data-stu-id="263bc-1322">Correctly handle filenames and filename prefixes that don't include a NULL terminator in a .tar file.</span></span>
-- <span data-ttu-id="263bc-1323">对 /dev/null 的 epoll 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1323">epoll support for /dev/null</span></span>
-- <span data-ttu-id="263bc-1324">修复 /dev/alarm 时间源</span><span class="sxs-lookup"><span data-stu-id="263bc-1324">Fix /dev/alarm time source</span></span>
-- <span data-ttu-id="263bc-1325">Bash -c 现在可以重定向到文件</span><span class="sxs-lookup"><span data-stu-id="263bc-1325">Bash -c now able to redirect to a file</span></span>
-- <span data-ttu-id="263bc-1326">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1326">Additional bugfixes and improvements</span></span>
+- <span data-ttu-id="aa113-1315">实现了 chroot 系统调用</span><span class="sxs-lookup"><span data-stu-id="aa113-1315">Implemented the chroot system call</span></span>
+- <span data-ttu-id="aa113-1316">inotifiy 的改进，~~包括支持从 DrvFs 上的 Windows 应用程序生成通知~~</span><span class="sxs-lookup"><span data-stu-id="aa113-1316">Improvements in inotify ~~including support for notifications generated from Windows applications on DrvFs~~</span></span>
+  - <span data-ttu-id="aa113-1317">更正：对源自 Windows 应用程序的更改的 Inotify 支持目前不可用。</span><span class="sxs-lookup"><span data-stu-id="aa113-1317">Correction: Inotify support for changes originating from Windows applications not available at this time.</span></span>
+- <span data-ttu-id="aa113-1318">与 IPV6::<port n> 的套接字绑定现在支持 IPV6_V6ONLY（GH #68、#157、#393、#460、#674、#740、#982、#996）</span><span class="sxs-lookup"><span data-stu-id="aa113-1318">Socket binding to IPV6::<port n> now supports IPV6_V6ONLY  (GH #68, #157, #393, #460, #674, #740, #982, #996)</span></span>
+- <span data-ttu-id="aa113-1319">实现了 waitid 系统调用的 WNOWAIT 行为 (GH #638)</span><span class="sxs-lookup"><span data-stu-id="aa113-1319">WNOWAIT behavior for waitid systemcall implemented (GH #638)</span></span>
+- <span data-ttu-id="aa113-1320">支持 IP 套接字选项 IP_HDRINCL 和 IP_TTL</span><span class="sxs-lookup"><span data-stu-id="aa113-1320">Support for IP socket options IP_HDRINCL and IP_TTL</span></span>
+- <span data-ttu-id="aa113-1321">零长度 read() 应立即返回 (GH #975)</span><span class="sxs-lookup"><span data-stu-id="aa113-1321">Zero-length read() should return immediately (GH #975)</span></span>
+- <span data-ttu-id="aa113-1322">在 .tar 文件中正确处理不包含 NULL 终止符的文件名和文件名前缀。</span><span class="sxs-lookup"><span data-stu-id="aa113-1322">Correctly handle filenames and filename prefixes that don't include a NULL terminator in a .tar file.</span></span>
+- <span data-ttu-id="aa113-1323">对 /dev/null 的 epoll 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1323">epoll support for /dev/null</span></span>
+- <span data-ttu-id="aa113-1324">修复 /dev/alarm 时间源</span><span class="sxs-lookup"><span data-stu-id="aa113-1324">Fix /dev/alarm time source</span></span>
+- <span data-ttu-id="aa113-1325">Bash -c 现在可以重定向到文件</span><span class="sxs-lookup"><span data-stu-id="aa113-1325">Bash -c now able to redirect to a file</span></span>
+- <span data-ttu-id="aa113-1326">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1326">Additional bugfixes and improvements</span></span>
 
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1327">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1327">LTP Results:</span></span>
-<span data-ttu-id="263bc-1328">通过的测试数：664</span><span class="sxs-lookup"><span data-stu-id="263bc-1328">Number of Passing Test: 664</span></span> </br>
-<span data-ttu-id="263bc-1329">未通过的测试数（失败、已跳过等）：264</span><span class="sxs-lookup"><span data-stu-id="263bc-1329">Number of non-Passing (failing, skipped, etc…): 264</span></span> </br>
-[<span data-ttu-id="263bc-1330">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1330">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14936)<br/>
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1327">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1327">LTP Results:</span></span>
+<span data-ttu-id="aa113-1328">通过的测试数：664</span><span class="sxs-lookup"><span data-stu-id="aa113-1328">Number of Passing Test: 664</span></span> </br>
+<span data-ttu-id="aa113-1329">未通过的测试数（失败、已跳过等）：264</span><span class="sxs-lookup"><span data-stu-id="aa113-1329">Number of non-Passing (failing, skipped, etc…): 264</span></span> </br>
+[<span data-ttu-id="aa113-1330">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1330">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14936)<br/>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1331">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1331">Syscall Support</span></span>
-<span data-ttu-id="263bc-1332">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1332">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1333">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1333">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1331">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1331">Syscall Support</span></span>
+<span data-ttu-id="aa113-1332">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1332">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1333">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1333">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `chroot`<br/>
 <br/>
 
-## <a name="build-14931"></a><span data-ttu-id="263bc-1334">内部版本 14931</span><span class="sxs-lookup"><span data-stu-id="263bc-1334">Build 14931</span></span>
+## <a name="build-14931"></a><span data-ttu-id="aa113-1334">内部版本 14931</span><span class="sxs-lookup"><span data-stu-id="aa113-1334">Build 14931</span></span>
 
-<span data-ttu-id="263bc-1335">有关内部版本 14931 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/09/21/announcing-windows-10-insider-preview-build-14931-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1335">For general Windows information on build 14931 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/09/21/announcing-windows-10-insider-preview-build-14931-for-pc/).</span></span><br/>
-
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1336">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1336">Fixed</span></span>
-
- - <span data-ttu-id="263bc-1337">由于这种情况超出了我们的控制，在此内部版本的适用于 Linux 的 Windows 子系统中未做更新。</span><span class="sxs-lookup"><span data-stu-id="263bc-1337">Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.</span></span>  <span data-ttu-id="263bc-1338">定期计划的更新将在下一版本中恢复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1338">Regularly scheduled updates will resume in the next release.</span></span>
-
-<br/>
-
-## <a name="build-14926"></a><span data-ttu-id="263bc-1339">内部版本 14926</span><span class="sxs-lookup"><span data-stu-id="263bc-1339">Build 14926</span></span>
-
-<span data-ttu-id="263bc-1340">有关内部版本 14926 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/09/14/announcing-windows-10-insider-preview-build-14926-for-pc-and-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1340">For general Windows information on build 14926 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/09/14/announcing-windows-10-insider-preview-build-14926-for-pc-and-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-1335">有关内部版本 14931 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/09/21/announcing-windows-10-insider-preview-build-14931-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1335">For general Windows information on build 14931 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/09/21/announcing-windows-10-insider-preview-build-14931-for-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1341">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1341">Fixed</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1336">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1336">Fixed</span></span>
 
-- <span data-ttu-id="263bc-1342">Ping 现在可以在没有管理员特权的控制台中正常运行</span><span class="sxs-lookup"><span data-stu-id="263bc-1342">Ping now works in consoles which do not have administrator privileges</span></span>
-- <span data-ttu-id="263bc-1343">现在支持 Ping6，也无需管理员特权</span><span class="sxs-lookup"><span data-stu-id="263bc-1343">Ping6 now supported, also without administrator privileges</span></span>
-- <span data-ttu-id="263bc-1344">对通过 WSL 修改的文件的 Inotify 支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1344">Inotify support for files modified through WSL.</span></span> <span data-ttu-id="263bc-1345">(GH #216)</span><span class="sxs-lookup"><span data-stu-id="263bc-1345">(GH #216)</span></span>
-  - <span data-ttu-id="263bc-1346">支持的标志：</span><span class="sxs-lookup"><span data-stu-id="263bc-1346">Flags supported:</span></span>
-    - <span data-ttu-id="263bc-1347">inotify_init1：LX_O_CLOEXEC、LX_O_NONBLOCK</span><span class="sxs-lookup"><span data-stu-id="263bc-1347">inotify_init1: LX_O_CLOEXEC, LX_O_NONBLOCK</span></span>
-    - <span data-ttu-id="263bc-1348">inotify_add_watch 事件：LX_IN_ACCESS、LX_IN_MODIFY、LX_IN_ATTRIB、LX_IN_CLOSE_WRITE、LX_IN_CLOSE_NOWRITE、LX_IN_OPEN、LX_IN_MOVED_FROM、LX_IN_MOVED_TO、LX_IN_CREATE、LX_IN_DELETE、LX_IN_DELETE_SELF、LX_IN_MOVE_SELF</span><span class="sxs-lookup"><span data-stu-id="263bc-1348">inotify_add_watch events: LX_IN_ACCESS, LX_IN_MODIFY, LX_IN_ATTRIB, LX_IN_CLOSE_WRITE, LX_IN_CLOSE_NOWRITE, LX_IN_OPEN, LX_IN_MOVED_FROM, LX_IN_MOVED_TO, LX_IN_CREATE, LX_IN_DELETE, LX_IN_DELETE_SELF, LX_IN_MOVE_SELF</span></span>
-    - <span data-ttu-id="263bc-1349">inotify_add_watch 属性：LX_IN_DONT_FOLLOW、LX_IN_EXCL_UNLINK、LX_IN_MASK_ADD、LX_IN_ONESHOT、LX_IN_ONLYDIR</span><span class="sxs-lookup"><span data-stu-id="263bc-1349">inotify_add_watch attributes: LX_IN_DONT_FOLLOW, LX_IN_EXCL_UNLINK, LX_IN_MASK_ADD, LX_IN_ONESHOT, LX_IN_ONLYDIR</span></span>
-    - <span data-ttu-id="263bc-1350">读取输出：LX_IN_ISDIR、LX_IN_IGNORED</span><span class="sxs-lookup"><span data-stu-id="263bc-1350">read output: LX_IN_ISDIR, LX_IN_IGNORED</span></span>
-  - <span data-ttu-id="263bc-1351">已知问题：修改 Windows 应用程序中的文件不会生成任何事件</span><span class="sxs-lookup"><span data-stu-id="263bc-1351">Known issue: Modifying files from Windows applications does not generate any events</span></span>
-- <span data-ttu-id="263bc-1352">Unix 套接字现在支持 SCM_CREDENTIALS</span><span class="sxs-lookup"><span data-stu-id="263bc-1352">Unix socket now supports SCM_CREDENTIALS</span></span>
-
-### <a name="ltp-results"></a><span data-ttu-id="263bc-1353">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="263bc-1353">LTP Results:</span></span>
-<span data-ttu-id="263bc-1354">通过的测试数：651</span><span class="sxs-lookup"><span data-stu-id="263bc-1354">Number of Passing Test: 651</span></span> </br>
-<span data-ttu-id="263bc-1355">未通过的测试数（失败、已跳过等）：258</span><span class="sxs-lookup"><span data-stu-id="263bc-1355">Number of non-Passing (failing, skipped, etc…): 258</span></span> </br>
-[<span data-ttu-id="263bc-1356">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="263bc-1356">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14926)<br/>
+ - <span data-ttu-id="aa113-1337">由于这种情况超出了我们的控制，在此内部版本的适用于 Linux 的 Windows 子系统中未做更新。</span><span class="sxs-lookup"><span data-stu-id="aa113-1337">Due to circumstances beyond our control there are no updates in this build for the Windows Subsystem for Linux.</span></span>  <span data-ttu-id="aa113-1338">定期计划的更新将在下一版本中恢复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1338">Regularly scheduled updates will resume in the next release.</span></span>
 
 <br/>
 
-## <a name="build-14915"></a><span data-ttu-id="263bc-1357">内部版本 14915</span><span class="sxs-lookup"><span data-stu-id="263bc-1357">Build 14915</span></span>
+## <a name="build-14926"></a><span data-ttu-id="aa113-1339">内部版本 14926</span><span class="sxs-lookup"><span data-stu-id="aa113-1339">Build 14926</span></span>
 
-<span data-ttu-id="263bc-1358">有关内部版本 14915 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/08/31/announcing-windows-10-insider-preview-build-14915-for-pc-and-mobile)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1358">For general Windows information on build 14915 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/08/31/announcing-windows-10-insider-preview-build-14915-for-pc-and-mobile).</span></span><br/>
+<span data-ttu-id="aa113-1340">有关内部版本 14926 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/09/14/announcing-windows-10-insider-preview-build-14926-for-pc-and-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1340">For general Windows information on build 14926 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/09/14/announcing-windows-10-insider-preview-build-14926-for-pc-and-mobile/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1359">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1359">Fixed</span></span>
--  <span data-ttu-id="263bc-1360">Unix 数据报套接字的套接字对 (GH #262)</span><span class="sxs-lookup"><span data-stu-id="263bc-1360">Socketpair for unix datagram sockets (GH #262)</span></span>
-- <span data-ttu-id="263bc-1361">对 SO_REUSEADDR 的 Unix 套接字支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1361">Unix socket support for SO_REUSEADDR</span></span>
-- <span data-ttu-id="263bc-1362">对 SO_BROADCAST 的 UNIX 套接字支持 (GH #568)</span><span class="sxs-lookup"><span data-stu-id="263bc-1362">UNIX socket support for SO_BROADCAST (GH #568)</span></span>
-- <span data-ttu-id="263bc-1363">对 SOCK_SEQPACKET 的 Unix 套接字支持（GH #758、#546）</span><span class="sxs-lookup"><span data-stu-id="263bc-1363">Unix socket support for SOCK_SEQPACKET (GH #758, #546)</span></span>
-- <span data-ttu-id="263bc-1364">添加对 Unix 数据报套接字 send、recv 和 shutdown 的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1364">Adding support for unix datagram socket send, recv and shutdown</span></span>
-- <span data-ttu-id="263bc-1365">修复对非固定地址的无效 mmap 参数验证导致的 bug 检查。</span><span class="sxs-lookup"><span data-stu-id="263bc-1365">Fix bugcheck due to invalid mmap parameter validation for non-fixed addresses.</span></span> <span data-ttu-id="263bc-1366">(GH #847)</span><span class="sxs-lookup"><span data-stu-id="263bc-1366">(GH #847)</span></span>
-- <span data-ttu-id="263bc-1367">支持暂停/恢复终端状态</span><span class="sxs-lookup"><span data-stu-id="263bc-1367">Support for suspend / resume of terminal states</span></span>
-- <span data-ttu-id="263bc-1368">支持使用 TIOCPKT ioctl 阻止 Screen 实用工具 (GH #774)</span><span class="sxs-lookup"><span data-stu-id="263bc-1368">Support for TIOCPKT ioctl to unblock the Screen utility (GH #774)</span></span>
-    - <span data-ttu-id="263bc-1369">已知问题：功能键不起作用</span><span class="sxs-lookup"><span data-stu-id="263bc-1369">Known issue: Function keys not operational</span></span>
-- <span data-ttu-id="263bc-1370">更正了 TimerFd 中的一种争用状态，该状态可能导致 LxpTimerFdWorkerRoutine 访问已释放的成员“ReaderReady” (GH #814)</span><span class="sxs-lookup"><span data-stu-id="263bc-1370">Corrected a race in TimerFd that could cause a freed member 'ReaderReady' to be accessed by LxpTimerFdWorkerRoutine (GH #814)</span></span>
-- <span data-ttu-id="263bc-1371">为 futex、poll 和 clock_nanosleep 启用可重启系统调用支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1371">Enable restartable system call support for futex, poll, and clock_nanosleep</span></span>
-- <span data-ttu-id="263bc-1372">添加了绑定装载支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1372">Added bind mount support</span></span>
-- <span data-ttu-id="263bc-1373">装载命名空间支持的取消共享</span><span class="sxs-lookup"><span data-stu-id="263bc-1373">unshare for mount namespace support</span></span>
-    - <span data-ttu-id="263bc-1374">已知问题：使用 `unshare(CLONE_NEWNS)` 创建新的装载命名空间时，当前工作目录将继续指向旧命名空间</span><span class="sxs-lookup"><span data-stu-id="263bc-1374">Known issue: When creating a new mount namespace with `unshare(CLONE_NEWNS)` the current working directory will continue to point to the old namespace</span></span>
-- <span data-ttu-id="263bc-1375">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="263bc-1375">Additional improvements and bug fixes</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1341">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1341">Fixed</span></span>
+
+- <span data-ttu-id="aa113-1342">Ping 现在可以在没有管理员特权的控制台中正常运行</span><span class="sxs-lookup"><span data-stu-id="aa113-1342">Ping now works in consoles which do not have administrator privileges</span></span>
+- <span data-ttu-id="aa113-1343">现在支持 Ping6，也无需管理员特权</span><span class="sxs-lookup"><span data-stu-id="aa113-1343">Ping6 now supported, also without administrator privileges</span></span>
+- <span data-ttu-id="aa113-1344">对通过 WSL 修改的文件的 Inotify 支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1344">Inotify support for files modified through WSL.</span></span> <span data-ttu-id="aa113-1345">(GH #216)</span><span class="sxs-lookup"><span data-stu-id="aa113-1345">(GH #216)</span></span>
+  - <span data-ttu-id="aa113-1346">支持的标志：</span><span class="sxs-lookup"><span data-stu-id="aa113-1346">Flags supported:</span></span>
+    - <span data-ttu-id="aa113-1347">inotify_init1：LX_O_CLOEXEC、LX_O_NONBLOCK</span><span class="sxs-lookup"><span data-stu-id="aa113-1347">inotify_init1: LX_O_CLOEXEC, LX_O_NONBLOCK</span></span>
+    - <span data-ttu-id="aa113-1348">inotify_add_watch 事件：LX_IN_ACCESS、LX_IN_MODIFY、LX_IN_ATTRIB、LX_IN_CLOSE_WRITE、LX_IN_CLOSE_NOWRITE、LX_IN_OPEN、LX_IN_MOVED_FROM、LX_IN_MOVED_TO、LX_IN_CREATE、LX_IN_DELETE、LX_IN_DELETE_SELF、LX_IN_MOVE_SELF</span><span class="sxs-lookup"><span data-stu-id="aa113-1348">inotify_add_watch events: LX_IN_ACCESS, LX_IN_MODIFY, LX_IN_ATTRIB, LX_IN_CLOSE_WRITE, LX_IN_CLOSE_NOWRITE, LX_IN_OPEN, LX_IN_MOVED_FROM, LX_IN_MOVED_TO, LX_IN_CREATE, LX_IN_DELETE, LX_IN_DELETE_SELF, LX_IN_MOVE_SELF</span></span>
+    - <span data-ttu-id="aa113-1349">inotify_add_watch 属性：LX_IN_DONT_FOLLOW、LX_IN_EXCL_UNLINK、LX_IN_MASK_ADD、LX_IN_ONESHOT、LX_IN_ONLYDIR</span><span class="sxs-lookup"><span data-stu-id="aa113-1349">inotify_add_watch attributes: LX_IN_DONT_FOLLOW, LX_IN_EXCL_UNLINK, LX_IN_MASK_ADD, LX_IN_ONESHOT, LX_IN_ONLYDIR</span></span>
+    - <span data-ttu-id="aa113-1350">读取输出：LX_IN_ISDIR、LX_IN_IGNORED</span><span class="sxs-lookup"><span data-stu-id="aa113-1350">read output: LX_IN_ISDIR, LX_IN_IGNORED</span></span>
+  - <span data-ttu-id="aa113-1351">已知问题：修改 Windows 应用程序中的文件不会生成任何事件</span><span class="sxs-lookup"><span data-stu-id="aa113-1351">Known issue: Modifying files from Windows applications does not generate any events</span></span>
+- <span data-ttu-id="aa113-1352">Unix 套接字现在支持 SCM_CREDENTIALS</span><span class="sxs-lookup"><span data-stu-id="aa113-1352">Unix socket now supports SCM_CREDENTIALS</span></span>
+
+### <a name="ltp-results"></a><span data-ttu-id="aa113-1353">LTP 结果：</span><span class="sxs-lookup"><span data-stu-id="aa113-1353">LTP Results:</span></span>
+<span data-ttu-id="aa113-1354">通过的测试数：651</span><span class="sxs-lookup"><span data-stu-id="aa113-1354">Number of Passing Test: 651</span></span> </br>
+<span data-ttu-id="aa113-1355">未通过的测试数（失败、已跳过等）：258</span><span class="sxs-lookup"><span data-stu-id="aa113-1355">Number of non-Passing (failing, skipped, etc…): 258</span></span> </br>
+[<span data-ttu-id="aa113-1356">LTP 测试运行日志</span><span class="sxs-lookup"><span data-stu-id="aa113-1356">LTP Test Run Logs</span></span>](https://github.com/Microsoft/CommandLine-Documentation/tree/live/LTP_Results/14926)<br/>
 
 <br/>
 
-## <a name="build-14905"></a><span data-ttu-id="263bc-1376">内部版本 14905</span><span class="sxs-lookup"><span data-stu-id="263bc-1376">Build 14905</span></span>
+## <a name="build-14915"></a><span data-ttu-id="aa113-1357">内部版本 14915</span><span class="sxs-lookup"><span data-stu-id="aa113-1357">Build 14915</span></span>
 
-<span data-ttu-id="263bc-1377">有关内部版本 14905 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/08/17/announcing-windows-10-insider-preview-build-14905-for-pc-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1377">For general Windows information on build 14905 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/08/17/announcing-windows-10-insider-preview-build-14905-for-pc-mobile/).</span></span><br/>
+<span data-ttu-id="aa113-1358">有关内部版本 14915 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/08/31/announcing-windows-10-insider-preview-build-14915-for-pc-and-mobile)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1358">For general Windows information on build 14915 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/08/31/announcing-windows-10-insider-preview-build-14915-for-pc-and-mobile).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1378">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1378">Fixed</span></span>
-- <span data-ttu-id="263bc-1379">现在支持可重启系统调用（GH #349、GH #520）</span><span class="sxs-lookup"><span data-stu-id="263bc-1379">Restartable system calls are now supported (GH #349, GH #520)</span></span>
-- <span data-ttu-id="263bc-1380">现在可正常使用指向以 / 结尾的目录的符号链接 (GH #650)</span><span class="sxs-lookup"><span data-stu-id="263bc-1380">Symlinks to directories ending in / now operational (GH #650)</span></span>
-- <span data-ttu-id="263bc-1381">为 /dev/random 实现了 RNDGETENTCNT ioctl</span><span class="sxs-lookup"><span data-stu-id="263bc-1381">Implemented RNDGETENTCNT ioctl for /dev/random</span></span>
-- <span data-ttu-id="263bc-1382">实现了 /proc/[pid]/mounts、/proc/[pid]/mountinfo 和 /proc/[pid]/mountstats 文件</span><span class="sxs-lookup"><span data-stu-id="263bc-1382">Implemented the /proc/[pid]/mounts, /proc/[pid]/mountinfo and /proc/[pid]/mountstats files</span></span>
-- <span data-ttu-id="263bc-1383">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1383">Additional bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1359">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1359">Fixed</span></span>
+-  <span data-ttu-id="aa113-1360">Unix 数据报套接字的套接字对 (GH #262)</span><span class="sxs-lookup"><span data-stu-id="aa113-1360">Socketpair for unix datagram sockets (GH #262)</span></span>
+- <span data-ttu-id="aa113-1361">对 SO_REUSEADDR 的 Unix 套接字支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1361">Unix socket support for SO_REUSEADDR</span></span>
+- <span data-ttu-id="aa113-1362">对 SO_BROADCAST 的 UNIX 套接字支持 (GH #568)</span><span class="sxs-lookup"><span data-stu-id="aa113-1362">UNIX socket support for SO_BROADCAST (GH #568)</span></span>
+- <span data-ttu-id="aa113-1363">对 SOCK_SEQPACKET 的 Unix 套接字支持（GH #758、#546）</span><span class="sxs-lookup"><span data-stu-id="aa113-1363">Unix socket support for SOCK_SEQPACKET (GH #758, #546)</span></span>
+- <span data-ttu-id="aa113-1364">添加对 Unix 数据报套接字 send、recv 和 shutdown 的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1364">Adding support for unix datagram socket send, recv and shutdown</span></span>
+- <span data-ttu-id="aa113-1365">修复对非固定地址的无效 mmap 参数验证导致的 bug 检查。</span><span class="sxs-lookup"><span data-stu-id="aa113-1365">Fix bugcheck due to invalid mmap parameter validation for non-fixed addresses.</span></span> <span data-ttu-id="aa113-1366">(GH #847)</span><span class="sxs-lookup"><span data-stu-id="aa113-1366">(GH #847)</span></span>
+- <span data-ttu-id="aa113-1367">支持暂停/恢复终端状态</span><span class="sxs-lookup"><span data-stu-id="aa113-1367">Support for suspend / resume of terminal states</span></span>
+- <span data-ttu-id="aa113-1368">支持使用 TIOCPKT ioctl 阻止 Screen 实用工具 (GH #774)</span><span class="sxs-lookup"><span data-stu-id="aa113-1368">Support for TIOCPKT ioctl to unblock the Screen utility (GH #774)</span></span>
+    - <span data-ttu-id="aa113-1369">已知问题：功能键不起作用</span><span class="sxs-lookup"><span data-stu-id="aa113-1369">Known issue: Function keys not operational</span></span>
+- <span data-ttu-id="aa113-1370">更正了 TimerFd 中的一种争用状态，该状态可能导致 LxpTimerFdWorkerRoutine 访问已释放的成员“ReaderReady” (GH #814)</span><span class="sxs-lookup"><span data-stu-id="aa113-1370">Corrected a race in TimerFd that could cause a freed member 'ReaderReady' to be accessed by LxpTimerFdWorkerRoutine (GH #814)</span></span>
+- <span data-ttu-id="aa113-1371">为 futex、poll 和 clock_nanosleep 启用可重启系统调用支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1371">Enable restartable system call support for futex, poll, and clock_nanosleep</span></span>
+- <span data-ttu-id="aa113-1372">添加了绑定装载支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1372">Added bind mount support</span></span>
+- <span data-ttu-id="aa113-1373">装载命名空间支持的取消共享</span><span class="sxs-lookup"><span data-stu-id="aa113-1373">unshare for mount namespace support</span></span>
+    - <span data-ttu-id="aa113-1374">已知问题：使用 `unshare(CLONE_NEWNS)` 创建新的装载命名空间时，当前工作目录将继续指向旧命名空间</span><span class="sxs-lookup"><span data-stu-id="aa113-1374">Known issue: When creating a new mount namespace with `unshare(CLONE_NEWNS)` the current working directory will continue to point to the old namespace</span></span>
+- <span data-ttu-id="aa113-1375">其他改进和 bug 修复</span><span class="sxs-lookup"><span data-stu-id="aa113-1375">Additional improvements and bug fixes</span></span>
+
+<br/>
+
+## <a name="build-14905"></a><span data-ttu-id="aa113-1376">内部版本 14905</span><span class="sxs-lookup"><span data-stu-id="aa113-1376">Build 14905</span></span>
+
+<span data-ttu-id="aa113-1377">有关内部版本 14905 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/08/17/announcing-windows-10-insider-preview-build-14905-for-pc-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1377">For general Windows information on build 14905 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/08/17/announcing-windows-10-insider-preview-build-14905-for-pc-mobile/).</span></span><br/>
+
+
+### <a name="fixed"></a><span data-ttu-id="aa113-1378">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1378">Fixed</span></span>
+- <span data-ttu-id="aa113-1379">现在支持可重启系统调用（GH #349、GH #520）</span><span class="sxs-lookup"><span data-stu-id="aa113-1379">Restartable system calls are now supported (GH #349, GH #520)</span></span>
+- <span data-ttu-id="aa113-1380">现在可正常使用指向以 / 结尾的目录的符号链接 (GH #650)</span><span class="sxs-lookup"><span data-stu-id="aa113-1380">Symlinks to directories ending in / now operational (GH #650)</span></span>
+- <span data-ttu-id="aa113-1381">为 /dev/random 实现了 RNDGETENTCNT ioctl</span><span class="sxs-lookup"><span data-stu-id="aa113-1381">Implemented RNDGETENTCNT ioctl for /dev/random</span></span>
+- <span data-ttu-id="aa113-1382">实现了 /proc/[pid]/mounts、/proc/[pid]/mountinfo 和 /proc/[pid]/mountstats 文件</span><span class="sxs-lookup"><span data-stu-id="aa113-1382">Implemented the /proc/[pid]/mounts, /proc/[pid]/mountinfo and /proc/[pid]/mountstats files</span></span>
+- <span data-ttu-id="aa113-1383">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1383">Additional bugfixes and improvements</span></span>
 
 </br>
 
-## <a name="build-14901"></a><span data-ttu-id="263bc-1384">内部版本 14901</span><span class="sxs-lookup"><span data-stu-id="263bc-1384">Build 14901</span></span>
-<span data-ttu-id="263bc-1385">Windows 10 周年更新版的第一个预览体验内部版本。</span><span class="sxs-lookup"><span data-stu-id="263bc-1385">First Insider build for the post Windows 10 Anniversary Update release.</span></span>
+## <a name="build-14901"></a><span data-ttu-id="aa113-1384">内部版本 14901</span><span class="sxs-lookup"><span data-stu-id="aa113-1384">Build 14901</span></span>
+<span data-ttu-id="aa113-1385">Windows 10 周年更新版的第一个预览体验内部版本。</span><span class="sxs-lookup"><span data-stu-id="aa113-1385">First Insider build for the post Windows 10 Anniversary Update release.</span></span>
 
-<span data-ttu-id="263bc-1386">有关内部版本 14901 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/08/11/announcing-windows-10-insider-preview-build-14901-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1386">For general Windows information on build 14901 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/08/11/announcing-windows-10-insider-preview-build-14901-for-pc/).</span></span><br/>
+<span data-ttu-id="aa113-1386">有关内部版本 14901 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/08/11/announcing-windows-10-insider-preview-build-14901-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1386">For general Windows information on build 14901 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/08/11/announcing-windows-10-insider-preview-build-14901-for-pc/).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1387">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1387">Fixed</span></span>
-- <span data-ttu-id="263bc-1388">修复了尾随斜杠问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1388">Fixed trailing slash issue</span></span>
-    - <span data-ttu-id="263bc-1389">`$ mv a/c/ a/b/` 等命令现在可正常运行</span><span class="sxs-lookup"><span data-stu-id="263bc-1389">Commands such as `$ mv a/c/ a/b/` now work</span></span>
-- <span data-ttu-id="263bc-1390">安装程序现在会提示是否应将 Ubuntu 区域设置指定为 Windows 区域设置</span><span class="sxs-lookup"><span data-stu-id="263bc-1390">Installing now prompts if Ubuntu locale should be set to Windows locale</span></span>
-- <span data-ttu-id="263bc-1391">对 ns 文件夹的 Procfs 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1391">Procfs support for ns folder</span></span>
-- <span data-ttu-id="263bc-1392">添加了 tmpfs、procfs 和 sysfs 文件系统的装入点和卸载点</span><span class="sxs-lookup"><span data-stu-id="263bc-1392">Added mount and unmount for tmpfs, procfs and sysfs file systems</span></span>
-- <span data-ttu-id="263bc-1393">修复 mknod [at] 32 位 ABI 签名</span><span class="sxs-lookup"><span data-stu-id="263bc-1393">Fix mknod[at] 32-bit ABI signature</span></span>
-- <span data-ttu-id="263bc-1394">Unix 套接字已移到调度模型</span><span class="sxs-lookup"><span data-stu-id="263bc-1394">Unix sockets moved to dispatch model</span></span>
-- <span data-ttu-id="263bc-1395">应遵循使用 setsockopt 设置的 INET 套接字接收缓冲区大小</span><span class="sxs-lookup"><span data-stu-id="263bc-1395">INET socket recv buffer size set using the setsockopt should be honored</span></span>
-- <span data-ttu-id="263bc-1396">实现 MSG_CMSG_CLOEXEC unix 套接字接收消息标志</span><span class="sxs-lookup"><span data-stu-id="263bc-1396">Implement MSG_CMSG_CLOEXEC unix socket receive message flag</span></span>
-- <span data-ttu-id="263bc-1397">Linux 进程 stdin/stdout 管道重定向 (GH #2)</span><span class="sxs-lookup"><span data-stu-id="263bc-1397">Linux process stdin/stdout pipe redirection (GH #2)</span></span>
-    - <span data-ttu-id="263bc-1398">允许在 CMD 中使用竖线分隔 bash -c 命令。</span><span class="sxs-lookup"><span data-stu-id="263bc-1398">Allows for piping of bash -c commands in CMD.</span></span>  <span data-ttu-id="263bc-1399">示例：>dir | bash -c "grep foo"</span><span class="sxs-lookup"><span data-stu-id="263bc-1399">Example:  >dir | bash -c "grep foo"</span></span>
-- <span data-ttu-id="263bc-1400">Bash 现在可以安装在包含多个页面文件的系统上（GH #538、#358）</span><span class="sxs-lookup"><span data-stu-id="263bc-1400">Bash can now be installed on systems with multiple pagefiles (GH #538, #358)</span></span>
-- <span data-ttu-id="263bc-1401">默认的 INET 套接字缓冲区大小应与默认 Ubuntu 安装的大小相匹配</span><span class="sxs-lookup"><span data-stu-id="263bc-1401">Default INET Socket buffer size should match that of default Ubuntu setup</span></span>
-- <span data-ttu-id="263bc-1402">将 xattr syscall 与 listxattr 对齐</span><span class="sxs-lookup"><span data-stu-id="263bc-1402">Align xattr syscalls to listxattr</span></span>
-- <span data-ttu-id="263bc-1403">仅返回使用 SIOCGIFCONF 中有效 IPv4 地址的接口</span><span class="sxs-lookup"><span data-stu-id="263bc-1403">Only return interfaces with a valid IPv4 address from SIOCGIFCONF</span></span>
-- <span data-ttu-id="263bc-1404">修复 ptrace 注入时的信号默认操作</span><span class="sxs-lookup"><span data-stu-id="263bc-1404">Fix signal default action when injected by ptrace</span></span>
-- <span data-ttu-id="263bc-1405">实现 /proc/sys/vm/min_free_kbytes</span><span class="sxs-lookup"><span data-stu-id="263bc-1405">implement /proc/sys/vm/min_free_kbytes</span></span>
-- <span data-ttu-id="263bc-1406">在 sigreturn 中还原上下文时使用计算机上下文寄存器值</span><span class="sxs-lookup"><span data-stu-id="263bc-1406">Use machine context register values when restoring context in sigreturn</span></span>
-    - <span data-ttu-id="263bc-1407">这解决了某些用户遇到的 java 和 javac 挂起问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1407">This resolves the issue where java and javac were hanging for some users</span></span>
-- <span data-ttu-id="263bc-1408">实现 /proc/sys/kernel/hostname</span><span class="sxs-lookup"><span data-stu-id="263bc-1408">Implement /proc/sys/kernel/hostname</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1387">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1387">Fixed</span></span>
+- <span data-ttu-id="aa113-1388">修复了尾随斜杠问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1388">Fixed trailing slash issue</span></span>
+    - <span data-ttu-id="aa113-1389">`$ mv a/c/ a/b/` 等命令现在可正常运行</span><span class="sxs-lookup"><span data-stu-id="aa113-1389">Commands such as `$ mv a/c/ a/b/` now work</span></span>
+- <span data-ttu-id="aa113-1390">安装程序现在会提示是否应将 Ubuntu 区域设置指定为 Windows 区域设置</span><span class="sxs-lookup"><span data-stu-id="aa113-1390">Installing now prompts if Ubuntu locale should be set to Windows locale</span></span>
+- <span data-ttu-id="aa113-1391">对 ns 文件夹的 Procfs 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1391">Procfs support for ns folder</span></span>
+- <span data-ttu-id="aa113-1392">添加了 tmpfs、procfs 和 sysfs 文件系统的装入点和卸载点</span><span class="sxs-lookup"><span data-stu-id="aa113-1392">Added mount and unmount for tmpfs, procfs and sysfs file systems</span></span>
+- <span data-ttu-id="aa113-1393">修复 mknod [at] 32 位 ABI 签名</span><span class="sxs-lookup"><span data-stu-id="aa113-1393">Fix mknod[at] 32-bit ABI signature</span></span>
+- <span data-ttu-id="aa113-1394">Unix 套接字已移到调度模型</span><span class="sxs-lookup"><span data-stu-id="aa113-1394">Unix sockets moved to dispatch model</span></span>
+- <span data-ttu-id="aa113-1395">应遵循使用 setsockopt 设置的 INET 套接字接收缓冲区大小</span><span class="sxs-lookup"><span data-stu-id="aa113-1395">INET socket recv buffer size set using the setsockopt should be honored</span></span>
+- <span data-ttu-id="aa113-1396">实现 MSG_CMSG_CLOEXEC unix 套接字接收消息标志</span><span class="sxs-lookup"><span data-stu-id="aa113-1396">Implement MSG_CMSG_CLOEXEC unix socket receive message flag</span></span>
+- <span data-ttu-id="aa113-1397">Linux 进程 stdin/stdout 管道重定向 (GH #2)</span><span class="sxs-lookup"><span data-stu-id="aa113-1397">Linux process stdin/stdout pipe redirection (GH #2)</span></span>
+    - <span data-ttu-id="aa113-1398">允许在 CMD 中使用竖线分隔 bash -c 命令。</span><span class="sxs-lookup"><span data-stu-id="aa113-1398">Allows for piping of bash -c commands in CMD.</span></span>  <span data-ttu-id="aa113-1399">示例：>dir | bash -c "grep foo"</span><span class="sxs-lookup"><span data-stu-id="aa113-1399">Example:  >dir | bash -c "grep foo"</span></span>
+- <span data-ttu-id="aa113-1400">Bash 现在可以安装在包含多个页面文件的系统上（GH #538、#358）</span><span class="sxs-lookup"><span data-stu-id="aa113-1400">Bash can now be installed on systems with multiple pagefiles (GH #538, #358)</span></span>
+- <span data-ttu-id="aa113-1401">默认的 INET 套接字缓冲区大小应与默认 Ubuntu 安装的大小相匹配</span><span class="sxs-lookup"><span data-stu-id="aa113-1401">Default INET Socket buffer size should match that of default Ubuntu setup</span></span>
+- <span data-ttu-id="aa113-1402">将 xattr syscall 与 listxattr 对齐</span><span class="sxs-lookup"><span data-stu-id="aa113-1402">Align xattr syscalls to listxattr</span></span>
+- <span data-ttu-id="aa113-1403">仅返回使用 SIOCGIFCONF 中有效 IPv4 地址的接口</span><span class="sxs-lookup"><span data-stu-id="aa113-1403">Only return interfaces with a valid IPv4 address from SIOCGIFCONF</span></span>
+- <span data-ttu-id="aa113-1404">修复 ptrace 注入时的信号默认操作</span><span class="sxs-lookup"><span data-stu-id="aa113-1404">Fix signal default action when injected by ptrace</span></span>
+- <span data-ttu-id="aa113-1405">实现 /proc/sys/vm/min_free_kbytes</span><span class="sxs-lookup"><span data-stu-id="aa113-1405">implement /proc/sys/vm/min_free_kbytes</span></span>
+- <span data-ttu-id="aa113-1406">在 sigreturn 中还原上下文时使用计算机上下文寄存器值</span><span class="sxs-lookup"><span data-stu-id="aa113-1406">Use machine context register values when restoring context in sigreturn</span></span>
+    - <span data-ttu-id="aa113-1407">这解决了某些用户遇到的 java 和 javac 挂起问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1407">This resolves the issue where java and javac were hanging for some users</span></span>
+- <span data-ttu-id="aa113-1408">实现 /proc/sys/kernel/hostname</span><span class="sxs-lookup"><span data-stu-id="aa113-1408">Implement /proc/sys/kernel/hostname</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1409">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1409">Syscall Support</span></span>
-<span data-ttu-id="263bc-1410">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1410">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1411">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1411">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1409">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1409">Syscall Support</span></span>
+<span data-ttu-id="aa113-1410">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1410">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1411">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1411">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `waitid`<br/>
 `epoll_pwait`<br/>
 
 <br/>
 
-## <a name="build-14388-to-windows-10-anniversary-update"></a><span data-ttu-id="263bc-1412">Windows 10 周年更新的内部版本 14388</span><span class="sxs-lookup"><span data-stu-id="263bc-1412">Build 14388 to Windows 10 Anniversary Update</span></span>
-<span data-ttu-id="263bc-1413">有关内部版本 14388 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/14388wip)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1413">For general Windows information on build 14388 visit the [Windows Blog](https://aka.ms/14388wip).</span></span> <br/>
+## <a name="build-14388-to-windows-10-anniversary-update"></a><span data-ttu-id="aa113-1412">Windows 10 周年更新的内部版本 14388</span><span class="sxs-lookup"><span data-stu-id="aa113-1412">Build 14388 to Windows 10 Anniversary Update</span></span>
+<span data-ttu-id="aa113-1413">有关内部版本 14388 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/14388wip)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1413">For general Windows information on build 14388 visit the [Windows Blog](https://aka.ms/14388wip).</span></span> <br/>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1414">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1414">Fixed</span></span>
-- <span data-ttu-id="263bc-1415">修复在 8/2 准备 Windows 10 周年更新时出现的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1415">Fixes to prepare for the Windows 10 Anniversary Update on 8/2</span></span>
-  - <span data-ttu-id="263bc-1416">可在我们的[博客](https://blogs.msdn.microsoft.com/wsl/)中找到有关周年更新中的 WSL 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-1416">More information about WSL in the Anniversary Update can be found on our [blog](https://blogs.msdn.microsoft.com/wsl/)</span></span>
-
-<br/>
-
-## <a name="build-14376"></a><span data-ttu-id="263bc-1417">内部版本 14376</span><span class="sxs-lookup"><span data-stu-id="263bc-1417">Build 14376</span></span>
-<span data-ttu-id="263bc-1418">有关内部版本 14376 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/06/28/announcing-windows-10-insider-preview-build-14376-for-pc-and-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1418">For general Windows information on build 14376 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/06/28/announcing-windows-10-insider-preview-build-14376-for-pc-and-mobile/).</span></span> <br/>
-
-### <a name="fixed"></a><span data-ttu-id="263bc-1419">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1419">Fixed</span></span>
-- <span data-ttu-id="263bc-1420">删除了一些存在 apt-get 挂起问题的实例 (GH #493)</span><span class="sxs-lookup"><span data-stu-id="263bc-1420">Removed some instances where apt-get hangs (GH #493)</span></span>
-- <span data-ttu-id="263bc-1421">修复了不正确处理空装入点的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1421">Fixed an issue where empty mounts were not handled correctly</span></span>
-- <span data-ttu-id="263bc-1422">修复了不正确装载 ramdisk 的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1422">Fixed an issue where ramdisks were not mounted correctly</span></span>
-- <span data-ttu-id="263bc-1423">更改 unix 套接字接受行为以支持标志（在 GH #451 中做了部分描述）</span><span class="sxs-lookup"><span data-stu-id="263bc-1423">Change unix socket accept to support flags (partial GH #451)</span></span>
-- <span data-ttu-id="263bc-1424">修复了与网络相关的常见蓝屏问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1424">Fixed common network related bluescreen</span></span>
-- <span data-ttu-id="263bc-1425">修复了访问 /proc/[pid]/task 时出现蓝屏的问题 (GH #523)</span><span class="sxs-lookup"><span data-stu-id="263bc-1425">Fixed bluescreen when accessing /proc/[pid]/task (GH #523)</span></span>
-- <span data-ttu-id="263bc-1426">修复了在某些 pty 方案中 CPU 利用率偏高的问题（GH #488、#504）</span><span class="sxs-lookup"><span data-stu-id="263bc-1426">Fixed high CPU utilization for some pty scenarios (GH #488, #504)</span></span>
-- <span data-ttu-id="263bc-1427">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1427">Additional bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1414">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1414">Fixed</span></span>
+- <span data-ttu-id="aa113-1415">修复在 8/2 准备 Windows 10 周年更新时出现的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1415">Fixes to prepare for the Windows 10 Anniversary Update on 8/2</span></span>
+  - <span data-ttu-id="aa113-1416">可在我们的[博客](https://blogs.msdn.microsoft.com/wsl/)中找到有关周年更新中的 WSL 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-1416">More information about WSL in the Anniversary Update can be found on our [blog](https://blogs.msdn.microsoft.com/wsl/)</span></span>
 
 <br/>
 
-## <a name="build-14371"></a><span data-ttu-id="263bc-1428">内部版本 14371</span><span class="sxs-lookup"><span data-stu-id="263bc-1428">Build 14371</span></span>
-<span data-ttu-id="263bc-1429">有关内部版本 14371 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/06/22/announcing-windows-10-insider-preview-build-14371-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1429">For general Windows information on build 14371 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/06/22/announcing-windows-10-insider-preview-build-14371-for-pc/).</span></span> <br/>
+## <a name="build-14376"></a><span data-ttu-id="aa113-1417">内部版本 14376</span><span class="sxs-lookup"><span data-stu-id="aa113-1417">Build 14376</span></span>
+<span data-ttu-id="aa113-1418">有关内部版本 14376 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/06/28/announcing-windows-10-insider-preview-build-14376-for-pc-and-mobile/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1418">For general Windows information on build 14376 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/06/28/announcing-windows-10-insider-preview-build-14376-for-pc-and-mobile/).</span></span> <br/>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1430">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1430">Fixed</span></span>
-- <span data-ttu-id="263bc-1431">更正了使用 ptrace 时 SIGCHLD 和 wait() 出现计时争用的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1431">Corrected timing race with SIGCHLD and wait() when using ptrace</span></span>
-- <span data-ttu-id="263bc-1432">更正了当路径包含尾随 / 时出现的某种行为 (GH #432)</span><span class="sxs-lookup"><span data-stu-id="263bc-1432">Corrected some behavior when paths have a trailing /  (GH #432)</span></span>
-- <span data-ttu-id="263bc-1433">修复了由于打开子级句柄导致重命名/取消链接失败的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1433">Fixed issue with rename/unlink failing due to open handles to children</span></span>
-- <span data-ttu-id="263bc-1434">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1434">Additional bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1419">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1419">Fixed</span></span>
+- <span data-ttu-id="aa113-1420">删除了一些存在 apt-get 挂起问题的实例 (GH #493)</span><span class="sxs-lookup"><span data-stu-id="aa113-1420">Removed some instances where apt-get hangs (GH #493)</span></span>
+- <span data-ttu-id="aa113-1421">修复了不正确处理空装入点的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1421">Fixed an issue where empty mounts were not handled correctly</span></span>
+- <span data-ttu-id="aa113-1422">修复了不正确装载 ramdisk 的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1422">Fixed an issue where ramdisks were not mounted correctly</span></span>
+- <span data-ttu-id="aa113-1423">更改 unix 套接字接受行为以支持标志（在 GH #451 中做了部分描述）</span><span class="sxs-lookup"><span data-stu-id="aa113-1423">Change unix socket accept to support flags (partial GH #451)</span></span>
+- <span data-ttu-id="aa113-1424">修复了与网络相关的常见蓝屏问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1424">Fixed common network related bluescreen</span></span>
+- <span data-ttu-id="aa113-1425">修复了访问 /proc/[pid]/task 时出现蓝屏的问题 (GH #523)</span><span class="sxs-lookup"><span data-stu-id="aa113-1425">Fixed bluescreen when accessing /proc/[pid]/task (GH #523)</span></span>
+- <span data-ttu-id="aa113-1426">修复了在某些 pty 方案中 CPU 利用率偏高的问题（GH #488、#504）</span><span class="sxs-lookup"><span data-stu-id="aa113-1426">Fixed high CPU utilization for some pty scenarios (GH #488, #504)</span></span>
+- <span data-ttu-id="aa113-1427">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1427">Additional bugfixes and improvements</span></span>
 
 <br/>
 
-## <a name="build-14366"></a><span data-ttu-id="263bc-1435">内部版本 14366</span><span class="sxs-lookup"><span data-stu-id="263bc-1435">Build 14366</span></span>
-<span data-ttu-id="263bc-1436">有关内部版本 14366 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/06/14/announcing-windows-10-insider-preview-build-14366-mobile-build-14364/)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1436">For general Windows information on build 14366 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/06/14/announcing-windows-10-insider-preview-build-14366-mobile-build-14364/).</span></span> <br/>
+## <a name="build-14371"></a><span data-ttu-id="aa113-1428">内部版本 14371</span><span class="sxs-lookup"><span data-stu-id="aa113-1428">Build 14371</span></span>
+<span data-ttu-id="aa113-1429">有关内部版本 14371 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/06/22/announcing-windows-10-insider-preview-build-14371-for-pc/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1429">For general Windows information on build 14371 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/06/22/announcing-windows-10-insider-preview-build-14371-for-pc/).</span></span> <br/>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1437">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1437">Fixed</span></span>
-- <span data-ttu-id="263bc-1438">修复通过符号链接创建文件的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1438">Fix in file creation through symlinks</span></span>
--   <span data-ttu-id="263bc-1439">添加了 Python 的 listxattr (GH 385)</span><span class="sxs-lookup"><span data-stu-id="263bc-1439">Added listxattr for Python (GH 385)</span></span>
--   <span data-ttu-id="263bc-1440">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1440">Additional bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1430">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1430">Fixed</span></span>
+- <span data-ttu-id="aa113-1431">更正了使用 ptrace 时 SIGCHLD 和 wait() 出现计时争用的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1431">Corrected timing race with SIGCHLD and wait() when using ptrace</span></span>
+- <span data-ttu-id="aa113-1432">更正了当路径包含尾随 / 时出现的某种行为 (GH #432)</span><span class="sxs-lookup"><span data-stu-id="aa113-1432">Corrected some behavior when paths have a trailing /  (GH #432)</span></span>
+- <span data-ttu-id="aa113-1433">修复了由于打开子级句柄导致重命名/取消链接失败的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1433">Fixed issue with rename/unlink failing due to open handles to children</span></span>
+- <span data-ttu-id="aa113-1434">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1434">Additional bugfixes and improvements</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1441">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1441">Syscall Support</span></span>
--   <span data-ttu-id="263bc-1442">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1442">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1443">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1443">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+<br/>
+
+## <a name="build-14366"></a><span data-ttu-id="aa113-1435">内部版本 14366</span><span class="sxs-lookup"><span data-stu-id="aa113-1435">Build 14366</span></span>
+<span data-ttu-id="aa113-1436">有关内部版本 14366 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2016/06/14/announcing-windows-10-insider-preview-build-14366-mobile-build-14364/)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1436">For general Windows information on build 14366 visit the [Windows Blog](https://blogs.windows.com/windowsexperience/2016/06/14/announcing-windows-10-insider-preview-build-14366-mobile-build-14364/).</span></span> <br/>
+
+### <a name="fixed"></a><span data-ttu-id="aa113-1437">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1437">Fixed</span></span>
+- <span data-ttu-id="aa113-1438">修复通过符号链接创建文件的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1438">Fix in file creation through symlinks</span></span>
+-   <span data-ttu-id="aa113-1439">添加了 Python 的 listxattr (GH 385)</span><span class="sxs-lookup"><span data-stu-id="aa113-1439">Added listxattr for Python (GH 385)</span></span>
+-   <span data-ttu-id="aa113-1440">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1440">Additional bugfixes and improvements</span></span>
+
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1441">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1441">Syscall Support</span></span>
+-   <span data-ttu-id="aa113-1442">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1442">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1443">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1443">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `listxattr`<br/>
 <br/>
 
-## <a name="build-14361"></a><span data-ttu-id="263bc-1444">内部版本 14361</span><span class="sxs-lookup"><span data-stu-id="263bc-1444">Build 14361</span></span>
-<span data-ttu-id="263bc-1445">有关内部版本 14361 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14361)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1445">For general Windows information on build 14361 visit the [Windows Blog](https://aka.ms/wip14361).</span></span> <br/>
+## <a name="build-14361"></a><span data-ttu-id="aa113-1444">内部版本 14361</span><span class="sxs-lookup"><span data-stu-id="aa113-1444">Build 14361</span></span>
+<span data-ttu-id="aa113-1445">有关内部版本 14361 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14361)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1445">For general Windows information on build 14361 visit the [Windows Blog](https://aka.ms/wip14361).</span></span> <br/>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1446">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1446">Fixed</span></span>
-- <span data-ttu-id="263bc-1447">现在，在 Windows 上的 Ubuntu Bash 中运行时，DrvFs 区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-1447">DrvFs is now case sensitive when running in Bash on Ubuntu on Windows.</span></span>
-  - <span data-ttu-id="263bc-1448">用户可在其 /mnt/c 驱动器中保存 case.txt 和 CASE.TXT</span><span class="sxs-lookup"><span data-stu-id="263bc-1448">Users may case.txt and CASE.TXT on their /mnt/c drives</span></span>
-  - <span data-ttu-id="263bc-1449">只有 Windows 上的 Ubuntu Bash 支持区分大小写。</span><span class="sxs-lookup"><span data-stu-id="263bc-1449">Case sensitivity is only supported within Bash on Ubuntu on Windows.</span></span> <span data-ttu-id="263bc-1450">在 Bash 外部，NTFS 会正确报告文件，但在与 Windows 中的文件交互时，可能会出现意外的行为。</span><span class="sxs-lookup"><span data-stu-id="263bc-1450">When outside of Bash NTFS will report the files correctly, but unexpected behavior may occur interacting with the files from Windows.</span></span>
-  - <span data-ttu-id="263bc-1451">每个卷的根目录（即 /mnt/c）不区分大小写</span><span class="sxs-lookup"><span data-stu-id="263bc-1451">The root of each volume (i.e. /mnt/c) is not case sensitive</span></span>
-  - <span data-ttu-id="263bc-1452">可在[此处](https://support.microsoft.com/kb/100625)找到有关处理 Windows 中的这些文件的详细信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-1452">More information on handling these files in Windows can be found [here](https://support.microsoft.com/kb/100625).</span></span>
-- <span data-ttu-id="263bc-1453">大幅增强了 pty/tty 支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1453">Greatly enhanced pty / tty support.</span></span>  <span data-ttu-id="263bc-1454">现在支持 TMUX 等应用程序 (GH #40)</span><span class="sxs-lookup"><span data-stu-id="263bc-1454">Applications like TMUX now supported (GH #40)</span></span>
-- <span data-ttu-id="263bc-1455">修复了不总会创建用户帐户的安装问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1455">Fixed install issue where user accounts not always created</span></span>
-- <span data-ttu-id="263bc-1456">优化了命令行参数结构，允许极长的参数列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1456">Optimized command line arg structure allowing for extremely long argument list.</span></span> <span data-ttu-id="263bc-1457">(GH #153)</span><span class="sxs-lookup"><span data-stu-id="263bc-1457">(GH #153)</span></span>
-- <span data-ttu-id="263bc-1458">现在可对 DrvFs 中的只读文件执行删除和 chmod</span><span class="sxs-lookup"><span data-stu-id="263bc-1458">Now able to delete and chmod read_only files from DrvFs</span></span>
-- <span data-ttu-id="263bc-1459">修复了一些在断开连接时终端会挂起的实例 (GH #43)</span><span class="sxs-lookup"><span data-stu-id="263bc-1459">Fixed some instances where the terminal hangs on disconnect (GH #43)</span></span>
-- <span data-ttu-id="263bc-1460">现在可在 tty 设备上正常运行 chmod 和 chown</span><span class="sxs-lookup"><span data-stu-id="263bc-1460">chmod and chown now work on tty devices</span></span>
-- <span data-ttu-id="263bc-1461">允许连接到作为 localhost 的 0.0.0.0 和 :: (GH #388)</span><span class="sxs-lookup"><span data-stu-id="263bc-1461">Allow connection to 0.0.0.0 and :: as localhost (GH #388)</span></span>
-- <span data-ttu-id="263bc-1462">Sendmsg/recvmsg 现在可处理大于 1 的 IO 矢量长度（在 GH #376 中做了部分描述）</span><span class="sxs-lookup"><span data-stu-id="263bc-1462">Sendmsg/recvmsg now handle an IO vector length of >1 (partial GH #376)</span></span>
-- <span data-ttu-id="263bc-1463">用户现在可以选择禁用自动生成的 hosts 文件 (GH #398)</span><span class="sxs-lookup"><span data-stu-id="263bc-1463">Users can now opt-out of auto-generated hosts file (GH #398)</span></span>
-- <span data-ttu-id="263bc-1464">在安装期间自动将 Linux 区域设置与 NT 区域设置进行匹配 (GH #11)</span><span class="sxs-lookup"><span data-stu-id="263bc-1464">Automatically match Linux locale to the NT locale during install (GH #11)</span></span>
-- <span data-ttu-id="263bc-1465">添加了 /proc/sys/vm/swappiness 文件 (GH #306)</span><span class="sxs-lookup"><span data-stu-id="263bc-1465">Added the /proc/sys/vm/swappiness file (GH #306)</span></span>
-- <span data-ttu-id="263bc-1466">strace 现在会正常退出</span><span class="sxs-lookup"><span data-stu-id="263bc-1466">strace now exits correctly</span></span>
-- <span data-ttu-id="263bc-1467">允许通过 /proc/self/fd 重新打开管道 (GH #222)</span><span class="sxs-lookup"><span data-stu-id="263bc-1467">Allow pipes to be reopened through /proc/self/fd (GH #222)</span></span>
-- <span data-ttu-id="263bc-1468">在 DrvFs 中隐藏 %LOCALAPPDATA%\lxss 下的目录 (GH #270)</span><span class="sxs-lookup"><span data-stu-id="263bc-1468">Hide directories under %LOCALAPPDATA%\lxss from DrvFs (GH #270)</span></span>
-- <span data-ttu-id="263bc-1469">更好地处理 bash.exe ~。</span><span class="sxs-lookup"><span data-stu-id="263bc-1469">Better handling of bash.exe ~.</span></span>  <span data-ttu-id="263bc-1470">现在支持类似于“bash ~ -c ls”的命令 (GH #467)</span><span class="sxs-lookup"><span data-stu-id="263bc-1470">Commands like "bash ~ -c ls" now supported (GH #467)</span></span>
-- <span data-ttu-id="263bc-1471">现在，在关闭期间，套接字会通知 epoll read 可用 (GH #271)</span><span class="sxs-lookup"><span data-stu-id="263bc-1471">Sockets now notify epoll read available during shutdown (GH #271)</span></span>
-- <span data-ttu-id="263bc-1472">lxrun /uninstall 可以更好地删除文件和文件夹</span><span class="sxs-lookup"><span data-stu-id="263bc-1472">lxrun /uninstall does a better job of deleting the files and folders</span></span>
-- <span data-ttu-id="263bc-1473">更正了 ps -f (GH #246)</span><span class="sxs-lookup"><span data-stu-id="263bc-1473">Corrected ps -f (GH #246)</span></span>
-- <span data-ttu-id="263bc-1474">改善了对 xEmacs 等 x11 应用的支持 (GH #481)</span><span class="sxs-lookup"><span data-stu-id="263bc-1474">Improved support for x11 apps such as xEmacs (GH #481)</span></span>
-- <span data-ttu-id="263bc-1475">更新了初始线程堆栈大小，以匹配默认的 Ubuntu 设置，并正确地向 get_rlimit syscall 报告大小（GH #172、#258）</span><span class="sxs-lookup"><span data-stu-id="263bc-1475">Updated initial thread stack size to match default Ubuntu setting and reporting the size correctly to the get_rlimit syscall (GH #172, #258)</span></span>
-- <span data-ttu-id="263bc-1476">改善了 pico 进程映像名称的报告（例如，用于审核）</span><span class="sxs-lookup"><span data-stu-id="263bc-1476">Improved reporting of pico process image names (e.g., for auditing)</span></span>
-- <span data-ttu-id="263bc-1477">实现了 df 命令的 /proc/mountinfo</span><span class="sxs-lookup"><span data-stu-id="263bc-1477">Implemented /proc/mountinfo for df command</span></span>
-- <span data-ttu-id="263bc-1478">修复了子名称 .</span><span class="sxs-lookup"><span data-stu-id="263bc-1478">Fixed symlink error code for child name .</span></span> <span data-ttu-id="263bc-1479">和 .. 的符号链接错误代码</span><span class="sxs-lookup"><span data-stu-id="263bc-1479">and ..</span></span>
-- <span data-ttu-id="263bc-1480">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1480">Additional improvements bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1446">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1446">Fixed</span></span>
+- <span data-ttu-id="aa113-1447">现在，在 Windows 上的 Ubuntu Bash 中运行时，DrvFs 区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-1447">DrvFs is now case sensitive when running in Bash on Ubuntu on Windows.</span></span>
+  - <span data-ttu-id="aa113-1448">用户可在其 /mnt/c 驱动器中保存 case.txt 和 CASE.TXT</span><span class="sxs-lookup"><span data-stu-id="aa113-1448">Users may case.txt and CASE.TXT on their /mnt/c drives</span></span>
+  - <span data-ttu-id="aa113-1449">只有 Windows 上的 Ubuntu Bash 支持区分大小写。</span><span class="sxs-lookup"><span data-stu-id="aa113-1449">Case sensitivity is only supported within Bash on Ubuntu on Windows.</span></span> <span data-ttu-id="aa113-1450">在 Bash 外部，NTFS 会正确报告文件，但在与 Windows 中的文件交互时，可能会出现意外的行为。</span><span class="sxs-lookup"><span data-stu-id="aa113-1450">When outside of Bash NTFS will report the files correctly, but unexpected behavior may occur interacting with the files from Windows.</span></span>
+  - <span data-ttu-id="aa113-1451">每个卷的根目录（即 /mnt/c）不区分大小写</span><span class="sxs-lookup"><span data-stu-id="aa113-1451">The root of each volume (i.e. /mnt/c) is not case sensitive</span></span>
+  - <span data-ttu-id="aa113-1452">可在[此处](https://support.microsoft.com/kb/100625)找到有关处理 Windows 中的这些文件的详细信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-1452">More information on handling these files in Windows can be found [here](https://support.microsoft.com/kb/100625).</span></span>
+- <span data-ttu-id="aa113-1453">大幅增强了 pty/tty 支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1453">Greatly enhanced pty / tty support.</span></span>  <span data-ttu-id="aa113-1454">现在支持 TMUX 等应用程序 (GH #40)</span><span class="sxs-lookup"><span data-stu-id="aa113-1454">Applications like TMUX now supported (GH #40)</span></span>
+- <span data-ttu-id="aa113-1455">修复了不总会创建用户帐户的安装问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1455">Fixed install issue where user accounts not always created</span></span>
+- <span data-ttu-id="aa113-1456">优化了命令行参数结构，允许极长的参数列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1456">Optimized command line arg structure allowing for extremely long argument list.</span></span> <span data-ttu-id="aa113-1457">(GH #153)</span><span class="sxs-lookup"><span data-stu-id="aa113-1457">(GH #153)</span></span>
+- <span data-ttu-id="aa113-1458">现在可对 DrvFs 中的只读文件执行删除和 chmod</span><span class="sxs-lookup"><span data-stu-id="aa113-1458">Now able to delete and chmod read_only files from DrvFs</span></span>
+- <span data-ttu-id="aa113-1459">修复了一些在断开连接时终端会挂起的实例 (GH #43)</span><span class="sxs-lookup"><span data-stu-id="aa113-1459">Fixed some instances where the terminal hangs on disconnect (GH #43)</span></span>
+- <span data-ttu-id="aa113-1460">现在可在 tty 设备上正常运行 chmod 和 chown</span><span class="sxs-lookup"><span data-stu-id="aa113-1460">chmod and chown now work on tty devices</span></span>
+- <span data-ttu-id="aa113-1461">允许连接到作为 localhost 的 0.0.0.0 和 :: (GH #388)</span><span class="sxs-lookup"><span data-stu-id="aa113-1461">Allow connection to 0.0.0.0 and :: as localhost (GH #388)</span></span>
+- <span data-ttu-id="aa113-1462">Sendmsg/recvmsg 现在可处理大于 1 的 IO 矢量长度（在 GH #376 中做了部分描述）</span><span class="sxs-lookup"><span data-stu-id="aa113-1462">Sendmsg/recvmsg now handle an IO vector length of >1 (partial GH #376)</span></span>
+- <span data-ttu-id="aa113-1463">用户现在可以选择禁用自动生成的 hosts 文件 (GH #398)</span><span class="sxs-lookup"><span data-stu-id="aa113-1463">Users can now opt-out of auto-generated hosts file (GH #398)</span></span>
+- <span data-ttu-id="aa113-1464">在安装期间自动将 Linux 区域设置与 NT 区域设置进行匹配 (GH #11)</span><span class="sxs-lookup"><span data-stu-id="aa113-1464">Automatically match Linux locale to the NT locale during install (GH #11)</span></span>
+- <span data-ttu-id="aa113-1465">添加了 /proc/sys/vm/swappiness 文件 (GH #306)</span><span class="sxs-lookup"><span data-stu-id="aa113-1465">Added the /proc/sys/vm/swappiness file (GH #306)</span></span>
+- <span data-ttu-id="aa113-1466">strace 现在会正常退出</span><span class="sxs-lookup"><span data-stu-id="aa113-1466">strace now exits correctly</span></span>
+- <span data-ttu-id="aa113-1467">允许通过 /proc/self/fd 重新打开管道 (GH #222)</span><span class="sxs-lookup"><span data-stu-id="aa113-1467">Allow pipes to be reopened through /proc/self/fd (GH #222)</span></span>
+- <span data-ttu-id="aa113-1468">在 DrvFs 中隐藏 %LOCALAPPDATA%\lxss 下的目录 (GH #270)</span><span class="sxs-lookup"><span data-stu-id="aa113-1468">Hide directories under %LOCALAPPDATA%\lxss from DrvFs (GH #270)</span></span>
+- <span data-ttu-id="aa113-1469">更好地处理 bash.exe ~。</span><span class="sxs-lookup"><span data-stu-id="aa113-1469">Better handling of bash.exe ~.</span></span>  <span data-ttu-id="aa113-1470">现在支持类似于“bash ~ -c ls”的命令 (GH #467)</span><span class="sxs-lookup"><span data-stu-id="aa113-1470">Commands like "bash ~ -c ls" now supported (GH #467)</span></span>
+- <span data-ttu-id="aa113-1471">现在，在关闭期间，套接字会通知 epoll read 可用 (GH #271)</span><span class="sxs-lookup"><span data-stu-id="aa113-1471">Sockets now notify epoll read available during shutdown (GH #271)</span></span>
+- <span data-ttu-id="aa113-1472">lxrun /uninstall 可以更好地删除文件和文件夹</span><span class="sxs-lookup"><span data-stu-id="aa113-1472">lxrun /uninstall does a better job of deleting the files and folders</span></span>
+- <span data-ttu-id="aa113-1473">更正了 ps -f (GH #246)</span><span class="sxs-lookup"><span data-stu-id="aa113-1473">Corrected ps -f (GH #246)</span></span>
+- <span data-ttu-id="aa113-1474">改善了对 xEmacs 等 x11 应用的支持 (GH #481)</span><span class="sxs-lookup"><span data-stu-id="aa113-1474">Improved support for x11 apps such as xEmacs (GH #481)</span></span>
+- <span data-ttu-id="aa113-1475">更新了初始线程堆栈大小，以匹配默认的 Ubuntu 设置，并正确地向 get_rlimit syscall 报告大小（GH #172、#258）</span><span class="sxs-lookup"><span data-stu-id="aa113-1475">Updated initial thread stack size to match default Ubuntu setting and reporting the size correctly to the get_rlimit syscall (GH #172, #258)</span></span>
+- <span data-ttu-id="aa113-1476">改善了 pico 进程映像名称的报告（例如，用于审核）</span><span class="sxs-lookup"><span data-stu-id="aa113-1476">Improved reporting of pico process image names (e.g., for auditing)</span></span>
+- <span data-ttu-id="aa113-1477">实现了 df 命令的 /proc/mountinfo</span><span class="sxs-lookup"><span data-stu-id="aa113-1477">Implemented /proc/mountinfo for df command</span></span>
+- <span data-ttu-id="aa113-1478">修复了子名称 .</span><span class="sxs-lookup"><span data-stu-id="aa113-1478">Fixed symlink error code for child name .</span></span> <span data-ttu-id="aa113-1479">和 .. 的符号链接错误代码</span><span class="sxs-lookup"><span data-stu-id="aa113-1479">and ..</span></span>
+- <span data-ttu-id="aa113-1480">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1480">Additional improvements bugfixes and improvements</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1481">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1481">Syscall Support</span></span>
-<span data-ttu-id="263bc-1482">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1482">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1483">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1483">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1481">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1481">Syscall Support</span></span>
+<span data-ttu-id="aa113-1482">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1482">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1483">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1483">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `GETTIMER`<br/>
 `MKNODAT`<br/>
@@ -1886,26 +1886,26 @@ $ cmd.exe /c dir
 `SYNC_FILE_RANGE`<br/>
 <br/>
 
-## <a name="build-14352"></a><span data-ttu-id="263bc-1484">内部版本 14352</span><span class="sxs-lookup"><span data-stu-id="263bc-1484">Build 14352</span></span>
-<span data-ttu-id="263bc-1485">有关内部版本 14352 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14352)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1485">For general Windows information on build 14352 visit the [Windows Blog](https://aka.ms/wip14352).</span></span><br/>
+## <a name="build-14352"></a><span data-ttu-id="aa113-1484">内部版本 14352</span><span class="sxs-lookup"><span data-stu-id="aa113-1484">Build 14352</span></span>
+<span data-ttu-id="aa113-1485">有关内部版本 14352 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14352)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1485">For general Windows information on build 14352 visit the [Windows Blog](https://aka.ms/wip14352).</span></span><br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1486">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1486">Fixed</span></span>
-- <span data-ttu-id="263bc-1487">修复了不正常下载/创建大型文件的问题。</span><span class="sxs-lookup"><span data-stu-id="263bc-1487">Fixed issue where large files were not downloaded / created correctly.</span></span>  <span data-ttu-id="263bc-1488">这应该可以解除 npm 和其他方案的阻碍（GH #3、GH #313）</span><span class="sxs-lookup"><span data-stu-id="263bc-1488">This should unblock npm and other scenarios (GH #3, GH #313)</span></span>
-- <span data-ttu-id="263bc-1489">删除了一些存在套接字挂起情况的实例</span><span class="sxs-lookup"><span data-stu-id="263bc-1489">Removed some instances where sockets hang</span></span>
-- <span data-ttu-id="263bc-1490">更正了一些 ptrace 错误</span><span class="sxs-lookup"><span data-stu-id="263bc-1490">Corrected some ptrace errors</span></span>
-- <span data-ttu-id="263bc-1491">修复了 WSL 中的问题，允许超过 255 个字符的文件名</span><span class="sxs-lookup"><span data-stu-id="263bc-1491">Fixed issue with WSL allowing filenames longer than 255 characters</span></span>
-- <span data-ttu-id="263bc-1492">改善了对非英语字符的支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1492">Improved support for non-English characters</span></span>
-- <span data-ttu-id="263bc-1493">添加当前 Windows 时区数据并将其设为默认值</span><span class="sxs-lookup"><span data-stu-id="263bc-1493">Add current Windows timezone data and set as default</span></span>
-- <span data-ttu-id="263bc-1494">每个装入点的唯一设备 ID（JRE 修复 – GH #49）</span><span class="sxs-lookup"><span data-stu-id="263bc-1494">Unique device id's for each mount point (jre fix – GH #49)</span></span>
-- <span data-ttu-id="263bc-1495">更正了路径包含“.”和“..”的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1495">Correct issue with paths containing "." and ".."</span></span>
-- <span data-ttu-id="263bc-1496">添加了 Fifo 支持 (GH #71)</span><span class="sxs-lookup"><span data-stu-id="263bc-1496">Added Fifo support (GH #71)</span></span>
-- <span data-ttu-id="263bc-1497">更新了 resolv.conf 的格式，以匹配本机 Ubuntu 格式</span><span class="sxs-lookup"><span data-stu-id="263bc-1497">Updated format of resolv.conf to match native Ubuntu format</span></span>
-- <span data-ttu-id="263bc-1498">一些 procfs 清理</span><span class="sxs-lookup"><span data-stu-id="263bc-1498">Some procfs cleanup</span></span>
-- <span data-ttu-id="263bc-1499">为管理员控制台启用了 ping (GH #18)</span><span class="sxs-lookup"><span data-stu-id="263bc-1499">Enabled ping for Administrator consoles (GH #18)</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1486">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1486">Fixed</span></span>
+- <span data-ttu-id="aa113-1487">修复了不正常下载/创建大型文件的问题。</span><span class="sxs-lookup"><span data-stu-id="aa113-1487">Fixed issue where large files were not downloaded / created correctly.</span></span>  <span data-ttu-id="aa113-1488">这应该可以解除 npm 和其他方案的阻碍（GH #3、GH #313）</span><span class="sxs-lookup"><span data-stu-id="aa113-1488">This should unblock npm and other scenarios (GH #3, GH #313)</span></span>
+- <span data-ttu-id="aa113-1489">删除了一些存在套接字挂起情况的实例</span><span class="sxs-lookup"><span data-stu-id="aa113-1489">Removed some instances where sockets hang</span></span>
+- <span data-ttu-id="aa113-1490">更正了一些 ptrace 错误</span><span class="sxs-lookup"><span data-stu-id="aa113-1490">Corrected some ptrace errors</span></span>
+- <span data-ttu-id="aa113-1491">修复了 WSL 中的问题，允许超过 255 个字符的文件名</span><span class="sxs-lookup"><span data-stu-id="aa113-1491">Fixed issue with WSL allowing filenames longer than 255 characters</span></span>
+- <span data-ttu-id="aa113-1492">改善了对非英语字符的支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1492">Improved support for non-English characters</span></span>
+- <span data-ttu-id="aa113-1493">添加当前 Windows 时区数据并将其设为默认值</span><span class="sxs-lookup"><span data-stu-id="aa113-1493">Add current Windows timezone data and set as default</span></span>
+- <span data-ttu-id="aa113-1494">每个装入点的唯一设备 ID（JRE 修复 – GH #49）</span><span class="sxs-lookup"><span data-stu-id="aa113-1494">Unique device id's for each mount point (jre fix – GH #49)</span></span>
+- <span data-ttu-id="aa113-1495">更正了路径包含“.”和“..”的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1495">Correct issue with paths containing "." and ".."</span></span>
+- <span data-ttu-id="aa113-1496">添加了 Fifo 支持 (GH #71)</span><span class="sxs-lookup"><span data-stu-id="aa113-1496">Added Fifo support (GH #71)</span></span>
+- <span data-ttu-id="aa113-1497">更新了 resolv.conf 的格式，以匹配本机 Ubuntu 格式</span><span class="sxs-lookup"><span data-stu-id="aa113-1497">Updated format of resolv.conf to match native Ubuntu format</span></span>
+- <span data-ttu-id="aa113-1498">一些 procfs 清理</span><span class="sxs-lookup"><span data-stu-id="aa113-1498">Some procfs cleanup</span></span>
+- <span data-ttu-id="aa113-1499">为管理员控制台启用了 ping (GH #18)</span><span class="sxs-lookup"><span data-stu-id="aa113-1499">Enabled ping for Administrator consoles (GH #18)</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1500">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1500">Syscall Support</span></span>
-<span data-ttu-id="263bc-1501">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1501">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1502">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1502">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1500">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1500">Syscall Support</span></span>
+<span data-ttu-id="aa113-1501">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1501">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1502">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1502">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `FALLOCATE`<br/>
 `EXECVE`<br/>
@@ -1913,39 +1913,39 @@ $ cmd.exe /c dir
 `FGETXATTR`<br/>
 <br/>
 
-## <a name="build-14342"></a><span data-ttu-id="263bc-1503">内部版本 14342</span><span class="sxs-lookup"><span data-stu-id="263bc-1503">Build 14342</span></span>
-<span data-ttu-id="263bc-1504">有关内部版本 14342 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14342)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1504">For general Windows information on build 14342 the [Windows Blog](https://aka.ms/wip14342).</span></span> <br/>
+## <a name="build-14342"></a><span data-ttu-id="aa113-1503">内部版本 14342</span><span class="sxs-lookup"><span data-stu-id="aa113-1503">Build 14342</span></span>
+<span data-ttu-id="aa113-1504">有关内部版本 14342 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14342)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1504">For general Windows information on build 14342 the [Windows Blog](https://aka.ms/wip14342).</span></span> <br/>
 
-<span data-ttu-id="263bc-1505">在 [WSL 博客](https://blogs.msdn.microsoft.com/wsl)中可以找到有关 VolFs 和 DriveFs 的信息。</span><span class="sxs-lookup"><span data-stu-id="263bc-1505">Information on VolFs and DriveFs can be found on the [WSL Blog](https://blogs.msdn.microsoft.com/wsl).</span></span> <br/>
+<span data-ttu-id="aa113-1505">在 [WSL 博客](https://blogs.msdn.microsoft.com/wsl)中可以找到有关 VolFs 和 DriveFs 的信息。</span><span class="sxs-lookup"><span data-stu-id="aa113-1505">Information on VolFs and DriveFs can be found on the [WSL Blog](https://blogs.msdn.microsoft.com/wsl).</span></span> <br/>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1506">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1506">Fixed</span></span>
-- <span data-ttu-id="263bc-1507">修复了 Windows 用户在用户名中包含 Unicode 字符时出现的安装问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1507">Fixed install issue when the Windows user had Unicode characters in the username</span></span>
-- <span data-ttu-id="263bc-1508">现在，在首次运行时，默认会提供“常见问题解答”中的 apt-get update udev 解决方法</span><span class="sxs-lookup"><span data-stu-id="263bc-1508">The apt-get update udev workaround in the FAQ is now provided by default on first run</span></span>
-- <span data-ttu-id="263bc-1509">在 DriveFs (/mnt/<drive>) 目录中启用了符号链接</span><span class="sxs-lookup"><span data-stu-id="263bc-1509">Enabled symlinks in DriveFs (/mnt/<drive>) directories</span></span>
-- <span data-ttu-id="263bc-1510">现在可以在 DriveFs 和 VolFs 之间使用符号链接</span><span class="sxs-lookup"><span data-stu-id="263bc-1510">Symlinks now work between DriveFs and VolFs</span></span>
-- <span data-ttu-id="263bc-1511">解决了顶级路径分析问题：ls .// 现在可按预期方式工作</span><span class="sxs-lookup"><span data-stu-id="263bc-1511">Addressed top level path parsing issue: ls .// will now work as expected</span></span>
-- <span data-ttu-id="263bc-1512">DriveFs 上的 npm install 和 -g 选项现在可正常工作</span><span class="sxs-lookup"><span data-stu-id="263bc-1512">npm install on DriveFs and the -g options are now working</span></span>
-- <span data-ttu-id="263bc-1513">修复了阻止 PHP 服务器启动的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1513">Fixed issue preventing PHP server from launching</span></span>
-- <span data-ttu-id="263bc-1514">更新了默认环境值（例如 $PATH），以便与本机 Ubuntu 更匹配</span><span class="sxs-lookup"><span data-stu-id="263bc-1514">Updated default environment values, such as $PATH to closer match native Ubuntu</span></span>
-- <span data-ttu-id="263bc-1515">在 Windows 中添加了每周维护任务以更新 apt 包缓存</span><span class="sxs-lookup"><span data-stu-id="263bc-1515">Added a weekly maintenance task in Windows to update the apt package cache</span></span>
-- <span data-ttu-id="263bc-1516">修复了 ELF 标头验证的问题，WSL 现在支持所有 Melkor 选项</span><span class="sxs-lookup"><span data-stu-id="263bc-1516">Fixed issue with ELF header validation, WSL now supports all Melkor options</span></span>
-- <span data-ttu-id="263bc-1517">Zsh shell 可正常运行</span><span class="sxs-lookup"><span data-stu-id="263bc-1517">Zsh shell is functional</span></span>
-- <span data-ttu-id="263bc-1518">现在支持预编译的 Go 二进制文件</span><span class="sxs-lookup"><span data-stu-id="263bc-1518">Precompiled Go binaries are now supported</span></span>
-- <span data-ttu-id="263bc-1519">现已正确本地化首次运行 Bash 时出现的提示</span><span class="sxs-lookup"><span data-stu-id="263bc-1519">Prompting on Bash.exe first run is now localized correctly</span></span>
-- <span data-ttu-id="263bc-1520">/proc/meminfo 现在会返回正确的信息</span><span class="sxs-lookup"><span data-stu-id="263bc-1520">/proc/meminfo now returns correct information</span></span>
-- <span data-ttu-id="263bc-1521">VFS 现在支持套接字</span><span class="sxs-lookup"><span data-stu-id="263bc-1521">Sockets now supported in VFS</span></span>
-- <span data-ttu-id="263bc-1522">/dev 现在装载为 tempfs</span><span class="sxs-lookup"><span data-stu-id="263bc-1522">/dev now mounted as tempfs</span></span>
-- <span data-ttu-id="263bc-1523">现在支持 Fifo</span><span class="sxs-lookup"><span data-stu-id="263bc-1523">Fifo now supported</span></span>
-- <span data-ttu-id="263bc-1524">多核系统现在会在 /proc/cpuinfo 中正确显示</span><span class="sxs-lookup"><span data-stu-id="263bc-1524">Multi-core systems now showing correctly in /proc/cpuinfo</span></span>
-- <span data-ttu-id="263bc-1525">其他改进以及首次运行期间下载内容时显示的错误消息</span><span class="sxs-lookup"><span data-stu-id="263bc-1525">Additional improvements and error messages downloading during first run</span></span>
-- <span data-ttu-id="263bc-1526">Syscall 改进和 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1526">Syscall improvements and bugfixes.</span></span> <span data-ttu-id="263bc-1527">下面列出了支持的 syscall。</span><span class="sxs-lookup"><span data-stu-id="263bc-1527">Supported syscall list below.</span></span>
-- <span data-ttu-id="263bc-1528">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1528">Additional bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1506">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1506">Fixed</span></span>
+- <span data-ttu-id="aa113-1507">修复了 Windows 用户在用户名中包含 Unicode 字符时出现的安装问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1507">Fixed install issue when the Windows user had Unicode characters in the username</span></span>
+- <span data-ttu-id="aa113-1508">现在，在首次运行时，默认会提供“常见问题解答”中的 apt-get update udev 解决方法</span><span class="sxs-lookup"><span data-stu-id="aa113-1508">The apt-get update udev workaround in the FAQ is now provided by default on first run</span></span>
+- <span data-ttu-id="aa113-1509">在 DriveFs (/mnt/<drive>) 目录中启用了符号链接</span><span class="sxs-lookup"><span data-stu-id="aa113-1509">Enabled symlinks in DriveFs (/mnt/<drive>) directories</span></span>
+- <span data-ttu-id="aa113-1510">现在可以在 DriveFs 和 VolFs 之间使用符号链接</span><span class="sxs-lookup"><span data-stu-id="aa113-1510">Symlinks now work between DriveFs and VolFs</span></span>
+- <span data-ttu-id="aa113-1511">解决了顶级路径分析问题：ls .// 现在可按预期方式工作</span><span class="sxs-lookup"><span data-stu-id="aa113-1511">Addressed top level path parsing issue: ls .// will now work as expected</span></span>
+- <span data-ttu-id="aa113-1512">DriveFs 上的 npm install 和 -g 选项现在可正常工作</span><span class="sxs-lookup"><span data-stu-id="aa113-1512">npm install on DriveFs and the -g options are now working</span></span>
+- <span data-ttu-id="aa113-1513">修复了阻止 PHP 服务器启动的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1513">Fixed issue preventing PHP server from launching</span></span>
+- <span data-ttu-id="aa113-1514">更新了默认环境值（例如 $PATH），以便与本机 Ubuntu 更匹配</span><span class="sxs-lookup"><span data-stu-id="aa113-1514">Updated default environment values, such as $PATH to closer match native Ubuntu</span></span>
+- <span data-ttu-id="aa113-1515">在 Windows 中添加了每周维护任务以更新 apt 包缓存</span><span class="sxs-lookup"><span data-stu-id="aa113-1515">Added a weekly maintenance task in Windows to update the apt package cache</span></span>
+- <span data-ttu-id="aa113-1516">修复了 ELF 标头验证的问题，WSL 现在支持所有 Melkor 选项</span><span class="sxs-lookup"><span data-stu-id="aa113-1516">Fixed issue with ELF header validation, WSL now supports all Melkor options</span></span>
+- <span data-ttu-id="aa113-1517">Zsh shell 可正常运行</span><span class="sxs-lookup"><span data-stu-id="aa113-1517">Zsh shell is functional</span></span>
+- <span data-ttu-id="aa113-1518">现在支持预编译的 Go 二进制文件</span><span class="sxs-lookup"><span data-stu-id="aa113-1518">Precompiled Go binaries are now supported</span></span>
+- <span data-ttu-id="aa113-1519">现已正确本地化首次运行 Bash 时出现的提示</span><span class="sxs-lookup"><span data-stu-id="aa113-1519">Prompting on Bash.exe first run is now localized correctly</span></span>
+- <span data-ttu-id="aa113-1520">/proc/meminfo 现在会返回正确的信息</span><span class="sxs-lookup"><span data-stu-id="aa113-1520">/proc/meminfo now returns correct information</span></span>
+- <span data-ttu-id="aa113-1521">VFS 现在支持套接字</span><span class="sxs-lookup"><span data-stu-id="aa113-1521">Sockets now supported in VFS</span></span>
+- <span data-ttu-id="aa113-1522">/dev 现在装载为 tempfs</span><span class="sxs-lookup"><span data-stu-id="aa113-1522">/dev now mounted as tempfs</span></span>
+- <span data-ttu-id="aa113-1523">现在支持 Fifo</span><span class="sxs-lookup"><span data-stu-id="aa113-1523">Fifo now supported</span></span>
+- <span data-ttu-id="aa113-1524">多核系统现在会在 /proc/cpuinfo 中正确显示</span><span class="sxs-lookup"><span data-stu-id="aa113-1524">Multi-core systems now showing correctly in /proc/cpuinfo</span></span>
+- <span data-ttu-id="aa113-1525">其他改进以及首次运行期间下载内容时显示的错误消息</span><span class="sxs-lookup"><span data-stu-id="aa113-1525">Additional improvements and error messages downloading during first run</span></span>
+- <span data-ttu-id="aa113-1526">Syscall 改进和 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1526">Syscall improvements and bugfixes.</span></span> <span data-ttu-id="aa113-1527">下面列出了支持的 syscall。</span><span class="sxs-lookup"><span data-stu-id="aa113-1527">Supported syscall list below.</span></span>
+- <span data-ttu-id="aa113-1528">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1528">Additional bugfixes and improvements</span></span>
 
-### <a name="known-issues"></a><span data-ttu-id="263bc-1529">已知问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1529">Known Issues</span></span>
-- <span data-ttu-id="263bc-1530">在某些情况下，</span><span class="sxs-lookup"><span data-stu-id="263bc-1530">Not resolving '..'</span></span> <span data-ttu-id="263bc-1531">不会正确解析 DriveFs 上的“..”</span><span class="sxs-lookup"><span data-stu-id="263bc-1531">correctly on DriveFs in some cases</span></span>
+### <a name="known-issues"></a><span data-ttu-id="aa113-1529">已知问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1529">Known Issues</span></span>
+- <span data-ttu-id="aa113-1530">在某些情况下，</span><span class="sxs-lookup"><span data-stu-id="aa113-1530">Not resolving '..'</span></span> <span data-ttu-id="aa113-1531">不会正确解析 DriveFs 上的“..”</span><span class="sxs-lookup"><span data-stu-id="aa113-1531">correctly on DriveFs in some cases</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1532">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1532">Syscall Support</span></span>
-<span data-ttu-id="263bc-1533">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1533">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="263bc-1534">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1534">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1532">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1532">Syscall Support</span></span>
+<span data-ttu-id="aa113-1533">下面是在 WSL 中具有某种实现的新的或增强的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1533">Below are a list of new or enhanced syscalls that have some implementation in WSL.</span></span> <span data-ttu-id="aa113-1534">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1534">The syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `FCHOWNAT`<br/>
 `GETEUID`<br/>
@@ -1959,49 +1959,49 @@ $ cmd.exe /c dir
 `SETXATTR`<br/>
 <br/>
 
-## <a name="build-14332"></a><span data-ttu-id="263bc-1535">内部版本 14332</span><span class="sxs-lookup"><span data-stu-id="263bc-1535">Build 14332</span></span>
+## <a name="build-14332"></a><span data-ttu-id="aa113-1535">内部版本 14332</span><span class="sxs-lookup"><span data-stu-id="aa113-1535">Build 14332</span></span>
 
-<span data-ttu-id="263bc-1536">有关内部版本 14332 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14332)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1536">For general Windows information on build 14332 visit the [Windows Blog](https://aka.ms/wip14332).</span></span> <br/>
+<span data-ttu-id="aa113-1536">有关内部版本 14332 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14332)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1536">For general Windows information on build 14332 visit the [Windows Blog](https://aka.ms/wip14332).</span></span> <br/>
 
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1537">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1537">Fixed</span></span>
-- <span data-ttu-id="263bc-1538">更好地生成 resolv.conf，包括指定 DNS 项的优先级</span><span class="sxs-lookup"><span data-stu-id="263bc-1538">Better resolv.conf generation including prioritizing DNS entries</span></span>
-- <span data-ttu-id="263bc-1539">在 /mnt 与非 /mnt 驱动器之间移动文件和目录时出现的问题</span><span class="sxs-lookup"><span data-stu-id="263bc-1539">Issue with moving files and directories between /mnt and non-/mnt drives</span></span>
-- <span data-ttu-id="263bc-1540">现在可以使用符号链接创建 Tar 文件。</span><span class="sxs-lookup"><span data-stu-id="263bc-1540">Tar files can now be created with symlinks</span></span>
-- <span data-ttu-id="263bc-1541">创建实例时会添加默认的 /run/lock 目录</span><span class="sxs-lookup"><span data-stu-id="263bc-1541">Added default /run/lock directory on instance creation</span></span>
-- <span data-ttu-id="263bc-1542">更新 /dev/null 以返回正确的统计信息</span><span class="sxs-lookup"><span data-stu-id="263bc-1542">Update /dev/null to return proper stat info</span></span>
-- <span data-ttu-id="263bc-1543">首次运行期间下载内容时出现的其他错误</span><span class="sxs-lookup"><span data-stu-id="263bc-1543">Additional errors when downloading during first run</span></span>
-- <span data-ttu-id="263bc-1544">Syscall 改进和 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1544">Syscall improvements and bugfixes.</span></span> <span data-ttu-id="263bc-1545">下面列出了支持的 syscall。</span><span class="sxs-lookup"><span data-stu-id="263bc-1545">Supported syscall list below.</span></span>
-- <span data-ttu-id="263bc-1546">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1546">Additional improvements bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1537">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1537">Fixed</span></span>
+- <span data-ttu-id="aa113-1538">更好地生成 resolv.conf，包括指定 DNS 项的优先级</span><span class="sxs-lookup"><span data-stu-id="aa113-1538">Better resolv.conf generation including prioritizing DNS entries</span></span>
+- <span data-ttu-id="aa113-1539">在 /mnt 与非 /mnt 驱动器之间移动文件和目录时出现的问题</span><span class="sxs-lookup"><span data-stu-id="aa113-1539">Issue with moving files and directories between /mnt and non-/mnt drives</span></span>
+- <span data-ttu-id="aa113-1540">现在可以使用符号链接创建 Tar 文件。</span><span class="sxs-lookup"><span data-stu-id="aa113-1540">Tar files can now be created with symlinks</span></span>
+- <span data-ttu-id="aa113-1541">创建实例时会添加默认的 /run/lock 目录</span><span class="sxs-lookup"><span data-stu-id="aa113-1541">Added default /run/lock directory on instance creation</span></span>
+- <span data-ttu-id="aa113-1542">更新 /dev/null 以返回正确的统计信息</span><span class="sxs-lookup"><span data-stu-id="aa113-1542">Update /dev/null to return proper stat info</span></span>
+- <span data-ttu-id="aa113-1543">首次运行期间下载内容时出现的其他错误</span><span class="sxs-lookup"><span data-stu-id="aa113-1543">Additional errors when downloading during first run</span></span>
+- <span data-ttu-id="aa113-1544">Syscall 改进和 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1544">Syscall improvements and bugfixes.</span></span> <span data-ttu-id="aa113-1545">下面列出了支持的 syscall。</span><span class="sxs-lookup"><span data-stu-id="aa113-1545">Supported syscall list below.</span></span>
+- <span data-ttu-id="aa113-1546">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1546">Additional improvements bugfixes and improvements</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1547">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1547">Syscall Support</span></span>
-<span data-ttu-id="263bc-1548">下面是在 WSL 中具有某种实现的新 syscall。</span><span class="sxs-lookup"><span data-stu-id="263bc-1548">Below is the new syscall that has some implementation in WSL.</span></span> <span data-ttu-id="263bc-1549">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一定都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1549">The syscall on this list is supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1547">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1547">Syscall Support</span></span>
+<span data-ttu-id="aa113-1548">下面是在 WSL 中具有某种实现的新 syscall。</span><span class="sxs-lookup"><span data-stu-id="aa113-1548">Below is the new syscall that has some implementation in WSL.</span></span> <span data-ttu-id="aa113-1549">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一定都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1549">The syscall on this list is supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `READLINKAT`<br/>
 <br/>
 
-## <a name="build-14328"></a><span data-ttu-id="263bc-1550">内部版本 14328</span><span class="sxs-lookup"><span data-stu-id="263bc-1550">Build 14328</span></span>
+## <a name="build-14328"></a><span data-ttu-id="aa113-1550">内部版本 14328</span><span class="sxs-lookup"><span data-stu-id="aa113-1550">Build 14328</span></span>
 
-<span data-ttu-id="263bc-1551">有关内部版本 14332 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14328)。</span><span class="sxs-lookup"><span data-stu-id="263bc-1551">For general Windows information on build 14332 visit the [Windows Blog](https://aka.ms/wip14328).</span></span> <br/>
+<span data-ttu-id="aa113-1551">有关内部版本 14332 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14328)。</span><span class="sxs-lookup"><span data-stu-id="aa113-1551">For general Windows information on build 14332 visit the [Windows Blog](https://aka.ms/wip14328).</span></span> <br/>
 
 
-### <a name="new-features"></a><span data-ttu-id="263bc-1552">新功能</span><span class="sxs-lookup"><span data-stu-id="263bc-1552">New Features</span></span>
-* <span data-ttu-id="263bc-1553">现在支持 Linux 用户。</span><span class="sxs-lookup"><span data-stu-id="263bc-1553">Now support Linux users.</span></span>  <span data-ttu-id="263bc-1554">安装 Windows 上的 Ubuntu Bash 时会提示创建 Linux 用户。</span><span class="sxs-lookup"><span data-stu-id="263bc-1554">Installing Bash on Ubuntu on Windows will prompt for creation of a Linux user.</span></span>  <span data-ttu-id="263bc-1555">有关详细信息，请访问 https://aka.ms/wslusers</span><span class="sxs-lookup"><span data-stu-id="263bc-1555">For more information, visit https://aka.ms/wslusers</span></span>
-* <span data-ttu-id="263bc-1556">现在，主机名将设置为 Windows 计算机名，而不再是 @localhost</span><span class="sxs-lookup"><span data-stu-id="263bc-1556">Hostname is now set to the Windows computer name, no more @localhost</span></span>
-* <span data-ttu-id="263bc-1557">有关内部版本 14328 的详细信息，请访问： https://aka.ms/wip14328</span><span class="sxs-lookup"><span data-stu-id="263bc-1557">For more information on build 14328, visit: https://aka.ms/wip14328</span></span>
+### <a name="new-features"></a><span data-ttu-id="aa113-1552">新功能</span><span class="sxs-lookup"><span data-stu-id="aa113-1552">New Features</span></span>
+* <span data-ttu-id="aa113-1553">现在支持 Linux 用户。</span><span class="sxs-lookup"><span data-stu-id="aa113-1553">Now support Linux users.</span></span>  <span data-ttu-id="aa113-1554">安装 Windows 上的 Ubuntu Bash 时会提示创建 Linux 用户。</span><span class="sxs-lookup"><span data-stu-id="aa113-1554">Installing Bash on Ubuntu on Windows will prompt for creation of a Linux user.</span></span>  <span data-ttu-id="aa113-1555">有关详细信息，请访问 https://aka.ms/wslusers</span><span class="sxs-lookup"><span data-stu-id="aa113-1555">For more information, visit https://aka.ms/wslusers</span></span>
+* <span data-ttu-id="aa113-1556">现在，主机名将设置为 Windows 计算机名，而不再是 @localhost</span><span class="sxs-lookup"><span data-stu-id="aa113-1556">Hostname is now set to the Windows computer name, no more @localhost</span></span>
+* <span data-ttu-id="aa113-1557">有关内部版本 14328 的详细信息，请访问： https://aka.ms/wip14328</span><span class="sxs-lookup"><span data-stu-id="aa113-1557">For more information on build 14328, visit: https://aka.ms/wip14328</span></span>
 
-### <a name="fixed"></a><span data-ttu-id="263bc-1558">固定</span><span class="sxs-lookup"><span data-stu-id="263bc-1558">Fixed</span></span>
-* <span data-ttu-id="263bc-1559">非 /mnt/<drive> 文件的符号链接改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1559">Symlink improvements for non /mnt/<drive> files</span></span>
-    * <span data-ttu-id="263bc-1560">现在可正常运行 npm install</span><span class="sxs-lookup"><span data-stu-id="263bc-1560">npm install now works</span></span>
-    * <span data-ttu-id="263bc-1561">现在可以根据[此处](https://xubuntugeek.blogspot.com/2012/09/how-to-install-oracle-jdk-7-manually-in.html)的说明安装 jdk/jre。</span><span class="sxs-lookup"><span data-stu-id="263bc-1561">jdk / jre now installable using instructions found [here](https://xubuntugeek.blogspot.com/2012/09/how-to-install-oracle-jdk-7-manually-in.html).</span></span>
-    * <span data-ttu-id="263bc-1562">已知问题：符号链接不适用于 Windows 装载。</span><span class="sxs-lookup"><span data-stu-id="263bc-1562">known issue: symlinks do not work for Windows mounts.</span></span>  <span data-ttu-id="263bc-1563">此功能将在以后的内部版本中可用</span><span class="sxs-lookup"><span data-stu-id="263bc-1563">Functionality will be available in a later build</span></span>
-* <span data-ttu-id="263bc-1564">现在会显示 top 和 htop</span><span class="sxs-lookup"><span data-stu-id="263bc-1564">top and htop now display</span></span>
-* <span data-ttu-id="263bc-1565">有关某些安装失败的其他错误消息</span><span class="sxs-lookup"><span data-stu-id="263bc-1565">Additional error messages for some install failures</span></span>
-* <span data-ttu-id="263bc-1566">Syscall 改进和 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="263bc-1566">Syscall improvements and bugfixes.</span></span>  <span data-ttu-id="263bc-1567">下面列出了支持的 syscall。</span><span class="sxs-lookup"><span data-stu-id="263bc-1567">Supported syscall list below.</span></span>
-* <span data-ttu-id="263bc-1568">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="263bc-1568">Additional improvements bugfixes and improvements</span></span>
+### <a name="fixed"></a><span data-ttu-id="aa113-1558">固定</span><span class="sxs-lookup"><span data-stu-id="aa113-1558">Fixed</span></span>
+* <span data-ttu-id="aa113-1559">非 /mnt/<drive> 文件的符号链接改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1559">Symlink improvements for non /mnt/<drive> files</span></span>
+    * <span data-ttu-id="aa113-1560">现在可正常运行 npm install</span><span class="sxs-lookup"><span data-stu-id="aa113-1560">npm install now works</span></span>
+    * <span data-ttu-id="aa113-1561">现在可以根据[此处](https://xubuntugeek.blogspot.com/2012/09/how-to-install-oracle-jdk-7-manually-in.html)的说明安装 jdk/jre。</span><span class="sxs-lookup"><span data-stu-id="aa113-1561">jdk / jre now installable using instructions found [here](https://xubuntugeek.blogspot.com/2012/09/how-to-install-oracle-jdk-7-manually-in.html).</span></span>
+    * <span data-ttu-id="aa113-1562">已知问题：符号链接不适用于 Windows 装载。</span><span class="sxs-lookup"><span data-stu-id="aa113-1562">known issue: symlinks do not work for Windows mounts.</span></span>  <span data-ttu-id="aa113-1563">此功能将在以后的内部版本中可用</span><span class="sxs-lookup"><span data-stu-id="aa113-1563">Functionality will be available in a later build</span></span>
+* <span data-ttu-id="aa113-1564">现在会显示 top 和 htop</span><span class="sxs-lookup"><span data-stu-id="aa113-1564">top and htop now display</span></span>
+* <span data-ttu-id="aa113-1565">有关某些安装失败的其他错误消息</span><span class="sxs-lookup"><span data-stu-id="aa113-1565">Additional error messages for some install failures</span></span>
+* <span data-ttu-id="aa113-1566">Syscall 改进和 bug 修复。</span><span class="sxs-lookup"><span data-stu-id="aa113-1566">Syscall improvements and bugfixes.</span></span>  <span data-ttu-id="aa113-1567">下面列出了支持的 syscall。</span><span class="sxs-lookup"><span data-stu-id="aa113-1567">Supported syscall list below.</span></span>
+* <span data-ttu-id="aa113-1568">其他 bug 修复和改进</span><span class="sxs-lookup"><span data-stu-id="aa113-1568">Additional improvements bugfixes and improvements</span></span>
 
-### <a name="syscall-support"></a><span data-ttu-id="263bc-1569">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="263bc-1569">Syscall Support</span></span>
-<span data-ttu-id="263bc-1570">下面是在 WSL 中具有某种实现的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="263bc-1570">Below is a list of syscalls that have some implementation in WSL.</span></span>  <span data-ttu-id="263bc-1571">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一定都受支持。</span><span class="sxs-lookup"><span data-stu-id="263bc-1571">Syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
+### <a name="syscall-support"></a><span data-ttu-id="aa113-1569">Syscall 支持</span><span class="sxs-lookup"><span data-stu-id="aa113-1569">Syscall Support</span></span>
+<span data-ttu-id="aa113-1570">下面是在 WSL 中具有某种实现的 syscall 列表。</span><span class="sxs-lookup"><span data-stu-id="aa113-1570">Below is a list of syscalls that have some implementation in WSL.</span></span>  <span data-ttu-id="aa113-1571">此列表中的 syscall 至少在一种方案中受支持，但目前其所有参数不一定都受支持。</span><span class="sxs-lookup"><span data-stu-id="aa113-1571">Syscalls on this list are supported in at least one scenario, but may not have all parameters supported at this time.</span></span>
 
 `ACCEPT`<br/>
 `ACCEPT4`<br/>
