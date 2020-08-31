@@ -1,16 +1,16 @@
 ---
 title: 适用于 Linux 的 Windows 子系统命令参考
-description: 用于管理适用于 Linux 的 Windows 子系统的命令列表
+description: 查看管理适用于 Linux 的 Windows 子系统（例如用于运行 Linux 命令的参数）的命令的列表。
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu
 ms.date: 07/31/2017
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 72b78a73bf68b28dd14b4826943a0c81ea04bbad
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: fc5c9e06c597092a3790ba7f9eb06054a33450c1
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270871"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866132"
 ---
 # <a name="command-reference-for-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统的命令参考
 
@@ -60,7 +60,7 @@ wsl --set-default-version 2
 
   如果未提供命令行，wsl.exe 将启动默认 shell。
 
-* **--exec、-e \<命令行>**
+* **--exec, -e \<CommandLine>**
   
   执行指定的命令，但不使用默认的 Linux shell。
 
@@ -70,21 +70,21 @@ wsl --set-default-version 2
 
 上述命令也接受以下选项：
 
-* **--distribution、-d \<分发版>**
+* **--distribution, -d \<Distro>**
 
   运行指定的分发版。
 
-* **--user、-u \<用户名>**
+* **--user, -u \<UserName>**
 
   以指定用户的身份运行。
 
 ### <a name="arguments-for-managing-windows-subsystem-for-linux"></a>用于管理适用于 Linux 的 Windows 子系统的参数
 
-* **--export \<分发版> \<文件名>**
+* **--export \<Distro> \<FileName>**
   
   将分发版导出到 tar 文件。 在标准输出中，文件名可以是 -。
 
-* **--import \<分发版> \<安装位置> \<文件名>**
+* **--import \<Distro> \<InstallLocation> \<FileName>**
   
   导入指定的 tar 文件作为新的分发版。 在标准输入中，文件名可以是 -。
 
@@ -101,15 +101,15 @@ wsl --set-default-version 2
 
     仅列出当前正在运行的分发版。
 
-* **--set-default、-s \<分发版>**
+* **--set-default, -s \<Distro>**
   
   将分发版设置为默认值。
 
-* **--terminate, -t \<分发版>**
+* **--terminate, -t \<Distro>**
   
   终止指定的分发版。
 
-* **--unregister \<分发版>**
+* **--unregister \<Distro>**
   
   注销分发版。
 
@@ -137,13 +137,13 @@ wsl --set-default-version 2
 
 * **/running** 仅列出当前正在运行的分发版。
 
-* **/s, /setdefault \<Distro>** 将该分发版设置为默认版本。
+* **/s, /setdefault \<Distro>** 将该发行版设置为默认版本。
 
-* **/t, /terminate \<Distro>** 终止分发版。
+* **/t, /terminate \<Distro>** 终止发行版。
 
-* **/u, /unregister \<Distro>** 注销分发版。
+* **/u, /unregister \<Distro>** 注销发行版。
 
-* **/upgrade \<Distro>** 将分发版升级为 WslFs 文件系统格式。
+* **/upgrade \<Distro>** 将发行版升级为 WslFs 文件系统格式。
 
 ### `bash.exe`
 
@@ -159,7 +159,7 @@ wsl --set-default-version 2
   
   `bash ~` 在用户的主目录中启动 bash shell。  类似于运行 `cd ~`。
 
-* **-c "\<命令>"**
+* **-c "\<command>"**
   
   运行命令，列显输出，并返回到 Windows 命令提示符。
 

@@ -1,16 +1,16 @@
 ---
 title: 比较 WSL 2 和 WSL 1
-description: 比较适用于 Linux 的 Windows 子系统版本 1 和版本 2。 提示- 版本 2 运行实际 Linux 内核并且性能速度更快，但是，但如果需要同时在 Windows 和 Linux 文件系统中工作，WSL 1 的效果更佳。
+description: 比较适用于 Linux 的 Windows 子系统版本 1 和版本 2。 WSL 2 运行实际的 Linux 内核，从而提高速度和完全系统调用兼容性。 如果跨 Windows 和 Linux 文件系统工作，则 WSL 1 效果更佳。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubuntu, debian, suse, windows 10, UX 更改, WSL 2, linux 内核, 网络应用程序, localhost, IPv6, 虚拟硬件磁盘, VHD, VHD 限制, VHD 错误
 ms.date: 07/22/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: f64eff318ead5b74356a1b7db435952d4d4e669b
-ms.sourcegitcommit: 90577817a9321949da2a3971b4c78bb00f6d977f
+ms.openlocfilehash: 15f1528332345f0bea829b9606372ed7346e6dff
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88039420"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866029"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 

@@ -1,16 +1,16 @@
 ---
 title: 在 Windows Server 上安装 Linux 子系统
-description: Windows Server 上的 Linux 子系统的安装说明。
+description: 了解如何在 Windows Server 上安装 Linux 子系统。 WSL 可供在 Windows Server 2019（版本 1709）和更高版本上安装。
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu, windows server
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ebcd7f6b10d2b734b1f2a66f64a5e3292855bcf4
-ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
+ms.openlocfilehash: 501bbf78c2d9f59dad945af9c30571317240b79f
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84671017"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866149"
 ---
 # <a name="windows-server-installation-guide"></a>Windows Server 安装指南
 

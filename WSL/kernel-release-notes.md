@@ -5,16 +5,24 @@ keywords: 发行说明, wsl, windows, 适用于 linux 的 windows 子系统, win
 ms.date: 06/09/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: e2409fccada9077adbeac3843c31b8faa2c93208
-ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
+ms.openlocfilehash: ffec37d179005eb7015a8f9af8de0ac185710bec
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85336050"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866118"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux-kernel"></a>适用于 Linux 的 Windows 子系统内核发行说明
 
 我们添加了对 WSL 2 分发的支持，[这些分发使用完整 Linux 内核](https://devblogs.microsoft.com/commandline/shipping-a-linux-kernel-with-windows/)。 此 Linux 内核是开源的，[WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel) 存储库中提供了其源代码。 此 Linux 内核通过 Microsoft 更新传递到计算机，并按单独的发布计划发布到适用于 Linux 的 Windows 子系统，该子系统作为 Windows 映像的一部分提供。
+
+## <a name="419128-microsoft-standard"></a>4.19.128-microsoft-standard
+*发布日期*：预发行版
+
+[官方 Github 版本链接](https://github.com/microsoft/WSL2-Linux-Kernel/releases/tag/4.19.128-microsoft-standard)。
+
+* 这是 4.19.128 的稳定版本
+* 修复 dxgkrnl 驱动程序 IOCTL 内存损坏的问题
 
 ## <a name="419121-microsoft-standard"></a>4.19.121-microsoft-standard
 *发布日期*：预发行版

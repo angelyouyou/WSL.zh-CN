@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: cc8f032a99fb087b7ef614dd3a3574cb8ee3f2da
-ms.sourcegitcommit: ba52d673c123fe8ae61e872a33e218cfc30a1f82
+ms.openlocfilehash: 84aecf4f6111cca47ece3c2421be659fb5a27771
+ms.sourcegitcommit: a5534257c236cefeebe86e6b3fc4be0be8fac24e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86033061"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88714855"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
@@ -39,6 +39,22 @@ ms.locfileid: "86033061"
 最后，如果你的问题与 Windows 终端、Windows 控制台或命令行 UI 相关，请使用 Windows 终端存储库： https://github.com/microsoft/terminal
 
 ## <a name="common-issues"></a>常见问题
+
+### <a name="error-0x1bc-when-wsl---set-default-version-2"></a>错误：使用 `wsl --set-default-version 2` 时显示 0x1bc
+当“显示语言”或“系统区域设置”未设为英语时，可能会发生此情况。
+```
+wsl --set-default-version 2
+Error: 0x1bc
+For information on key differences with WSL 2 please visit https://aka.ms/wsl2
+```
+
+`0x1bc` 的实际错误为：
+```
+WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel
+```
+
+有关详细信息，请查看问题 [5749](https://github.com/microsoft/WSL/issues/5749)
+
 
 ### <a name="cannot-access-wsl-files-from-windows"></a>无法从 Windows 访问 WSL 文件
 9p 协议文件服务器在 Linux 端提供服务，以允许 Windows 访问 Linux 文件系统。 如果在 Windows 上无法使用 `\\wsl$` 访问 WSL，则可能是因为 9P 无法正确启动。

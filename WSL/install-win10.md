@@ -1,16 +1,16 @@
 ---
 title: 在 Windows 10 上安装适用于 Linux 的 Windows 子系统 (WSL)
-description: 有关在 Windows 10 上安装适用于 Linux 的 Windows 子系统的说明。
+description: 了解如何在 Windows 10 上安装适用于 Linux 的 Windows 子系统。 Windows 10 必须更新为版本 2004（内部版本 19041）或更高版本。
 keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系统, windows 子系统, ubuntu, debian, suse, Windows 10, 安装, 启用, WSL2, 版本 2
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: bab21722e77a0879db70e21003fb237491d99218
-ms.sourcegitcommit: 90577817a9321949da2a3971b4c78bb00f6d977f
+ms.openlocfilehash: 23c72c0e82c90c23fc0406b56dbf8accad0e39df
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88039431"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866167"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
@@ -30,9 +30,9 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 若要更新到 WSL 2，必须满足以下条件：
 
-- 运行 Windows 10（[已更新到版本 2004](ms-settings:windowsupdate) 的**内部版本 19041** 或更高版本）。
+- 运行 Windows 10（[已更新到版本 1903 或更高版本](ms-settings:windowsupdate)的内部版本 18362 或更高版本）。
 
-- 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver**，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 如果内部版本低于 19041，请[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 [获取 Windows 更新助手](https://www.microsoft.com/software-download/windows10)。
+- 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver**，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 如果内部版本低于 18361，请[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 [获取 Windows 更新助手](https://www.microsoft.com/software-download/windows10)。
 
 ### <a name="enable-the-virtual-machine-platform-optional-component"></a>启用“虚拟机平台”可选组件
 
@@ -59,7 +59,7 @@ wsl --set-default-version 2
 > [!NOTE]
 > 从 WSL 1 更新到 WSL 2 可能需要几分钟才能完成，具体取决于目标分发版的大小。 如果从 Windows 10 周年更新或创意者更新运行 WSL 1 的旧（历史）安装，可能会遇到更新错误。 按照这些说明[卸载并删除任何旧分发](https://docs.microsoft.com/windows/wsl/install-legacy#uninstallingremoving-the-legacy-distro)。 
 >
-> 如果 `wsl --set-default-version` 结果为无效命令，请输入 `wsl --help`。 如果 `--set-default-version` 未列出，则表示你的 OS 不支持它，你需要更新到版本 2004、内部版本 19041 或更高版本。
+> 如果 `wsl --set-default-version` 结果为无效命令，请输入 `wsl --help`。 如果 `--set-default-version` 未列出，则表示你的 OS 不支持它，你需要更新到版本 1903（内部版本 18362）或更高版本。
 
 ## <a name="install-your-linux-distribution-of-choice"></a>安装所选的 Linux 分发版
 
@@ -96,7 +96,7 @@ wsl --set-default-version 2
 
 ## <a name="set-your-distribution-version-to-wsl-1-or-wsl-2"></a>将分发版版本设置为 WSL 1 或 WSL 2
 
-可以打开 PowerShell 命令行并输入以下命令（仅在 [Windows 内部版本 19041 或更高版本](ms-settings:windowsupdate)中可用），来检查分配给每个已安装的 Linux 分发版的 WSL 版本：`wsl -l -v`
+可打开 PowerShell 命令行并输入以下命令（仅在 [Windows 内部版本 18362 或更高版本](ms-settings:windowsupdate)中可用），检查分配给每个已安装的 Linux 分发版的 WSL 版本：`wsl -l -v`
 
 ```powershell
 wsl --list --verbose
@@ -135,7 +135,7 @@ wsl --set-default-version 2
   - 请确保在计算机的 BIOS 内已启用虚拟化。 有关如何执行此操作的说明因计算机而异，并且很可能在 CPU 相关选项下。
 
 - **尝试升级时出错：`Invalid command line option: wsl --set-version Ubuntu 2`**
-  - 请确保已启用适用于 Linux 的 Windows 子系统，并且你使用的是 Windows 内部版本 19041 或更高版本。 若要启用 WSL，请在 PowerShell 提示符下以具有管理员权限的身份运行此命令：`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`。
+  - 请确保已启用适用于 Linux 的 Windows 子系统，并且你使用的是 Windows 内部版本 18362 或更高版本。 若要启用 WSL，请在 PowerShell 提示符下以具有管理员权限的身份运行此命令：`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`。
 
 - **由于虚拟磁盘系统的某个限制，无法完成所请求的操作。虚拟硬盘文件必须是解压缩的且未加密的，并且不能是稀疏的。**
   - 取消选中“压缩内容”（如果已选中“加密内容”，请一并取消选中），方法是打开 Linux 发行版的配置文件文件夹。 它应位于 Windows 文件系统上的一个文件夹中，类似于：`USERPROFILE%\AppData\Local\Packages\CanonicalGroupLimited...`

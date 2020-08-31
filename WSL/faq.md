@@ -1,17 +1,17 @@
 ---
 title: 常见问题 (FAQ)
-description: 有关适用于 Linux 的 Windows 子系统的常见问题解答。
+description: 查找有关适用于 Linux 的 Windows 子系统的常见问题的解答，例如“我可使用 WSL 执行哪些操作？”。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, faq
 ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 8e3ebb44c139b5e7b8c25e8e813766b0107426dc
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: 9a9f287ceb2ae93286999ed32d655198c8a390c8
+ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948631"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88866150"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>有关适用于 Linux 的 Windows 子系统的常见问题解答
 
