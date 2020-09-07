@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 23c72c0e82c90c23fc0406b56dbf8accad0e39df
-ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
+ms.openlocfilehash: 14e1697d1f2ac7a1efa17368be830a5c22973bc6
+ms.sourcegitcommit: 910845e9b3f980b2c5b9b4968331a706720603c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88866167"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89058492"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
@@ -30,7 +30,9 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 若要更新到 WSL 2，必须满足以下条件：
 
-- 运行 Windows 10（[已更新到版本 1903 或更高版本](ms-settings:windowsupdate)的内部版本 18362 或更高版本）。
+- 运行 Windows 10（[已更新到版本 1903 或更高版本](ms-settings:windowsupdate)，对于 x64 系统则是内部版本 18362 或更高版本）。
+- 运行 Windows 10（已更新到版本 2004 或更高版本，对于 ARM64 系统则是内部版本 19041）。
+- 请注意，如果使用的是 Windows 10 版本 1903 或 1909，将需要确保具有正确的向后移植，[此处](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/#how-do-i-get-it)提供了相关说明。 
 
 - 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver**，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 如果内部版本低于 18361，请[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 [获取 Windows 更新助手](https://www.microsoft.com/software-download/windows10)。
 
