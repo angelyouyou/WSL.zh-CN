@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 84aecf4f6111cca47ece3c2421be659fb5a27771
-ms.sourcegitcommit: a5534257c236cefeebe86e6b3fc4be0be8fac24e
+ms.openlocfilehash: 2335db4daf8b9c5c67ad04a1fc94339b6c01e546
+ms.sourcegitcommit: 6ff046993e9f196cdfa04f5f91130e0e4ff1e7fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714855"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427194"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
@@ -39,6 +39,12 @@ ms.locfileid: "88714855"
 最后，如果你的问题与 Windows 终端、Windows 控制台或命令行 UI 相关，请使用 Windows 终端存储库： https://github.com/microsoft/terminal
 
 ## <a name="common-issues"></a>常见问题
+
+### <a name="im-on-windows-10-version-1903-and-i-still-do-not-see-options-for-wsl-2"></a>我在使用 Windows 10 版本 1903，但我还是没看见 WSL 2 选项。 
+
+这可能是因为你的计算机尚未实现对 WSL 2 的向后移植。 要解决此问题，最简单的方法是转到 Windows 设置，然后打击“检查更新”，在你的系统上安装最新更新。 你可在[此处](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/#how-do-i-get-it)查看有关实现向后移植的完整说明。 
+
+如果你点击了“检查更新”，但仍未收到更新，那么可[按照此链接](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4566116)手动安装 KB KB4566116。  
 
 ### <a name="error-0x1bc-when-wsl---set-default-version-2"></a>错误：使用 `wsl --set-default-version 2` 时显示 0x1bc
 当“显示语言”或“系统区域设置”未设为英语时，可能会发生此情况。

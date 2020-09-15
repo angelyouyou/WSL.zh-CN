@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系�
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 551cc66b1648a66717163d1d8e19a78d28bff342
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: cdb510b8195f18f89ea475889c34850234b7c0e8
+ms.sourcegitcommit: 6ff046993e9f196cdfa04f5f91130e0e4ff1e7fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235913"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427184"
 ---
 # <a name="create-a-user-account-and-password-for-your-new-linux-distribution"></a>为新的 Linux 分发版创建用户帐户和密码
 
@@ -50,7 +50,7 @@ Windows 不会自动更新或升级 Linux 分发版。 大多数 Linux 用户往
 
     > 如果需要在非默认分发版中更新忘记的密码，请使用命令：`wsl -d Debian -u root`，并将 `Debian` 替换为目标分发版的名称。
 
-2. 在 PowerShell 内的根级别打开 WSL 分发版后，可以使用此命令更新密码：`passwd`
+2. 在 PowerShell 内的根级别打开 WSL 发行版后，可使用此命令更新密码：`passwd <WSLUsername>`，其中 `<WSLUsername>` 是 DISTRO 中帐户的用户名，而你忘记了它的密码。
 
 3. 系统将提示你输入新的 UNIX 密码，然后确认该密码。 在被告知密码已成功更新后，请使用以下命令在 PowerShell 内关闭 WSL：`exit`
 
