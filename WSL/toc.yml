@@ -40,6 +40,8 @@
       href: enterprise.md
     - name: 生成自定义分发版
       href: build-custom-distro.md
+    - name: 在 WSL 2（预览版）中装载磁盘
+      href: wsl2-mount-disk.md
     - name: 命令行参考
       href: reference.md
 - name: 常见问题
