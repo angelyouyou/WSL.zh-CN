@@ -4,8 +4,6 @@
   items:
     - name: 什么是 WSL？
       href: about.md
-    - name: WSL 2 中的新增功能
-      href: wsl2-index.md
     - name: 比较 WSL 2 和 WSL 1
       href: compare-versions.md
 - name: 快速入门
