@@ -5,12 +5,12 @@ keywords: wsl、windows、windowssubsystem、windows 10、docker、容器
 ms.date: 08/28/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: a972cd6f179059e0841e1aef4bc3929fa46fcc4d
-ms.sourcegitcommit: 1c7f2e9928672ad3941a9327162595cb73ef5a3f
+ms.openlocfilehash: 2ae9da815335f99a9b4a75334a02d2730ddd08c6
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609641"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818749"
 ---
 # <a name="get-started-with-docker-remote-containers-on-wsl-2"></a>WSL 2 上的 Docker 远程容器入门
 
@@ -127,13 +127,13 @@ Docker 容器与虚拟机类似，但不会创建整个虚拟操作系统。 相
 
     ![VS Code 运行调试配置](../media/vscode-run-config.png)
 
-10. 在 VS Code 中，选择 "**运行**" "  >  **开始调试**" (或只需按**F5**键) 。 这会在 VS Code 中打开终端，你应看到如下所示的结果： " http://127.0.0.1:8000/ 使用 CONTROL C 退出服务器"。 按住 Ctrl 键并选择显示的用于在默认 web 浏览器中打开应用程序的地址，并查看在它的容器中运行的项目。
+10. 在 VS Code 中，选择 "**运行**" "  >  **开始调试**" (或只需按**F5**键) 。 这会在 VS Code 中打开终端，你应看到如下所示的结果： " http://127.0.0.1:8000/ 使用 CONTROL C 退出服务器"。 按住 Ctrl 键并选择显示的用于在默认 web 浏览器中打开应用程序的地址，并查看在其容器内运行的项目。
 
     ![运行 docker 容器 VS Code](../media/vscode-running-in-container.png)
 
 现在，你已成功配置了使用 Docker Desktop 的远程开发容器，该容器由 WSL 2 后端提供支持，你可以使用 VS Code 进行编码、生成、运行、部署或调试！
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 ### <a name="wsl-docker-context-deprecated"></a>已弃用 WSL docker 上下文
 

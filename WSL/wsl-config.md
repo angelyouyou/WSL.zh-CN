@@ -4,12 +4,12 @@ description: 有关列出和配置在适用于 Linux 的 Windows 子系统上运
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: b8aa740233f3ac9517744212eb7b362a18378822
-ms.sourcegitcommit: 90577817a9321949da2a3971b4c78bb00f6d977f
+ms.openlocfilehash: 0a127d376a8606a1a13ea88c9efed161e18a161d
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88039410"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818729"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL 命令和启动配置
 
@@ -18,7 +18,7 @@ ms.locfileid: "88039410"
 [安装](install-win10.md)了 WSL 后，可通过多种方式运行 Linux 分发版。
 
 1. 通过访问 Windows 的 "开始" 菜单并键入已安装的分发的名称，打开 Linux 分发版。 例如： "Ubuntu"。
-2. 在 Windows 命令提示符或 PowerShell 中，输入已安装的分发的名称。 例如： `ubuntu`
+2. 在 Windows 命令提示符或 PowerShell 中，输入已安装的分发的名称。 例如：`ubuntu`
 3. 在 Windows 命令提示符或 PowerShell 中，若要在当前命令行内打开默认的 Linux 分发，请输入： `wsl.exe` 。
 4. 在 Windows 命令提示符或 PowerShell 中，若要在当前命令行内打开默认的 Linux 分发，请输入： `wsl [command]` 。
 
@@ -116,18 +116,18 @@ PS C:\Users\sarah>
 
 ## <a name="managing-multiple-linux-distributions"></a>管理多个 Linux 分发版
 
-在 Windows 10 版本 1903[及更高](ms-settings:windowsupdate)版本中，可以使用在 `wsl.exe` 适用于 Linux 的 WINDOWS 子系统 (WSL) 中管理分发，包括列出可用的分发、设置默认分发以及卸载分发。
+在 Windows 10 版本 1903 [及更高](ms-settings:windowsupdate)版本中，可以使用在 `wsl.exe` 适用于 Linux 的 WINDOWS 子系统 (WSL) 中管理分发，包括列出可用的分发、设置默认分发以及卸载分发。
 
-每个 Linux 分发版独立管理自身的配置。 若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如 `ubuntu /?`。
+每个 Linux 分发版独立管理自身的配置。 若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如，`ubuntu /?`。
 
 ## <a name="list-distributions"></a>列出分发版
 
 `wsl -l` , `wsl --list`  
 列出可用于 WSL 的 Linux 分发版。  如果列出了某个分发版，表示该分发版已安装且可供使用。
 
-`wsl --list --all`列出所有分发，包括当前不可用的分发。  这些分发版可能正在安装、卸载或处于损坏状态。  
+`wsl --list --all` 列出所有分发，包括当前不可用的分发。  这些分发版可能正在安装、卸载或处于损坏状态。  
 
-`wsl --list --running`列出当前正在运行的所有分发版。
+`wsl --list --running` 列出当前正在运行的所有分发版。
 
 ## <a name="set-a-default-distribution"></a>设置默认分发版
 
@@ -170,7 +170,7 @@ PS C:\Users\sarah>
 例如： `ubuntu config --default-user johndoe` 会将 Ubuntu 分发的默认用户更改为 "johndoe" 用户。
 
 > [!NOTE]
-> 如果在找出分发的名称时遇到问题，请参阅命令的[列表分发](https://docs.microsoft.com/windows/wsl/wsl-config#list-distributions)以列出已安装的分发的正式名称。 
+> 如果在找出分发的名称时遇到问题，请参阅命令的 [列表分发](https://docs.microsoft.com/windows/wsl/wsl-config#list-distributions) 以列出已安装的分发的正式名称。 
 
 ## <a name="run-a-specific-distribution"></a>运行特定的分发版
 
@@ -182,7 +182,7 @@ PS C:\Users\sarah>
 
 在 Windows 10 版本1903之前，应使用 WSL Config (`wslconfig.exe`) 命令行工具管理在适用于 linux 的 Windows 子系统 (WSL) 上运行的 linux 分发。  使用该工具可以列出可用分发版、设置默认分发和卸载分发版。
 
-尽管 WSL Config 对于跨越或协调分发版的设置有帮助，但每个 Linux 分发版会独立管理自身的配置。  若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如 `ubuntu /?`。
+尽管 WSL Config 对于跨越或协调分发版的设置有帮助，但每个 Linux 分发版会独立管理自身的配置。  若要查看特定于分发版的命令，请运行 `[distro.exe] /?`。  例如，`ubuntu /?`。
 
 若要查看 wslconfig 的所有可用选项，请运行：`wslconfig /?`
 
@@ -208,7 +208,7 @@ Usage:
 
 设置在命令行上运行时运行的默认分发 `wsl` ：
 
-`wslconfig /setdefault <DistributionName>`将默认分布设置为 `<DistributionName>` 。
+`wslconfig /setdefault <DistributionName>` 将默认分布设置为 `<DistributionName>` 。
 
 **示例：使用 PowerShell)  (**  
 `wslconfig /setdefault Ubuntu` 会将我的默认分发版设置为 Ubuntu。  现在，当我运行 `wsl npm init` 时，该分发版将在 Ubuntu 中运行。  如果我运行 `wsl`，它会打开 Ubuntu 会话。
@@ -260,7 +260,7 @@ WSL 支持两个节：`automount` 和 `network`。
 
 | 键        | value                          | 默认      | 备注                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 已启用    | 布尔值                        | true         | `true` 导致固定驱动器（即 `C:/` 或 `D:/`）自动装载到 DrvFs 中的 `/mnt` 下。  `false`表示不会自动装入驱动器，但你仍然可以手动或通过手动装载它们 `fstab` 。                                                                                                             |
+| 已启用    | 布尔值                        | true         | `true` 导致固定驱动器（即 `C:/` 或 `D:/`）自动装载到 DrvFs 中的 `/mnt` 下。  `false` 表示不会自动装入驱动器，但你仍然可以手动或通过手动装载它们 `fstab` 。                                                                                                             |
 | mountFsTab | 布尔值                        | true         | `true` 设置启动 WSL 时要处理的 `/etc/fstab`。 /etc/fstab 是可在其中声明其他文件系统的文件，类似于 SMB 共享。 因此，在启动时，可以在 WSL 中自动装载这些文件系统。                                                                                                                |
 | root       | 字符串                         | `/mnt/`      | 设置固定驱动器要自动装载到的目录。 例如，如果 WSL 中的某个目录位于 `/windir/`，而你将该目录指定为根目录，则固定驱动器预期会装载到 `/windir/c`                                                                                              |
 | 选项    | 逗号分隔值列表 | 空字符串 | 此值将追加到默认的 DrvFs 装载选项字符串。 **只能指定特定于 DrvFs 的选项。** 通常由装载二进制文件分析成标志的选项不受支持。 若要显式指定这些选项，必须在 /etc/fstab 中包含要对其执行此操作的每个驱动器。 |
@@ -339,15 +339,15 @@ processors=2 # Makes the WSL 2 VM use two virtual processors
 | key | value | 默认值 | 说明|
 |:----|:----|:----|:----|
 | 内核 (kernel) | 字符串 | Microsoft 构建的内核提供的收件箱 | 自定义 Linux 内核的绝对 Windows 路径。 |
-| 内存 | 大小 | Windows 上的总内存的 80% * | 要分配给 WSL 2 VM 的内存量。 |
-| 款 | number | Windows 上的处理器数相同 | 要分配给 WSL 2 VM 的处理器数量。 |
+| 内存 | 大小 | Windows 或8GB 上的总内存的50%，取两者中的较小者;在20175之前的版本中，在 Windows 上的内存总量为80% | 要分配给 WSL 2 VM 的内存量。 |
+| 款 | 数字 | Windows 上的处理器数相同 | 要分配给 WSL 2 VM 的处理器数量。 |
 | localhostForwarding | boolean | `true` | 布尔值，指定是否应通过 localhost： port 将绑定到 WSL 2 VM 中的通配符或 localhost 的端口连接到主机。 |
-| kernelCommandLine | 字符串 | 空 | 其他内核命令行参数。 |
+| kernelCommandLine | 字符串 | 空白 | 其他内核命令行参数。 |
 | swap | 大小 | Windows 上的25% 内存大小向上舍入到最接近的 GB | 要添加到 WSL 2 VM 的交换空间量，0表示没有交换文件。 |
 | 交换文件 | 字符串 | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | 交换虚拟硬盘的绝对 Windows 路径。 |
 
 * 注意：对于 Windows 版本19041，此值为 true，并可能在预览体验计划中的 Windows 版本中有所不同
 
-值为的项 `path` 必须是包含转义反斜杠的 Windows 路径，例如：`C:\\Temp\\myCustomKernel`
+值为的项 `path` 必须是包含转义反斜杠的 Windows 路径，例如： `C:\\Temp\\myCustomKernel`
 
 具有值的项 `size` 必须是后跟一个单位的大小，例如 `8GB` 或 `512MB` 。

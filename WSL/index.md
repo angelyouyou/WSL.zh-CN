@@ -3,29 +3,33 @@ title: 适用于 Linux 的 Windows 子系统概述
 description: 浏览适用于 Linux 的 Windows 子系统文档。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, gnu, linux
 ms.topic: article
+ms.date: 09/15/2020
 ms.localizationpriority: high
-ms.openlocfilehash: 81ff05f03172e3e3a167ffba4ce846ec2edb3d1c
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: e8046e4ec95e599014c5e5c09a24e7fac44da43d
+ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948581"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90719156"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>适用于 Linux 的 Windows 子系统文档
 
-适用于 Linux 的 Windows 子系统可让开发人员按原样运行 GNU/Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生传统虚拟机或双启动设置开销。
+适用于 Linux 的 Windows 子系统可让开发人员直接在 Windows 上按原样运行 GNU/Linux 环境（包括大多数命令行工具、实用工具和应用程序），且不会产生传统虚拟机或双启动设置开销。
 
-## <a name="learn-more-here"></a>在此处了解详细信息
+> [!div class="nextstepaction"]
+> [安装 WSL](install-win10.md)
+
+## <a name="learn-more"></a>了解更多
 
 * [什么是适用于 Linux 的 Windows 子系统？](about.md)
-* [WSL 2 的新增功能](wsl2-index.md)
+* [WSL 2 的新增功能](compare-versions.md#whats-new-in-wsl-2)
 * [比较 WSL 2 和 WSL 1](compare-versions.md)
 * [阅读常见问题解答](faq.md)
 
 ## <a name="get-started"></a>入门
 
 * [安装 WSL1](install-win10.md)
-* [更新到 WSL2](install-win10.md#update-to-wsl-2)
+* [更新到 WSL2](install-win10.md#step-2---update-to-wsl-2)
 * [在 Windows Server 上安装 Linux](install-on-server.md)
 * [为新的 Linux 分发版创建用户帐户和密码](user-support.md)
 
