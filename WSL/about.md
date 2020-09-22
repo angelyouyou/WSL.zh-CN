@@ -6,12 +6,12 @@ ms.date: 07/21/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.localizationpriority: high
-ms.openlocfilehash: c468f501894df9dfde4323471a6d20569ac82e9c
-ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
+ms.openlocfilehash: 2b79473f620c39084bc9b7a385d4e16e3fe34d77
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88865967"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818669"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>什么是适用于 Linux 的 Windows 子系统？
 
@@ -72,6 +72,6 @@ WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，�
 
 * [引用 WSL 命令](./reference.md)
 
-* [生成自定义分发版](./build-custom-distro.md)
+* [自定义分发版](./build-custom-distro.md)
 
 * [阅读 WSL 发行说明](./release-notes.md)
