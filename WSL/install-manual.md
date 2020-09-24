@@ -2,15 +2,15 @@
 title: 手动下载适用于 Linux 的 Windows 子系统 (WSL) 发行版
 description: 有关如何手动下载适用于 Linux 的 Windows 子系统发行版的说明。
 keywords: wsl, 适用于 linux 的 windows 子系统, 手动安装, 手动安装, microsoft store, windows 10, curl, Add-appxpackage, 长期服务, LTSC
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: d948ce9d304314bdd15b98136b8a99ca35723139
-ms.sourcegitcommit: e67eb4aedff57a304188ca3360aba25605f8bdb1
+ms.openlocfilehash: 04b991d1019f2187a01189695e4078f4d8a8ba1f
+ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84746273"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90719136"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>手动下载适用于 Linux 的 Windows 子系统发行版包
 
@@ -40,7 +40,7 @@ ms.locfileid: "84746273"
 如果愿意，也可以通过命令行下载你首选的发行版：
 
  ### <a name="download-using-powershell"></a>使用 PowerShell 下载
- 若要使用 PowerShell 下载发行版，请使用 [Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-5.1) cmdlet。 下面是用于下载 Ubuntu 16.04 的示例说明。
+ 若要使用 PowerShell 下载发行版，请使用 [Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest) cmdlet。 下面是用于下载 Ubuntu 16.04 的示例说明。
 
 ```powershell
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
@@ -56,7 +56,7 @@ Windows 10 Spring 2018 更新（或更高版本）包括了流行的 [curl 命�
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 ```
 
-在上面的示例中，将执行 `curl.exe`（而不仅仅是 `curl`），以确保在 PowerShell 中调用真正的 curl 可执行文件，而不是调用 [Invoke WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6) 的 PowerShell curl 别名
+在上面的示例中，将执行 `curl.exe`（而不仅仅是 `curl`），以确保在 PowerShell 中调用真正的 curl 可执行文件，而不是调用 [Invoke WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest) 的 PowerShell curl 别名
 
 > 注意：如果必须使用 Cmd shell 和/或 `.bat` / `.cmd` 脚本来调用/编写下载步骤，则使用 `curl` 可能更好。
 
@@ -68,4 +68,4 @@ Add-AppxPackage .\app_name.appx
 
 如果使用的是 Windows server，可以在 [Windows Server](install-on-server.md) 文档页上找到安装说明。
 
-安装分发版后，请按照常规说明[更新到 WSL 2](./install-win10.md#update-to-wsl-2) 或[创建新的用户帐户和密码](./user-support.md)。
+安装分发版后，请按照常规说明[更新到 WSL 2](./install-win10.md#step-2---update-to-wsl-2) 或[创建新的用户帐户和密码](./user-support.md)。

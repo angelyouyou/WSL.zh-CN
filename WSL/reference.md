@@ -2,15 +2,15 @@
 title: 适用于 Linux 的 Windows 子系统命令参考
 description: 查看管理适用于 Linux 的 Windows 子系统（例如用于运行 Linux 命令的参数）的命令的列表。
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu
-ms.date: 07/31/2017
+ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: fc5c9e06c597092a3790ba7f9eb06054a33450c1
-ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
+ms.openlocfilehash: 6f98cb7b238e4b38c1a931a0e77e419efbcc319d
+ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88866132"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90719165"
 ---
 # <a name="command-reference-for-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统的命令参考
 
@@ -169,7 +169,7 @@ wsl --set-default-version 2
 
 `lxrun.exe` 是用于安装和管理适用于 Linux 的 Windows 子系统的第一个命令。 从 Windows 10 1803 和更高版本开始，此命令已弃用。
 
-可以使用命令 `lxrun.exe` 来直接与[适用于 Linux 的 Windows 子系统 (WSL)](https://msdn.microsoft.com/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) 交互。  这些命令已安装到 `\Windows\System32` 目录中，可以在 Windows 命令提示符或 PowerShell 中运行。
+可以使用命令 `lxrun.exe` 来直接与适用于 Linux 的 Windows 子系统 (WSL) 交互。  这些命令已安装到 `\Windows\System32` 目录中，可以在 Windows 命令提示符或 PowerShell 中运行。
 
 | 命令                     | 说明                     |
 |:----------------------------|:---------------------------|

@@ -2,16 +2,16 @@
 title: 常见问题 (FAQ)
 description: 查找有关适用于 Linux 的 Windows 子系统的常见问题的解答，例如“我可使用 WSL 执行哪些操作？”。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, faq
-ms.date: 9/4/2018
+ms.date: 09/15/2020
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 9a9f287ceb2ae93286999ed32d655198c8a390c8
-ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
+ms.openlocfilehash: 0f16471968151fa040d41baa90af6aedfb6fee79
+ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88866150"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90719186"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>有关适用于 Linux 的 Windows 子系统的常见问题解答
 
@@ -181,7 +181,7 @@ WSL 不支持在旧版控制台中运行。 若要关闭旧版控制台：
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>在升级 Windows 后运行 bash.exe 时，为何会出现“错误:0x80040154”？
 
-在 Windows 更新期间可能禁用了“适用于 Linux 的 Windows 子系统”功能。 如果出现这种情况，则必须重新启用 Windows 功能。 在[安装指南](https://docs.microsoft.com/windows/wsl/install-win10#install-the-windows-subsystem-for-linux)中可以找到有关启用“适用于 Linux 的 Windows 子系统”功能的说明。
+在 Windows 更新期间可能禁用了“适用于 Linux 的 Windows 子系统”功能。 如果出现这种情况，则必须重新启用 Windows 功能。 在[安装指南](https://docs.microsoft.com/windows/wsl/install-win10)中可以找到有关启用“适用于 Linux 的 Windows 子系统”功能的说明。
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>如何更改 WSL 的显示语言？
 
