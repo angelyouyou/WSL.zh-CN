@@ -5,16 +5,16 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 2335db4daf8b9c5c67ad04a1fc94339b6c01e546
-ms.sourcegitcommit: 6ff046993e9f196cdfa04f5f91130e0e4ff1e7fa
+ms.openlocfilehash: 83c73e99afd4745081290340a67edee3ec26dc60
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427194"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818709"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
-要获得 WSL 相关问题的支持，请参阅 GitHub 存储库：
+要获得 WSL 相关问题的支持，请参阅 GitHub 存储库： https://github.com/Microsoft/wsl/issues
 
 ## <a name="search-for-any-existing-issues-related-to-your-problem"></a>搜索与你的问题相关的任何现有问题
 
@@ -44,7 +44,7 @@ ms.locfileid: "89427194"
 
 这可能是因为你的计算机尚未实现对 WSL 2 的向后移植。 要解决此问题，最简单的方法是转到 Windows 设置，然后打击“检查更新”，在你的系统上安装最新更新。 你可在[此处](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/#how-do-i-get-it)查看有关实现向后移植的完整说明。 
 
-如果你点击了“检查更新”，但仍未收到更新，那么可[按照此链接](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4566116)手动安装 KB KB4566116。  
+如果你点击了“检查更新”，但仍未收到更新，那么可[按照此链接](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566116)手动安装 KB KB4566116。  
 
 ### <a name="error-0x1bc-when-wsl---set-default-version-2"></a>错误：使用 `wsl --set-default-version 2` 时显示 0x1bc
 当“显示语言”或“系统区域设置”未设为英语时，可能会发生此情况。

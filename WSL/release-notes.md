@@ -6,23 +6,33 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 57d06a8666f8003b187f043bd18655a9287d8a63
-ms.sourcegitcommit: fb79750bd71d6ebaed5203b3de71ba85a67227b1
+ms.openlocfilehash: f79acbbc7f6436bae54c5160e769cababa76a341
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88866107"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818689"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统发行说明
+
+## <a name="build-20211"></a>内部版本 20211
+有关内部版本 20211 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windows-insider/2020/09/10/announcing-windows-10-insider-preview-build-20211/)。
+
+* 用于装载物理或虚拟磁盘的 `wsl.exe --mount` 简介。 有关详细信息，请参阅[访问 Windows 和 WSL 2 中的 Linux 文件系统](https://devblogs.microsoft.com/commandline/access-linux-filesystems-in-windows-and-wsl-2/)。
+* 解决检查 VM 是否处于空闲状态时 LxssManager 服务发生崩溃的问题。 [GH 5768]
+* 支持压缩的 VHD 文件。 [GH 4103]
+* 确保在 OS 升级期间保留安装到 c:\windows\system32\lxss\lib 的 Linux 用户模式库。 [GH 5848]
+* 添加了功能：列出可使用 `wsl --install --list-distributions` 安装的可用分发。
+* 现在，当用户注销时，WSL 实例会终止运行。
 
 ## <a name="build-20190"></a>内部版本 20190
 有关内部版本 20190 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/08/12/announcing-windows-10-insider-preview-build-20190/)。
 
-* 修复阻止 WSL1 实例启动的 bug [GH 5633]
-* 修复重定向 Windows 进程输出时出现的挂起 [GH 5648]
-* 添加 %userprofile%\\.wslconfig 选项以控制 VM 空闲超时 (wsl2.vmIdleTimeout=<time_in_ms>)
-* 支持从 WSL 启动应用执行别名
-* 添加了对安装 WSL2 内核和 wsl.exe 发行版的支持 - 安装
+* 修复阻止 WSL1 实例启动的 bug。 [GH 5633]
+* 修复重定向 Windows 进程输出时出现的挂起。 [GH 5648]
+* 添加 %userprofile%\\.wslconfig 选项以控制 VM 空闲超时 (wsl2.vmIdleTimeout=<time_in_ms>)。
+* 支持从 WSL 启动应用执行别名。
+* 添加了对安装 WSL2 内核和 wsl.exe 发行版的支持 - 安装。
 
 ## <a name="build-20175"></a>内部版本 20175
 有关内部版本 20175 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2020/07/22/announcing-windows-10-insider-preview-build-20175/)。

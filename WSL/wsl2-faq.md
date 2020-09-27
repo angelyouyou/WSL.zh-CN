@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: a021dc3c6c3c2a14fea631f2733d2b846c6fe3ad
-ms.sourcegitcommit: 910845e9b3f980b2c5b9b4968331a706720603c6
+ms.openlocfilehash: 458aadc89e0f8e63e7d7bad780ed8c5fad0de702
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89058482"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818678"
 ---
 # <a name="wsl-2-faqs"></a>WSL 2 常见问题解答
 
@@ -30,13 +30,13 @@ WSL 2 在当前可使用 WSL 的所有 SKU 上都可使用，包括 Windows 10 �
 
 ## <a name="will-i-be-able-to-run-wsl-2-and-other-3rd-party-virtualization-tools-such-as-vmware-or-virtualbox"></a>我是否能够运行 WSL 2 和其他第三方虚拟化工具（例如 VMware 或 VirtualBox）？
 
-当使用 Hyper-V 时，某些第三方应用程序无法工作，这意味着当启用了 WSL 2 时，这些应用程序（如 VMware 和 VirtualBox）将无法运行。 但最近，VirtualBox 和 VMware 都发布了支持 Hyper-V 和 WSL2 的版本！ 可[在此处了解有关 VirtualBox 的更改的详细信息][1]，并可[在此处了解有关 VMware 的更改的详细信息][4]。
+当使用 Hyper-V 时，某些第三方应用程序无法工作，这意味着当启用了 WSL 2 时，这些应用程序（如 VMware 和 VirtualBox）将无法运行。 但最近，VirtualBox 和 VMware 都发布了支持 Hyper-V 和 WSL2 的版本。 [在此处了解有关 VirtualBox 的更改的详细信息][1]，并[在此处了解有关 VMware 的更改的详细信息][4]。 若要解决问题，请查看 [GitHub 上 WSL 存储库中的 VirtualBox 问题讨论](https://github.com/MicrosoftDocs/WSL/issues?q=is%3Aissue+virtualbox+sort%3Acomments-desc)。
 
 我们一直在开发解决方案以支持 Hyper-V 的第三方集成。 例如，我们向第三方虚拟化提供商公开了一组称为[虚拟机监控程序平台][2]的 API，可以用来使其软件与 Hyper-V 兼容。 这使得应用程序可以将 Hyper-V 体系结构用于其模拟，例如，现在都与 Hyper-V 兼容的 [Google 安卓模拟器][3]和 VirtualBox 6 及更高版本。
 
 ## <a name="can-i-access-the-gpu-in-wsl-2-are-there-plans-to-increase-hardware-support"></a>是否可以在 WSL 2 中访问 GPU？ 是否计划增加硬件支持？
 
-我们发布了相关支持，可在 WSL 2 发行版内访问 GPU！ 这意味着，在涉及到大数据集时，现在可以更轻松地将 WSL 用于机器学习、人工智能和数据科学应用场景。 在此处可以找到 [GPU 支持的入门教程](./tutorials/gpu-compute)。 从现在开始，WSL 2 不包括串行支持和 USB 设备支持。 我们正在研究添加这些功能的最佳方法。
+我们发布了相关支持，可在 WSL 2 发行版内访问 GPU！ 这意味着，在涉及到大数据集时，现在可以更轻松地将 WSL 用于机器学习、人工智能和数据科学应用场景。 请查看 [GPU 支持入门](./tutorials/gpu-compute.md)教程。 从现在开始，WSL 2 不包括串行支持和 USB 设备支持。 我们正在研究添加这些功能的最佳方法。
 
 ## <a name="will-wsl-2-be-able-to-use-networking-applications"></a>WSL 2 是否能够使用网络应用程序？
 

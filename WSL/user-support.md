@@ -5,20 +5,20 @@ keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系�
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: cdb510b8195f18f89ea475889c34850234b7c0e8
-ms.sourcegitcommit: 6ff046993e9f196cdfa04f5f91130e0e4ff1e7fa
+ms.openlocfilehash: 7f1ad56a6f4261ad0455ee93bdeb5e31d0ed10d1
+ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427184"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90818719"
 ---
 # <a name="create-a-user-account-and-password-for-your-new-linux-distribution"></a>为新的 Linux 分发版创建用户帐户和密码
 
 [启用 WSL 并从 Microsoft Store 中安装 Linux 分发版](./install-win10.md)后，在打开新安装的 Linux 分发版时将会要求你完成的第一步是创建帐户，包括**用户名**和**密码**。
 
-- 此**用户名**和**密码**特定于 Linux 分发版，与 Windows 用户名无关。
+- 此**用户名**和**密码**特定于安装的每个单独的 Linux 分发版，与 Windows 用户名无关。
 
-- 创建此**用户名**和**密码**后，该帐户将是分发版的默认用户，并将在启动时自动登录。
+- 创建**用户名**和**密码**后，该帐户将是分发版的默认用户，并将在启动时自动登录。
 
 - 此帐户将被视为 Linux 管理员，能够运行 `sudo` (Super User Do) 管理命令。
 

@@ -5,19 +5,19 @@ keywords: 发行说明, wsl, windows, 适用于 linux 的 windows 子系统, win
 ms.date: 06/09/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 32b65bcde3df01b25f0361493a172e754e78e101
-ms.sourcegitcommit: 43d4056eefe0c71ecd9a0fbd5a7a58dd18fa9829
+ms.openlocfilehash: eb93135355384013b93b4b5c4af03a582280febf
+ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89615549"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90719116"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux-kernel"></a>适用于 Linux 的 Windows 子系统内核发行说明
 
 我们添加了对 WSL 2 分发的支持，[这些分发使用完整 Linux 内核](https://devblogs.microsoft.com/commandline/shipping-a-linux-kernel-with-windows/)。 此 Linux 内核是开源的，[WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel) 存储库中提供了其源代码。 此 Linux 内核通过 Microsoft 更新传递到计算机，并按单独的发布计划发布到适用于 Linux 的 Windows 子系统，该子系统作为 Windows 映像的一部分提供。
 
 ## <a name="419128-microsoft-standard"></a>4.19.128-microsoft-standard
-*发布日期*：预发行版，通过手动安装提供
+*发布日期*：2020/09/15
 
 [官方 Github 版本链接](https://github.com/microsoft/WSL2-Linux-Kernel/releases/tag/4.19.128-microsoft-standard)。
 
