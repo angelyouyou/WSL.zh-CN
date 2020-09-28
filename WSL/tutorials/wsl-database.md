@@ -5,12 +5,12 @@ keywords: wsl、windows、windowssubsystem、MySQL MongoDB、PostgreSQL、SQLite
 ms.date: 07/07/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 561af482e245892156a02fe287b95867ef80ded1
-ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
+ms.openlocfilehash: b7e4f7477741a931c4ee71e07736bac115443ac9
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90719126"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413298"
 ---
 # <a name="get-started-with-databases-on-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统上的数据库入门
 
@@ -19,9 +19,9 @@ ms.locfileid: "90719126"
 ## <a name="prerequisites"></a>先决条件
 
 - 运行 Windows 10（[已更新到版本 2004](ms-settings:windowsupdate) 的**内部版本 19041** 或更高版本）。
-- [启用并安装 WSL，并更新为 WSL 2](https://docs.microsoft.com/windows/wsl/install-win10)。
-- [Linux 分发](https://docs.microsoft.com/windows/wsl/install-win10#step-6---install-your-linux-distribution-of-choice) (Ubuntu 18.04 安装在) 的示例中。
-- 确保 Ubuntu 18.04 分发 [在 WSL 2 模式下运行](https://docs.microsoft.com/windows/wsl/install-win10#set-your-distribution-version-to-wsl-1-or-wsl-2)。  (WSL 可以在 v1 或 v2 模式下运行分发。 ) 可以通过打开 PowerShell 并输入以下内容来进行检查： `wsl -l -v`
+- [启用并安装 WSL，并更新为 WSL 2](../install-win10.md)。
+- [Linux 分发](../install-win10.md#step-6---install-your-linux-distribution-of-choice) (Ubuntu 18.04 安装在) 的示例中。
+- 确保 Ubuntu 18.04 分发 [在 WSL 2 模式下运行](../install-win10.md#set-your-distribution-version-to-wsl-1-or-wsl-2)。  (WSL 可以在 v1 或 v2 模式下运行分发。 ) 可以通过打开 PowerShell 并输入以下内容来进行检查： `wsl -l -v`
 
 ## <a name="differences-between-database-systems"></a>数据库系统之间的差异
 
@@ -29,7 +29,7 @@ ms.locfileid: "90719126"
 
 - [MySQL](https://www.mysql.com/why-mysql/) (SQL) 
 - [PostgreSQL](https://www.postgresql.org/about/) (SQL) 
-- [Microsoft SQL Server](https://docs.microsoft.com/sql) (SQL) 
+- [Microsoft SQL Server](/sql) (SQL) 
 - [SQLite](https://www.sqlite.org/about.html) (SQL) 
 - [MongoDB](https://www.mongodb.com/what-is-mongodb) (NoSQL) 
 - [Redis](https://redis.io/topics/introduction) (NoSQL) 
@@ -157,7 +157,7 @@ VS Code 支持通过 [Azure CosmosDB 扩展](https://marketplace.visualstudio.co
 
 ## <a name="install-microsoft-sql-server"></a>安装 Microsoft SQL Server
 
-若要在 WSL 上安装 SQL Server (Ubuntu 18.04) ，请按照本快速入门： [安装 SQL Server 并在 ubuntu 上创建数据库](https://docs.microsoft.com/sql/linux/quickstart-install-connect-ubuntu)。
+若要在 WSL 上安装 SQL Server (Ubuntu 18.04) ，请按照本快速入门： [安装 SQL Server 并在 ubuntu 上创建数据库](/sql/linux/quickstart-install-connect-ubuntu)。
 
 若要在 VS Code 中使用 Microsoft SQL Server 数据库，请尝试 [MSSQL 扩展](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)。
 
@@ -226,4 +226,4 @@ VS Code 支持通过 [Azure CosmosDB 扩展](https://marketplace.visualstudio.co
 
 ## <a name="additional-resources"></a>其他资源
 
-- [在 Windows 10 上设置开发环境](https://docs.microsoft.com/windows/dev-environment/)
+- [在 Windows 10 上设置开发环境](/windows/dev-environment/)

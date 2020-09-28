@@ -6,12 +6,12 @@ ms.date: 07/21/2020
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.localizationpriority: high
-ms.openlocfilehash: 2b79473f620c39084bc9b7a385d4e16e3fe34d77
-ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
+ms.openlocfilehash: 0c6fa3d0c5483a7ffd1fb95f13ca62666a7c1e72
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90818669"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413078"
 ---
 # <a name="what-is-the-windows-subsystem-for-linux"></a>什么是适用于 Linux 的 Windows 子系统？
 
@@ -23,7 +23,7 @@ ms.locfileid: "90818669"
 * 运行常用的命令行软件工具（例如 `grep`、`sed`、`awk`）或其他 ELF-64 二进制文件。
 * 运行 Bash shell 脚本和 GNU/Linux 命令行应用程序，包括：  
     * 工具：vim、emacs、tmux
-    * 语言：[NodeJS](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2)、Javascript、[Python](https://docs.microsoft.com/windows/python/web-frameworks)、Ruby、C/ C++、C# 与 F#、Rust、Go 等。
+    * 语言：[NodeJS](/windows/nodejs/setup-on-wsl2)、Javascript、[Python](/windows/python/web-frameworks)、Ruby、C/ C++、C# 与 F#、Rust、Go 等。
     * 服务：SSHD、[MySQL](./tutorials/wsl-database.md)、Apache、lighttpd、[MongoDB](./tutorials/wsl-database.md)、[PostgreSQL](./tutorials/wsl-database.md)。
 * 使用自己的 GNU/Linux 分发包管理器安装其他软件。
 * 使用类似于 Unix 的命令行 shell 调用 Windows 应用程序。

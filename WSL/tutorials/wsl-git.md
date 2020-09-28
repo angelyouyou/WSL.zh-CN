@@ -5,12 +5,12 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，git，github�
 ms.date: 06/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: c48234be5c3867d771363aaa5e630d8ebe378364
-ms.sourcegitcommit: 6ff046993e9f196cdfa04f5f91130e0e4ff1e7fa
+ms.openlocfilehash: 2d05e83d4c87b1b03028856bcec9d5205205535a
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427214"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413348"
 ---
 # <a name="get-started-using-git-on-windows-subsystem-for-linux"></a>在适用于 Linux 的 Windows 子系统上开始使用 Git
 
@@ -40,7 +40,7 @@ Git 已安装了大多数适用于 Linux 分发的 Windows 子系统，但你可
 
 若要安装 Git，请参阅 [适用于 Linux 的 Git 下载](https://git-scm.com/download/linux) 站点。 每个 Linux 分发都有自己的包管理器和安装命令。
 
-对于 Ubuntu/Debian 中的最新稳定 GIt 版本，请输入以下命令：
+对于 Ubuntu/Debian 中的最新稳定 Git 版本，请输入以下命令：
 
 ```bash
 sudo apt-get install git

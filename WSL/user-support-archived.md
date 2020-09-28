@@ -4,18 +4,18 @@ description: 针对以前的 Windows 版本的参考，用于通过适用于 Lin
 ms.date: 01/20/2020
 ms.topic: article
 ROBOTS: NOINDEX
-ms.openlocfilehash: 406158d769c4b465b6168d7cca45b48ff1f201fe
-ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
+ms.openlocfilehash: 33a42c8f3bd518fa45df2874a6c59b76cd8ec80a
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520836"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413358"
 ---
 # <a name="wsl-user-account-updates-on-previous-windows-versions"></a>WSL 以前的 Windows 版本上的用户帐户更新
 
 此内容针对早期版本的 Windows 操作系统的用户存档，该版本支持适用于 Linux 的子系统并且需要支持更新 Linux 用户帐户。
 
-有关最新文档，请参阅适用于[Linux 的 Windows 子系统的用户帐户](../user-support.md)。
+有关最新文档，请参阅适用于 [Linux 的 Windows 子系统的用户帐户](./user-support.md)。
 
 ### <a name="for-creators-update-version-of-windows-and-earlier"></a>对于创建者更新版本的 Windows 和更早版本
 

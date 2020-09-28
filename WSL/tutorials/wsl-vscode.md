@@ -5,16 +5,16 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，vs code，远�
 ms.date: 05/28/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f5d7bd4f582f504ea3c4bd814454b1dc881ffed2
-ms.sourcegitcommit: 97cc93f8e26391c09a31a4ab42c4b5e9d98d1c32
+ms.openlocfilehash: b39b34644040354df44bf62ec7b878e3f5d667e6
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86948651"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413338"
 ---
 # <a name="get-started-using-visual-studio-code-with-windows-subsystem-for-linux"></a>使用适用于 Linux 的 Windows 子系统的 Visual Studio Code 入门
 
-Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code 使用 WSL 作为你的全时开发环境。 方法：
+Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code 使用 WSL 作为你的全时开发环境。 您可以：
 
 * 在基于 Linux 的环境中进行开发
 * 使用特定于 Linux 的工具链和实用工具
@@ -23,18 +23,18 @@ Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code
 * 利用[Intellisense 代码完成](https://code.visualstudio.com/docs/editor/intellisense)、 [linting](https://code.visualstudio.com/docs/python/linting)、[调试支持](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)、[代码片段](https://code.visualstudio.com/docs/editor/userdefinedsnippets)和[单元测试](https://code.visualstudio.com/docs/python/testing)等 VS Code 功能
 * 通过 VS Code 的内置[Git 支持](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support)轻松管理版本控制
 * 直接在 WSL 项目上运行命令和 VS Code 扩展
-* 在 Linux 或已装载的 Windows filesystem 中编辑文件（例如/mnt/c），无需担心路径问题、二进制兼容性或其他跨操作系统挑战
+* 编辑 Linux 中的文件或已装载的 Windows filesystem (例如/mnt/c) ，无需担心路径问题、二进制兼容性或其他跨操作系统挑战
 
 ## <a name="install-vs-code-and-the-remote-wsl-extension"></a>安装 VS Code 和远程 WSL 扩展
 
-* 访问[VS Code 安装 "页](https://code.visualstudio.com/download)，然后选择32或64位安装程序。 在 Windows 上安装 Visual Studio Code （不在 WSL 文件系统中安装）。
+* 访问 [VS Code 安装 "页](https://code.visualstudio.com/download) ，然后选择32或64位安装程序。 不在 WSL 文件系统) 上安装 Windows (上的 Visual Studio Code。
 
-* 当系统提示您在安装过程中**选择其他任务**时，请务必选中 "**添加到路径**" 选项，以便您可以使用代码命令轻松打开 WSL 中的文件夹。
+* 当系统提示您在安装过程中 **选择其他任务** 时，请务必选中 " **添加到路径** " 选项，以便您可以使用代码命令轻松打开 WSL 中的文件夹。
 
-* 安装[远程开发扩展包](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)。 除了远程 SSH 和远程容器扩展外，此扩展包还包括远程 WSL 扩展，使你能够打开容器、远程计算机或 WSL 中的任何文件夹。
+* 安装 [远程开发扩展包](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)。 除了远程 SSH 和远程容器扩展外，此扩展包还包括远程 WSL 扩展，使你能够打开容器、远程计算机或 WSL 中的任何文件夹。
 
 > [!IMPORTANT]
-> 若要安装 WSL 扩展，将需要[1.35 的发行](https://code.visualstudio.com/updates/v1_35)版本或更高版本 VS Code。 建议不要在不使用 WSL 扩展的 VS Code 中使用 WSL，因为将失去对自动完成、调试、linting 等的支持。有趣的事实：此 WSL 扩展安装在 $HOME/.vscode/extensions （ `ls $HOME\.vscode\extensions\` 在 PowerShell 中输入命令）中。
+> 若要安装 WSL 扩展，将需要 [1.35 的发行](https://code.visualstudio.com/updates/v1_35) 版本或更高版本 VS Code。 建议不要在不使用 WSL 扩展的 VS Code 中使用 WSL，因为将失去对自动完成、调试、linting 等的支持。有趣的事实：此 WSL 扩展安装在 $HOME/.vscode/extensions 中 (在 `ls $HOME\.vscode\extensions\` PowerShell) 中输入命令。
 
 ## <a name="update-your-linux-distribution"></a>更新 Linux 分发版
 
@@ -46,7 +46,7 @@ Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code
 sudo apt-get update
 ```
 
-若要添加 wget （从 web 服务器检索内容）和 ca 证书（以允许基于 SSL 的应用程序检查 SSL 连接的真实性），请输入：
+若要添加 wget (从 web 服务器检索内容) 和 ca 证书 (允许基于 SSL 的应用程序检查 SSL 连接的真实性) ，请输入：
 
 ```bash
 sudo apt-get install wget ca-certificates
@@ -56,7 +56,7 @@ sudo apt-get install wget ca-certificates
 
 ### <a name="from-the-command-line"></a>从命令行
 
-若要从 WSL 分发打开项目，请打开分发的命令行并输入以下命令：`code .`
+若要从 WSL 分发打开项目，请打开分发的命令行并输入以下命令： `code .`
 
 ![VS Code 远程服务器打开 WSL 项目](../media/wsl-open-vs-code.gif)
 
@@ -68,31 +68,31 @@ sudo apt-get install wget ca-certificates
 
 ## <a name="extensions-inside-of-vs-code-remote"></a>VS Code 远程中的扩展
 
-远程 WSL 扩展将 VS Code 拆分为 "客户端-服务器" 体系结构，并在 Windows 计算机上运行的客户端（用户界面）以及远程运行的服务器（你的代码、Git、插件等）运行客户端（用户界面）。
+远程 WSL 扩展将 VS Code 拆分为 "客户端-服务器" 体系结构，客户端 (在 Windows 计算机上运行的用户界面，以及在远程运行 (代码、Git、插件等) 的服务器上运行的用户) 界面。
 
 VS Code 远程运行时，选择 "扩展" 选项卡将显示本地计算机与 WSL 分发之间剥离的扩展的列表。
 
-安装本地扩展（如[主题](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs)）只需安装一次。
+安装本地扩展（如 [主题](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs)）只需安装一次。
 
-某些扩展（如[Python 扩展](https://marketplace.visualstudio.com/items?itemName=ms-python.python)）或处理 linting 或调试等内容的任何内容必须在每个远程 WSL 分发上单独安装。 ⚠如果本地安装的扩展未安装在 WSL Remote 上，VS Code 将显示一个警告图标以及绿色的 "安装在 WSL" 按钮。
+某些扩展（如 [Python 扩展](https://marketplace.visualstudio.com/items?itemName=ms-python.python) ）或处理 linting 或调试等内容的任何内容必须在每个远程 WSL 分发上单独安装。 ⚠如果本地安装的扩展未安装在 WSL Remote 上，VS Code 将显示一个警告图标以及绿色的 "安装在 WSL" 按钮。
 
 ![VS Code 与 WSL extension vs local extension](../media/vscode-remote-wsl-extensions.png)
 
 有关详细信息，请参阅 VS Code 文档：
 
-* 在 WSL 中启动 VS Code Remote 时，将不运行任何 shell 启动脚本。 有关如何运行其他命令或修改环境的详细信息，请参阅此[高级环境安装脚本一文](https://code.visualstudio.com/docs/remote/wsl#_advanced-environment-setup-script)。
+* 在 WSL 中启动 VS Code Remote 时，将不运行任何 shell 启动脚本。 有关如何运行其他命令或修改环境的详细信息，请参阅此 [高级环境安装脚本一文](https://code.visualstudio.com/docs/remote/wsl#_advanced-environment-setup-script) 。
 
-* 从 WSL 命令行启动 VS Code 时遇到问题？ 此[故障排除指南](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-problems-with-the-code-command-not-working)包含有关更改路径变量、解决有关缺失依赖项的扩展错误、解决 Git 行结束问题、在远程计算机上安装本地 VSIX、启动浏览器窗口、阻止 localhost 端口、web socket 不工作、存储扩展数据错误等的提示。
+* 从 WSL 命令行启动 VS Code 时遇到问题？ 此 [故障排除指南](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-problems-with-the-code-command-not-working) 包含有关更改路径变量、解决有关缺失依赖项的扩展错误、解决 Git 行结束问题、在远程计算机上安装本地 VSIX、启动浏览器窗口、阻止 localhost 端口、web socket 不工作、存储扩展数据错误等的提示。
 
 ## <a name="install-git-optional"></a>安装 Git（可选）
 
 如果计划与其他人协作，或是在开放源代码站点（如 GitHub）上托管项目，则 VS Code 支持[使用 Git 进行版本控制](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support)。 VS Code 中的“源代码管理”选项卡可跟踪所有更改，并直接在 UI 中内置了常见 Git 命令（add、commit、push、pull）。
 
-若要安装 Git，请参阅[设置 git 以使用适用于 Linux 的 Windows 子系统](./wsl-git.md)。
+若要安装 Git，请参阅 [设置 git 以使用适用于 Linux 的 Windows 子系统](./wsl-git.md)。
 
 ## <a name="install-windows-terminal-optional"></a>安装 Windows 终端（可选）
 
-新的 Windows 终端启用多个选项卡（在命令提示符、PowerShell 或多个 Linux 分发之间快速切换）、自定义密钥绑定（创建自己的快捷键以打开或关闭选项卡、复制 + 粘贴等）、表情符号☺和自定义主题（配色方案、字体样式和大小、背景图像/模糊/透明度）。 在[Windows 终端文档](https://docs.microsoft.com/windows/terminal)中了解详细信息。
+新的 Windows 终端启用多个选项卡 (在命令提示符、PowerShell 或多个 Linux 分发) 之间快速切换，自定义键绑定 (为打开或关闭选项卡、复制 + 粘贴等 ) 、表情符号☺和自定义主题 (颜色方案、字体样式和大小、背景图像/模糊/透明度) 。 在 [Windows 终端文档](/windows/terminal)中了解详细信息。
 
 1. [在 Microsoft Store 中获取 Windows 终端](https://www.microsoft.com/store/apps/9n0dx20hk701)：通过 Microsoft Store 进行安装时，将自动处理更新。
 
@@ -105,7 +105,7 @@ VS Code 远程运行时，选择 "扩展" 选项卡将显示本地计算机与 W
 * [通过 WSL 的远程开发教程](https://code.visualstudio.com/remote-tutorials/wsl/getting-started)
 * [将 Docker 与 WSL 2 和 VS Code 一起使用](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2)
 * [在 VS Code 中使用 c + + 和 WSL](https://code.visualstudio.com/docs/cpp/config-wsl)
-* [适用于 Linux 的远程 R 服务](https://docs.microsoft.com/visualstudio/rtvs/setting-up-remote-r-service-on-linux?view=vs-2017)
+* [适用于 Linux 的远程 R 服务](/visualstudio/rtvs/setting-up-remote-r-service-on-linux)
 
 可能需要考虑的几个附加扩展包括：
 

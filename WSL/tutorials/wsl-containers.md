@@ -5,12 +5,12 @@ keywords: wsl、windows、windowssubsystem、windows 10、docker、容器
 ms.date: 08/28/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 2ae9da815335f99a9b4a75334a02d2730ddd08c6
-ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
+ms.openlocfilehash: 5a1187336341d73f662b7e9f27b19df4fd0e1e73
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90818749"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413328"
 ---
 # <a name="get-started-with-docker-remote-containers-on-wsl-2"></a>WSL 2 上的 Docker 远程容器入门
 
@@ -24,17 +24,17 @@ Docker 是一种工具，用于创建、部署和运行应用程序（通过使�
 
 Docker 容器与虚拟机类似，但不会创建整个虚拟操作系统。 相反，Docker 允许应用使用与运行它的系统相同的 Linux 内核。 这使得应用包能够仅要求主计算机上尚未安装的部件，从而降低包大小以及提高性能。
 
-将 Docker 容器与 [Kubernetes](https://docs.microsoft.com/azure/aks/) 等工具结合使用以实现持续可用性是容器普及的另一个原因。 这样就可以在不同的时间创建应用容器的多个版本。 并且每个容器（及其特定的微服务）均可以动态更换，而无需停止整个系统进行更新或维护。 你可以准备一个包含所有更新的新容器，将该容器设置用于生产，并在新容器准备就绪后直接指向该容器。 你还可以使用容器对不同版本的应用进行存档，如有需要，还可将其作为安全回退保持运行。
+将 Docker 容器与 [Kubernetes](/azure/aks/) 等工具结合使用以实现持续可用性是容器普及的另一个原因。 这样就可以在不同的时间创建应用容器的多个版本。 并且每个容器（及其特定的微服务）均可以动态更换，而无需停止整个系统进行更新或维护。 你可以准备一个包含所有更新的新容器，将该容器设置用于生产，并在新容器准备就绪后直接指向该容器。 你还可以使用容器对不同版本的应用进行存档，如有需要，还可将其作为安全回退保持运行。
 
-若要了解详细信息，请查看 Microsoft Learn 上的 [Docker 容器简介](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/) 。
+若要了解详细信息，请查看 Microsoft Learn 上的 [Docker 容器简介](/learn/modules/intro-to-docker-containers/) 。
 
 ## <a name="prerequisites"></a>先决条件
 
 - 确保你的计算机运行的是 Windows 10， [并已更新到版本2004、版本](ms-settings:windowsupdate) **18362** 或更高版本。
-- [启用 WSL、安装 Linux 分发版和更新到 WSL 2](https://docs.microsoft.com/windows/wsl/install-win10)。
-- [下载并安装 Linux 内核更新包](https://docs.microsoft.com/windows/wsl/wsl2-kernel)。
+- [启用 WSL、安装 Linux 分发版和更新到 WSL 2](../install-win10.md)。
+- [下载并安装 Linux 内核更新包](/windows/wsl/wsl2-kernel)。
 - [安装](https://code.visualstudio.com/download) * (可选) *Visual Studio Code。 这将提供最佳体验，包括在远程 Docker 容器内进行代码和调试并连接到 Linux 分发的功能。
-- [安装 Windows 终端](https://docs.microsoft.com/windows/terminal/get-started) * (可选) *。 这会提供最佳体验，包括在同一接口中自定义和打开多个终端 (包括 Ubuntu、Debian、PowerShell、Azure CLI 或你喜欢) 的任何内容。
+- [安装 Windows 终端](/windows/terminal/get-started) * (可选) *。 这会提供最佳体验，包括在同一接口中自定义和打开多个终端 (包括 Ubuntu、Debian、PowerShell、Azure CLI 或你喜欢) 的任何内容。
 - [在 Docker Hub 上注册 DOCKER ID](https://hub.docker.com/signup) * (可选) *。
 
 > [!NOTE]
@@ -46,7 +46,7 @@ Docker 容器与虚拟机类似，但不会创建整个虚拟操作系统。 相
 
 对于 Windows 的 Docker Desktop 中支持 WSL 2 后端，你可以在基于 Linux 的开发环境中工作，并构建基于 Linux 的容器，同时使用 Visual Studio Code 进行代码编辑和调试，以及在 Windows 上的 Microsoft Edge 浏览器中运行容器。
 
-若要在已 [安装 WSL 2](https://docs.microsoft.com/windows/wsl/install-win10)) 之后安装 Docker (：
+若要在已 [安装 WSL 2](../install-win10.md)) 之后安装 Docker (：
 
 1. 下载 [Docker Desktop](https://docs.docker.com/docker-for-windows/wsl/#download) 并按照安装说明进行操作。
 
@@ -84,7 +84,7 @@ Docker 容器与虚拟机类似，但不会创建整个虚拟操作系统。 相
 
 让我们使用 Docker 为现有应用程序项目创建一个开发容器。
 
-1. 在此示例中，我将使用 my [Hello World 教程](https://docs.microsoft.com/windows/python/web-frameworks#hello-world-tutorial-for-django) 中的源代码，以便在 Python 开发环境中安装文档。如果希望使用自己的项目源代码，则可以跳过此步骤。 若要从 GitHub 下载 HelloWorld Django web 应用，请打开 WSL terminal (Ubuntu，例如) 并输入： `git clone https://github.com/mattwojo/helloworld-django.git`
+1. 在此示例中，我将使用 my [Hello World 教程](/windows/python/web-frameworks#hello-world-tutorial-for-django) 中的源代码，以便在 Python 开发环境中安装文档。如果希望使用自己的项目源代码，则可以跳过此步骤。 若要从 GitHub 下载 HelloWorld Django web 应用，请打开 WSL terminal (Ubuntu，例如) 并输入： `git clone https://github.com/mattwojo/helloworld-django.git`
 
     > [!NOTE]
     > 始终将代码存储在使用工具的同一文件系统中。 这将提高文件访问性能。 在此示例中，我们使用的是 Linux 发行版 (Ubuntu) 并想要将项目文件存储在 WSL 文件系统上 `\\wsl\` 。 使用 WSL 中的 Linux 工具访问这些文件时，在 Windows 文件系统上存储项目文件会显著降低性能。

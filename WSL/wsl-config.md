@@ -4,12 +4,12 @@ description: 有关列出和配置在适用于 Linux 的 Windows 子系统上运
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: 0a127d376a8606a1a13ea88c9efed161e18a161d
-ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
+ms.openlocfilehash: 73544d4d8c8eda462194f213a0f093b21ab6d90e
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90818729"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413318"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL 命令和启动配置
 
@@ -18,7 +18,7 @@ ms.locfileid: "90818729"
 [安装](install-win10.md)了 WSL 后，可通过多种方式运行 Linux 分发版。
 
 1. 通过访问 Windows 的 "开始" 菜单并键入已安装的分发的名称，打开 Linux 分发版。 例如： "Ubuntu"。
-2. 在 Windows 命令提示符或 PowerShell 中，输入已安装的分发的名称。 例如：`ubuntu`
+2. 在 Windows 命令提示符或 PowerShell 中，输入已安装的分发的名称。 例如： `ubuntu`
 3. 在 Windows 命令提示符或 PowerShell 中，若要在当前命令行内打开默认的 Linux 分发，请输入： `wsl.exe` 。
 4. 在 Windows 命令提示符或 PowerShell 中，若要在当前命令行内打开默认的 Linux 分发，请输入： `wsl [command]` 。
 
@@ -170,7 +170,7 @@ PS C:\Users\sarah>
 例如： `ubuntu config --default-user johndoe` 会将 Ubuntu 分发的默认用户更改为 "johndoe" 用户。
 
 > [!NOTE]
-> 如果在找出分发的名称时遇到问题，请参阅命令的 [列表分发](https://docs.microsoft.com/windows/wsl/wsl-config#list-distributions) 以列出已安装的分发的正式名称。 
+> 如果在找出分发的名称时遇到问题，请参阅命令的 [列表分发](#list-distributions) 以列出已安装的分发的正式名称。 
 
 ## <a name="run-a-specific-distribution"></a>运行特定的分发版
 
@@ -309,9 +309,9 @@ WSL 支持两个节：`automount` 和 `network`。
 
 这些选项在版本18980和更高版本中可用。
 
-| key | value | 默认值 | 说明|
+| key | 值 | default | 说明|
 |:----|:----|:----|:----|
-| 默认值 | 字符串 | 首次运行时创建的初始用户名 | 设置此项将指定在首次启动 WSL 会话时要运行的用户。 |
+| default | 字符串 | 首次运行时创建的初始用户名 | 设置此项将指定在首次启动 WSL 会话时要运行的用户。 |
 
 ## <a name="configure-global-options-with-wslconfig"></a>用 wslconfig 配置全局选项。
 
@@ -336,7 +336,7 @@ processors=2 # Makes the WSL 2 VM use two virtual processors
 
 这些设置会影响支持任何 WSL 2 分发的虚拟机。
 
-| key | value | 默认值 | 说明|
+| key | 值 | default | 说明|
 |:----|:----|:----|:----|
 | 内核 (kernel) | 字符串 | Microsoft 构建的内核提供的收件箱 | 自定义 Linux 内核的绝对 Windows 路径。 |
 | 内存 | 大小 | Windows 或8GB 上的总内存的50%，取两者中的较小者;在20175之前的版本中，在 Windows 上的内存总量为80% | 要分配给 WSL 2 VM 的内存量。 |
