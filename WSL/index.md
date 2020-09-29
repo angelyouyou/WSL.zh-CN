@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.topic: article
 ms.date: 09/15/2020
 ms.localizationpriority: high
-ms.openlocfilehash: e8046e4ec95e599014c5e5c09a24e7fac44da43d
-ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
+ms.openlocfilehash: 6bfa3a67418e2b5c164f3506d0ee9180df828377
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90719156"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413198"
 ---
 # <a name="windows-subsystem-for-linux-documentation"></a>适用于 Linux 的 Windows 子系统文档
 
@@ -37,7 +37,7 @@ ms.locfileid: "90719156"
 
 * [概述文章以及一系列视频和博客](https://blogs.msdn.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/)
 * [命令行博客](https://blogs.msdn.microsoft.com/commandline/)（适用于现行版本）
-* [适用于 Linux 的 Windows 子系统博客](https://blogs.msdn.microsoft.com/wsl/)（适用于传统版本）
+* [适用于 Linux 的 Windows 子系统博客](/archive/blogs/wsl/)（适用于传统版本）
 
 ## <a name="posts-and-articles"></a>帖子和文章
 
