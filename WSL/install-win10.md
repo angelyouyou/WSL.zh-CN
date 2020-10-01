@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: f617f006ae8067da8adbe1449bfcfe5bf32e73a3
-ms.sourcegitcommit: 1232d3b3becc4ceaa113f8ffb0b935c5550f99a2
+ms.openlocfilehash: 74a5960609e058b2f2da6160ecd04dc48f666a69
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90777648"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413108"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
@@ -43,7 +43,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 若要检查 Windows 版本及内部版本号，选择 Windows 徽标键 + R，然后键入“winver”，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 更新到“设置”菜单中的[最新 Windows 版本](ms-settings:windowsupdate)。
 
 > [!NOTE]
-> 如果运行的是 Windows 10 版本1903 或 1909，请在 Windows 菜单中打开“设置”，导航到“更新和安全性”，然后选择“检查更新”。 内部版本号必须是 18362.1049+ 或 18363.1049+，次要内部版本号需要高于 .1049。 阅读详细信息：[WSL 2 即将支持 Windows 10 版本 1903 和 1909](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/)。 请参阅[疑难解答说明](https://docs.microsoft.com/windows/wsl/troubleshooting#im-on-windows-10-version-1903-and-i-still-do-not-see-options-for-wsl-2)。
+> 如果运行的是 Windows 10 版本1903 或 1909，请在 Windows 菜单中打开“设置”，导航到“更新和安全性”，然后选择“检查更新”。 内部版本号必须是 18362.1049+ 或 18363.1049+，次要内部版本号需要高于 .1049。 阅读详细信息：[WSL 2 即将支持 Windows 10 版本 1903 和 1909](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/)。 请参阅[疑难解答说明](./troubleshooting.md#im-on-windows-10-version-1903-and-i-still-do-not-see-options-for-wsl-2)。
 
 ## <a name="step-3---enable-virtual-machine-feature"></a>步骤 3 - 启用虚拟机功能
 
@@ -81,7 +81,7 @@ wsl --set-default-version 2
 ```
 
 > [!NOTE]
-> 从 WSL 1 更新到 WSL 2 可能需要几分钟才能完成，具体取决于目标分发版的大小。 如果从 Windows 10 周年更新或创意者更新运行 WSL 1 的旧（历史）安装，可能会遇到更新错误。 按照这些说明[卸载并删除任何旧分发](https://docs.microsoft.com/windows/wsl/install-legacy#uninstallingremoving-the-legacy-distro)。
+> 从 WSL 1 更新到 WSL 2 可能需要几分钟才能完成，具体取决于目标分发版的大小。 如果从 Windows 10 周年更新或创意者更新运行 WSL 1 的旧（历史）安装，可能会遇到更新错误。 按照这些说明[卸载并删除任何旧分发](./install-legacy.md#uninstallingremoving-the-legacy-distro)。
 >
 > 如果 `wsl --set-default-version` 结果为无效命令，请输入 `wsl --help`。 如果 `--set-default-version` 未列出，则表示你的 OS 不支持它，你需要更新到版本 1903（内部版本 18362）或更高版本。
 >
@@ -124,9 +124,9 @@ wsl --set-default-version 2
 
 ## <a name="install-windows-terminal-optional"></a>安装 Windows 终端（可选）
 
-Windows 终端可启用多个选项卡（在多个 Linux 命令行、Windows 命令提示符、PowerShell 和 Azure CLI 等之间快速切换）、创建键绑定（用于打开或关闭选项卡、复制粘贴等的快捷方式键）、使用搜索功能，以及使用自定义主题（配色方案、字体样式和大小、背景图像/模糊/透明度）。 [了解详细信息。](https://docs.microsoft.com/windows/terminal)
+Windows 终端可启用多个选项卡（在多个 Linux 命令行、Windows 命令提示符、PowerShell 和 Azure CLI 等之间快速切换）、创建键绑定（用于打开或关闭选项卡、复制粘贴等的快捷方式键）、使用搜索功能，以及使用自定义主题（配色方案、字体样式和大小、背景图像/模糊/透明度）。 [了解详细信息。](/windows/terminal)
 
-[安装 Windows 终端](https://docs.microsoft.com/windows/terminal/get-started)。
+[安装 Windows 终端](/windows/terminal/get-started)。
 
   ![Windows 终端](media/terminal.png)
 
@@ -185,7 +185,7 @@ wsl --set-default-version 2
 > 请检查 [WSL Docs GitHub 主题 #4103](https://github.com/microsoft/WSL/issues/4103)，其中跟踪了此问题以提供更新的信息。
 
 - **无法将词语“wsl”识别为 cmdlet、函数、脚本文件或可运行程序的名称。**
-  - 请确保[已安装“适用于 Linux 的 Windows 子系统”可选组件](./install-win10.md#step-3---enable-virtual-machine-feature)。 此外，如果你使用的是 ARM64 设备，并从 PowerShell 运行此命令，则会收到此错误。 请改为从 [PowerShell Core](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows) 或从命令提示符运行 `wsl.exe`。
+  - 请确保[已安装“适用于 Linux 的 Windows 子系统”可选组件](./install-win10.md#step-3---enable-virtual-machine-feature)。 此外，如果你使用的是 ARM64 设备，并从 PowerShell 运行此命令，则会收到此错误。 请改为从 [PowerShell Core](/powershell/scripting/install/installing-powershell-core-on-windows) 或从命令提示符运行 `wsl.exe`。
 
 - **错误：此更新仅适用于装有适用于 Linux 的 Windows 子系统的计算机。**
   - 若要安装 Linux 内核更新 MSI 包，需要 WSL，应先启用它。 如果失败，将看到以下消息：`This update only applies to machines with the Windows Subsystem for Linux`。

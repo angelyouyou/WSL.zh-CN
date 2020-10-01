@@ -6,12 +6,12 @@ ms.date: 01/14/2020
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.localizationpriority: high
-ms.openlocfilehash: 81d4cfa1ae57cdd077ba8cbd614111881724718a
-ms.sourcegitcommit: f1b049a1276782d4f2754f46a8d2025b598a0784
+ms.openlocfilehash: 3de8553baf616ee8d5d45f0738615f83df952942
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85336070"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413218"
 ---
 # <a name="file-permissions-for-wsl"></a>WSL 的文件权限
 
@@ -32,7 +32,7 @@ WSL 可以添加四个 NTFS 扩展属性：
 | $LXMOD | 文件模式（文件系统权限八进制数字和类型，例如：0777） |
 | $LXDEV | 设备（如果它是设备文件） |
 
-此外，任何并非常规文件或目录的文件（例如：符号链接、FIFO、块设备、unix 套接字和字符设备）也有 NTFS [重新分析点](https://docs.microsoft.com/windows/win32/fileio/reparse-points)。 这样一来，就能够以快得多的速度确定给定目录中的文件类型，而不必查询其扩展属性。
+此外，任何并非常规文件或目录的文件（例如：符号链接、FIFO、块设备、unix 套接字和字符设备）也有 NTFS [重新分析点](/windows/win32/fileio/reparse-points)。 这样一来，就能够以快得多的速度确定给定目录中的文件类型，而不必查询其扩展属性。
 
 ## <a name="file-access-scenarios"></a>文件访问方案
 

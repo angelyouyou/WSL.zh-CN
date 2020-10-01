@@ -6,12 +6,12 @@ author: benhillis
 ms.date: 05/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: f79acbbc7f6436bae54c5160e769cababa76a341
-ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
+ms.openlocfilehash: d7b868f959c62879524dcbdad20509ef35fecfce
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90818689"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413268"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>适用于 Linux 的 Windows 子系统发行说明
 
@@ -1184,14 +1184,14 @@ wslconfig.exe /terminate <DistributionName>
 
 ### <a name="fixed"></a>固定
 
-- [已启用串行支持](https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/)
+- [已启用串行支持](/archive/blogs/wsl/serial-support-on-the-windows-subsystem-for-linux)
 - 添加了 IP 套接字选项 IP_OPTIONS [GH 1116]
 - 实现了 pwritev 函数（将文件上传到 nginx/PHP-FPM 时）[GH 1506]
 - 添加了 IP 套接字选项 IP_MULTICAST_IF 和 IPV6_MULTICAST_IF [GH 990]
 - 支持套接字选项 IP_MULTICAST_LOOP 和 IPV6_MULTICAST_LOOP [GH 1678]
 - 为应用节点、traceroute、dig、nslookup、主机添加了 IP(V6)_MTU 套接字选项
 - 添加了 IP 套接字选项 IPV6_UNICAST_HOPS
-- [文件系统改进](https://blogs.msdn.microsoft.com/wsl/2017/04/18/file-system-improvements-to-the-windows-subsystem-for-linux/)
+- [文件系统改进](/archive/blogs/wsl/file-system-improvements-to-the-windows-subsystem-for-linux)
     * 允许装载 UNC 路径
     * 在 drvfs 中启用 CDFS 支持
     * 正确处理 drvfs 中网络文件系统的权限
@@ -1208,7 +1208,7 @@ wslconfig.exe /terminate <DistributionName>
 
 有关内部版本 16170 的一般 Windows 信息，请访问 [Windows 博客](https://blogs.windows.com/windowsexperience/2017/04/07/announcing-windows-10-insider-preview-build-16170-pc/)。<br/>
 
-我们发布的新[博客文章](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/)中介绍了我们在测试 WSL 方面所做的努力。
+我们发布的新[博客文章](/archive/blogs/wsl/testing-the-windows-subsystem-for-linux)中介绍了我们在测试 WSL 方面所做的努力。
 
 ### <a name="fixed"></a>固定
 
@@ -1540,7 +1540,7 @@ Syscall 总数：384 </br>
 
 ### <a name="fixed"></a>固定
 
-- 改善了 Windows 的 Pico 进程通知。  在 [WSL 博客](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/)中可以找到更多信息。
+- 改善了 Windows 的 Pico 进程通知。  在 [WSL 博客](/archive/blogs/wsl/wsl-antivirus-and-firewall-compatibility)中可以找到更多信息。
 - 改善了 Windows 互操作的稳定性
 - 修复了在启用企业数据保护 (EDP) 后启动 bash.exe 时出现的错误 0x80070057
 - 其他 bug 修复和改进
@@ -1586,8 +1586,8 @@ $ cmd.exe /c dir
 
 可在以下资源中找到详细信息：
 
-- [WSL 团队的互操作博客](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
-- [MSDN 互操作文档](https://msdn.microsoft.com/commandline/wsl/interop)<br/>
+- [WSL 团队的互操作博客](/archive/blogs/wsl/windows-and-ubuntu-interoperability)<br/>
+- [MSDN 互操作文档](./interop.md)<br/>
 
 ### <a name="fixed"></a>固定
 
@@ -1807,7 +1807,7 @@ Windows 10 周年更新版的第一个预览体验内部版本。
 
 ### <a name="fixed"></a>固定
 - 修复在 8/2 准备 Windows 10 周年更新时出现的问题
-  - 可在我们的[博客](https://blogs.msdn.microsoft.com/wsl/)中找到有关周年更新中的 WSL 的详细信息。
+  - 可在我们的[博客](/archive/blogs/wsl/)中找到有关周年更新中的 WSL 的详细信息。
 
 <br/>
 
@@ -1926,7 +1926,7 @@ Windows 10 周年更新版的第一个预览体验内部版本。
 ## <a name="build-14342"></a>内部版本 14342
 有关内部版本 14342 的一般 Windows 信息，请访问 [Windows 博客](https://aka.ms/wip14342)。 <br/>
 
-在 [WSL 博客](https://blogs.msdn.microsoft.com/wsl)中可以找到有关 VolFs 和 DriveFs 的信息。 <br/>
+在 [WSL 博客](/archive/blogs/wsl/)中可以找到有关 VolFs 和 DriveFs 的信息。 <br/>
 
 ### <a name="fixed"></a>固定
 - 修复了 Windows 用户在用户名中包含 Unicode 字符时出现的安装问题

@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 07/24/2018
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 7ce4455dd4ab5e75d69ba841d7dfb7963af9c891
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: 11dc84d3a58b51241c7c63e8ca35eba94a12508b
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235794"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413208"
 ---
 # <a name="initializing-a-newly-installed-distribution"></a>初始化新安装的分发版
 
@@ -52,7 +52,7 @@ sudo apt update && sudo apt upgrade
 
 > Windows 不会自动更新或升级 Linux 分发版：Linux 用户往往倾向于自行控制此任务。
 
-大功告成！ 请在 WSL 上享用新的 Linux 分发版！ 若要详细了解 WSL，请查看其他 [WSL 文档](https://aka.ms/wsldocs)或 [WSL 学习资源页](https://aka.ms/learnwsl)。
+大功告成！ 请在 WSL 上享用新的 Linux 分发版！ 若要详细了解 WSL，请查看其他 [WSL 文档](./index.md)或 [WSL 学习资源页](https://aka.ms/learnwsl)。
 
 ![在 WSL 上享用 Linux](media/linux-on-wsl.png)
 

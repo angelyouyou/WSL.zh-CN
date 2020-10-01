@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 83c73e99afd4745081290340a67edee3ec26dc60
-ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
+ms.openlocfilehash: 78d122ce22e3ab4d67339cc6f0d6038502e23dbb
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90818709"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413288"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
@@ -87,8 +87,8 @@ WSL 2
 
 ### <a name="please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios"></a>请启用 Virtual Machine Platform Windows 功能，并确保在 BIOS 中启用了虚拟化。
 
-1. 请查看 [Hyper-V 系统要求](https://docs.microsoft.com/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows#:~:text=on%20Windows%20Server.-,General%20requirements,the%20processor%20must%20have%20SLAT.)
-2. 如果你的计算机是 VM，请手动启用[嵌套虚拟化](https://docs.microsoft.com/windows/wsl/wsl2-faq#can-i-run-wsl-2-in-a-virtual-machine)。 使用 admin 启动 powershell，并运行： 
+1. 请查看 [Hyper-V 系统要求](/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows#:~:text=on%20Windows%20Server.-,General%20requirements,the%20processor%20must%20have%20SLAT.)
+2. 如果你的计算机是 VM，请手动启用[嵌套虚拟化](./wsl2-faq.md#can-i-run-wsl-2-in-a-virtual-machine)。 使用 admin 启动 powershell，并运行： 
 
 ```powershell
 Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true

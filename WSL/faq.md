@@ -6,12 +6,12 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 0f16471968151fa040d41baa90af6aedfb6fee79
-ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
+ms.openlocfilehash: f769261bab35619b034e2a84e4f308eeb0a93cb4
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90719186"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413237"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>有关适用于 Linux 的 Windows 子系统的常见问题解答
 
@@ -45,7 +45,7 @@ WSL 面向开发人员受众，旨在用作内部开发流程的一部分。 假
 
 ## <a name="how-does-this-work"></a>WSL 的工作原理是怎样的？
 
-请查看我们的[博客](https://blogs.msdn.microsoft.com/wsl/)，其中详细介绍了底层技术。
+请查看我们的[博客](/archive/blogs/wsl/)，其中详细介绍了底层技术。
 
 ## <a name="why-would-i-use-wsl-rather-than-linux-in-a-vm"></a>在 VM 中为何要使用 WSL 而不是 Linux？
 
@@ -103,7 +103,7 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 
 现在，在 WSL 分发版中执行的任何 git 操作都将使用凭据管理器。 如果已为主机缓存凭据，那么它会从凭据管理器访问这些凭据。 如果尚未缓存凭据，你将收到一个请求凭据的对话响应，即使你处于 Linux 控制台中也是如此。
 
-此支持依赖于[适用于 Linux 的 Windows 子系统与 Windows 本身之间的互操作性](https://docs.microsoft.com/windows/wsl/interop)。
+此支持依赖于[适用于 Linux 的 Windows 子系统与 Windows 本身之间的互操作性](./interop.md)。
 
 ## <a name="how-do-i-use-a-windows-file-with-a-linux-app"></a>如何在 Linux 应用中使用 Windows 文件？
 
@@ -161,7 +161,7 @@ WSL 将计算机的固定驱动器装载到 Linux 分发版中的 `/mnt/<drive>`
   lxrun /uninstall /full
   ```
   
-可以像卸载任何其他 Windows 应用一样来卸载从 Store 安装的 WSL 分发版：右键单击应用磁贴并单击“卸载”，或者通过 PowerShell 使用 [`Remove-AppxPackage` cmdlet](https://technet.microsoft.com/library/hh856038.aspx)。
+可以像卸载任何其他 Windows 应用一样来卸载从 Store 安装的 WSL 分发版：右键单击应用磁贴并单击“卸载”，或者通过 PowerShell 使用 [`Remove-AppxPackage` cmdlet](/previous-versions//hh856038(v=technet.10))。
 
 ## <a name="why-does-ping-generate-permission-denied-errors"></a>ping 命令为何生成权限被拒绝错误？
 
@@ -181,7 +181,7 @@ WSL 不支持在旧版控制台中运行。 若要关闭旧版控制台：
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>在升级 Windows 后运行 bash.exe 时，为何会出现“错误:0x80040154”？
 
-在 Windows 更新期间可能禁用了“适用于 Linux 的 Windows 子系统”功能。 如果出现这种情况，则必须重新启用 Windows 功能。 在[安装指南](https://docs.microsoft.com/windows/wsl/install-win10)中可以找到有关启用“适用于 Linux 的 Windows 子系统”功能的说明。
+在 Windows 更新期间可能禁用了“适用于 Linux 的 Windows 子系统”功能。 如果出现这种情况，则必须重新启用 Windows 功能。 在[安装指南](./install-win10.md)中可以找到有关启用“适用于 Linux 的 Windows 子系统”功能的说明。
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>如何更改 WSL 的显示语言？
 

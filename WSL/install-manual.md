@@ -5,12 +5,12 @@ keywords: wsl, 适用于 linux 的 windows 子系统, 手动安装, 手动安装
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 04b991d1019f2187a01189695e4078f4d8a8ba1f
-ms.sourcegitcommit: ba3399a5ffeffd23551315acd04ea6848d30693b
+ms.openlocfilehash: 1894f0bfcb9ede7b05870c99912f30f6d0b7286e
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90719136"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413247"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>手动下载适用于 Linux 的 Windows 子系统发行版包
 
@@ -40,7 +40,7 @@ ms.locfileid: "90719136"
 如果愿意，也可以通过命令行下载你首选的发行版：
 
  ### <a name="download-using-powershell"></a>使用 PowerShell 下载
- 若要使用 PowerShell 下载发行版，请使用 [Invoke-WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest) cmdlet。 下面是用于下载 Ubuntu 16.04 的示例说明。
+ 若要使用 PowerShell 下载发行版，请使用 [Invoke-WebRequest](/powershell/module/microsoft.powershell.utility/invoke-webrequest) cmdlet。 下面是用于下载 Ubuntu 16.04 的示例说明。
 
 ```powershell
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
@@ -56,7 +56,7 @@ Windows 10 Spring 2018 更新（或更高版本）包括了流行的 [curl 命�
 curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 ```
 
-在上面的示例中，将执行 `curl.exe`（而不仅仅是 `curl`），以确保在 PowerShell 中调用真正的 curl 可执行文件，而不是调用 [Invoke WebRequest](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest) 的 PowerShell curl 别名
+在上面的示例中，将执行 `curl.exe`（而不仅仅是 `curl`），以确保在 PowerShell 中调用真正的 curl 可执行文件，而不是调用 [Invoke WebRequest](/powershell/module/microsoft.powershell.utility/invoke-webrequest) 的 PowerShell curl 别名
 
 > 注意：如果必须使用 Cmd shell 和/或 `.bat` / `.cmd` 脚本来调用/编写下载步骤，则使用 `curl` 可能更好。
 
