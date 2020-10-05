@@ -6,12 +6,12 @@ ms.date: 09/15/2020
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.custom: contperfq1
-ms.openlocfilehash: e8a8fc2c5e844ae5b6a62b2a4f7844e674bdcfd9
-ms.sourcegitcommit: 69fc9d3ca22cf3f07622db4cdf80c8ec751fe620
+ms.openlocfilehash: 5aa37c632fe1e02680bdef307a5923d05dfb3f60
+ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90818739"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413115"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
@@ -42,7 +42,7 @@ WSL 2 使用最新、最强大的虚拟化技术在轻量级实用工具虚拟�
 
 ## <a name="performance-across-os-file-systems"></a>跨 OS 文件系统的性能
 
-建议不要跨操作系统使用文件，除非有这么做的特定原因。 若想获得最快的性能速度，请将文件存储在 WSL 文件系统中，前提是在 Linux 命令行（Ubuntu、OpenSUSE 等）中工作。 如果在 Windows 命令行（PowerShell、命令提示符）中工作，请将文件存储在 Windows 文件系统中。
+建议不要跨操作系统使用文件，除非有这么做的特定原因。 若想获得最快的性能速度，请将文件存储在 WSL 文件系统中，前提是在 Linux 命令行（Ubuntu、OpenSUSE 等）中工作。 如果使用 Windows 命令行（PowerShell、命令提示符）工作，请将文件存储在 Windows 文件系统中。
 
 例如，在存储 WSL 项目文件时：
 
