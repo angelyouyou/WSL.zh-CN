@@ -1,18 +1,18 @@
 ---
-title: '开始在 WSL 2 (preview 中安装 linux 磁盘) '
+title: '开始在 WSL 2 (preview 中安装 Linux 磁盘) '
 description: 了解如何在 WSL 2 中设置磁盘装载，以及如何对其进行访问。
 keywords: wsl，windows，windowssubsystem，gnu，linux，bash，磁盘，ext4，filesystem，装载
 ms.date: 06/08/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 5ea7d7adae42a44b040408575e7345c456f3acac
-ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
+ms.openlocfilehash: 8c67b0f34dcde925bb91979e9153049fdd474db3
+ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413278"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92211731"
 ---
-# <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 linux 磁盘) 
+# <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 Linux 磁盘) 
 
 如果要访问 Windows 不支持的 Linux 磁盘格式，则可以使用 WSL 2 来装入磁盘并访问其内容。
 
