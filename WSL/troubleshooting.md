@@ -5,22 +5,22 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 78d122ce22e3ab4d67339cc6f0d6038502e23dbb
-ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
+ms.openlocfilehash: c3becde51cf16b95f96222a08a2fe7249cd936c1
+ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413288"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92211751"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
-要获得 WSL 相关问题的支持，请参阅 GitHub 存储库： https://github.com/Microsoft/wsl/issues
+要获得 WSL 相关问题的支持，请参阅 [GitHub 上的 WSL 产品存储库](https://github.com/Microsoft/wsl/issues)。
 
 ## <a name="search-for-any-existing-issues-related-to-your-problem"></a>搜索与你的问题相关的任何现有问题
 
-有关技术问题，请使用产品存储库： https://github.com/Microsoft/wsl/issues
+有关技术问题，请使用[产品存储库](https://github.com/Microsoft/wsl/issues)。
 
-对于与本文档内容相关的问题，请使用文档存储库： https://github.com/MicrosoftDocs/wsl/issues
+对于与本文档内容相关的问题，请使用[文档存储库](https://github.com/MicrosoftDocs/wsl/issues)。
 
 ## <a name="submit-a-bug-report"></a>提交 Bug 报告
 
@@ -28,7 +28,7 @@ ms.locfileid: "91413288"
 
 ## <a name="submit-a-feature-request"></a>提交功能请求
 
-若要请求与 WSL 功能或兼容性相关的新功能，请在产品存储库中创建问题： https://github.com/Microsoft/wsl/issues
+若要请求与 WSL 功能或兼容性相关的新功能，请[在产品存储库中提交问题](https://github.com/Microsoft/wsl/issues)。
 
 ## <a name="contribute-to-the-docs"></a>参与编辑文档
 
@@ -40,34 +40,37 @@ ms.locfileid: "91413288"
 
 ## <a name="common-issues"></a>常见问题
 
-### <a name="im-on-windows-10-version-1903-and-i-still-do-not-see-options-for-wsl-2"></a>我在使用 Windows 10 版本 1903，但我还是没看见 WSL 2 选项。 
+### <a name="im-on-windows-10-version-1903-and-i-still-do-not-see-options-for-wsl-2"></a>我在使用 Windows 10 版本 1903，但我还是没看见 WSL 2 选项
 
-这可能是因为你的计算机尚未实现对 WSL 2 的向后移植。 要解决此问题，最简单的方法是转到 Windows 设置，然后打击“检查更新”，在你的系统上安装最新更新。 你可在[此处](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/#how-do-i-get-it)查看有关实现向后移植的完整说明。 
+这可能是因为你的计算机尚未实现对 WSL 2 的向后移植。 要解决此问题，最简单的方法是转到 Windows 设置，然后打击“检查更新”，在你的系统上安装最新更新。 查看[有关实现向后移植的完整说明](https://devblogs.microsoft.com/commandline/wsl-2-support-is-coming-to-windows-10-versions-1903-and-1909/#how-do-i-get-it)。
 
-如果你点击了“检查更新”，但仍未收到更新，那么可[按照此链接](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566116)手动安装 KB KB4566116。  
+如果你点击了“检查更新”，但仍未收到更新，可以[手动安装 KB KB4566116](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566116)。  
 
 ### <a name="error-0x1bc-when-wsl---set-default-version-2"></a>错误：使用 `wsl --set-default-version 2` 时显示 0x1bc
+
 当“显示语言”或“系统区域设置”未设为英语时，可能会发生此情况。
-```
+
+```powershell
 wsl --set-default-version 2
 Error: 0x1bc
 For information on key differences with WSL 2 please visit https://aka.ms/wsl2
 ```
 
 `0x1bc` 的实际错误为：
-```
+
+```powershell
 WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel
 ```
 
 有关详细信息，请查看问题 [5749](https://github.com/microsoft/WSL/issues/5749)
 
-
 ### <a name="cannot-access-wsl-files-from-windows"></a>无法从 Windows 访问 WSL 文件
+
 9p 协议文件服务器在 Linux 端提供服务，以允许 Windows 访问 Linux 文件系统。 如果在 Windows 上无法使用 `\\wsl$` 访问 WSL，则可能是因为 9P 无法正确启动。
 
-要检查这一点，可以使用 `dmesg |grep 9p` 来检查启动日志，这将显示任何错误。 成功的输出如下所示： 
+要检查这一点，可以使用 `dmesg |grep 9p` 来检查启动日志，这将显示任何错误。 成功的输出如下所示：
 
-```
+```bash
 [    0.363323] 9p: Installing v9fs 9p2000 file system support
 [    0.363336] FS-Cache: Netfs '9p' registered for caching
 [    0.398989] 9pnet: Installing 9P2000 support
@@ -75,7 +78,8 @@ WSL 2 requires an update to its kernel component. For information please visit h
 
 请参阅[本 Github 线程](https://github.com/microsoft/wsl/issues/5307)，获取有关此问题的进一步讨论。
 
-### <a name="cant-start-wsl-2-distro-and-only-see-wsl-2-in-output"></a>无法启动 WSL 2 发行版，仅在输出中看到“WSL 2”
+### <a name="cant-start-wsl-2-distribution-and-only-see-wsl-2-in-output"></a>无法启动 WSL 2 发行版，仅在输出中看到“WSL 2”
+
 如果你的显示语言不是英语，则可能会看到截断的错误文本。
 
 ```powershell
@@ -85,17 +89,49 @@ WSL 2
 
 要解决此问题，请访问 `https://aka.ms/wsl2kernel`，按照该文档页面上的指示手动安装内核。 
 
-### <a name="please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios"></a>请启用 Virtual Machine Platform Windows 功能，并确保在 BIOS 中启用了虚拟化。
+### <a name="command-not-found-when-executing-windows-exe-in-linux"></a>在 linux 中执行 windows .exe 时，`command not found`
 
-1. 请查看 [Hyper-V 系统要求](/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows#:~:text=on%20Windows%20Server.-,General%20requirements,the%20processor%20must%20have%20SLAT.)
-2. 如果你的计算机是 VM，请手动启用[嵌套虚拟化](./wsl2-faq.md#can-i-run-wsl-2-in-a-virtual-machine)。 使用 admin 启动 powershell，并运行： 
+用户可以直接从 Linux 运行 notepad.exe 等 Windows 可执行文件。 有时，你可能会点击“找不到命令”，如下所示： 
 
-```powershell
-Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+```Bash
+$ notepad.exe
+-bash: notepad.exe: command not found
 ```
 
-3. 请按照电脑制造商提供的虚拟化启用指南进行操作。 通常，这可能涉及使用系统 BIOS 来确保在 CPU 上启用了这些功能。 
-4. 启用 `Virtual Machine Platform` 可选组件后，请重启计算机。 
+如果 $PATH 中没有 win32 路径，互操作将找不到 .exe。
+可以通过在 Linux 中运行 `echo $PATH` 来进行验证。 应会在输出中看到 win32 路径（例如，/mnt/c/Windows）。
+如果看不到任何 Windows 路径，则很可能是 Linux shell 覆盖了 PATH。 
+
+以下是 Debian 上的 /etc/profile 导致此问题的一个示例：
+
+```Bash
+if [ "`id -u`" -eq 0 ]; then
+  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+else
+  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+fi
+```
+
+Debian 上的正确方法是删除以上行。
+还可在赋值过程中追加 $PATH（如下所示），但这可能导致 WSL 和 VSCode 的一些[其他问题](https://salsa.debian.org/debian/WSL/-/commit/7611edba482fd0b3f67143aa0fc1e2cc1d4100a6)。
+
+有关详细信息，请参阅问题 [5296](https://github.com/microsoft/WSL/issues/5296) 和问题 [5779](https://github.com/microsoft/WSL/issues/5779)。
+
+### <a name="please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios"></a>请启用 Virtual Machine Platform Windows 功能，并确保在 BIOS 中启用了虚拟化
+
+请启用 Virtual Machine Platform Windows 功能，并确保在 BIOS 中启用了虚拟化。
+
+1. 请查看 [Hyper-V 系统要求](/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows#:~:text=on%20Windows%20Server.-,General%20requirements,the%20processor%20must%20have%20SLAT.)
+
+2. 如果你的计算机是 VM，请手动启用[嵌套虚拟化](./wsl2-faq.md#can-i-run-wsl-2-in-a-virtual-machine)。 使用 admin 启动 powershell，并运行：
+
+    ```powershell
+    Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+    ```
+
+3. 请按照电脑制造商提供的虚拟化启用指南进行操作。 通常，这可能涉及使用系统 BIOS 来确保在 CPU 上启用了这些功能。 此过程的说明可能因计算机而异，有关示例，请参阅来自 Bleeping Computer 的[本文](https://www.bleepingcomputer.com/tutorials/how-to-enable-cpu-virtualization-in-your-computer-bios/)。
+
+4. 启用 `Virtual Machine Platform` 可选组件后，请重启计算机。
 
 ### <a name="bash-loses-network-connectivity-once-connected-to-a-vpn"></a>Bash 在连接到 VPN 后断开网络连接
 
@@ -205,7 +241,7 @@ sudo update-locale LANG=en_US.UTF8
 
 ### <a name="permission-denied-error-when-using-ping"></a>使用 ping 时出现“权限被拒绝”错误
 
-对于 [Windows 周年更新版本 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update)，在 WSL 中运行 ping 命令需要拥有 Windows 中的**管理员特权**。  若要运行 ping，请以管理员身份运行 Windows 上的 Ubuntu Bash，或使用管理员特权从 CMD/PowerShell 提示符运行 bash.exe。
+对于 [Windows 周年更新版本 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update)，在 WSL 中运行 ping 命令需要拥有 Windows 中的 **管理员特权** 。  若要运行 ping，请以管理员身份运行 Windows 上的 Ubuntu Bash，或使用管理员特权从 CMD/PowerShell 提示符运行 bash.exe。
 
 对于更高版本的 Windows（[内部版本 14926 及更高版本](./release-notes.md#build-14926)），则不再需要管理员特权。
 
@@ -309,7 +345,7 @@ sudo apt-get install openssh-server
 
 如果看到此错误：
 
-```
+```bash
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -318,7 +354,7 @@ Permissions 0777 for '/home/artur/.ssh/private-key.pem' are too open.
 
 若要解决此问题，请将以下内容追加到 ```/etc/wsl.conf``` 文件：
 
-```
+```bash
 [automount]
 enabled = true
 options = metadata,uid=1000,gid=1000,umask=0022

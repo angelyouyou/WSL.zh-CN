@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 74a5960609e058b2f2da6160ecd04dc48f666a69
-ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
+ms.openlocfilehash: cf349615dc40f1912fdb4dff3f5593627fa246e6
+ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413108"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92211771"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
@@ -28,7 +28,7 @@ ms.locfileid: "91413108"
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-建议现在转到步骤 #2，更新到 WSL 2，但如果只想安装 WSL 1，现在可以重新启动计算机，然后继续执行[步骤 6 - 安装所选的 Linux 分发](./install-win10.md#step-6---install-your-linux-distribution-of-choice)。 若要更新到 WSL 2，请等待重新启动计算机，然后继续执行下一步。
+建议现在转到步骤 #2，更新到 WSL 2，但如果只想安装 WSL 1，现在可以重新启动计算机，然后继续执行[步骤 6 - 安装所选的 Linux 发行版](./install-win10.md#step-6---install-your-linux-distribution-of-choice)。 若要更新到 WSL 2，请等待重新启动计算机，然后继续执行下一步。
 
 ## <a name="step-2---update-to-wsl-2"></a>步骤 2 - 更新到 WSL 2
 
@@ -36,8 +36,8 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 ### <a name="requirements"></a>要求
 
-- 对于 x64 系统：**版本 1903** 或更高版本，采用**内部版本 18362** 或更高版本。
-- 对于 ARM64 系统：**版本 2004** 或更高版本，采用**内部版本 19041** 或更高版本。
+- 对于 x64 系统： **版本 1903** 或更高版本，采用 **内部版本 18362** 或更高版本。
+- 对于 ARM64 系统： **版本 2004** 或更高版本，采用 **内部版本 19041** 或更高版本。
 - 低于 18362 的版本不支持 WSL 2。 使用 [Windows Update 助手](https://www.microsoft.com/software-download/windows10)更新 Windows 版本。
 
 若要检查 Windows 版本及内部版本号，选择 Windows 徽标键 + R，然后键入“winver”，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 更新到“设置”菜单中的[最新 Windows 版本](ms-settings:windowsupdate)。
@@ -55,7 +55,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-**重新启动**计算机，以完成 WSL 安装并更新到 WSL 2。
+**重新启动** 计算机，以完成 WSL 安装并更新到 WSL 2。
 
 ## <a name="step-4---download-the-linux-kernel-update-package"></a>步骤 4 - 下载 Linux 内核更新包
 
@@ -74,7 +74,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ## <a name="step-5---set-wsl-2-as-your-default-version"></a>步骤 5 - 将 WSL 2 设置为默认版本
 
-以管理员的身份打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本：
+打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本：
 
 ```powershell
 wsl --set-default-version 2
@@ -160,7 +160,7 @@ wsl --set-default-version 2
 
 - **安装失败并出现错误 0x80070003**
   - 适用于 Linux 的 Windows 子系统只能在系统驱动器（通常是 `C:` 驱动器）中运行。 请确保分发版存储在系统驱动器上：  
-  - 打开“设置”->“存储”->“更多存储设置：  更改新内容的保存位置”
+  - 打开“设置”->“系统”-->“存储”-> **“更多存储设置”：** 更改新内容的保存位置”
     ![用于在 C: 驱动器中安装应用的系统设置屏幕截图](media/AppStorage.png)
 
 - **WslRegisterDistribution 失败并出现错误 0x8007019e**

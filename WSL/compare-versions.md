@@ -1,24 +1,24 @@
 ---
 title: 比较 WSL 2 和 WSL 1
-description: 比较适用于 Linux 的 Windows 子系统版本 1 和版本 2。 了解 WSL 2 中的新增功能 -实际的 Linux 内核、更快的速度、完全的系统调用兼容性。 对于跨操作文件系统来存储文件，使用 WSL 1 可获得更好的效果。 可以扩展 WSL 2 虚拟硬件磁盘 (VHD) 的大小。
-keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubuntu, debian, suse, windows 10, UX 更改, WSL 2, linux 内核, 网络应用程序, localhost, IPv6, 虚拟硬件磁盘, VHD, VHD 限制, VHD 错误
+description: 比较适用于 Linux 的 Windows 子系统版本 1 和版本 2。 了解 WSL 2 中的新增功能 -实际的 Linux 内核、更快的速度、完全的系统调用兼容性。 对于跨操作文件系统来存储文件，使用 WSL 1 可获得更好的效果。 可以扩展 WSL 2 虚拟硬盘 (VHD) 的大小。
+keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubuntu, debian, suse, windows 10, UX 更改, WSL 2, linux 内核, 网络应用程序, localhost, IPv6, 虚拟硬盘, VHD, VHD 限制, VHD 错误
 ms.date: 09/15/2020
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.custom: contperfq1
-ms.openlocfilehash: 5aa37c632fe1e02680bdef307a5923d05dfb3f60
-ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
+ms.openlocfilehash: ce68a19da519ddae5dd562c75c9ba2bac3659190
+ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413115"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92211761"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
 将适用于 Linux 的 Windows 子系统从 WSL 1 升级到 WSL 2 的主要区别和优势是：
 
-- **提高文件系统性能**，
-- **支持完全的系统调用兼容性**。
+- **提高文件系统性能** ，
+- **支持完全的系统调用兼容性** 。
 
 WSL 2 使用最新、最强大的虚拟化技术在轻量级实用工具虚拟机 (VM) 中运行 Linux 内核。 但是，WSL 2 不是传统的 VM 体验。
 
@@ -51,7 +51,7 @@ WSL 2 使用最新、最强大的虚拟化技术在轻量级实用工具虚拟�
 
 可以使用 Windows 应用和工具（如文件资源管理器）访问 Linux 根文件系统。 尝试打开 Linux 分发版（如 Ubuntu），通过输入以下命令确保你位于 Linux 主目录中：`cd ~`。 然后通过输入 `explorer.exe .`（不要忘记尾部的句点），在文件资源管理器中打开 Linux 文件系统。
 
-WSL 2 仅适用于 Windows 10 版本 1903、内部版本 18362 或更高版本。 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver**，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 你可能需要[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 低于 18362 的版本根本不支持 WSL。
+WSL 2 仅适用于 Windows 10 版本 1903、内部版本 18362 或更高版本。 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver** ，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 你可能需要[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 低于 18362 的版本根本不支持 WSL。
 
 > [!NOTE]
 > WSL 2 适用于 [VMware 15.5.5+](https://blogs.vmware.com/workstation/2020/05/vmware-workstation-now-supports-hyper-v-mode.html) 和 [VirtualBox 6+](https://www.virtualbox.org/wiki/Changelog-6.0)。 通过我们的 [WSL 2 常见问题解答](./wsl2-faq.md#will-i-be-able-to-run-wsl-2-and-other-3rd-party-virtualization-tools-such-as-vmware-or-virtualbox)了解详细信息。
@@ -160,11 +160,11 @@ netsh interface portproxy add v4tov4 listenport=4000 listenaddress=0.0.0.0 conne
 
 WSL2 分发版目前无法访问纯 IPv6 地址。 我们正在致力于添加此功能。
 
-## <a name="expanding-the-size-of-your-wsl-2-virtual-hardware-disk"></a>扩展 WSL 2 虚拟硬件磁盘的大小
+## <a name="expanding-the-size-of-your-wsl-2-virtual-hard-disk"></a>扩展 WSL 2 虚拟硬盘的大小
 
-WSL 2 使用虚拟硬件磁盘 (VHD) 来存储 Linux 文件。 如果达到其最大大小，则可能需要对其进行扩展。
+WSL 2 使用虚拟硬盘 (VHD) 来存储 Linux 文件。 在 WSL 2 中，VHD 在 Windows 硬盘驱动器上表示为 .vhdx 文件。
 
-WSL 2 VHD 使用 ext4 文件系统。 此 VHD 会自动调整大小以满足你的存储需求，并且其最大大小为 256GB。 如果你的分发版大小增长到大于 256GB，则会显示错误，指出磁盘空间不足。 可以通过扩展 VHD 大小来纠正此错误。
+WSL 2 VHD 使用 ext4 文件系统。 此 VHD 会自动调整大小以满足你的存储需求，并且其最大大小为 256GB。 如果 Linux 文件所需的存储空间超过此大小，则可能需要将其展开。 如果你的分发版大小增长到大于 256GB，则会显示错误，指出磁盘空间不足。 可以通过扩展 VHD 大小来纠正此错误。
 
 若要将最大 VHD 大小扩展到超过 256GB，请执行以下操作：
 
@@ -179,18 +179,54 @@ WSL 2 VHD 使用 ext4 文件系统。 此 VHD 会自动调整大小以满足你�
 
 4. 通过完成以下命令调整 WSL 2 VHD 的大小：
    - 以管理员权限打开 Windows 命令提示，然后输入：
-      - `diskpart`
-      - `Select vdisk file="<pathToVHD>"`
-      - `expand vdisk maximum="<sizeInMegaBytes>"`
+
+      ```powershell
+      diskpart
+      DISKPART> Select vdisk file="<pathToVHD>"
+      DISKPART> detail vdisk
+      ```
+
+   - 检查 detail 命令的输出。  输出将包含虚拟大小的值。  这是当前的最大值。  将此值转换为兆字节。  调整大小后的新值必须大于此值。  例如，如果 detail 输出显示“虚拟大小：  256 GB”，则必须指定大于 256000 的值。  转换为以 MB 为单位的新大小后，在 diskpart 中输入以下命令：
+
+      ```powershell
+      DISKPART> expand vdisk maximum=<sizeInMegaBytes>
+      ```
+
+   - Exit diskpart
+
+      ```powershell
+      DISKPART> exit
+      ```
 
 5. 启动 WSL 分发版（例如 Ubuntu）。
 
-6. 通过从 Linux 分发版命令行运行以下命令，让 WSL 知道它可以扩展其文件系统的大小：
-    - `sudo mount -t devtmpfs none /dev`
-    - `mount | grep ext4`
-    - 复制此项的名称，该名称类似于：`/dev/sdXX`（X 表示任何其他字符）
-    - `sudo resize2fs /dev/sdXX`
-    - 使用前面复制的值。 可能还需要安装 resize2fs：`apt install resize2fs`
+6. 通过从 Linux 分发版命令行运行以下命令，让 WSL 知道它可以扩展其文件系统的大小。
+
+   > [!NOTE]
+   > 可能会看到此消息，以响应第一个 mount 命令：/dev: none 已在 /dev 上装载 。  可以放心地忽略此消息。
+
+   ```powershell
+      sudo mount -t devtmpfs none /dev
+      mount | grep ext4
+   ```
+
+   复制此项的名称，该名称类似于：`/dev/sdX`（X 表示任何其他字符）。  在下面的示例中，X 的值是 b： 
+
+   ```powershell
+      sudo resize2fs /dev/sdb <sizeInMegabytes>M
+   ```
+
+   > [!NOTE]
+   > 可能需要安装 resize2fs。  如果是这样，可以使用此命令进行安装：`sudo apt install resize2fs`。
+
+   输出将类似于以下内容：
+
+   ```bash
+      resize2fs 1.44.1 (24-Mar-2018)
+      Filesystem at /dev/sdb is mounted on /; on-line resizing required
+      old_desc_blocks = 32, new_desc_blocks = 38
+      The filesystem on /dev/sdb is now 78643200 (4k) blocks long.
+      ```
 
 > [!NOTE]
 > 通常情况下，不要使用 Windows 工具或编辑器来修改、移动或访问 AppData 文件夹中与 WSL 相关的文件。 这样做可能会导致 Linux 分发版损坏。
