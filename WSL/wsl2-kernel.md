@@ -6,11 +6,11 @@ ms.date: 03/12/2020
 ms.topic: article
 ms.localizationpriority: high
 ms.openlocfilehash: 7bf2ef606d0bd23083f323117348aeea87c52b10
-ms.sourcegitcommit: f1996541005ae126ef379d8aebfe1abfcccb9ac9
+ms.sourcegitcommit: 609850fadd20687636b8486264e87af47c538111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91238791"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92444803"
 ---
 # <a name="updating-the-wsl-2-linux-kernel"></a>更新 WSL 2 Linux 内核
 
