@@ -5,12 +5,12 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，磁盘，ext4�
 ms.date: 06/08/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 8c67b0f34dcde925bb91979e9153049fdd474db3
-ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
+ms.openlocfilehash: 9ee71d7f76a9fd0e6b20293ef30b0808d56c43a1
+ms.sourcegitcommit: cfb6c254322b8eb9c2c26e19ce970d4c046bc352
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92211731"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93035723"
 ---
 # <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 Linux 磁盘) 
 
@@ -19,6 +19,7 @@ ms.locfileid: "92211731"
 本教程将介绍如何识别要附加到 WSL2 的磁盘和分区，如何装载这些磁盘和分区，以及如何对其进行访问。
 
 > [!NOTE]
+> 需要在 Windows 10 版本20211或更高版本上才能访问此功能。 可以加入 Windows 预览 [体验计划](https://insider.windows.com/) ，以获取最新的预览版。
 > 需要管理员访问权限才能将磁盘附加到 WSL 2。
 
 ## <a name="identify-the-disk"></a>确定磁盘
