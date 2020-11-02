@@ -1,17 +1,17 @@
 ---
 title: 比较 WSL 2 和 WSL 1
-description: 比较适用于 Linux 的 Windows 子系统版本 1 和版本 2。 了解 WSL 2 中的新增功能 -实际的 Linux 内核、更快的速度、完全的系统调用兼容性。 对于跨操作文件系统来存储文件，使用 WSL 1 可获得更好的效果。 可以扩展 WSL 2 虚拟硬盘 (VHD) 的大小。
-keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubuntu, debian, suse, windows 10, UX 更改, WSL 2, linux 内核, 网络应用程序, localhost, IPv6, 虚拟硬盘, VHD, VHD 限制, VHD 错误
-ms.date: 09/15/2020
+description: 比较适用于 Linux 的 Windows 子系统版本 1 和版本 2。 了解 WSL 2 中的新增功能 -实际的 Linux 内核、更快的速度、完全的系统调用兼容性。 对于跨操作文件系统来存储文件，使用 WSL 1 可获得更好的效果。 可以扩展 WSL 2 虚拟硬件磁盘 (VHD) 的大小。
+keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubuntu, debian, suse, windows 10, UX 更改, WSL 2, linux 内核, 网络应用程序, localhost, IPv6, 虚拟硬件磁盘, VHD, VHD 限制, VHD 错误
+ms.date: 09/28/2020
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.custom: contperfq1
-ms.openlocfilehash: ce68a19da519ddae5dd562c75c9ba2bac3659190
-ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
+ms.openlocfilehash: 93fdbf87bf588a8b23aa917ea0cab05020e0ea3e
+ms.sourcegitcommit: 609850fadd20687636b8486264e87af47c538111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92211761"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92444866"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
@@ -49,7 +49,12 @@ WSL 2 使用最新、最强大的虚拟化技术在轻量级实用工具虚拟�
 - 使用 Linux 文件系统根目录：`\\wsl$\Ubuntu-18.04\home\<user name>\Project`
 - 而不使用 Windows 文件系统根目录：`C:\Users\<user name>\Project`
 
-可以使用 Windows 应用和工具（如文件资源管理器）访问 Linux 根文件系统。 尝试打开 Linux 分发版（如 Ubuntu），通过输入以下命令确保你位于 Linux 主目录中：`cd ~`。 然后通过输入 `explorer.exe .`（不要忘记尾部的句点），在文件资源管理器中打开 Linux 文件系统。
+所有当前正在运行的分发 (`wsl -l`) 均可通过网络连接进行访问。 为此，请运行命令 \[WIN+R\]（键盘快捷方式）或在文件资源管理器地址栏中键入 `\\wsl$`，以查找相应的分发名称并访问其根文件系统。
+
+还可以在 WSL 的 Linux [终端](https://en.wikipedia.org/wiki/Linux_console)中使用 Windows 命令。 尝试打开 Linux 分发版（即 Ubuntu），通过输入以下命令确保你位于 Linux 主目录中：`cd ~`。 然后通过输入 `powershell.exe /c start .`（不要忘记尾部的句点），在文件资源管理器中打开 Linux 文件系统。
+
+> [!IMPORTANT]
+> 如果遇到错误“-bash: powershell.exe: 找不到命令”，请参阅 [WSL 故障排除页面](troubleshooting.md#running-windows-commands-fails-inside-a-distribution)予以解决。
 
 WSL 2 仅适用于 Windows 10 版本 1903、内部版本 18362 或更高版本。 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver** ，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 你可能需要[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 低于 18362 的版本根本不支持 WSL。
 

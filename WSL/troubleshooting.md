@@ -2,15 +2,15 @@
 title: 排查适用于 Linux 的 Windows 子系统问题
 description: 提供有关在适用于 Linux 的 Windows 子系统上运行 Linux 时遇到的常见错误和问题的详细信息。
 keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem, ubuntu
-ms.date: 01/20/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: c3becde51cf16b95f96222a08a2fe7249cd936c1
-ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
+ms.openlocfilehash: f7fdc6243e6cd5156bfae23fd7a1d61514449cf5
+ms.sourcegitcommit: 609850fadd20687636b8486264e87af47c538111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92211751"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92444790"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
@@ -117,7 +117,7 @@ Debian 上的正确方法是删除以上行。
 
 有关详细信息，请参阅问题 [5296](https://github.com/microsoft/WSL/issues/5296) 和问题 [5779](https://github.com/microsoft/WSL/issues/5779)。
 
-### <a name="please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios"></a>请启用 Virtual Machine Platform Windows 功能，并确保在 BIOS 中启用了虚拟化
+### <a name="error-0x80370102-the-virtual-machine-could-not-be-started-because-a-required-feature-is-not-installed"></a>Windows 更新后出现“错误:0x80370102 由于未安装所需功能，因此无法启动虚拟机。”
 
 请启用 Virtual Machine Platform Windows 功能，并确保在 BIOS 中启用了虚拟化。
 
@@ -361,3 +361,14 @@ options = metadata,uid=1000,gid=1000,umask=0022
 ```
 
 请注意，添加此命令将包含元数据并修改有关从 WSL 中看到的 Windows 文件的文件权限。 有关详细信息，请参阅[文件系统权限](./file-permissions.md)。
+
+### <a name="running-windows-commands-fails-inside-a-distribution"></a>在分发中运行 Windows 命令失败
+
+[Microsoft Store 中提供](install-win10.md#step-6---install-your-linux-distribution-of-choice)的某些分发尚不具备直接在[终端](https://en.wikipedia.org/wiki/Linux_console)中运行 Windows 命令的完全兼容性。 如果在运行 `powershell.exe /c start .` 或任何其他 Windows 命令时收到错误 `-bash: powershell.exe: command not found`，可按照以下步骤予以解决：
+
+1. 在 WSL 分发中运行 `echo $PATH`。  
+   如果不包括：`/mnt/c/Windows/system32`，表示有什么重新定义了标准 PATH 变量。
+2. 使用 `cat /etc/profile` 检查配置文件设置。  
+   如果其中包含 PATH 变量的分配，则使用 # 字符来编辑文件，以注释掉 PATH 分配块。
+3. 检查 wsl.conf 是否存在 `cat /etc/wsl.conf`，并确保其中不包含 `appendWindowsPath=false`，否则请将其注释掉。
+4. 通过键入 `wsl -t ` 后跟分发名称，或者在 cmd 或 PowerShell 中运行 `wsl --shutdown` 来重启分发。
