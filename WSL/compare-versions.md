@@ -6,12 +6,12 @@ ms.date: 09/28/2020
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.custom: contperfq1
-ms.openlocfilehash: 93fdbf87bf588a8b23aa917ea0cab05020e0ea3e
-ms.sourcegitcommit: 609850fadd20687636b8486264e87af47c538111
+ms.openlocfilehash: be0cd21b65705e455f29bfd1666ce74078a21baa
+ms.sourcegitcommit: cfb6c254322b8eb9c2c26e19ce970d4c046bc352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92444866"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93035733"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
@@ -133,9 +133,10 @@ WSL 2 在实际 Linux 内核上使用轻量级实用工具 VM，内存占用量�
 ### <a name="accessing-windows-networking-apps-from-linux-host-ip"></a>从 Linux（主机 IP）访问 Windows 网络应用
 
 如果要从 Linux 分发版（即 Ubuntu）访问 Windows 上运行的网络应用（例如，在 NodeJS 或 SQL 服务器上运行的应用），则需要使用主机的 IP 地址。 虽然这不是一种常见方案，但你可以执行以下步骤来使其可行。
-    - 通过在 Linux 分发版中运行以下命令来获取主机的 IP 地址：`cat /etc/resolv.conf`
-    - 复制以下词语后面的 IP 地址：`nameserver`。
-    - 使用复制的 IP 地址连接到任何 Windows 服务器。
+
+1. 通过在 Linux 分发版中运行以下命令来获取主机的 IP 地址：`cat /etc/resolv.conf`
+2. 复制以下词语后面的 IP 地址：`nameserver`。
+3. 使用复制的 IP 地址连接到任何 Windows 服务器。
 
 下图显示了一个示例，该示例说明如何通过 curl 连接到在 Windows 中运行的 Node.js 服务器。
 
