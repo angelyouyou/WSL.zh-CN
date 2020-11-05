@@ -4,12 +4,12 @@ description: 有关列出和配置在适用于 Linux 的 Windows 子系统上运
 keywords: BashOnWindows, bash, wsl, windows, 适用于 linux 的 windows 子系统, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: 73544d4d8c8eda462194f213a0f093b21ab6d90e
-ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
+ms.openlocfilehash: 2a26795821162e91cb87825483426cd58aab8ac6
+ms.sourcegitcommit: cc81ebc749cf84dd58e9f57ee4cc72b5c72be1fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413318"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93352660"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL 命令和启动配置
 
@@ -18,7 +18,7 @@ ms.locfileid: "91413318"
 [安装](install-win10.md)了 WSL 后，可通过多种方式运行 Linux 分发版。
 
 1. 通过访问 Windows 的 "开始" 菜单并键入已安装的分发的名称，打开 Linux 分发版。 例如： "Ubuntu"。
-2. 在 Windows 命令提示符或 PowerShell 中，输入已安装的分发的名称。 例如： `ubuntu`
+2. 在 Windows 命令提示符或 PowerShell 中，输入已安装的分发的名称。 例如：`ubuntu`
 3. 在 Windows 命令提示符或 PowerShell 中，若要在当前命令行内打开默认的 Linux 分发，请输入： `wsl.exe` 。
 4. 在 Windows 命令提示符或 PowerShell 中，若要在当前命令行内打开默认的 Linux 分发，请输入： `wsl [command]` 。
 
@@ -280,17 +280,18 @@ WSL 支持两个节：`automount` 和 `network`。
 |umask | 要对所有文件和目录排除的权限的八进制掩码 | 000
 |fmask | 要对所有文件排除的权限的八进制掩码 | 000
 |dmask | 要对所有目录排除的权限的八进制掩码 | 000
+|metadata | 是否向 Windows 文件添加了元数据以支持 Linux 系统权限 | enabled
 
-**注意：** 权限掩码在应用到文件或目录之前通过一个逻辑或操作进行设置。 
+**注意：** 在应用到文件或目录之前，会通过逻辑或操作来完成权限掩码。 
 
-#### <a name="network"></a>网络
+#### <a name="network"></a>network
 
 节标签：`[network]`
 
-| 键 | value | 默认 | 备注|
+| key | value | default | 说明|
 |:----|:----|:----|:----|
-| generateHosts | 布尔值 | `true` | `true` 将 WSL 设置为生成 `/etc/hosts`。 `hosts` 文件包含主机名对应的 IP 地址的静态映射。 |
-| generateResolvConf | 布尔值 | `true` | `true` 将 WSL 设置为生成 `/etc/resolv.conf`。 `resolv.conf` 包含能够将给定主机名解析为其 IP 地址的 DNS 列表。 | 
+| generateHosts | boolean | `true` | `true` 将 WSL 设置为生成 `/etc/hosts`。 `hosts` 文件包含主机名对应的 IP 地址的静态映射。 |
+| generateResolvConf | boolean | `true` | `true` 将 WSL 设置为生成 `/etc/resolv.conf`。 `resolv.conf` 包含能够将给定主机名解析为其 IP 地址的 DNS 列表。 | 
 
 #### <a name="interop"></a>interop
 
@@ -298,10 +299,10 @@ WSL 支持两个节：`automount` 和 `network`。
 
 这些选项在预览体验成员内部版本 17713 和更高版本中可用。
 
-| 键 | value | 默认 | 备注|
+| key | value | default | 说明|
 |:----|:----|:----|:----|
-| 已启用 | 布尔值 | `true` | 设置此键可确定 WSL 是否支持启动 Windows 进程。 |
-| appendWindowsPath | 布尔值 | `true` | 设置此键可确定 WSL 是否会将 Windows 路径元素添加到 $PATH 环境变量。 |
+| enabled | 布尔值 | `true` | 设置此键可确定 WSL 是否支持启动 Windows 进程。 |
+| appendWindowsPath | boolean | `true` | 设置此键可确定 WSL 是否会将 Windows 路径元素添加到 $PATH 环境变量。 |
 
 #### <a name="user"></a>user
 
@@ -309,9 +310,9 @@ WSL 支持两个节：`automount` 和 `network`。
 
 这些选项在版本18980和更高版本中可用。
 
-| key | 值 | default | 说明|
+| key | value | default | 说明|
 |:----|:----|:----|:----|
-| default | 字符串 | 首次运行时创建的初始用户名 | 设置此项将指定在首次启动 WSL 会话时要运行的用户。 |
+| default | string | 首次运行时创建的初始用户名 | 设置此项将指定在首次启动 WSL 会话时要运行的用户。 |
 
 ## <a name="configure-global-options-with-wslconfig"></a>用 wslconfig 配置全局选项。
 
@@ -336,15 +337,15 @@ processors=2 # Makes the WSL 2 VM use two virtual processors
 
 这些设置会影响支持任何 WSL 2 分发的虚拟机。
 
-| key | 值 | default | 说明|
+| key | value | default | 说明|
 |:----|:----|:----|:----|
-| 内核 (kernel) | 字符串 | Microsoft 构建的内核提供的收件箱 | 自定义 Linux 内核的绝对 Windows 路径。 |
+| 内核 (kernel) | string | Microsoft 构建的内核提供的收件箱 | 自定义 Linux 内核的绝对 Windows 路径。 |
 | 内存 | 大小 | Windows 或8GB 上的总内存的50%，取两者中的较小者;在20175之前的版本中，在 Windows 上的内存总量为80% | 要分配给 WSL 2 VM 的内存量。 |
-| 款 | 数字 | Windows 上的处理器数相同 | 要分配给 WSL 2 VM 的处理器数量。 |
+| 款 | number | Windows 上的处理器数相同 | 要分配给 WSL 2 VM 的处理器数量。 |
 | localhostForwarding | boolean | `true` | 布尔值，指定是否应通过 localhost： port 将绑定到 WSL 2 VM 中的通配符或 localhost 的端口连接到主机。 |
-| kernelCommandLine | 字符串 | 空白 | 其他内核命令行参数。 |
+| kernelCommandLine | string | 空白 | 其他内核命令行参数。 |
 | swap | 大小 | Windows 上的25% 内存大小向上舍入到最接近的 GB | 要添加到 WSL 2 VM 的交换空间量，0表示没有交换文件。 |
-| 交换文件 | 字符串 | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | 交换虚拟硬盘的绝对 Windows 路径。 |
+| 交换文件 | string | %USERPROFILE%\AppData\Local\Temp\swap.vhdx | 交换虚拟硬盘的绝对 Windows 路径。 |
 
 * 注意：对于 Windows 版本19041，此值为 true，并可能在预览体验计划中的 Windows 版本中有所不同
 

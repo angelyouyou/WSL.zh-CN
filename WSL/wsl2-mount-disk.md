@@ -5,12 +5,12 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，磁盘，ext4�
 ms.date: 06/08/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 9ee71d7f76a9fd0e6b20293ef30b0808d56c43a1
-ms.sourcegitcommit: cfb6c254322b8eb9c2c26e19ce970d4c046bc352
+ms.openlocfilehash: 5d996586baf5e22cc557c27c6f54b2cb1a91dc4b
+ms.sourcegitcommit: cc81ebc749cf84dd58e9f57ee4cc72b5c72be1fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93035723"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93352650"
 ---
 # <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 Linux 磁盘) 
 
@@ -138,7 +138,7 @@ wsl --mount <Diskpath> -p <PartitionIndex>
 wsl --mount <DiskPath> -o <MountOptions>
 ```
 
-示例：
+例如：
 
 ```powershell
 wsl --mount <DiskPath> -o "data=ordered"
@@ -169,6 +169,18 @@ wsl --unmount [DiskPath]
 
 > [!NOTE]
 > 如果无法卸载某个磁盘，可以通过运行将 WSL 2 强行退出 `wsl --shutdown` ，这将分离磁盘。
+
+## <a name="mount-a-vhd-in-wsl"></a>在 WSL 中装载 VHD
+
+你还可以使用将虚拟硬盘文件 (VHD) 装载到 WSL 中 `wsl --mount` 。 为此，首先需要使用 Windows 中的命令将 VHD 装载到 Windows [`Mount-VHD`](https://docs.microsoft.com/powershell/module/hyper-v/mount-vhd) 中。 请确保在具有管理员权限的窗口中运行此命令。 下面是一个示例，我们使用此命令并输出磁盘路径 
+
+```powershell
+Write-Output "\.\\PhysicalDrive$((Mount-VHD -Path .\ext4.vhdx -PassThru | Get-Disk).Number)"
+```
+
+你可以使用上面的输出获取此 VHD 的磁盘路径，然后按照上一部分中的说明将其装载到 WSL 中。
+
+你还可以使用此方法来装载和与其他 WSL 发行版的虚拟硬盘交互，因为每个 WSL 2 发行版都通过名为的虚拟硬盘文件存储 `ext4.vhdx` 。 默认情况下，WSL 2 发行版的 Vhd 存储在此路径中： `C:\Users\[user]\AppData\Local\Packages\[distro]\LocalState\[distroPackageName]` ，请注意访问这些系统文件，这是 Power User 的工作流。
 
 ## <a name="limitations"></a>限制
 
