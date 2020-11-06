@@ -2,15 +2,15 @@
 title: '开始在 WSL 2 (preview 中安装 Linux 磁盘) '
 description: 了解如何在 WSL 2 中设置磁盘装载，以及如何对其进行访问。
 keywords: wsl，windows，windowssubsystem，gnu，linux，bash，磁盘，ext4，filesystem，装载
-ms.date: 06/08/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 5d996586baf5e22cc557c27c6f54b2cb1a91dc4b
-ms.sourcegitcommit: cc81ebc749cf84dd58e9f57ee4cc72b5c72be1fd
+ms.openlocfilehash: 828f796839ff272261e98e88ca54a1af76471958
+ms.sourcegitcommit: 70ce8f7472167b6d8d760d0c54dbaab67904f2a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93352650"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413682"
 ---
 # <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 Linux 磁盘) 
 
@@ -89,7 +89,7 @@ wsl --mount <DiskPath> --partition <PartitionNumber> --type <Filesystem>
 
 ## <a name="access-the-disk-content"></a>访问磁盘内容
 
-装载后，可以通过配置值指向的路径访问磁盘： `automount.root` 。 默认值为 `/mnt/wsl`。
+装载后，可以通过配置值指向的路径访问磁盘： `automount.root` 。 默认值是 `/mnt/wsl`。
 
 在 Windows 中，可以通过导航到以下内容从文件资源管理器访问磁盘： `\\wsl$\\<Distro>\\<Mountpoint>` (选择任何 Linux 分发) 。
 
@@ -103,7 +103,7 @@ wsl --unmount <DiskPath>
 
 ## <a name="command-line-reference"></a>命令行参考
 
-### <a name="mouting-a-specific-filesystem"></a>此位置特定文件系统
+### <a name="mounting-a-specific-filesystem"></a>装载特定文件系统
 
 默认情况下，WSL 2 将尝试将设备装载为 ext4。 若要指定其他文件系统，请运行：
 
@@ -120,7 +120,7 @@ wsl --mount <Diskpath> -t vfat
 > [!NOTE]
 > 若要列出 WSL2 中的可用文件系统，请运行： `cat /proc/filesystems`
 
-### <a name="mouting-a-specific-partition"></a>此位置特定分区
+### <a name="mounting-a-specific-partition"></a>装载特定分区
 
 默认情况下，WSL 2 将尝试安装整个磁盘。 若要装载特定分区，请运行：
 
@@ -138,7 +138,7 @@ wsl --mount <Diskpath> -p <PartitionIndex>
 wsl --mount <DiskPath> -o <MountOptions>
 ```
 
-例如：
+示例：
 
 ```powershell
 wsl --mount <DiskPath> -o "data=ordered"
