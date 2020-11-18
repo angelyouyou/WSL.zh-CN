@@ -5,12 +5,12 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，磁盘，ext4�
 ms.date: 11/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: eed435c70cc429f7b787af187da9181b6f03eb8b
-ms.sourcegitcommit: 05e20f93e07518a9fbc8a66bad9b566618637cac
+ms.openlocfilehash: 165ae828b7fe83cae70a477d6143999da4265e3f
+ms.sourcegitcommit: 8b22f057a2f39c86bbede43fd65e8001c99548da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846245"
+ms.locfileid: "94870538"
 ---
 # <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 Linux 磁盘) 
 
@@ -172,10 +172,10 @@ wsl --unmount [DiskPath]
 
 ## <a name="mount-a-vhd-in-wsl"></a>在 WSL 中装载 VHD
 
-你还可以使用将虚拟硬盘文件 (VHD) 装载到 WSL 中 `wsl --mount` 。 为此，首先需要使用 Windows 中的命令将 VHD 装载到 Windows [`Mount-VHD`](https://docs.microsoft.com/powershell/module/hyper-v/mount-vhd) 中。 请确保在具有管理员权限的窗口中运行此命令。 下面是一个示例，我们使用此命令并输出磁盘路径 
+你还可以使用将虚拟硬盘文件 (VHD) 装载到 WSL 中 `wsl --mount` 。 为此，首先需要使用 Windows 中的命令将 VHD 装载到 Windows [`Mount-VHD`](https://docs.microsoft.com/powershell/module/hyper-v/mount-vhd) 中。 请确保在具有管理员权限的窗口中运行此命令。 下面是一个示例，我们使用此命令并输出磁盘路径。 请确保将替换 `<pathToVHD>` 为实际的 VHD 路径。 
 
 ```powershell
-Write-Output "\\.\PhysicalDrive$((Mount-VHD -Path .\ext4.vhdx -PassThru | Get-Disk).Number)"
+Write-Output "\\.\PhysicalDrive$((Mount-VHD -Path <pathToVHD> -PassThru | Get-Disk).Number)"
 ```
 
 你可以使用上面的输出获取此 VHD 的磁盘路径，然后按照上一部分中的说明将其装载到 WSL 中。
