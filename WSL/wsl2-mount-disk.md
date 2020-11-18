@@ -5,12 +5,12 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，磁盘，ext4�
 ms.date: 11/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 828f796839ff272261e98e88ca54a1af76471958
-ms.sourcegitcommit: 70ce8f7472167b6d8d760d0c54dbaab67904f2a4
+ms.openlocfilehash: eed435c70cc429f7b787af187da9181b6f03eb8b
+ms.sourcegitcommit: 05e20f93e07518a9fbc8a66bad9b566618637cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413682"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846245"
 ---
 # <a name="get-started-mounting-a-linux-disk-in-wsl-2-preview"></a>开始在 WSL 2 (preview 中安装 Linux 磁盘) 
 
@@ -89,7 +89,7 @@ wsl --mount <DiskPath> --partition <PartitionNumber> --type <Filesystem>
 
 ## <a name="access-the-disk-content"></a>访问磁盘内容
 
-装载后，可以通过配置值指向的路径访问磁盘： `automount.root` 。 默认值是 `/mnt/wsl`。
+装载后，可以通过配置值指向的路径访问磁盘： `automount.root` 。 默认值为 `/mnt/wsl`。
 
 在 Windows 中，可以通过导航到以下内容从文件资源管理器访问磁盘： `\\wsl$\\<Distro>\\<Mountpoint>` (选择任何 Linux 分发) 。
 
@@ -138,7 +138,7 @@ wsl --mount <Diskpath> -p <PartitionIndex>
 wsl --mount <DiskPath> -o <MountOptions>
 ```
 
-示例：
+例如：
 
 ```powershell
 wsl --mount <DiskPath> -o "data=ordered"
@@ -175,7 +175,7 @@ wsl --unmount [DiskPath]
 你还可以使用将虚拟硬盘文件 (VHD) 装载到 WSL 中 `wsl --mount` 。 为此，首先需要使用 Windows 中的命令将 VHD 装载到 Windows [`Mount-VHD`](https://docs.microsoft.com/powershell/module/hyper-v/mount-vhd) 中。 请确保在具有管理员权限的窗口中运行此命令。 下面是一个示例，我们使用此命令并输出磁盘路径 
 
 ```powershell
-Write-Output "\.\\PhysicalDrive$((Mount-VHD -Path .\ext4.vhdx -PassThru | Get-Disk).Number)"
+Write-Output "\\.\PhysicalDrive$((Mount-VHD -Path .\ext4.vhdx -PassThru | Get-Disk).Number)"
 ```
 
 你可以使用上面的输出获取此 VHD 的磁盘路径，然后按照上一部分中的说明将其装载到 WSL 中。
