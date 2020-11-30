@@ -604,7 +604,7 @@ wslconfig.exe /terminate <DistributionName>
 ### <a name="wsl"></a>WSL
 * 允许从 Windows 终止 /init [GH 2928]。
 * 现在，DrvFs 默认使用按目录区分大小写（相当于使用“case=dir”装载选项）。
-    * 使用“case=dir”（旧行为）需要设置注册表项。 如果需要使用“case=dir”，请运行以下命令来启用它：reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1
+    * 使用“case=force”（旧行为）需要设置注册表项。 如果需要使用“case=dir”，请运行以下命令来启用它：reg add HKLM\SYSTEM\CurrentControlSet\Services\lxss /v DrvFsAllowForceCaseSensitivity /t REG_DWORD /d 1
     * 如果在旧版 Windows 中使用 WSL 创建的现有目录需要区分大小写，请使用 fsutil.exe 将其标记为区分大小写：fsutil.exe file setcasesensitiveinfo <path> enable
 * NULL 终止从 uname syscall 返回的字符串。
 
