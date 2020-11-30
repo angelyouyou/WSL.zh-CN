@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 09/28/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: f7fdc6243e6cd5156bfae23fd7a1d61514449cf5
-ms.sourcegitcommit: 609850fadd20687636b8486264e87af47c538111
+ms.openlocfilehash: bb9beb75d09c4ca51ae4764d2e4cc6125a9de923
+ms.sourcegitcommit: 59aff996af4bbac5698573d58bbed6537cfb47ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92444790"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94933282"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
@@ -241,7 +241,7 @@ sudo update-locale LANG=en_US.UTF8
 
 ### <a name="permission-denied-error-when-using-ping"></a>使用 ping 时出现“权限被拒绝”错误
 
-对于 [Windows 周年更新版本 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update)，在 WSL 中运行 ping 命令需要拥有 Windows 中的 **管理员特权** 。  若要运行 ping，请以管理员身份运行 Windows 上的 Ubuntu Bash，或使用管理员特权从 CMD/PowerShell 提示符运行 bash.exe。
+对于 [Windows 周年更新版本 1607](./release-notes.md#build-14388-to-windows-10-anniversary-update)，在 WSL 中运行 ping 命令需要拥有 Windows 中的 **管理员特权**。  若要运行 ping，请以管理员身份运行 Windows 上的 Ubuntu Bash，或使用管理员特权从 CMD/PowerShell 提示符运行 bash.exe。
 
 对于更高版本的 Windows（[内部版本 14926 及更高版本](./release-notes.md#build-14926)），则不再需要管理员特权。
 
@@ -372,3 +372,7 @@ options = metadata,uid=1000,gid=1000,umask=0022
    如果其中包含 PATH 变量的分配，则使用 # 字符来编辑文件，以注释掉 PATH 分配块。
 3. 检查 wsl.conf 是否存在 `cat /etc/wsl.conf`，并确保其中不包含 `appendWindowsPath=false`，否则请将其注释掉。
 4. 通过键入 `wsl -t ` 后跟分发名称，或者在 cmd 或 PowerShell 中运行 `wsl --shutdown` 来重启分发。
+
+### <a name="unable-to-boot-after-installing-wsl-2"></a>安装 WSL 2 后无法启动
+
+我们注意到用户在安装 WSL 2 后无法启动的问题。 我们对该问题进行了全面诊断，而用户报告称[更改缓冲区大小](https://github.com/microsoft/WSL/issues/4784#issuecomment-639219363)或[安装适当的驱动程序](https://github.com/microsoft/WSL/issues/4784#issuecomment-675702244)可帮助解决此问题。 请查看此 [Github 问题](https://github.com/microsoft/WSL/issues/4784)，了解有关此问题的最新更新。 

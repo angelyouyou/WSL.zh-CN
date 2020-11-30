@@ -5,12 +5,12 @@ keywords: wsl, windows, linux 内核, 适用于 Linux 的 Windows 子系统, 内
 ms.date: 03/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 7bf2ef606d0bd23083f323117348aeea87c52b10
-ms.sourcegitcommit: 609850fadd20687636b8486264e87af47c538111
+ms.openlocfilehash: 4ca1bde2f8dc36c85b0c998c01f7f77eafe5f695
+ms.sourcegitcommit: fef5def707ccec57d6f0c5e9c89680754ea06411
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92444803"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95416644"
 ---
 # <a name="updating-the-wsl-2-linux-kernel"></a>更新 WSL 2 Linux 内核
 
@@ -47,8 +47,9 @@ ms.locfileid: "92444803"
 
 出现此消息有三个可能的原因：
 
-1. 你仍使用旧版 Windows，不支持 WSL 2。 请查看 [WSL 2 要求](https://docs.microsoft.com/windows/wsl/install-win10#update-to-wsl-2)，升级到使用 WSL 2。 
-2. 未启用 `Windows Subsystem for Linux`。 请按照[适用于 Linux 的 Windows 子系统安装指南](https://docs.microsoft.com/windows/wsl/install-win10)进行操作。
+1. 你仍使用旧版 Windows，不支持 WSL 2。 请查看 [WSL 2 要求](./install-win10.md#step-2---update-to-wsl-2)，升级到使用 WSL 
+2. 
+2. 未启用 `Windows Subsystem for Linux`。 请按照[适用于 Linux 的 Windows 子系统安装指南](./install-win10.md#step-1---enable-the-windows-subsystem-for-linux)进行操作。
 3. 启用 `Windows Subsystem for Linux` 后，需要重启才能生效，请重启计算机，然后重试。
 
 ### `WSL 2 requires an update to its kernel component. For information please visit https://aka.ms/wsl2kernel`

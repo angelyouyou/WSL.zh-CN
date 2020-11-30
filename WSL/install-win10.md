@@ -5,18 +5,32 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: cf349615dc40f1912fdb4dff3f5593627fa246e6
-ms.sourcegitcommit: dee2bf22c0c9f5725122a155d2876fcb2b7427d0
+ms.openlocfilehash: 4e2ec7fdac4f4a0c9106edeedbaea80e4dc09165
+ms.sourcegitcommit: fef5def707ccec57d6f0c5e9c89680754ea06411
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92211771"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95416654"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
 ## <a name="install-windows-subsystem-for-linux"></a>安装适用于 Linux 的 Windows 子系统
 
 适用于 Linux 的 Windows 子系统具有两个不同的版本，可以在安装过程中进行选择。 WSL 2 具有更好的整体性能，建议使用。 如果系统不支持 WSL 2，或由于特定情况需要跨系统存储文件，可能仍需要使用 WSL 1。 阅读有关[比较 WSL 2 和 WSL 1](./compare-versions.md) 的详细信息。
+
+> [!NOTE]
+> 若要使用新的 `wsl --install` 命令并跳过下面的步骤 1-6，你需要加入 [Windows 预览体验计划](https://insider.windows.com/getting-started)，并安装 Windows 10 预览版（操作系统版本 20262 或更高版本）。 
+>
+> 安装预览版后，可使用管理员特权打开命令提示符并运行 `wsl --install`。 这将自动启用可选的 WSL 和虚拟机平台组件、下载和安装最新的 Linux 内核、将 WSL 2 设置为默认值，还将下载 Ubuntu（可使用 `wsl --install -d Debian` 等命令更改它；若要查看可用 Linux 发行版的列表，请输入 `wsl --list --online`）。 命令完成后，系统将提示你进行重启。 重启后，Linux 发行版（默认为 Ubuntu）会完成安装，并打开一个 Linux 命令行供你开始使用。 然后，你可跳到[步骤 7 - 设置新的发行版](./install-win10.md#step-7---set-up-a-new-distribution)。
+
+### <a name="install-steps"></a>安装步骤
+
+- 使用管理员特权打开命令窗口
+- `wsl.exe --install`运行
+- 必要时以及在命令指示时，请重启计算机
+- 重启后，你将完成安装并可开始使用 WSL！
+
+这将安装 Ubuntu 发行版。 你还可传入参数来安装其他发行版，例如 `wsl --install -d Debian` 将安装 Debian。 运行 `wsl --list --online` 将显示可用发行版的列表。 
 
 ## <a name="step-1---enable-the-windows-subsystem-for-linux"></a>步骤 1 - 启用适用于 Linux 的 Windows 子系统
 
@@ -36,8 +50,8 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 ### <a name="requirements"></a>要求
 
-- 对于 x64 系统： **版本 1903** 或更高版本，采用 **内部版本 18362** 或更高版本。
-- 对于 ARM64 系统： **版本 2004** 或更高版本，采用 **内部版本 19041** 或更高版本。
+- 对于 x64 系统：**版本 1903** 或更高版本，采用 **内部版本 18362** 或更高版本。
+- 对于 ARM64 系统：**版本 2004** 或更高版本，采用 **内部版本 19041** 或更高版本。
 - 低于 18362 的版本不支持 WSL 2。 使用 [Windows Update 助手](https://www.microsoft.com/software-download/windows10)更新 Windows 版本。
 
 若要检查 Windows 版本及内部版本号，选择 Windows 徽标键 + R，然后键入“winver”，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 更新到“设置”菜单中的[最新 Windows 版本](ms-settings:windowsupdate)。
