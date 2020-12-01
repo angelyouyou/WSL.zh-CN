@@ -5,16 +5,16 @@ keywords: wsl，windows，windowssubsystem，gnu，linux，bash，vs code，远�
 ms.date: 05/28/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: b39b34644040354df44bf62ec7b878e3f5d667e6
-ms.sourcegitcommit: b15b847b87d29a40de4a1517315949bce9c7a3d5
+ms.openlocfilehash: 528c2b040136518f9c7d04d8572cd0f08bb68385
+ms.sourcegitcommit: d5d3dd8b91e93d46653f9512bceafd8b5340255f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413338"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443759"
 ---
 # <a name="get-started-using-visual-studio-code-with-windows-subsystem-for-linux"></a>使用适用于 Linux 的 Windows 子系统的 Visual Studio Code 入门
 
-Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code 使用 WSL 作为你的全时开发环境。 您可以：
+Visual Studio Code 与远程 WSL 扩展一起使用，你可以直接从 VS Code 使用 WSL 作为你的全时开发环境。 可以：
 
 * 在基于 Linux 的环境中进行开发
 * 使用特定于 Linux 的工具链和实用工具
@@ -62,7 +62,7 @@ sudo apt-get install wget ca-certificates
 
 ### <a name="from-vs-code"></a>From VS Code
 
-你还可以使用快捷方式访问更多 VS Code 远程选项： `CTRL+SHIFT+P` 在 VS Code 中打开命令面板。 如果随后键入，您 `VSCODE-REMOTE` 将看到所有可用的 VS Code 远程选项，允许您在远程会话中重新打开该文件夹，指定要在其中打开的分发，等等。
+你还可以使用快捷方式访问更多 VS Code 远程选项： `CTRL+SHIFT+P` 在 VS Code 中打开命令面板。 如果随后键入，您 `Remote-WSL` 将看到可用的 VS Code 远程选项的列表，允许您在远程会话中重新打开该文件夹，指定要打开的分发，等等。
 
 ![VS Code 的命令面板](../media/vscode-remote-command-palette.png)
 
