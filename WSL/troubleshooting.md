@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, windowssubsystem
 ms.date: 09/28/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: bb9beb75d09c4ca51ae4764d2e4cc6125a9de923
-ms.sourcegitcommit: 59aff996af4bbac5698573d58bbed6537cfb47ef
+ms.openlocfilehash: f4040cbe9faf5d55324b56974dd5677052224dd1
+ms.sourcegitcommit: d5d3dd8b91e93d46653f9512bceafd8b5340255f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94933282"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443749"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>排查适用于 Linux 的 Windows 子系统问题
 
@@ -297,7 +297,7 @@ Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linu
    sudo service ssh status
    ```
 
-   并已按照此教程进行操作： https://help.ubuntu.com/lts/serverguide/openssh-server.html.en
+   并已按照此教程进行操作： https://ubuntu.com/server/docs/service-openssh
 
 2. 停止 sshd 服务，然后在调试模式下启动 sshd：
 

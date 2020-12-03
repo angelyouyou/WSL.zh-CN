@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 4e2ec7fdac4f4a0c9106edeedbaea80e4dc09165
-ms.sourcegitcommit: fef5def707ccec57d6f0c5e9c89680754ea06411
+ms.openlocfilehash: 248afa4695cdfdf34dd44dd0692d2cba42c32a0b
+ms.sourcegitcommit: 291c6767954e3d5034ea0099e5c1e1f1ea5b577d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95416654"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96470489"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
@@ -74,10 +74,10 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ## <a name="step-4---download-the-linux-kernel-update-package"></a>步骤 4 - 下载 Linux 内核更新包
 
 1. 下载最新包：
-    - [适用于 x64 计算机的 WSL2 Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+    - [适用于 x64 计算机的 WSL2 Linux 内核更新包](http://aka.ms/wsl2kernelmsix64)
 
     > [!NOTE]
-    > 如果使用的是 ARM64 计算机，请下载 [ARM64 包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi)。 如果不确定自己计算机的类型，请打开命令提示符或 PowerShell，并输入：`systeminfo | find "System Type"`。
+    > 如果使用的是 ARM64 计算机，请下载 [ARM64 包](http://aka.ms/wsl2kernelmsiarm64)。 如果不确定自己计算机的类型，请打开命令提示符或 PowerShell，并输入：`systeminfo | find "System Type"`。
 
 2. 运行上一步中下载的更新包。 （双击以运行 - 系统将提示你提供提升的权限，选择“是”以批准此安装。）
 
