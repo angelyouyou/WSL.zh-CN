@@ -5,20 +5,20 @@ keywords: BashOnWindows, bash, wsl, windows, windows 子系统, gnu, linux, ubun
 ms.date: 09/28/2020
 ms.topic: conceptual
 ms.localizationpriority: high
-ms.custom: contperfq1
-ms.openlocfilehash: be0cd21b65705e455f29bfd1666ce74078a21baa
-ms.sourcegitcommit: cfb6c254322b8eb9c2c26e19ce970d4c046bc352
+ms.custom: contperf-fy21q1
+ms.openlocfilehash: ff2c9bc08b4fdfe8862f7d65fc5861fa242efef7
+ms.sourcegitcommit: c92245ab2b763d6a357210a9b4470a0cafd786a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93035733"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96857594"
 ---
 # <a name="comparing-wsl-1-and-wsl-2"></a>比较 WSL 1 和 WSL 2
 
 将适用于 Linux 的 Windows 子系统从 WSL 1 升级到 WSL 2 的主要区别和优势是：
 
-- **提高文件系统性能** ，
-- **支持完全的系统调用兼容性** 。
+- **提高文件系统性能**，
+- **支持完全的系统调用兼容性**。
 
 WSL 2 使用最新、最强大的虚拟化技术在轻量级实用工具虚拟机 (VM) 中运行 Linux 内核。 但是，WSL 2 不是传统的 VM 体验。
 
@@ -56,7 +56,7 @@ WSL 2 使用最新、最强大的虚拟化技术在轻量级实用工具虚拟�
 > [!IMPORTANT]
 > 如果遇到错误“-bash: powershell.exe: 找不到命令”，请参阅 [WSL 故障排除页面](troubleshooting.md#running-windows-commands-fails-inside-a-distribution)予以解决。
 
-WSL 2 仅适用于 Windows 10 版本 1903、内部版本 18362 或更高版本。 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver** ，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 你可能需要[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 低于 18362 的版本根本不支持 WSL。
+WSL 2 仅适用于 Windows 10 版本 1903、内部版本 18362 或更高版本。 通过按 Windows 徽标键 + R，检查你的 Windows 版本，然后键入 **winver**，选择“确定”。 （或者在 Windows 命令提示符下输入 `ver` 命令）。 你可能需要[更新到最新的 Windows 版本](ms-settings:windowsupdate)。 低于 18362 的版本根本不支持 WSL。
 
 > [!NOTE]
 > WSL 2 适用于 [VMware 15.5.5+](https://blogs.vmware.com/workstation/2020/05/vmware-workstation-now-supports-hyper-v-mode.html) 和 [VirtualBox 6+](https://www.virtualbox.org/wiki/Changelog-6.0)。 通过我们的 [WSL 2 常见问题解答](./wsl2-faq.md#will-i-be-able-to-run-wsl-2-and-other-3rd-party-virtualization-tools-such-as-vmware-or-virtualbox)了解详细信息。
