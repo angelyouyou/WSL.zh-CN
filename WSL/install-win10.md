@@ -5,32 +5,60 @@ keywords: BashOnWindows, bash, wsl, Windows, 适用于 Linux 的 Windows 子系�
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 248afa4695cdfdf34dd44dd0692d2cba42c32a0b
-ms.sourcegitcommit: 291c6767954e3d5034ea0099e5c1e1f1ea5b577d
+ms.openlocfilehash: f5cf426ee50bde3c21929add0682e17b707288f9
+ms.sourcegitcommit: 52eb0d4f669954a61e199f9222062d2a519378f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470489"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96760865"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>适用于 Linux 的 Windows 子系统安装指南 (Windows 10)
 
-## <a name="install-windows-subsystem-for-linux"></a>安装适用于 Linux 的 Windows 子系统
+安装适用于 Linux 的 Windows 子系统 (WSL) 时有两个选项：
 
-适用于 Linux 的 Windows 子系统具有两个不同的版本，可以在安装过程中进行选择。 WSL 2 具有更好的整体性能，建议使用。 如果系统不支持 WSL 2，或由于特定情况需要跨系统存储文件，可能仍需要使用 WSL 1。 阅读有关[比较 WSL 2 和 WSL 1](./compare-versions.md) 的详细信息。
+- **[简化安装](#simplified-installation-for-windows-insiders)** *（预览版）* ：`wsl --install`
 
-> [!NOTE]
-> 若要使用新的 `wsl --install` 命令并跳过下面的步骤 1-6，你需要加入 [Windows 预览体验计划](https://insider.windows.com/getting-started)，并安装 Windows 10 预览版（操作系统版本 20262 或更高版本）。 
->
-> 安装预览版后，可使用管理员特权打开命令提示符并运行 `wsl --install`。 这将自动启用可选的 WSL 和虚拟机平台组件、下载和安装最新的 Linux 内核、将 WSL 2 设置为默认值，还将下载 Ubuntu（可使用 `wsl --install -d Debian` 等命令更改它；若要查看可用 Linux 发行版的列表，请输入 `wsl --list --online`）。 命令完成后，系统将提示你进行重启。 重启后，Linux 发行版（默认为 Ubuntu）会完成安装，并打开一个 Linux 命令行供你开始使用。 然后，你可跳到[步骤 7 - 设置新的发行版](./install-win10.md#step-7---set-up-a-new-distribution)。
+    要使用 `wsl --install` 简化安装命令，你需要加入 [Windows 预览体验计划](https://insider.windows.com/getting-started) 并安装 Windows 10 的预览版（OS 版本 20262 或更高版本），但不需要执行手动安装步骤。 只需使用管理员权限打开命令窗口并运行 `wsl --install`，重启后即可使用 WSL。
 
-### <a name="install-steps"></a>安装步骤
+- **[手动安装](#manual-installation-steps)** ：按照下列 6 个步骤进行操作。
 
-- 使用管理员特权打开命令窗口
-- `wsl.exe --install`运行
-- 必要时以及在命令指示时，请重启计算机
-- 重启后，你将完成安装并可开始使用 WSL！
+    下面列出了 WSL 的手动安装步骤，可按这些步骤在任意版本的 Windows 10 上安装 Linux。
 
-这将安装 Ubuntu 发行版。 你还可传入参数来安装其他发行版，例如 `wsl --install -d Debian` 将安装 Debian。 运行 `wsl --list --online` 将显示可用发行版的列表。 
+## <a name="simplified-installation-for-windows-insiders"></a>Windows 预览体验计划的简化安装
+
+在 Windows 10 的最新 Windows 预览体验预览版中，显著改进了适用于 Linux 的 Windows 子系统的安装过程，将以下手动步骤替换为单个命令。
+
+要使用 `wsl --install` 简化安装命令，必须先完成以下操作：
+
+- 加入 [Windows 预览体验计划](https://insider.windows.com/getting-started)
+- 安装 Windows 10 的预览版（OS 版本 20262 或更高版本）。
+- 使用管理员特权打开命令行窗口
+
+满足这些要求后，可通过以下方式安装 WSL：
+
+- 在管理员模式下打开命令行，并输入以下命令：`wsl.exe --install`
+- 重启计算机
+
+首次启动新安装的 Linux 分发版时，将打开一个控制台窗口，要求你等待将文件解压缩并存储到电脑上。 未来的所有启动时间应不到一秒。
+
+然后，需要[为新的 Linux 分发版创建用户帐户和密码](./user-support.md)。
+
+**祝贺你！现已成功安装并设置了与 Windows 操作系统完全集成的 Linux 分发！**
+
+--install 命令执行以下操作：
+
+- 启用可选的 WSL 和虚拟机平台组件
+- 下载并安装最新 Linux 内核
+- 将 WSL 2 设置为默认值
+- 下载并安装 Linux 分发版（可能需要重启）
+
+默认情况下，安装的 Linux 分发版为 Ubuntu。 可以使用 `wsl --install -d <Distribution Name>` 进行更改。 （将 `<Distribution Name>` 替换为所需分发版的名称。）初始安装后，可以使用 `wsl --install -d <Distribution Name>` 命令将其他 Linux 分发版添加到计算机。
+
+若要查看可用 Linux 分发版的列表，请输入 `wsl --list --online`。
+
+## <a name="manual-installation-steps"></a>手动安装步骤
+
+如果你没有使用 Windows 预览体验版本，则需要按照以下步骤手动启用 WSL 所需的功能。
 
 ## <a name="step-1---enable-the-windows-subsystem-for-linux"></a>步骤 1 - 启用适用于 Linux 的 Windows 子系统
 
@@ -74,10 +102,10 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ## <a name="step-4---download-the-linux-kernel-update-package"></a>步骤 4 - 下载 Linux 内核更新包
 
 1. 下载最新包：
-    - [适用于 x64 计算机的 WSL2 Linux 内核更新包](http://aka.ms/wsl2kernelmsix64)
+    - [适用于 x64 计算机的 WSL2 Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
     > [!NOTE]
-    > 如果使用的是 ARM64 计算机，请下载 [ARM64 包](http://aka.ms/wsl2kernelmsiarm64)。 如果不确定自己计算机的类型，请打开命令提示符或 PowerShell，并输入：`systeminfo | find "System Type"`。
+    > 如果使用的是 ARM64 计算机，请下载 [ARM64 包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi)。 如果不确定自己计算机的类型，请打开命令提示符或 PowerShell，并输入：`systeminfo | find "System Type"`。
 
 2. 运行上一步中下载的更新包。 （双击以运行 - 系统将提示你提供提升的权限，选择“是”以批准此安装。）
 
@@ -125,8 +153,6 @@ wsl --set-default-version 2
 2. 在分发版的页面中，选择“获取”。
 
     ![Microsoft Store 中的 Linux 分发版](media/UbuntuStore.png)
-
-## <a name="step-7---set-up-a-new-distribution"></a>步骤 7 - 设置新分发
 
 首次启动新安装的 Linux 分发版时，将打开一个控制台窗口，系统会要求你等待一分钟或两分钟，以便文件解压缩并存储到电脑上。 未来的所有启动时间应不到一秒。
 
